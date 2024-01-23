@@ -1,7 +1,8 @@
-def get_node(idx, col, vis_list, state):
-    id = get_id(idx, col, state)
-    idx2str = "_".join(str(item) for item in idx) if len(idx) != 0 else '_'
-    col2str = "_".join(str(item) for item in col) if len(col) != 0 else '_'
+def get_node(header, vis_list):
+    id = get_id(header)
+    header2str = "_".join(str(item)
+                          for item in header) if len(header) != 0 else '_'
+
     ins_list = []
     for vis in vis_list:
         ins_list.append({
@@ -11,10 +12,9 @@ def get_node(idx, col, vis_list, state):
             'vega-lite': vis.vega_json})
 
     node = {'id': id,
-            'row': idx2str,
-            'col': col2str,
+            'fixed_header': header2str,
             'insight-list': ins_list,
-            'state': 'S'+str(state)}
+            }
 
     return node
 
@@ -152,8 +152,8 @@ def check_if_parent(parent, child):
         return False
 
 
-def get_id(idx, col, state):
-    idx_str = "_".join(str(item) for item in idx)
-    col_str = "_".join(str(item) for item in col)
-    id = str(state) + '_' + idx_str + '-' + col_str + '_'
+def get_id(header):
+    header_str = "_".join(str(item) for item in header)
+
+    id = header_str
     return id

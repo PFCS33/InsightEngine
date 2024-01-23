@@ -30,26 +30,11 @@ class Insight:
         return f"(Type: {self.type}, Score: {self.score}, Category: {self.category})"
 
 
-def get_insight(header, block_data, header_split, transformed_state):
+def get_insight(header, block_data):
     aggregate = 'sum'
     global block_insight  # record the insights for the current block
     # contains three types of insight
     block_insight = {'point': [], 'shape': [], 'compound': []}
-
-    # consider part of the data when transformed TODO not finished
-    # if transformed_state != 0:
-    #     # index header not none, column header not none
-    #     if header_split!=0 and header_split!=block_data.shape[1]-1:
-    #         # only consider the first layer of headers as breakdown and aggregate
-    #         get_scope_with_aggregate(block_data, 0, aggregate) # index header
-    #         get_scope_with_aggregate(block_data, header_split, aggregate) # column header
-
-    # else:
-    # if transformed_state != 0:
-    #     idx, col = header
-    #     # skip when block is a whole row or column
-    #     if idx==() or col==():
-    #         return block_insight
 
     # change categorical to string
     for col in block_data.columns:
@@ -58,15 +43,12 @@ def get_insight(header, block_data, header_split, transformed_state):
 
     # no breakdown, consider all data together
     get_scope_no_breakdown(block_data)
-    # index header not none, column header not none(the scope includes more than one row or column )
-    if header_split != 0 and header_split != block_data.shape[1]-1:
-        # only consider the first layer of headers as breakdown and aggregate
-        get_scope_with_aggregate(block_data, 0, aggregate)  # index header
-        get_scope_with_aggregate(
-            block_data, header_split, aggregate)  # column header
-        # consider all layers and generate groups, no aggregate, compound insights
-        if transformed_state == 0:
-            get_scope_rearrange(header, block_data, header_split)
+
+    # only consider the first layer of headers as breakdown and aggregate
+    get_scope_with_aggregate(block_data, 0, aggregate)  # index header
+
+    # consider all layers and generate groups, no aggregate, compound insights
+    # get_scope_rearrange(header, block_data)
 
     return block_insight
 
@@ -109,6 +91,7 @@ def get_scope_with_aggregate(block_data, breakdown, aggregate):
         scope_data = scope_data.sort_index()
         # change back to the origin name
         scope_data.index = scope_data.index.to_series().replace(letter2month, regex=True)
+
     calc_insight(scope_data, breakdown, aggregate)
 
 
@@ -139,28 +122,28 @@ def get_scope_rearrange_old(header, block_data, header_split):
     get_scope_rearrange_more(scope_data)
 
 
-def get_scope_rearrange(header, block_data, header_split):
+def get_scope_rearrange(header, block_data):
     origin_data = copy.deepcopy(block_data)
     # in order to avoid repated calculation inside groups
-    # group by columns
-    header_col_name = origin_data.columns[header_split]
-    get_scope_rearrange_advanced(
-        origin_data, header_col_name, header_split, 0, 1)
+    # # group by columns
+    # header_col_name = origin_data.columns[header_split]
+    # get_scope_rearrange_advanced(
+    #     origin_data, header_col_name, header_split, 0, 1)
     # group by rows
     header_row_name = origin_data.columns[0]
     get_scope_rearrange_advanced(
-        origin_data, header_row_name, header_split, 1, 0)
+        origin_data, header_row_name, 1, 0)
 
 
-def get_scope_rearrange_advanced(origin_data, header_name, header_split, idx_num, col_num):
+def get_scope_rearrange_advanced(origin_data, header_name, idx_num, col_num):
     grouped_data = dict(list(origin_data.groupby(header_name))).values()
     grouped_data_processed = []
     for g_data in grouped_data:
-        if g_data.shape[1]-1 - header_split > 1:    # many col headers, concat them
-            g_data = merge_columns(g_data, header_split,
+        print(g_data)
+        if g_data.shape[1]-1 > 1:    # many col headers, concat them
+            g_data = merge_columns(g_data, 0,
                                    origin_data.shape[1]-1, 'Merged_col')
-        if header_split > 1:    # many row headers, concat them
-            g_data = merge_columns(g_data, 0, header_split, 'Merged_idx')
+        print(g_data)
         g_data = g_data.pivot(
             index=g_data.columns[idx_num],
             columns=g_data.columns[col_num],

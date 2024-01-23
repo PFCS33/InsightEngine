@@ -4,20 +4,36 @@ import time
 from insight import get_insight
 from visualization import get_visualization
 from graph import get_node, get_links, get_state_links, get_id
+import itertools
 
 
 class HierarchicalTable:
     def __init__(self, data_source):
         self.data_source = data_source
-        self.origin_data = pd.read_excel(
-            data_source.source_path, header=data_source.header_row, index_col=data_source.header_col).fillna(0)
+        self.value_col_index = -1
+        self.origin_data = self.get_origin_data()
+        self.header_dict = self.get_header_dict()
+        # self.unique_value_dict = self.get_unique_value_dict(
+        #     self.origin_data.columns[:-1])
         self.all_nodes = None
         self.all_links = None
         self.block_has_insight = None
 
+    def get_origin_data(self):
+        data_source = self.data_source
+        if (data_source.name_suffix == 'csv'):
+            return pd.read_csv(data_source.source_path, header=0).fillna(0)
+        elif (data_source.name_suffix == 'xlsx'):
+            return pd.read_excel(
+                data_source.source_path, header=0).fillna(0)
+            # return pd.read_excel(
+            #     data_source.source_path, header=data_source.header_row, index_col=data_source.header_col).fillna(0)
+        else:
+            return None
+
     def generate_all_results(self):
         self.generate_blocks()
-        self.generate_links()
+        # self.generate_links()
 
         graph = self.generate_graph()
         filepath = self.data_source.get_result_path()
@@ -27,42 +43,23 @@ class HierarchicalTable:
 
     def generate_blocks(self):
         self.all_nodes = []
-        self.block_has_insight = []
-        # all combination of headers
-        args_list = []
+        # self.block_has_insight = []
 
         src_data = self.origin_data
-        columns = src_data.columns.tolist()
-        index = src_data.index.tolist()
-        all_columns = self.generate_all_headers(columns)
-        all_index = self.generate_all_headers(index)
-
-        for idx in all_index:
-            for col in all_columns:
-                idx_cond = len(idx) == len(src_data.index[0]) or \
-                    (len(idx) == 1 and type(src_data.index[0]) != tuple)
-                col_cond = len(col) == len(src_data.columns[0]) or \
-                    (len(col) == 1 and type(src_data.columns[0]) != tuple)
-                if idx_cond and col_cond:
-                    continue    # skip the singel cell
-                if len(idx) == 0 and len(col) == 0:
-                    continue    # skip the whole table
-                # iterate all blocks, and keep the column name
-                args = (idx, col)
-                args_list.append(args)
+        header_dict = self.header_dict
 
         print('processing blocks...')
-        # # no multi-processing
-        # # start here
-        for args in args_list:
-            node = self.process_block(args)
+        # no multi-processing
+        # start here
+        for header in header_dict:
+            node = self.process_block(header)
             if node != None:
                 # if set(idx+col) in curr_focus_headers:
                 #     continue
                 self.all_nodes.append(node)
-                self.block_has_insight.append((idx, col))
+                # self.block_has_insight.append(header)
         # end here
-        # print(self.all_nodes)
+        print(self.all_nodes)
 
     def generate_links(self):
         print('processing links...')
@@ -71,95 +68,97 @@ class HierarchicalTable:
         self.all_links = get_links([(0, list(blocks))])
         # print(self.all_links)
 
-    def process_block(self, args):
+    def process_block(self, header):
         s_time = time.time()
         src_data = self.origin_data
-        idx, col = args
-        transformed_state = 0
+        header_dict = self.header_dict
 
-        header = (idx, col)
-        block_data = self.get_block_data(src_data, idx, col)
-        # print('block data:', block_data)
-        # calculate the split of column and row headers in a block data
-        header_split = len(src_data.index[0]) - len(idx)
+        # get raw data through header
+        block_data = self.get_block_data(header)
 
-        insight_list = get_insight(
-            header, block_data, header_split, transformed_state)
+        insight_list = get_insight(header, block_data)
         # self.block_insight[header] = insight_list   # save the insight of the block
         vis_list = get_visualization(insight_list)
         # self.block_vis[header] = vis_list   # save the visulization of the block
 
         node = None
         if vis_list != []:
-            global_state = 0
-            node = get_node(idx, col, vis_list, global_state)
+            node = get_node(header, vis_list)
             print("header:\n", header)
             print('row data:\n', block_data)
             print('insights:\n', insight_list)
 
         # print('node complete!')
         e_time = time.time()
-        # print('state:', transformed_state, '    block:', idx, col, '    shape:', block_data.shape,'    time:', e_time - s_time)
+
         return node
 
-    def get_block_data(self, src_data, idx, col):
+    def get_block_data(self, header):
         '''
-        get the data of a block from origin data and convert it to flat table
-        idx is the index of the block, e.g. ('Nintendo', '3DS')
-        col is the column of the block, e.g. ('2011', 'JUN')
+        get the data of a block from flat table, and get rid of fixed columns
         '''
-        # get block data from origin data
-        block = None
-        if len(idx) == 0:
-            block = src_data.sort_index().loc[:, col]
-        elif len(col) == 0:
-            block = src_data.sort_index().loc[idx, :]
-        else:
-            block = src_data.sort_index().loc[idx, col]
-        res = None
-        if isinstance(block, pd.Series):
-            res = block.to_frame()   # convert to dataframe
-            res.columns = ['value']   # set column name
-            res = res.reset_index()  # convert to flat table
-        elif block.shape[1] == 1:
-            res = block.reset_index()
-        else:
-            # convert to flat table
-            res = block.melt(ignore_index=False).reset_index()
+        df = self.origin_data
+        header_dict = self.header_dict
+        condition, fixed_columns = header_dict[header]
 
-        # # get the length of the original header
-        # origin_col_len = len(self.origin_data.columns[0])
-        # origin_idx_len = len(self.origin_data.index[0])
-        # # if the header is from a higher level, add the higher level header to the flat table
-        # if len(idx) < origin_idx_len:
-        #     for i in range(len(idx)):
-        #         res.insert(i, 'idx'+str(i), idx[i])
-        # if len(col) < origin_col_len:
-        #     for i in range(len(col)):
-        #         res.insert(origin_idx_len+i, 'col'+str(i), col[i])
+        return df[condition].drop(list(fixed_columns), axis=1).reset_index(drop=True)
 
-        # with open('data/all_block.csv', mode='a') as f:
-        #     f.write(''+str(idx)+str(col)+'\n')
-        #     res.to_csv(f, index=False)
+    def get_header_condition(self,  header):
+        df = self.origin_data
+        # check if header is correspond to data blocks
+        condition = pd.Series([True] * len(df))
+        for column in header.index:
+            condition &= (df[column] == header[column])
+        return condition
+
+    def get_header_dict(self):
+        df = self.origin_data
+        value_label = df.columns[self.value_col_index]
+        columns_new = [col for col in df.columns if col != value_label]
+
+        all_fixed_combinations = []
+        for length in range(1, len(columns_new)):
+            combinations = itertools.combinations(columns_new, length)
+            all_fixed_combinations.extend(combinations)
+
+        res = {}
+        for index, row in df.iterrows():
+            for combination in all_fixed_combinations:
+                header = row.loc[list(combination)]
+                header_tuple = None
+                if isinstance(header, pd.Series):
+                    header_tuple = tuple(header)
+                else:
+                    header_tuple = (header,)
+                if header_tuple not in res:
+                    condition = self.get_header_condition(header)
+                    if sum(condition) > 1:
+                        res[header_tuple] = (condition, combination)
+
         return res
 
-    def generate_all_headers(self, header_list):
-        res = [()]
-        for i in range(len(header_list)):
-            header = header_list[i]
-            if type(header) == tuple:
-                for j in range(1, len(header)):
-                    new_header = header[:j]
-                    if new_header not in res:   # avoid duplicate
-                        res.append(new_header)
-            else:   # header is a list
-                header_list[i] = (header,)
-        res.extend(header_list)
-        return list(res)
+        # for i in range(len(header_list)):
+        #     header = header_list[i]
+        #     if type(header) == tuple:
+        #         for j in range(1, len(header)):
+        #             new_header = header[:j]
+        #             if new_header not in res:   # avoid duplicate
+        #                 res.append(new_header)
+        #     else:   # header is a list
+        #         header_list[i] = (header,)
+        # res.extend(header_list)
+        # return list(res)
+
+    # def get_unique_value_dict(self, non_value_columns):
+    #     df = self.origin_data
+    #     unique_value_dict = {}
+    #     for column in non_value_columns:
+    #         unique_value_dict[column] = df[column].unique()
+    #     print(unique_value_dict)
+    #     return unique_value_dict
 
     def generate_graph(self):
         # generate result json
         graph = {}
         graph['nodes'] = self.all_nodes
-        graph['links'] = self.all_links
         return graph
