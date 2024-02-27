@@ -10,6 +10,7 @@ import copy
 
 subspace_list = {}
 
+
 class HierarchicalTable:
     def __init__(self, data_source):
         self.data_source = data_source
@@ -81,7 +82,8 @@ class HierarchicalTable:
 
         aggregated_header = ""
         aggregated_data = None
-        aggregated_header, insight_list, aggregated_data, aggregated_insight_list = get_insight(header, block_data, aggregated_data)
+        aggregated_header, insight_list, aggregated_data, aggregated_insight_list = get_insight(header, block_data,
+                                                                                                aggregated_data)
         # self.block_insight[header] = insight_list   # save the insight of the block
         # vis_list = get_visualization(insight_list)
         # self.block_vis[header] = vis_list   # save the visulization of the block
@@ -123,8 +125,8 @@ class HierarchicalTable:
                 file.write('aggregated insights:\n' + str(aggregated_insight_list) + "\n")
 
             subspace_list.setdefault(header, {})['header2'] = aggregated_header
-            subspace_list.setdefault(header, {}).setdefault('aggregated_insight_list', []).extend(aggregated_insight_list)
-
+            subspace_list.setdefault(header, {}).setdefault('aggregated_insight_list', []).extend(
+                aggregated_insight_list)
 
         # print('node complete!')
         e_time = time.time()
@@ -142,7 +144,7 @@ class HierarchicalTable:
 
         return df[condition].drop(list(fixed_columns), axis=1).reset_index(drop=True)
 
-    def get_header_condition(self,  header):
+    def get_header_condition(self, header):
         df = self.origin_data
         # check if header is correspond to data blocks
         condition = pd.Series([True] * len(df))
