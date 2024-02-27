@@ -1,0 +1,15 @@
+header:
+('Sony', 'PlayStation 4 (PS4)', 'DEC', 2020)
+row data:
+        Location  Sale
+0         Europe   560
+1          Japan    40
+2  North America   420
+3          Other   110
+insights:
+{'point': [
+(Type: top2
+Score: 0.49557522123893805
+Category: point
+Description: The Sale proportion of Europe and North America is significantly higher than that of other Locations.)
+], 'shape': [], 'compound': []}

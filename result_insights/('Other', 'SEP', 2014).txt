@@ -1,0 +1,16 @@
+header:
+('Other', 'SEP', 2014)
+row data:
+     Company                   Brand  Sale
+0   Nintendo      Nintendo 3DS (3DS)     0
+1   Nintendo        Nintendo DS (DS)     0
+2   Nintendo    Nintendo Switch (NS)     0
+3   Nintendo               Wii (Wii)     0
+4   Nintendo            Wii U (WiiU)    40
+5       Sony     PlayStation 3 (PS3)   360
+6       Sony     PlayStation 4 (PS4)   460
+7       Sony  PlayStation Vita (PSV)    60
+8  Microsoft         Xbox 360 (X360)   950
+9  Microsoft         Xbox One (XOne)    60
+insights:
+{'point': [], 'shape': [], 'compound': []}

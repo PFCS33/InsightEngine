@@ -1,0 +1,19 @@
+header:
+('Microsoft', 'Other')
+row data:
+              Brand Season  Year  Sale
+0   Xbox 360 (X360)    DEC  2013    80
+1   Xbox 360 (X360)    DEC  2014    70
+2   Xbox 360 (X360)    DEC  2015    30
+3   Xbox 360 (X360)    DEC  2016    10
+4   Xbox 360 (X360)    DEC  2017     0
+..              ...    ...   ...   ...
+59  Xbox One (XOne)    SEP  2016   120
+60  Xbox One (XOne)    SEP  2017   160
+61  Xbox One (XOne)    SEP  2018    70
+62  Xbox One (XOne)    SEP  2019     0
+63  Xbox One (XOne)    SEP  2020    70
+
+[64 rows x 4 columns]
+insights:
+{'point': [], 'shape': [], 'compound': []}

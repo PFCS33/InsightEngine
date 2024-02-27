@@ -1,0 +1,10 @@
+header:
+('Wii U (WiiU)', 'Japan', 2015)
+row data:
+    Company Season  Sale
+0  Nintendo    DEC   200
+1  Nintendo    JUN   100
+2  Nintendo    MAR   240
+3  Nintendo    SEP   150
+insights:
+{'point': [], 'shape': [], 'compound': []}

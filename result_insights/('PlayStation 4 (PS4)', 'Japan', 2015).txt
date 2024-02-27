@@ -1,0 +1,15 @@
+header:
+('PlayStation 4 (PS4)', 'Japan', 2015)
+row data:
+  Company Season  Sale
+0    Sony    DEC   360
+1    Sony    JUN   350
+2    Sony    MAR   290
+3    Sony    SEP   160
+insights:
+{'point': [
+(Type: top2
+Score: 0.3103448275862069
+Category: point
+Description: The Sale proportion of Sony and Sony is significantly higher than that of other Companys.)
+], 'shape': [], 'compound': []}

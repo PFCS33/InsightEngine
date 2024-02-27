@@ -1,0 +1,19 @@
+header:
+('Sony', 'PlayStation Vita (PSV)', 'Other', 'JUN')
+row data:
+   Year  Sale
+0  2013   140
+1  2014   200
+2  2015   120
+3  2016   110
+4  2017    50
+5  2018    10
+6  2019     0
+7  2020     0
+insights:
+{'point': [], 'shape': [
+(Type: trend
+Score: 0.8545042086321551
+Category: shape
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.)
+], 'compound': []}

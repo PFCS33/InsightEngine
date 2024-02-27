@@ -1,0 +1,23 @@
+header:
+('Sony', 'DEC', 2015)
+row data:
+                     Brand       Location  Sale
+0      PlayStation 3 (PS3)         Europe   120
+1      PlayStation 3 (PS3)          Japan    40
+2      PlayStation 3 (PS3)  North America    30
+3      PlayStation 3 (PS3)          Other    60
+4      PlayStation 4 (PS4)         Europe  1360
+5      PlayStation 4 (PS4)          Japan   360
+6      PlayStation 4 (PS4)  North America  1240
+7      PlayStation 4 (PS4)          Other   640
+8   PlayStation Vita (PSV)         Europe   240
+9   PlayStation Vita (PSV)          Japan   210
+10  PlayStation Vita (PSV)  North America    30
+11  PlayStation Vita (PSV)          Other   120
+insights:
+{'point': [
+(Type: outlier
+Score: 2.2055616434385974
+Category: point
+Description: The Sale of Brand PlayStation 4 (PS4) of Location North America is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Sale.)
+], 'shape': [], 'compound': []}

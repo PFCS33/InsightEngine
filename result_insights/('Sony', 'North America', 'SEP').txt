@@ -1,0 +1,30 @@
+header:
+('Sony', 'North America', 'SEP')
+row data:
+                     Brand  Year  Sale
+0      PlayStation 3 (PS3)  2013   380
+1      PlayStation 3 (PS3)  2014   120
+2      PlayStation 3 (PS3)  2015    20
+3      PlayStation 3 (PS3)  2016    30
+4      PlayStation 3 (PS3)  2017     0
+5      PlayStation 3 (PS3)  2018     0
+6      PlayStation 3 (PS3)  2019     0
+7      PlayStation 3 (PS3)  2020     0
+8      PlayStation 4 (PS4)  2013     0
+9      PlayStation 4 (PS4)  2014   750
+10     PlayStation 4 (PS4)  2015   720
+11     PlayStation 4 (PS4)  2016   740
+12     PlayStation 4 (PS4)  2017   910
+13     PlayStation 4 (PS4)  2018   740
+14     PlayStation 4 (PS4)  2019   760
+15     PlayStation 4 (PS4)  2020   570
+16  PlayStation Vita (PSV)  2013   110
+17  PlayStation Vita (PSV)  2014    80
+18  PlayStation Vita (PSV)  2015    30
+19  PlayStation Vita (PSV)  2016     0
+20  PlayStation Vita (PSV)  2017     0
+21  PlayStation Vita (PSV)  2018     0
+22  PlayStation Vita (PSV)  2019     0
+23  PlayStation Vita (PSV)  2020     0
+insights:
+{'point': [], 'shape': [], 'compound': []}

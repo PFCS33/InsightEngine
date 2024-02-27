@@ -1,0 +1,15 @@
+header:
+('Nintendo 3DS (3DS)', 'MAR', 2015)
+row data:
+    Company       Location  Sale
+0  Nintendo         Europe   950
+1  Nintendo          Japan  1250
+2  Nintendo  North America  1480
+3  Nintendo          Other   300
+insights:
+{'point': [
+(Type: top2
+Score: 0.37185929648241206
+Category: point
+Description: The Sale proportion of Nintendo and Nintendo is significantly higher than that of other Companys.)
+], 'shape': [], 'compound': []}

@@ -1,0 +1,19 @@
+header:
+('Microsoft', 'MAR')
+row data:
+              Brand Location  Year  Sale
+0   Xbox 360 (X360)   Europe  2013   670
+1   Xbox 360 (X360)   Europe  2014   360
+2   Xbox 360 (X360)   Europe  2015   170
+3   Xbox 360 (X360)   Europe  2016    50
+4   Xbox 360 (X360)   Europe  2017    30
+..              ...      ...   ...   ...
+59  Xbox One (XOne)    Other  2016   440
+60  Xbox One (XOne)    Other  2017   460
+61  Xbox One (XOne)    Other  2018   530
+62  Xbox One (XOne)    Other  2019   270
+63  Xbox One (XOne)    Other  2020     0
+
+[64 rows x 4 columns]
+insights:
+{'point': [], 'shape': [], 'compound': []}

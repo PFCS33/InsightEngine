@@ -1,0 +1,10 @@
+header:
+('PlayStation 4 (PS4)', 'DEC', 2017)
+row data:
+  Company       Location  Sale
+0    Sony         Europe  1760
+1    Sony          Japan   540
+2    Sony  North America   930
+3    Sony          Other  1320
+insights:
+{'point': [], 'shape': [], 'compound': []}

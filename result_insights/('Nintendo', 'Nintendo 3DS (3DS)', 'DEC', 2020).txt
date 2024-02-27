@@ -1,0 +1,15 @@
+header:
+('Nintendo', 'Nintendo 3DS (3DS)', 'DEC', 2020)
+row data:
+        Location  Sale
+0         Europe    10
+1          Japan    20
+2  North America    70
+3          Other     0
+insights:
+{'point': [
+(Type: dominance
+Score: 0.7
+Category: point
+Description: The Sale of North America dominates among all Locations.)
+], 'shape': [], 'compound': []}

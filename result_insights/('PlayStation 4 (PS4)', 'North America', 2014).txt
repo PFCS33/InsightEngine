@@ -1,0 +1,10 @@
+header:
+('PlayStation 4 (PS4)', 'North America', 2014)
+row data:
+  Company Season  Sale
+0    Sony    DEC  1540
+1    Sony    JUN   870
+2    Sony    MAR  2750
+3    Sony    SEP   750
+insights:
+{'point': [], 'shape': [], 'compound': []}

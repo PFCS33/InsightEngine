@@ -1,0 +1,26 @@
+header:
+('Nintendo', 'SEP', 2013)
+row data:
+                   Brand       Location  Sale
+0     Nintendo 3DS (3DS)         Europe   660
+1     Nintendo 3DS (3DS)          Japan   790
+2     Nintendo 3DS (3DS)  North America   640
+3     Nintendo 3DS (3DS)          Other   130
+4       Nintendo DS (DS)         Europe     0
+5       Nintendo DS (DS)          Japan     0
+6       Nintendo DS (DS)  North America   140
+7       Nintendo DS (DS)          Other     0
+8   Nintendo Switch (NS)         Europe     0
+9   Nintendo Switch (NS)          Japan     0
+10  Nintendo Switch (NS)  North America     0
+11  Nintendo Switch (NS)          Other     0
+12             Wii (Wii)         Europe   150
+13             Wii (Wii)          Japan    20
+14             Wii (Wii)  North America   160
+15             Wii (Wii)          Other     0
+16          Wii U (WiiU)         Europe    90
+17          Wii U (WiiU)          Japan   130
+18          Wii U (WiiU)  North America   140
+19          Wii U (WiiU)          Other    30
+insights:
+{'point': [], 'shape': [], 'compound': []}

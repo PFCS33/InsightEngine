@@ -1,0 +1,15 @@
+header:
+('PlayStation 4 (PS4)', 'Europe', 2020)
+row data:
+  Company Season  Sale
+0    Sony    DEC   560
+1    Sony    JUN  1810
+2    Sony    MAR  1860
+3    Sony    SEP  1140
+insights:
+{'point': [
+(Type: top2
+Score: 0.3463687150837989
+Category: point
+Description: The Sale proportion of Sony and Sony is significantly higher than that of other Companys.)
+], 'shape': [], 'compound': []}

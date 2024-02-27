@@ -1,0 +1,15 @@
+header:
+('Sony', 'PlayStation Vita (PSV)', 'DEC', 2013)
+row data:
+        Location  Sale
+0         Europe   230
+1          Japan   180
+2  North America    80
+3          Other    40
+insights:
+{'point': [
+(Type: top2
+Score: 0.4339622641509434
+Category: point
+Description: The Sale proportion of Europe and Japan is significantly higher than that of other Locations.)
+], 'shape': [], 'compound': []}

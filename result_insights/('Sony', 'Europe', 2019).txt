@@ -1,0 +1,18 @@
+header:
+('Sony', 'Europe', 2019)
+row data:
+                     Brand Season  Sale
+0      PlayStation 3 (PS3)    DEC     0
+1      PlayStation 3 (PS3)    JUN   440
+2      PlayStation 3 (PS3)    MAR     0
+3      PlayStation 3 (PS3)    SEP     0
+4      PlayStation 4 (PS4)    DEC  1880
+5      PlayStation 4 (PS4)    JUN  1740
+6      PlayStation 4 (PS4)    MAR  2540
+7      PlayStation 4 (PS4)    SEP  1490
+8   PlayStation Vita (PSV)    DEC     0
+9   PlayStation Vita (PSV)    JUN     0
+10  PlayStation Vita (PSV)    MAR     0
+11  PlayStation Vita (PSV)    SEP     0
+insights:
+{'point': [], 'shape': [], 'compound': []}

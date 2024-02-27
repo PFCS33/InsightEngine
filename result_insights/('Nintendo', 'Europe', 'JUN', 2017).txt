@@ -1,0 +1,16 @@
+header:
+('Nintendo', 'Europe', 'JUN', 2017)
+row data:
+                  Brand  Sale
+0    Nintendo 3DS (3DS)   170
+1      Nintendo DS (DS)     0
+2  Nintendo Switch (NS)   840
+3             Wii (Wii)     0
+4          Wii U (WiiU)    30
+insights:
+{'point': [
+(Type: dominance
+Score: 0.8076923076923077
+Category: point
+Description: The Sale of Nintendo Switch (NS) dominates among all Brands.)
+], 'shape': [], 'compound': []}

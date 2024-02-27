@@ -1,0 +1,15 @@
+header:
+('Sony', 'PlayStation Vita (PSV)', 'North America', 2015)
+row data:
+  Season  Sale
+0    DEC    30
+1    JUN    70
+2    MAR   190
+3    SEP    30
+insights:
+{'point': [
+(Type: dominance
+Score: 0.59375
+Category: point
+Description: The Sale of MAR dominates among all Seasons.)
+], 'shape': [], 'compound': []}

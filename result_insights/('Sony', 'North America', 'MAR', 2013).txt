@@ -1,0 +1,9 @@
+header:
+('Sony', 'North America', 'MAR', 2013)
+row data:
+                    Brand  Sale
+0     PlayStation 3 (PS3)   960
+1     PlayStation 4 (PS4)     0
+2  PlayStation Vita (PSV)   140
+insights:
+{'point': [], 'shape': [], 'compound': []}

@@ -1,0 +1,22 @@
+header:
+('Sony', 'PlayStation 4 (PS4)', 2018)
+row data:
+         Location Season  Sale
+0          Europe    DEC  1810
+1          Europe    JUN  1650
+2          Europe    MAR  3490
+3          Europe    SEP   970
+4           Japan    DEC   280
+5           Japan    JUN   410
+6           Japan    MAR   840
+7           Japan    SEP   220
+8   North America    DEC  1150
+9   North America    JUN  1290
+10  North America    MAR  3160
+11  North America    SEP   740
+12          Other    DEC   780
+13          Other    JUN   630
+14          Other    MAR  1760
+15          Other    SEP   340
+insights:
+{'point': [], 'shape': [], 'compound': []}

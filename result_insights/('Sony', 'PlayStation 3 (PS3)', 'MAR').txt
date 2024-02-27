@@ -1,0 +1,38 @@
+header:
+('Sony', 'PlayStation 3 (PS3)', 'MAR')
+row data:
+         Location  Year  Sale
+0          Europe  2013  1330
+1          Europe  2014   720
+2          Europe  2015   730
+3          Europe  2016   110
+4          Europe  2017    60
+5          Europe  2018     0
+6          Europe  2019     0
+7          Europe  2020     0
+8           Japan  2013   380
+9           Japan  2014   260
+10          Japan  2015   100
+11          Japan  2016    20
+12          Japan  2017    10
+13          Japan  2018     0
+14          Japan  2019     0
+15          Japan  2020     0
+16  North America  2013   960
+17  North America  2014   870
+18  North America  2015   290
+19  North America  2016    70
+20  North America  2017    40
+21  North America  2018     0
+22  North America  2019     0
+23  North America  2020     0
+24          Other  2013   490
+25          Other  2014   120
+26          Other  2015   210
+27          Other  2016    50
+28          Other  2017    30
+29          Other  2018     0
+30          Other  2019     0
+31          Other  2020     0
+insights:
+{'point': [], 'shape': [], 'compound': []}

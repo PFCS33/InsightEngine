@@ -1,0 +1,10 @@
+header:
+('Sony', 'PlayStation 3 (PS3)', 'MAR', 2017)
+row data:
+        Location  Sale
+0         Europe    60
+1          Japan    10
+2  North America    40
+3          Other    30
+insights:
+{'point': [], 'shape': [], 'compound': []}

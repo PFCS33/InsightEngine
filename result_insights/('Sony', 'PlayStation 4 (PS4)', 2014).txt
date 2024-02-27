@@ -1,0 +1,27 @@
+header:
+('Sony', 'PlayStation 4 (PS4)', 2014)
+row data:
+         Location Season  Sale
+0          Europe    DEC  2430
+1          Europe    JUN   650
+2          Europe    MAR  2180
+3          Europe    SEP   930
+4           Japan    DEC   130
+5           Japan    JUN   260
+6           Japan    MAR   320
+7           Japan    SEP    90
+8   North America    DEC  1540
+9   North America    JUN   870
+10  North America    MAR  2750
+11  North America    SEP   750
+12          Other    DEC   940
+13          Other    JUN   190
+14          Other    MAR   600
+15          Other    SEP   460
+insights:
+{'point': [
+(Type: outlier
+Score: 2.2144065644341837
+Category: point
+Description: The Sale of Location North America of Season MAR is an outlier, which is significantly higher than the normal Sale of other Locations in the corresponding Sale.)
+], 'shape': [], 'compound': []}

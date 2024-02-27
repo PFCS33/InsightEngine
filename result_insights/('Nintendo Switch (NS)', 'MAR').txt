@@ -1,0 +1,38 @@
+header:
+('Nintendo Switch (NS)', 'MAR')
+row data:
+     Company       Location  Year  Sale
+0   Nintendo         Europe  2013     0
+1   Nintendo         Europe  2014     0
+2   Nintendo         Europe  2015     0
+3   Nintendo         Europe  2016     0
+4   Nintendo         Europe  2017     0
+5   Nintendo         Europe  2018  1790
+6   Nintendo         Europe  2019  2280
+7   Nintendo         Europe  2020  2450
+8   Nintendo          Japan  2013     0
+9   Nintendo          Japan  2014     0
+10  Nintendo          Japan  2015     0
+11  Nintendo          Japan  2016     0
+12  Nintendo          Japan  2017     0
+13  Nintendo          Japan  2018  1640
+14  Nintendo          Japan  2019  1650
+15  Nintendo          Japan  2020  1770
+16  Nintendo  North America  2013     0
+17  Nintendo  North America  2014     0
+18  Nintendo  North America  2015     0
+19  Nintendo  North America  2016     0
+20  Nintendo  North America  2017     0
+21  Nintendo  North America  2018  2690
+22  Nintendo  North America  2019  3350
+23  Nintendo  North America  2020  3210
+24  Nintendo          Other  2013     0
+25  Nintendo          Other  2014     0
+26  Nintendo          Other  2015     0
+27  Nintendo          Other  2016     0
+28  Nintendo          Other  2017     0
+29  Nintendo          Other  2018   430
+30  Nintendo          Other  2019  1240
+31  Nintendo          Other  2020  1400
+insights:
+{'point': [], 'shape': [], 'compound': []}

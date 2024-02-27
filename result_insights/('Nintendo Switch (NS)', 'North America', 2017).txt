@@ -1,0 +1,15 @@
+header:
+('Nintendo Switch (NS)', 'North America', 2017)
+row data:
+    Company Season  Sale
+0  Nintendo    DEC  1090
+1  Nintendo    JUN  1150
+2  Nintendo    MAR     0
+3  Nintendo    SEP   740
+insights:
+{'point': [
+(Type: top2
+Score: 0.3859060402684564
+Category: point
+Description: The Sale proportion of Nintendo and Nintendo is significantly higher than that of other Companys.)
+], 'shape': [], 'compound': []}

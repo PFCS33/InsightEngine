@@ -1,0 +1,19 @@
+header:
+('Nintendo', 'Nintendo 3DS (3DS)', 'Japan', 'MAR')
+row data:
+   Year  Sale
+0  2013  2090
+1  2014  1490
+2  2015  1250
+3  2016   990
+4  2017  1030
+5  2018   490
+6  2019   120
+7  2020    20
+insights:
+{'point': [], 'shape': [
+(Type: trend
+Score: 0.9585109200508483
+Category: shape
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.)
+], 'compound': []}

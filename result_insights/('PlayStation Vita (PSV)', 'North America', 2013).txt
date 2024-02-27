@@ -1,0 +1,10 @@
+header:
+('PlayStation Vita (PSV)', 'North America', 2013)
+row data:
+  Company Season  Sale
+0    Sony    DEC    80
+1    Sony    JUN    70
+2    Sony    MAR   140
+3    Sony    SEP   110
+insights:
+{'point': [], 'shape': [], 'compound': []}

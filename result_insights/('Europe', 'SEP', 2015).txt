@@ -1,0 +1,21 @@
+header:
+('Europe', 'SEP', 2015)
+row data:
+     Company                   Brand  Sale
+0   Nintendo      Nintendo 3DS (3DS)   210
+1   Nintendo        Nintendo DS (DS)     0
+2   Nintendo    Nintendo Switch (NS)     0
+3   Nintendo               Wii (Wii)     0
+4   Nintendo            Wii U (WiiU)   100
+5       Sony     PlayStation 3 (PS3)    70
+6       Sony     PlayStation 4 (PS4)   820
+7       Sony  PlayStation Vita (PSV)  1080
+8  Microsoft         Xbox 360 (X360)    20
+9  Microsoft         Xbox One (XOne)   250
+insights:
+{'point': [
+(Type: top2
+Score: 0.4235294117647059
+Category: point
+Description: The Sale proportion of Sony and Sony is significantly higher than that of other Companys.)
+], 'shape': [], 'compound': []}

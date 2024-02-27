@@ -1,0 +1,15 @@
+header:
+('Nintendo', 'Wii (Wii)', 'Europe', 2013)
+row data:
+  Season  Sale
+0    DEC   140
+1    JUN   510
+2    MAR   410
+3    SEP   150
+insights:
+{'point': [
+(Type: top2
+Score: 0.4214876033057851
+Category: point
+Description: The Sale proportion of JUN and MAR is significantly higher than that of other Seasons.)
+], 'shape': [], 'compound': []}

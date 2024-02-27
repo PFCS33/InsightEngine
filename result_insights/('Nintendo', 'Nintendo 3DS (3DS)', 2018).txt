@@ -1,0 +1,27 @@
+header:
+('Nintendo', 'Nintendo 3DS (3DS)', 2018)
+row data:
+         Location Season  Sale
+0          Europe    DEC   200
+1          Europe    JUN   170
+2          Europe    MAR  1190
+3          Europe    SEP     0
+4           Japan    DEC   110
+5           Japan    JUN   150
+6           Japan    MAR   490
+7           Japan    SEP    80
+8   North America    DEC   280
+9   North America    JUN   460
+10  North America    MAR  1320
+11  North America    SEP   210
+12          Other    DEC    50
+13          Other    JUN    40
+14          Other    MAR   320
+15          Other    SEP    30
+insights:
+{'point': [
+(Type: outlier
+Score: 2.6269355787856843
+Category: point
+Description: The Sale of Location Europe of Season MAR is an outlier, which is significantly higher than the normal Sale of other Locations in the corresponding Sale.)
+], 'shape': [], 'compound': []}

@@ -1,0 +1,22 @@
+header:
+('Wii U (WiiU)', 2017)
+row data:
+     Company       Location Season  Sale
+0   Nintendo         Europe    DEC    10
+1   Nintendo         Europe    JUN    30
+2   Nintendo         Europe    MAR   140
+3   Nintendo         Europe    SEP    30
+4   Nintendo          Japan    DEC    10
+5   Nintendo          Japan    JUN     0
+6   Nintendo          Japan    MAR    50
+7   Nintendo          Japan    SEP     0
+8   Nintendo  North America    DEC     0
+9   Nintendo  North America    JUN    20
+10  Nintendo  North America    MAR    90
+11  Nintendo  North America    SEP    10
+12  Nintendo          Other    DEC    10
+13  Nintendo          Other    JUN    10
+14  Nintendo          Other    MAR     0
+15  Nintendo          Other    SEP     0
+insights:
+{'point': [], 'shape': [], 'compound': []}

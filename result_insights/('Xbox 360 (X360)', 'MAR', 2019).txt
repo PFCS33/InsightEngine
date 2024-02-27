@@ -1,0 +1,10 @@
+header:
+('Xbox 360 (X360)', 'MAR', 2019)
+row data:
+     Company       Location  Sale
+0  Microsoft         Europe     0
+1  Microsoft          Japan     0
+2  Microsoft  North America     0
+3  Microsoft          Other     0
+insights:
+{'point': [], 'shape': [], 'compound': []}

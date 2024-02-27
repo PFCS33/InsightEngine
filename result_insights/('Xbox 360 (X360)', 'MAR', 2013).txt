@@ -1,0 +1,15 @@
+header:
+('Xbox 360 (X360)', 'MAR', 2013)
+row data:
+     Company       Location  Sale
+0  Microsoft         Europe   670
+1  Microsoft          Japan    20
+2  Microsoft  North America  1580
+3  Microsoft          Other   180
+insights:
+{'point': [
+(Type: dominance
+Score: 0.6448979591836734
+Category: point
+Description: The Sale of Microsoft dominates among all Companys.)
+], 'shape': [], 'compound': []}

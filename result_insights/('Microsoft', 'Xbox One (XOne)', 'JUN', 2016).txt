@@ -1,0 +1,15 @@
+header:
+('Microsoft', 'Xbox One (XOne)', 'JUN', 2016)
+row data:
+        Location  Sale
+0         Europe   470
+1          Japan     0
+2  North America   610
+3          Other   150
+insights:
+{'point': [
+(Type: top2
+Score: 0.4959349593495935
+Category: point
+Description: The Sale proportion of North America and Europe is significantly higher than that of other Locations.)
+], 'shape': [], 'compound': []}

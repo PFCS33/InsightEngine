@@ -1,0 +1,15 @@
+header:
+('Microsoft', 'Xbox One (XOne)', 'SEP', 2020)
+row data:
+        Location  Sale
+0         Europe   120
+1          Japan     0
+2  North America   350
+3          Other    70
+insights:
+{'point': [
+(Type: dominance
+Score: 0.6481481481481481
+Category: point
+Description: The Sale of North America dominates among all Locations.)
+], 'shape': [], 'compound': []}

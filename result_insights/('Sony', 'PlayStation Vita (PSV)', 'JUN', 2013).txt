@@ -1,0 +1,10 @@
+header:
+('Sony', 'PlayStation Vita (PSV)', 'JUN', 2013)
+row data:
+        Location  Sale
+0         Europe   330
+1          Japan   230
+2  North America    70
+3          Other   140
+insights:
+{'point': [], 'shape': [], 'compound': []}

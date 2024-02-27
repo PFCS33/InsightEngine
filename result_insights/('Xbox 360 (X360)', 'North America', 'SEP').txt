@@ -1,0 +1,19 @@
+header:
+('Xbox 360 (X360)', 'North America', 'SEP')
+row data:
+     Company  Year  Sale
+0  Microsoft  2013   520
+1  Microsoft  2014   770
+2  Microsoft  2015    30
+3  Microsoft  2016    40
+4  Microsoft  2017    10
+5  Microsoft  2018     0
+6  Microsoft  2019     0
+7  Microsoft  2020     0
+insights:
+{'point': [
+(Type: top2
+Score: 0.5620437956204379
+Category: point
+Description: The Sale proportion of Microsoft and Microsoft is significantly higher than that of other Companys.)
+], 'shape': [], 'compound': []}

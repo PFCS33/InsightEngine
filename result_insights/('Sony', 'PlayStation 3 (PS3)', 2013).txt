@@ -1,0 +1,27 @@
+header:
+('Sony', 'PlayStation 3 (PS3)', 2013)
+row data:
+         Location Season  Sale
+0          Europe    DEC   670
+1          Europe    JUN  2010
+2          Europe    MAR  1330
+3          Europe    SEP   700
+4           Japan    DEC   110
+5           Japan    JUN   180
+6           Japan    MAR   380
+7           Japan    SEP   180
+8   North America    DEC   390
+9   North America    JUN   490
+10  North America    MAR   960
+11  North America    SEP   380
+12          Other    DEC   280
+13          Other    JUN  1300
+14          Other    MAR   490
+15          Other    SEP   390
+insights:
+{'point': [
+(Type: outlier
+Score: 2.728293453343865
+Category: point
+Description: The Sale of Location Europe of Season JUN is an outlier, which is significantly higher than the normal Sale of other Locations in the corresponding Sale.)
+], 'shape': [], 'compound': []}

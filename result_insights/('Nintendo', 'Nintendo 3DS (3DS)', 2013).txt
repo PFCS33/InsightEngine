@@ -1,0 +1,22 @@
+header:
+('Nintendo', 'Nintendo 3DS (3DS)', 2013)
+row data:
+         Location Season  Sale
+0          Europe    DEC   950
+1          Europe    JUN   550
+2          Europe    MAR  1370
+3          Europe    SEP   660
+4           Japan    DEC  1380
+5           Japan    JUN   660
+6           Japan    MAR  2090
+7           Japan    SEP   790
+8   North America    DEC   860
+9   North America    JUN   580
+10  North America    MAR  1410
+11  North America    SEP   640
+12          Other    DEC   170
+13          Other    JUN    70
+14          Other    MAR   310
+15          Other    SEP   130
+insights:
+{'point': [], 'shape': [], 'compound': []}

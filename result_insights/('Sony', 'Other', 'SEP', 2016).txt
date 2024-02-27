@@ -1,0 +1,14 @@
+header:
+('Sony', 'Other', 'SEP', 2016)
+row data:
+                    Brand  Sale
+0     PlayStation 3 (PS3)    20
+1     PlayStation 4 (PS4)   450
+2  PlayStation Vita (PSV)    80
+insights:
+{'point': [
+(Type: dominance
+Score: 0.8181818181818182
+Category: point
+Description: The Sale of PlayStation 4 (PS4) dominates among all Brands.)
+], 'shape': [], 'compound': []}

@@ -1,0 +1,26 @@
+header:
+('Nintendo', 'North America', 2013)
+row data:
+                   Brand Season  Sale
+0     Nintendo 3DS (3DS)    DEC   860
+1     Nintendo 3DS (3DS)    JUN   580
+2     Nintendo 3DS (3DS)    MAR  1410
+3     Nintendo 3DS (3DS)    SEP   640
+4       Nintendo DS (DS)    DEC    50
+5       Nintendo DS (DS)    JUN   170
+6       Nintendo DS (DS)    MAR   470
+7       Nintendo DS (DS)    SEP   140
+8   Nintendo Switch (NS)    DEC     0
+9   Nintendo Switch (NS)    JUN     0
+10  Nintendo Switch (NS)    MAR     0
+11  Nintendo Switch (NS)    SEP     0
+12             Wii (Wii)    DEC   120
+13             Wii (Wii)    JUN   180
+14             Wii (Wii)    MAR   560
+15             Wii (Wii)    SEP   160
+16          Wii U (WiiU)    DEC   190
+17          Wii U (WiiU)    JUN   130
+18          Wii U (WiiU)    MAR   410
+19          Wii U (WiiU)    SEP   140
+insights:
+{'point': [], 'shape': [], 'compound': []}

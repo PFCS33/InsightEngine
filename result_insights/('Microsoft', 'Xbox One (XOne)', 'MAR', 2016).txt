@@ -1,0 +1,15 @@
+header:
+('Microsoft', 'Xbox One (XOne)', 'MAR', 2016)
+row data:
+        Location  Sale
+0         Europe   950
+1          Japan    10
+2  North America  2890
+3          Other   440
+insights:
+{'point': [
+(Type: dominance
+Score: 0.6736596736596736
+Category: point
+Description: The Sale of North America dominates among all Locations.)
+], 'shape': [], 'compound': []}

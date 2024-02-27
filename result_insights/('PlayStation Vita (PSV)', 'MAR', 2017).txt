@@ -1,0 +1,15 @@
+header:
+('PlayStation Vita (PSV)', 'MAR', 2017)
+row data:
+  Company       Location  Sale
+0    Sony         Europe   270
+1    Sony          Japan   280
+2    Sony  North America    20
+3    Sony          Other   140
+insights:
+{'point': [
+(Type: top2
+Score: 0.39436619718309857
+Category: point
+Description: The Sale proportion of Sony and Sony is significantly higher than that of other Companys.)
+], 'shape': [], 'compound': []}

@@ -1,0 +1,10 @@
+header:
+('Microsoft', 'Xbox One (XOne)', 'Europe', 2016)
+row data:
+  Season  Sale
+0    DEC   520
+1    JUN   470
+2    MAR   950
+3    SEP   390
+insights:
+{'point': [], 'shape': [], 'compound': []}

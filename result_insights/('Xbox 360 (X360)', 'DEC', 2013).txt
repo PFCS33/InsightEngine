@@ -1,0 +1,15 @@
+header:
+('Xbox 360 (X360)', 'DEC', 2013)
+row data:
+     Company       Location  Sale
+0  Microsoft         Europe   310
+1  Microsoft          Japan     0
+2  Microsoft  North America   350
+3  Microsoft          Other    80
+insights:
+{'point': [
+(Type: top2
+Score: 0.47297297297297297
+Category: point
+Description: The Sale proportion of Microsoft and Microsoft is significantly higher than that of other Companys.)
+], 'shape': [], 'compound': []}

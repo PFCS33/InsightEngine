@@ -1,0 +1,23 @@
+header:
+('Sony', 'Other', 2017)
+row data:
+                     Brand Season  Sale
+0      PlayStation 3 (PS3)    DEC     0
+1      PlayStation 3 (PS3)    JUN    10
+2      PlayStation 3 (PS3)    MAR    30
+3      PlayStation 3 (PS3)    SEP    10
+4      PlayStation 4 (PS4)    DEC  1320
+5      PlayStation 4 (PS4)    JUN   520
+6      PlayStation 4 (PS4)    MAR  1600
+7      PlayStation 4 (PS4)    SEP   640
+8   PlayStation Vita (PSV)    DEC    20
+9   PlayStation Vita (PSV)    JUN    50
+10  PlayStation Vita (PSV)    MAR   140
+11  PlayStation Vita (PSV)    SEP    30
+insights:
+{'point': [
+(Type: top2
+Score: 0.36613272311212813
+Category: point
+Description: The Sale proportion of PlayStation 4 (PS4) and PlayStation 4 (PS4) is significantly higher than that of other Brands.)
+], 'shape': [], 'compound': []}

@@ -1,0 +1,14 @@
+header:
+('Microsoft', 'Xbox One (XOne)', 'Europe', 'MAR')
+row data:
+   Year  Sale
+0  2013     0
+1  2014   890
+2  2015   790
+3  2016   950
+4  2017  1040
+5  2018  1220
+6  2019   820
+7  2020   170
+insights:
+{'point': [], 'shape': [], 'compound': []}

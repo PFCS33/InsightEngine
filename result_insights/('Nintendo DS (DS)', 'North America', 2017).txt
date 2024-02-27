@@ -1,0 +1,10 @@
+header:
+('Nintendo DS (DS)', 'North America', 2017)
+row data:
+    Company Season  Sale
+0  Nintendo    DEC    20
+1  Nintendo    JUN     0
+2  Nintendo    MAR     0
+3  Nintendo    SEP     0
+insights:
+{'point': [], 'shape': [], 'compound': []}

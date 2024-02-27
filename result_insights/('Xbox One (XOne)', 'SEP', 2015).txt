@@ -1,0 +1,15 @@
+header:
+('Xbox One (XOne)', 'SEP', 2015)
+row data:
+     Company       Location  Sale
+0  Microsoft         Europe   250
+1  Microsoft          Japan    10
+2  Microsoft  North America   600
+3  Microsoft          Other    80
+insights:
+{'point': [
+(Type: dominance
+Score: 0.6382978723404256
+Category: point
+Description: The Sale of Microsoft dominates among all Companys.)
+], 'shape': [], 'compound': []}

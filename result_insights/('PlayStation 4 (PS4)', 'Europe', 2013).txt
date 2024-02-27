@@ -1,0 +1,10 @@
+header:
+('PlayStation 4 (PS4)', 'Europe', 2013)
+row data:
+  Company Season  Sale
+0    Sony    DEC     0
+1    Sony    JUN     0
+2    Sony    MAR     0
+3    Sony    SEP     0
+insights:
+{'point': [], 'shape': [], 'compound': []}

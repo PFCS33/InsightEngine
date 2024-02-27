@@ -1,0 +1,15 @@
+header:
+('Sony', 'PlayStation Vita (PSV)', 'MAR', 2016)
+row data:
+        Location  Sale
+0         Europe     0
+1          Japan   410
+2  North America   100
+3          Other    30
+insights:
+{'point': [
+(Type: dominance
+Score: 0.7592592592592593
+Category: point
+Description: The Sale of Japan dominates among all Locations.)
+], 'shape': [], 'compound': []}

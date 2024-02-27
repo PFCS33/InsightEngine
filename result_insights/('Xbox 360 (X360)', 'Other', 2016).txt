@@ -1,0 +1,10 @@
+header:
+('Xbox 360 (X360)', 'Other', 2016)
+row data:
+     Company Season  Sale
+0  Microsoft    DEC    10
+1  Microsoft    JUN    10
+2  Microsoft    MAR    20
+3  Microsoft    SEP    10
+insights:
+{'point': [], 'shape': [], 'compound': []}

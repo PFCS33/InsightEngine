@@ -1,0 +1,19 @@
+header:
+('Microsoft', 'MAR', 2013)
+row data:
+             Brand       Location  Sale
+0  Xbox 360 (X360)         Europe   670
+1  Xbox 360 (X360)          Japan    20
+2  Xbox 360 (X360)  North America  1580
+3  Xbox 360 (X360)          Other   180
+4  Xbox One (XOne)         Europe     0
+5  Xbox One (XOne)          Japan     0
+6  Xbox One (XOne)  North America     0
+7  Xbox One (XOne)          Other     0
+insights:
+{'point': [
+(Type: dominance
+Score: 0.6448979591836734
+Category: point
+Description: The Sale of Xbox 360 (X360) dominates among all Brands.)
+], 'shape': [], 'compound': []}

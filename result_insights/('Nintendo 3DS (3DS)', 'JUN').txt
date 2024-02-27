@@ -1,0 +1,38 @@
+header:
+('Nintendo 3DS (3DS)', 'JUN')
+row data:
+     Company       Location  Year  Sale
+0   Nintendo         Europe  2013   550
+1   Nintendo         Europe  2014   440
+2   Nintendo         Europe  2015   650
+3   Nintendo         Europe  2016   560
+4   Nintendo         Europe  2017   170
+5   Nintendo         Europe  2018   170
+6   Nintendo         Europe  2019     0
+7   Nintendo         Europe  2020    30
+8   Nintendo          Japan  2013   660
+9   Nintendo          Japan  2014   440
+10  Nintendo          Japan  2015   350
+11  Nintendo          Japan  2016   300
+12  Nintendo          Japan  2017   320
+13  Nintendo          Japan  2018   150
+14  Nintendo          Japan  2019   100
+15  Nintendo          Japan  2020    20
+16  Nintendo  North America  2013   580
+17  Nintendo  North America  2014   420
+18  Nintendo  North America  2015   680
+19  Nintendo  North America  2016   440
+20  Nintendo  North America  2017   250
+21  Nintendo  North America  2018   460
+22  Nintendo  North America  2019   260
+23  Nintendo  North America  2020    90
+24  Nintendo          Other  2013    70
+25  Nintendo          Other  2014   210
+26  Nintendo          Other  2015   140
+27  Nintendo          Other  2016   110
+28  Nintendo          Other  2017     0
+29  Nintendo          Other  2018    40
+30  Nintendo          Other  2019     0
+31  Nintendo          Other  2020    10
+insights:
+{'point': [], 'shape': [], 'compound': []}

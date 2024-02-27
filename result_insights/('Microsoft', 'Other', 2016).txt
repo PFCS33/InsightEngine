@@ -1,0 +1,19 @@
+header:
+('Microsoft', 'Other', 2016)
+row data:
+             Brand Season  Sale
+0  Xbox 360 (X360)    DEC    10
+1  Xbox 360 (X360)    JUN    10
+2  Xbox 360 (X360)    MAR    20
+3  Xbox 360 (X360)    SEP    10
+4  Xbox One (XOne)    DEC   150
+5  Xbox One (XOne)    JUN   150
+6  Xbox One (XOne)    MAR   440
+7  Xbox One (XOne)    SEP   120
+insights:
+{'point': [
+(Type: outlier
+Score: 2.381105399042284
+Category: point
+Description: The Sale of Brand Xbox One (XOne) of Season MAR is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Sale.)
+], 'shape': [], 'compound': []}

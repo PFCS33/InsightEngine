@@ -1,0 +1,19 @@
+header:
+(2017,)
+row data:
+       Company               Brand       Location Season  Sale
+0     Nintendo  Nintendo 3DS (3DS)         Europe    DEC  1400
+1     Nintendo  Nintendo 3DS (3DS)         Europe    JUN   170
+2     Nintendo  Nintendo 3DS (3DS)         Europe    MAR   760
+3     Nintendo  Nintendo 3DS (3DS)         Europe    SEP   200
+4     Nintendo  Nintendo 3DS (3DS)          Japan    DEC   590
+..         ...                 ...            ...    ...   ...
+155  Microsoft     Xbox One (XOne)  North America    SEP   470
+156  Microsoft     Xbox One (XOne)          Other    DEC   220
+157  Microsoft     Xbox One (XOne)          Other    JUN   130
+158  Microsoft     Xbox One (XOne)          Other    MAR   460
+159  Microsoft     Xbox One (XOne)          Other    SEP   160
+
+[160 rows x 5 columns]
+insights:
+{'point': [], 'shape': [], 'compound': []}

@@ -1,0 +1,15 @@
+header:
+('Sony', 'PlayStation 3 (PS3)', 'MAR', 2014)
+row data:
+        Location  Sale
+0         Europe   720
+1          Japan   260
+2  North America   870
+3          Other   120
+insights:
+{'point': [
+(Type: top2
+Score: 0.4416243654822335
+Category: point
+Description: The Sale proportion of North America and Europe is significantly higher than that of other Locations.)
+], 'shape': [], 'compound': []}

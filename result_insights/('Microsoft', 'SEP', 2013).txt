@@ -1,0 +1,19 @@
+header:
+('Microsoft', 'SEP', 2013)
+row data:
+             Brand       Location  Sale
+0  Xbox 360 (X360)         Europe   400
+1  Xbox 360 (X360)          Japan    10
+2  Xbox 360 (X360)  North America   520
+3  Xbox 360 (X360)          Other    80
+4  Xbox One (XOne)         Europe     0
+5  Xbox One (XOne)          Japan     0
+6  Xbox One (XOne)  North America     0
+7  Xbox One (XOne)          Other     0
+insights:
+{'point': [
+(Type: top2
+Score: 0.5148514851485149
+Category: point
+Description: The Sale proportion of Xbox 360 (X360) and Xbox 360 (X360) is significantly higher than that of other Brands.)
+], 'shape': [], 'compound': []}

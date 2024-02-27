@@ -1,0 +1,15 @@
+header:
+('PlayStation 4 (PS4)', 'DEC', 2014)
+row data:
+  Company       Location  Sale
+0    Sony         Europe  2430
+1    Sony          Japan   130
+2    Sony  North America  1540
+3    Sony          Other   940
+insights:
+{'point': [
+(Type: top2
+Score: 0.48214285714285715
+Category: point
+Description: The Sale proportion of Sony and Sony is significantly higher than that of other Companys.)
+], 'shape': [], 'compound': []}

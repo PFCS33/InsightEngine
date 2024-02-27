@@ -1,0 +1,38 @@
+header:
+('Wii U (WiiU)', 'Europe')
+row data:
+     Company Season  Year  Sale
+0   Nintendo    DEC  2013   130
+1   Nintendo    DEC  2014   100
+2   Nintendo    DEC  2015   190
+3   Nintendo    DEC  2016    90
+4   Nintendo    DEC  2017    10
+5   Nintendo    DEC  2018     0
+6   Nintendo    DEC  2019     0
+7   Nintendo    DEC  2020     0
+8   Nintendo    JUN  2013    90
+9   Nintendo    JUN  2014   110
+10  Nintendo    JUN  2015   110
+11  Nintendo    JUN  2016   180
+12  Nintendo    JUN  2017    30
+13  Nintendo    JUN  2018     0
+14  Nintendo    JUN  2019     0
+15  Nintendo    JUN  2020     0
+16  Nintendo    MAR  2013   290
+17  Nintendo    MAR  2014   360
+18  Nintendo    MAR  2015   380
+19  Nintendo    MAR  2016   460
+20  Nintendo    MAR  2017   140
+21  Nintendo    MAR  2018     0
+22  Nintendo    MAR  2019     0
+23  Nintendo    MAR  2020     0
+24  Nintendo    SEP  2013    90
+25  Nintendo    SEP  2014   340
+26  Nintendo    SEP  2015   100
+27  Nintendo    SEP  2016    40
+28  Nintendo    SEP  2017    30
+29  Nintendo    SEP  2018     0
+30  Nintendo    SEP  2019     0
+31  Nintendo    SEP  2020     0
+insights:
+{'point': [], 'shape': [], 'compound': []}

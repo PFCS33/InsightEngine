@@ -1,0 +1,14 @@
+header:
+('Xbox One (XOne)', 'North America', 'SEP')
+row data:
+     Company  Year  Sale
+0  Microsoft  2013     0
+1  Microsoft  2014   390
+2  Microsoft  2015   600
+3  Microsoft  2016   630
+4  Microsoft  2017   470
+5  Microsoft  2018   510
+6  Microsoft  2019   350
+7  Microsoft  2020   350
+insights:
+{'point': [], 'shape': [], 'compound': []}

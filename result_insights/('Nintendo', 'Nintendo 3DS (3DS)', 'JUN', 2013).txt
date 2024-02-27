@@ -1,0 +1,15 @@
+header:
+('Nintendo', 'Nintendo 3DS (3DS)', 'JUN', 2013)
+row data:
+        Location  Sale
+0         Europe   550
+1          Japan   660
+2  North America   580
+3          Other    70
+insights:
+{'point': [
+(Type: top2
+Score: 0.3548387096774194
+Category: point
+Description: The Sale proportion of Japan and North America is significantly higher than that of other Locations.)
+], 'shape': [], 'compound': []}

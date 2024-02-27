@@ -1,0 +1,38 @@
+header:
+('PlayStation 3 (PS3)', 'Japan')
+row data:
+   Company Season  Year  Sale
+0     Sony    DEC  2013   110
+1     Sony    DEC  2014    70
+2     Sony    DEC  2015    40
+3     Sony    DEC  2016    10
+4     Sony    DEC  2017     0
+5     Sony    DEC  2018     0
+6     Sony    DEC  2019     0
+7     Sony    DEC  2020     0
+8     Sony    JUN  2013   180
+9     Sony    JUN  2014   140
+10    Sony    JUN  2015    60
+11    Sony    JUN  2016    20
+12    Sony    JUN  2017    10
+13    Sony    JUN  2018     0
+14    Sony    JUN  2019     0
+15    Sony    JUN  2020     0
+16    Sony    MAR  2013   380
+17    Sony    MAR  2014   260
+18    Sony    MAR  2015   100
+19    Sony    MAR  2016    20
+20    Sony    MAR  2017    10
+21    Sony    MAR  2018     0
+22    Sony    MAR  2019     0
+23    Sony    MAR  2020     0
+24    Sony    SEP  2013   180
+25    Sony    SEP  2014    80
+26    Sony    SEP  2015    30
+27    Sony    SEP  2016    10
+28    Sony    SEP  2017    10
+29    Sony    SEP  2018     0
+30    Sony    SEP  2019     0
+31    Sony    SEP  2020     0
+insights:
+{'point': [], 'shape': [], 'compound': []}

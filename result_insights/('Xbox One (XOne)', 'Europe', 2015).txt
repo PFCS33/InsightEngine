@@ -1,0 +1,15 @@
+header:
+('Xbox One (XOne)', 'Europe', 2015)
+row data:
+     Company Season  Sale
+0  Microsoft    DEC   590
+1  Microsoft    JUN   300
+2  Microsoft    MAR   790
+3  Microsoft    SEP   250
+insights:
+{'point': [
+(Type: top2
+Score: 0.40932642487046633
+Category: point
+Description: The Sale proportion of Microsoft and Microsoft is significantly higher than that of other Companys.)
+], 'shape': [], 'compound': []}
