@@ -1,0 +1,18 @@
+header:
+('Sony', 'JUN', 2015)
+row data:
+                     Brand       Location  Sale
+0      PlayStation 3 (PS3)         Europe   180
+1      PlayStation 3 (PS3)          Japan    60
+2      PlayStation 3 (PS3)  North America   100
+3      PlayStation 3 (PS3)          Other   100
+4      PlayStation 4 (PS4)         Europe  1200
+5      PlayStation 4 (PS4)          Japan   350
+6      PlayStation 4 (PS4)  North America   850
+7      PlayStation 4 (PS4)          Other   870
+8   PlayStation Vita (PSV)         Europe   150
+9   PlayStation Vita (PSV)          Japan   270
+10  PlayStation Vita (PSV)  North America    70
+11  PlayStation Vita (PSV)          Other   120
+insights:
+{'point': [], 'shape': [], 'compound': []}

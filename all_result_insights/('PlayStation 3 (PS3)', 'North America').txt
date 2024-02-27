@@ -1,0 +1,59 @@
+header:
+('PlayStation 3 (PS3)', 'North America')
+row data:
+   Company Season  Year  Sale
+0     Sony    DEC  2013   390
+1     Sony    DEC  2014   170
+2     Sony    DEC  2015    30
+3     Sony    DEC  2016    30
+4     Sony    DEC  2017     0
+5     Sony    DEC  2018     0
+6     Sony    DEC  2019     0
+7     Sony    DEC  2020     0
+8     Sony    JUN  2013   490
+9     Sony    JUN  2014   160
+10    Sony    JUN  2015   100
+11    Sony    JUN  2016    30
+12    Sony    JUN  2017    10
+13    Sony    JUN  2018     0
+14    Sony    JUN  2019     0
+15    Sony    JUN  2020     0
+16    Sony    MAR  2013   960
+17    Sony    MAR  2014   870
+18    Sony    MAR  2015   290
+19    Sony    MAR  2016    70
+20    Sony    MAR  2017    40
+21    Sony    MAR  2018     0
+22    Sony    MAR  2019     0
+23    Sony    MAR  2020     0
+24    Sony    SEP  2013   380
+25    Sony    SEP  2014   120
+26    Sony    SEP  2015    20
+27    Sony    SEP  2016    30
+28    Sony    SEP  2017     0
+29    Sony    SEP  2018     0
+30    Sony    SEP  2019     0
+31    Sony    SEP  2020     0
+------------------
+insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Brand = PlayStation 3 (PS3), Location = North America, Company = Sony]
+In the filtered subspace, the insight is: 
+Type: dominance
+Score: 0.5322195704057279
+Category: point
+Description: The Sale of MAR dominates among all Seasons.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('PlayStation 3 (PS3)', 'North America', 'Sony')
+aggregated data:
+  Season       Year  Sale
+0    DEC  all Years   620
+1    JUN  all Years   790
+2    MAR  all Years  2230
+3    SEP  all Years   550
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

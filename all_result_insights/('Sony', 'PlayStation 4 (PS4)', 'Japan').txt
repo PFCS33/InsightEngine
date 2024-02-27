@@ -1,0 +1,51 @@
+header:
+('Sony', 'PlayStation 4 (PS4)', 'Japan')
+row data:
+   Season  Year  Sale
+0     DEC  2013     0
+1     DEC  2014   130
+2     DEC  2015   360
+3     DEC  2016   310
+4     DEC  2017   540
+5     DEC  2018   280
+6     DEC  2019   200
+7     DEC  2020    40
+8     JUN  2013     0
+9     JUN  2014   260
+10    JUN  2015   350
+11    JUN  2016   350
+12    JUN  2017   350
+13    JUN  2018   410
+14    JUN  2019   400
+15    JUN  2020   280
+16    MAR  2013     0
+17    MAR  2014   320
+18    MAR  2015   290
+19    MAR  2016   450
+20    MAR  2017   900
+21    MAR  2018   840
+22    MAR  2019   500
+23    MAR  2020   350
+24    SEP  2013     0
+25    SEP  2014    90
+26    SEP  2015   160
+27    SEP  2016   310
+28    SEP  2017   280
+29    SEP  2018   220
+30    SEP  2019   200
+31    SEP  2020    80
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Sony', 'PlayStation 4 (PS4)', 'Japan')
+aggregated data:
+  Season       Year  Sale
+0    DEC  all Years  1860
+1    JUN  all Years  2400
+2    MAR  all Years  3650
+3    SEP  all Years  1340
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

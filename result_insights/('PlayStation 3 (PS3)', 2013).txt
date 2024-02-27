@@ -1,0 +1,27 @@
+header:
+('PlayStation 3 (PS3)', 2013)
+row data:
+   Company       Location Season  Sale
+0     Sony         Europe    DEC   670
+1     Sony         Europe    JUN  2010
+2     Sony         Europe    MAR  1330
+3     Sony         Europe    SEP   700
+4     Sony          Japan    DEC   110
+5     Sony          Japan    JUN   180
+6     Sony          Japan    MAR   380
+7     Sony          Japan    SEP   180
+8     Sony  North America    DEC   390
+9     Sony  North America    JUN   490
+10    Sony  North America    MAR   960
+11    Sony  North America    SEP   380
+12    Sony          Other    DEC   280
+13    Sony          Other    JUN  1300
+14    Sony          Other    MAR   490
+15    Sony          Other    SEP   390
+insights:
+{'point': [
+(Type: outlier
+Score: 2.728293453343865
+Category: point
+Description: The Sale of Company Sony of Location Europe of Season JUN is an outlier, which is significantly higher than the normal Sale of other Companys in the corresponding Location, Sale.)
+], 'shape': [], 'compound': []}

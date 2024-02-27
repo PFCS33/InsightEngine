@@ -1,0 +1,10 @@
+header:
+('PlayStation 3 (PS3)', 'Other', 2018)
+row data:
+  Company Season  Sale
+0    Sony    DEC     0
+1    Sony    JUN     0
+2    Sony    MAR     0
+3    Sony    SEP     0
+insights:
+{'point': [], 'shape': [], 'compound': []}

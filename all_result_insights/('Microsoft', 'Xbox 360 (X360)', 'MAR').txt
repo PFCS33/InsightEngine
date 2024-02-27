@@ -1,0 +1,59 @@
+header:
+('Microsoft', 'Xbox 360 (X360)', 'MAR')
+row data:
+         Location  Year  Sale
+0          Europe  2013   670
+1          Europe  2014   360
+2          Europe  2015   170
+3          Europe  2016    50
+4          Europe  2017    30
+5          Europe  2018     0
+6          Europe  2019     0
+7          Europe  2020     0
+8           Japan  2013    20
+9           Japan  2014    10
+10          Japan  2015     0
+11          Japan  2016     0
+12          Japan  2017     0
+13          Japan  2018     0
+14          Japan  2019     0
+15          Japan  2020     0
+16  North America  2013  1580
+17  North America  2014  1500
+18  North America  2015   650
+19  North America  2016   260
+20  North America  2017   110
+21  North America  2018     0
+22  North America  2019     0
+23  North America  2020     0
+24          Other  2013   180
+25          Other  2014   100
+26          Other  2015   130
+27          Other  2016    20
+28          Other  2017    20
+29          Other  2018     0
+30          Other  2019     0
+31          Other  2020     0
+------------------
+insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Microsoft, Brand = Xbox 360 (X360), Season = MAR]
+In the filtered subspace, the insight is: 
+Type: dominance
+Score: 0.6996587030716723
+Category: point
+Description: The Sale of North America dominates among all Locations.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Microsoft', 'Xbox 360 (X360)', 'MAR')
+aggregated data:
+        Location       Year  Sale
+0         Europe  all Years  1280
+1          Japan  all Years    30
+2  North America  all Years  4100
+3          Other  all Years   450
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

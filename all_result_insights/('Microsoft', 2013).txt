@@ -1,0 +1,49 @@
+header:
+('Microsoft', 2013)
+row data:
+              Brand       Location Season  Sale
+0   Xbox 360 (X360)         Europe    DEC   310
+1   Xbox 360 (X360)         Europe    JUN   980
+2   Xbox 360 (X360)         Europe    MAR   670
+3   Xbox 360 (X360)         Europe    SEP   400
+4   Xbox 360 (X360)          Japan    DEC     0
+5   Xbox 360 (X360)          Japan    JUN     0
+6   Xbox 360 (X360)          Japan    MAR    20
+7   Xbox 360 (X360)          Japan    SEP    10
+8   Xbox 360 (X360)  North America    DEC   350
+9   Xbox 360 (X360)  North America    JUN  1470
+10  Xbox 360 (X360)  North America    MAR  1580
+11  Xbox 360 (X360)  North America    SEP   520
+12  Xbox 360 (X360)          Other    DEC    80
+13  Xbox 360 (X360)          Other    JUN   240
+14  Xbox 360 (X360)          Other    MAR   180
+15  Xbox 360 (X360)          Other    SEP    80
+16  Xbox One (XOne)         Europe    DEC     0
+17  Xbox One (XOne)         Europe    JUN     0
+18  Xbox One (XOne)         Europe    MAR     0
+19  Xbox One (XOne)         Europe    SEP     0
+20  Xbox One (XOne)          Japan    DEC     0
+21  Xbox One (XOne)          Japan    JUN     0
+22  Xbox One (XOne)          Japan    MAR     0
+23  Xbox One (XOne)          Japan    SEP     0
+24  Xbox One (XOne)  North America    DEC     0
+25  Xbox One (XOne)  North America    JUN     0
+26  Xbox One (XOne)  North America    MAR     0
+27  Xbox One (XOne)  North America    SEP     0
+28  Xbox One (XOne)          Other    DEC     0
+29  Xbox One (XOne)          Other    JUN     0
+30  Xbox One (XOne)          Other    MAR     0
+31  Xbox One (XOne)          Other    SEP     0
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Microsoft', 2013)
+aggregated data:
+             Brand       Location       Season  Sale
+0  Xbox 360 (X360)  all Locations  all Seasons  6890
+1  Xbox One (XOne)  all Locations  all Seasons     0
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

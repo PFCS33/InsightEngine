@@ -1,0 +1,48 @@
+header:
+('Nintendo', 'DEC', 2015)
+row data:
+                   Brand       Location  Sale
+0     Nintendo 3DS (3DS)         Europe   530
+1     Nintendo 3DS (3DS)          Japan   430
+2     Nintendo 3DS (3DS)  North America   500
+3     Nintendo 3DS (3DS)          Other   110
+4       Nintendo DS (DS)         Europe     0
+5       Nintendo DS (DS)          Japan     0
+6       Nintendo DS (DS)  North America     0
+7       Nintendo DS (DS)          Other     0
+8   Nintendo Switch (NS)         Europe     0
+9   Nintendo Switch (NS)          Japan     0
+10  Nintendo Switch (NS)  North America     0
+11  Nintendo Switch (NS)          Other     0
+12             Wii (Wii)         Europe     0
+13             Wii (Wii)          Japan     0
+14             Wii (Wii)  North America    10
+15             Wii (Wii)          Other     0
+16          Wii U (WiiU)         Europe   190
+17          Wii U (WiiU)          Japan   200
+18          Wii U (WiiU)  North America   280
+19          Wii U (WiiU)          Other    50
+------------------
+insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Nintendo, Season = DEC]
+In the filtered subspace, the insight is: 
+Type: top2
+Score: 0.6826086956521739
+Category: point
+Description: The Sale proportion of Nintendo 3DS (3DS) and Wii U (WiiU) is significantly higher than that of other Brands.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo', 'DEC', 2015)
+aggregated data:
+                  Brand       Location  Sale
+0    Nintendo 3DS (3DS)  all Locations  1570
+1      Nintendo DS (DS)  all Locations     0
+2  Nintendo Switch (NS)  all Locations     0
+3             Wii (Wii)  all Locations    10
+4          Wii U (WiiU)  all Locations   720
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

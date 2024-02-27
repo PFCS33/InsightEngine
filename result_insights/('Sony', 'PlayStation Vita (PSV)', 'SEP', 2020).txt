@@ -1,0 +1,10 @@
+header:
+('Sony', 'PlayStation Vita (PSV)', 'SEP', 2020)
+row data:
+        Location  Sale
+0         Europe     0
+1          Japan     0
+2  North America     0
+3          Other     0
+insights:
+{'point': [], 'shape': [], 'compound': []}

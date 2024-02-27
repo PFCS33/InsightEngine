@@ -1,0 +1,43 @@
+header:
+('Nintendo 3DS (3DS)', 2020)
+row data:
+     Company       Location Season  Sale
+0   Nintendo         Europe    DEC    10
+1   Nintendo         Europe    JUN    30
+2   Nintendo         Europe    MAR    70
+3   Nintendo         Europe    SEP    70
+4   Nintendo          Japan    DEC    20
+5   Nintendo          Japan    JUN    20
+6   Nintendo          Japan    MAR    20
+7   Nintendo          Japan    SEP    10
+8   Nintendo  North America    DEC    70
+9   Nintendo  North America    JUN    90
+10  Nintendo  North America    MAR   110
+11  Nintendo  North America    SEP   350
+12  Nintendo          Other    DEC     0
+13  Nintendo          Other    JUN    10
+14  Nintendo          Other    MAR     0
+15  Nintendo          Other    SEP    70
+------------------
+insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Brand = Nintendo 3DS (3DS), Company = Nintendo]
+In the filtered subspace, the insight is: 
+Type: dominance
+Score: 0.6526315789473685
+Category: point
+Description: The Sale of North America dominates among all Locations.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo 3DS (3DS)', 2020, 'Nintendo')
+aggregated data:
+        Location       Season  Sale
+0         Europe  all Seasons   180
+1          Japan  all Seasons    70
+2  North America  all Seasons   620
+3          Other  all Seasons    80
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

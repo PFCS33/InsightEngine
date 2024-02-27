@@ -1,0 +1,8 @@
+header:
+('Microsoft', 'Japan', 'MAR', 2019)
+row data:
+             Brand  Sale
+0  Xbox 360 (X360)     0
+1  Xbox One (XOne)    10
+insights:
+{'point': [], 'shape': [], 'compound': []}

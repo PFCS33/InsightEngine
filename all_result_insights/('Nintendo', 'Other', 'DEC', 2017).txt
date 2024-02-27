@@ -1,0 +1,41 @@
+header:
+('Nintendo', 'Other', 'DEC', 2017)
+row data:
+                  Brand  Sale
+0    Nintendo 3DS (3DS)    60
+1      Nintendo DS (DS)     0
+2  Nintendo Switch (NS)   360
+3             Wii (Wii)   200
+4          Wii U (WiiU)    10
+------------------
+insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Nintendo, Location = Other, Season = DEC]
+In the filtered subspace, the insight is: 
+Type: top2
+Score: 0.5714285714285714
+Category: point
+Description: The Sale proportion of Nintendo Switch (NS) and Wii (Wii) is significantly higher than that of other Brands.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo', 'Other', 'DEC', 2017)
+aggregated data:
+                  Brand  Sale
+0    Nintendo 3DS (3DS)    60
+1      Nintendo DS (DS)     0
+2  Nintendo Switch (NS)   360
+3             Wii (Wii)   200
+4          Wii U (WiiU)    10
+------------------
+aggregated insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Nintendo, Location = Other, Season = DEC]
+In the filtered subspace, the insight is: 
+Type: top2
+Score: 0.5714285714285714
+Category: point
+Description: The Sale proportion of Nintendo Switch (NS) and Wii (Wii) is significantly higher than that of other Brands.)
+], 'shape': [], 'compound': []}

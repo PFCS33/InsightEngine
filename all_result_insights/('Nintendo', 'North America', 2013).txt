@@ -1,0 +1,48 @@
+header:
+('Nintendo', 'North America', 2013)
+row data:
+                   Brand Season  Sale
+0     Nintendo 3DS (3DS)    DEC   860
+1     Nintendo 3DS (3DS)    JUN   580
+2     Nintendo 3DS (3DS)    MAR  1410
+3     Nintendo 3DS (3DS)    SEP   640
+4       Nintendo DS (DS)    DEC    50
+5       Nintendo DS (DS)    JUN   170
+6       Nintendo DS (DS)    MAR   470
+7       Nintendo DS (DS)    SEP   140
+8   Nintendo Switch (NS)    DEC     0
+9   Nintendo Switch (NS)    JUN     0
+10  Nintendo Switch (NS)    MAR     0
+11  Nintendo Switch (NS)    SEP     0
+12             Wii (Wii)    DEC   120
+13             Wii (Wii)    JUN   180
+14             Wii (Wii)    MAR   560
+15             Wii (Wii)    SEP   160
+16          Wii U (WiiU)    DEC   190
+17          Wii U (WiiU)    JUN   130
+18          Wii U (WiiU)    MAR   410
+19          Wii U (WiiU)    SEP   140
+------------------
+insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Nintendo, Location = North America]
+In the filtered subspace, the insight is: 
+Type: dominance
+Score: 0.5619967793880838
+Category: point
+Description: The Sale of Nintendo 3DS (3DS) dominates among all Brands.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo', 'North America', 2013)
+aggregated data:
+                  Brand       Season  Sale
+0    Nintendo 3DS (3DS)  all Seasons  3490
+1      Nintendo DS (DS)  all Seasons   830
+2  Nintendo Switch (NS)  all Seasons     0
+3             Wii (Wii)  all Seasons  1020
+4          Wii U (WiiU)  all Seasons   870
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

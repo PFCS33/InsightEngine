@@ -1,0 +1,10 @@
+header:
+('Nintendo 3DS (3DS)', 'Europe', 2015)
+row data:
+    Company Season  Sale
+0  Nintendo    DEC   530
+1  Nintendo    JUN   650
+2  Nintendo    MAR   950
+3  Nintendo    SEP   210
+insights:
+{'point': [], 'shape': [], 'compound': []}

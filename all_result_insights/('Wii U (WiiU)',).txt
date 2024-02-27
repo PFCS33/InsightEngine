@@ -1,0 +1,32 @@
+header:
+('Wii U (WiiU)',)
+row data:
+      Company Location Season  Year  Sale
+0    Nintendo   Europe    DEC  2013   130
+1    Nintendo   Europe    DEC  2014   100
+2    Nintendo   Europe    DEC  2015   190
+3    Nintendo   Europe    DEC  2016    90
+4    Nintendo   Europe    DEC  2017    10
+..        ...      ...    ...   ...   ...
+123  Nintendo    Other    SEP  2016     0
+124  Nintendo    Other    SEP  2017     0
+125  Nintendo    Other    SEP  2018     0
+126  Nintendo    Other    SEP  2019     0
+127  Nintendo    Other    SEP  2020     0
+
+[128 rows x 5 columns]
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Wii U (WiiU)', 'Nintendo')
+aggregated data:
+        Location       Season       Year  Sale
+0         Europe  all Seasons  all Years  3270
+1          Japan  all Seasons  all Years  3020
+2  North America  all Seasons  all Years  5460
+3          Other  all Seasons  all Years   780
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

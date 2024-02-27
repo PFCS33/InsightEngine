@@ -1,0 +1,27 @@
+header:
+('PlayStation 4 (PS4)', 2014)
+row data:
+   Company       Location Season  Sale
+0     Sony         Europe    DEC  2430
+1     Sony         Europe    JUN   650
+2     Sony         Europe    MAR  2180
+3     Sony         Europe    SEP   930
+4     Sony          Japan    DEC   130
+5     Sony          Japan    JUN   260
+6     Sony          Japan    MAR   320
+7     Sony          Japan    SEP    90
+8     Sony  North America    DEC  1540
+9     Sony  North America    JUN   870
+10    Sony  North America    MAR  2750
+11    Sony  North America    SEP   750
+12    Sony          Other    DEC   940
+13    Sony          Other    JUN   190
+14    Sony          Other    MAR   600
+15    Sony          Other    SEP   460
+insights:
+{'point': [
+(Type: outlier
+Score: 2.2144065644341837
+Category: point
+Description: The Sale of Company Sony of Location North America of Season MAR is an outlier, which is significantly higher than the normal Sale of other Companys in the corresponding Location, Sale.)
+], 'shape': [], 'compound': []}

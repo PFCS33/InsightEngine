@@ -1,0 +1,39 @@
+header:
+('Sony', 'DEC')
+row data:
+                     Brand Location  Year  Sale
+0      PlayStation 3 (PS3)   Europe  2013   670
+1      PlayStation 3 (PS3)   Europe  2014   120
+2      PlayStation 3 (PS3)   Europe  2015   120
+3      PlayStation 3 (PS3)   Europe  2016    40
+4      PlayStation 3 (PS3)   Europe  2017    10
+..                     ...      ...   ...   ...
+91  PlayStation Vita (PSV)    Other  2016    50
+92  PlayStation Vita (PSV)    Other  2017    20
+93  PlayStation Vita (PSV)    Other  2018     0
+94  PlayStation Vita (PSV)    Other  2019     0
+95  PlayStation Vita (PSV)    Other  2020     0
+
+[96 rows x 4 columns]
+------------------
+insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Sony, Season = DEC]
+In the filtered subspace, the insight is: 
+Type: dominance
+Score: 0.8473335657023353
+Category: point
+Description: The Sale of PlayStation 4 (PS4) dominates among all Brands.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Sony', 'DEC')
+aggregated data:
+                    Brand       Location       Year   Sale
+0     PlayStation 3 (PS3)  all Locations  all Years   2330
+1     PlayStation 4 (PS4)  all Locations  all Years  24310
+2  PlayStation Vita (PSV)  all Locations  all Years   2050
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

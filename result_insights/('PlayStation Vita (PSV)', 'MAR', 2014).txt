@@ -1,0 +1,10 @@
+header:
+('PlayStation Vita (PSV)', 'MAR', 2014)
+row data:
+  Company       Location  Sale
+0    Sony         Europe   390
+1    Sony          Japan   580
+2    Sony  North America   260
+3    Sony          Other   160
+insights:
+{'point': [], 'shape': [], 'compound': []}

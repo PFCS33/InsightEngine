@@ -1,0 +1,14 @@
+header:
+('Xbox One (XOne)', 'Other', 'SEP')
+row data:
+     Company  Year  Sale
+0  Microsoft  2013     0
+1  Microsoft  2014    60
+2  Microsoft  2015    80
+3  Microsoft  2016   120
+4  Microsoft  2017   160
+5  Microsoft  2018    70
+6  Microsoft  2019     0
+7  Microsoft  2020    70
+insights:
+{'point': [], 'shape': [], 'compound': []}

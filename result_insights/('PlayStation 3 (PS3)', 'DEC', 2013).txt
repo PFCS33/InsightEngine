@@ -1,0 +1,10 @@
+header:
+('PlayStation 3 (PS3)', 'DEC', 2013)
+row data:
+  Company       Location  Sale
+0    Sony         Europe   670
+1    Sony          Japan   110
+2    Sony  North America   390
+3    Sony          Other   280
+insights:
+{'point': [], 'shape': [], 'compound': []}

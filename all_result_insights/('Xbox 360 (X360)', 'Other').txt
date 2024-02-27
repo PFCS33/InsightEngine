@@ -1,0 +1,59 @@
+header:
+('Xbox 360 (X360)', 'Other')
+row data:
+      Company Season  Year  Sale
+0   Microsoft    DEC  2013    80
+1   Microsoft    DEC  2014    70
+2   Microsoft    DEC  2015    30
+3   Microsoft    DEC  2016    10
+4   Microsoft    DEC  2017     0
+5   Microsoft    DEC  2018     0
+6   Microsoft    DEC  2019     0
+7   Microsoft    DEC  2020     0
+8   Microsoft    JUN  2013   240
+9   Microsoft    JUN  2014     0
+10  Microsoft    JUN  2015    30
+11  Microsoft    JUN  2016    10
+12  Microsoft    JUN  2017     0
+13  Microsoft    JUN  2018     0
+14  Microsoft    JUN  2019     0
+15  Microsoft    JUN  2020     0
+16  Microsoft    MAR  2013   180
+17  Microsoft    MAR  2014   100
+18  Microsoft    MAR  2015   130
+19  Microsoft    MAR  2016    20
+20  Microsoft    MAR  2017    20
+21  Microsoft    MAR  2018     0
+22  Microsoft    MAR  2019     0
+23  Microsoft    MAR  2020     0
+24  Microsoft    SEP  2013    80
+25  Microsoft    SEP  2014   950
+26  Microsoft    SEP  2015    10
+27  Microsoft    SEP  2016    10
+28  Microsoft    SEP  2017     0
+29  Microsoft    SEP  2018     0
+30  Microsoft    SEP  2019     0
+31  Microsoft    SEP  2020     0
+------------------
+insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Brand = Xbox 360 (X360), Location = Other, Company = Microsoft]
+In the filtered subspace, the insight is: 
+Type: dominance
+Score: 0.5329949238578681
+Category: point
+Description: The Sale of SEP dominates among all Seasons.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Xbox 360 (X360)', 'Other', 'Microsoft')
+aggregated data:
+  Season       Year  Sale
+0    DEC  all Years   190
+1    JUN  all Years   280
+2    MAR  all Years   450
+3    SEP  all Years  1050
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

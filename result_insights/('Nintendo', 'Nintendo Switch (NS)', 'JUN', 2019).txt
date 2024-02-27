@@ -1,0 +1,10 @@
+header:
+('Nintendo', 'Nintendo Switch (NS)', 'JUN', 2019)
+row data:
+        Location  Sale
+0         Europe   860
+1          Japan  1040
+2  North America  1410
+3          Other   300
+insights:
+{'point': [], 'shape': [], 'compound': []}

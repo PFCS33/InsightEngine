@@ -1,0 +1,35 @@
+header:
+('Nintendo Switch (NS)', 2019)
+row data:
+     Company       Location Season  Sale
+0   Nintendo         Europe    DEC  1600
+1   Nintendo         Europe    JUN   860
+2   Nintendo         Europe    MAR  2280
+3   Nintendo         Europe    SEP   660
+4   Nintendo          Japan    DEC  1780
+5   Nintendo          Japan    JUN  1040
+6   Nintendo          Japan    MAR  1650
+7   Nintendo          Japan    SEP   600
+8   Nintendo  North America    DEC  2090
+9   Nintendo  North America    JUN  1410
+10  Nintendo  North America    MAR  3350
+11  Nintendo  North America    SEP   990
+12  Nintendo          Other    DEC   750
+13  Nintendo          Other    JUN   300
+14  Nintendo          Other    MAR  1240
+15  Nintendo          Other    SEP   380
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo Switch (NS)', 2019, 'Nintendo')
+aggregated data:
+        Location       Season  Sale
+0         Europe  all Seasons  5400
+1          Japan  all Seasons  5070
+2  North America  all Seasons  7840
+3          Other  all Seasons  2670
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

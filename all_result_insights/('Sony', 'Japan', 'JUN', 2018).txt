@@ -1,0 +1,21 @@
+header:
+('Sony', 'Japan', 'JUN', 2018)
+row data:
+                    Brand  Sale
+0     PlayStation 3 (PS3)     0
+1     PlayStation 4 (PS4)   410
+2  PlayStation Vita (PSV)    60
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Sony', 'Japan', 'JUN', 2018)
+aggregated data:
+                    Brand  Sale
+0     PlayStation 3 (PS3)     0
+1     PlayStation 4 (PS4)   410
+2  PlayStation Vita (PSV)    60
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

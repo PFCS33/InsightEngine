@@ -1,0 +1,31 @@
+header:
+('Microsoft', 'Xbox One (XOne)', 'Other', 'DEC')
+row data:
+   Year  Sale
+0  2013     0
+1  2014   620
+2  2015   260
+3  2016   150
+4  2017   220
+5  2018   180
+6  2019     0
+7  2020    20
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Microsoft', 'Xbox One (XOne)', 'Other', 'DEC')
+aggregated data:
+   Year  Sale
+0  2013     0
+1  2014   620
+2  2015   260
+3  2016   150
+4  2017   220
+5  2018   180
+6  2019     0
+7  2020    20
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

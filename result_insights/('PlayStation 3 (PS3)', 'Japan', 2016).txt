@@ -1,0 +1,15 @@
+header:
+('PlayStation 3 (PS3)', 'Japan', 2016)
+row data:
+  Company Season  Sale
+0    Sony    DEC    10
+1    Sony    JUN    20
+2    Sony    MAR    20
+3    Sony    SEP    10
+insights:
+{'point': [
+(Type: top2
+Score: 0.3333333333333333
+Category: point
+Description: The Sale proportion of Sony and Sony is significantly higher than that of other Companys.)
+], 'shape': [], 'compound': []}

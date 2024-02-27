@@ -1,0 +1,11 @@
+header:
+('Nintendo', 'Japan', 'MAR', 2019)
+row data:
+                  Brand  Sale
+0    Nintendo 3DS (3DS)   120
+1      Nintendo DS (DS)     0
+2  Nintendo Switch (NS)  1650
+3             Wii (Wii)     0
+4          Wii U (WiiU)     0
+insights:
+{'point': [], 'shape': [], 'compound': []}

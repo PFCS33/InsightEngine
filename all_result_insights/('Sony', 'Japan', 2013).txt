@@ -1,0 +1,30 @@
+header:
+('Sony', 'Japan', 2013)
+row data:
+                     Brand Season  Sale
+0      PlayStation 3 (PS3)    DEC   110
+1      PlayStation 3 (PS3)    JUN   180
+2      PlayStation 3 (PS3)    MAR   380
+3      PlayStation 3 (PS3)    SEP   180
+4      PlayStation 4 (PS4)    DEC     0
+5      PlayStation 4 (PS4)    JUN     0
+6      PlayStation 4 (PS4)    MAR     0
+7      PlayStation 4 (PS4)    SEP     0
+8   PlayStation Vita (PSV)    DEC   180
+9   PlayStation Vita (PSV)    JUN   230
+10  PlayStation Vita (PSV)    MAR   270
+11  PlayStation Vita (PSV)    SEP   230
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Sony', 'Japan', 2013)
+aggregated data:
+                    Brand       Season  Sale
+0     PlayStation 3 (PS3)  all Seasons   850
+1     PlayStation 4 (PS4)  all Seasons     0
+2  PlayStation Vita (PSV)  all Seasons   910
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

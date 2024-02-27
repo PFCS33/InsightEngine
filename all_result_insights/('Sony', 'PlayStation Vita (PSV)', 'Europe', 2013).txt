@@ -1,0 +1,23 @@
+header:
+('Sony', 'PlayStation Vita (PSV)', 'Europe', 2013)
+row data:
+  Season  Sale
+0    DEC   230
+1    JUN   330
+2    MAR   170
+3    SEP   130
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Sony', 'PlayStation Vita (PSV)', 'Europe', 2013)
+aggregated data:
+  Season  Sale
+0    DEC   230
+1    JUN   330
+2    MAR   170
+3    SEP   130
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

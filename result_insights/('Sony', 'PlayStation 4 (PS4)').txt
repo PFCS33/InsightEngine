@@ -1,0 +1,19 @@
+header:
+('Sony', 'PlayStation 4 (PS4)')
+row data:
+    Location Season  Year  Sale
+0     Europe    DEC  2013     0
+1     Europe    DEC  2014  2430
+2     Europe    DEC  2015  1360
+3     Europe    DEC  2016  1020
+4     Europe    DEC  2017  1760
+..       ...    ...   ...   ...
+123    Other    SEP  2016   450
+124    Other    SEP  2017   640
+125    Other    SEP  2018   340
+126    Other    SEP  2019   720
+127    Other    SEP  2020   250
+
+[128 rows x 4 columns]
+insights:
+{'point': [], 'shape': [], 'compound': []}

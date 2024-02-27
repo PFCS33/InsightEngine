@@ -1,0 +1,43 @@
+header:
+('Nintendo', 'Wii (Wii)', 'JUN')
+row data:
+         Location  Year  Sale
+0          Europe  2013   510
+1          Europe  2014     0
+2          Europe  2015     0
+3          Europe  2016     0
+4          Europe  2017     0
+5          Europe  2018     0
+6          Europe  2019     0
+7          Europe  2020     0
+8           Japan  2013    20
+9           Japan  2014     0
+10          Japan  2015     0
+11          Japan  2016     0
+12          Japan  2017     0
+13          Japan  2018     0
+14          Japan  2019     0
+15          Japan  2020     0
+16  North America  2013   180
+17  North America  2014    60
+18  North America  2015     0
+19  North America  2016     0
+20  North America  2017     0
+21  North America  2018     0
+22  North America  2019     0
+23  North America  2020     0
+24          Other  2013    30
+25          Other  2014     0
+26          Other  2015     0
+27          Other  2016     0
+28          Other  2017     0
+29          Other  2018     0
+30          Other  2019     0
+31          Other  2020     0
+insights:
+{'point': [
+(Type: dominance
+Score: 0.6375
+Category: point
+Description: The Sale of Europe dominates among all Locations.)
+], 'shape': [], 'compound': []}

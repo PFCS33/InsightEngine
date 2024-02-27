@@ -1,0 +1,23 @@
+header:
+('Nintendo 3DS (3DS)', 'SEP', 2013)
+row data:
+    Company       Location  Sale
+0  Nintendo         Europe   660
+1  Nintendo          Japan   790
+2  Nintendo  North America   640
+3  Nintendo          Other   130
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo 3DS (3DS)', 'SEP', 2013, 'Nintendo')
+aggregated data:
+        Location  Sale
+0         Europe   660
+1          Japan   790
+2  North America   640
+3          Other   130
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

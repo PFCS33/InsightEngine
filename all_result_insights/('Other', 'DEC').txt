@@ -1,0 +1,39 @@
+header:
+('Other', 'DEC')
+row data:
+      Company               Brand  Year  Sale
+0    Nintendo  Nintendo 3DS (3DS)  2013   170
+1    Nintendo  Nintendo 3DS (3DS)  2014     0
+2    Nintendo  Nintendo 3DS (3DS)  2015   110
+3    Nintendo  Nintendo 3DS (3DS)  2016     0
+4    Nintendo  Nintendo 3DS (3DS)  2017    60
+..        ...                 ...   ...   ...
+75  Microsoft     Xbox One (XOne)  2016   150
+76  Microsoft     Xbox One (XOne)  2017   220
+77  Microsoft     Xbox One (XOne)  2018   180
+78  Microsoft     Xbox One (XOne)  2019     0
+79  Microsoft     Xbox One (XOne)  2020    20
+
+[80 rows x 4 columns]
+------------------
+insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Location = Other, Season = DEC]
+In the filtered subspace, the insight is: 
+Type: dominance
+Score: 0.5443159922928709
+Category: point
+Description: The Sale of Sony dominates among all Companys.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Other', 'DEC')
+aggregated data:
+     Company       Brand       Year  Sale
+0  Microsoft  all Brands  all Years  1640
+1   Nintendo  all Brands  all Years  3090
+2       Sony  all Brands  all Years  5650
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

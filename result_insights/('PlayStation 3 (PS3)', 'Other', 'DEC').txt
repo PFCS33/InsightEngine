@@ -1,0 +1,19 @@
+header:
+('PlayStation 3 (PS3)', 'Other', 'DEC')
+row data:
+  Company  Year  Sale
+0    Sony  2013   280
+1    Sony  2014   160
+2    Sony  2015    60
+3    Sony  2016    20
+4    Sony  2017     0
+5    Sony  2018     0
+6    Sony  2019     0
+7    Sony  2020     0
+insights:
+{'point': [
+(Type: top2
+Score: 0.5384615384615384
+Category: point
+Description: The Sale proportion of Sony and Sony is significantly higher than that of other Companys.)
+], 'shape': [], 'compound': []}

@@ -1,0 +1,43 @@
+header:
+('Microsoft', 'Xbox One (XOne)', 2016)
+row data:
+         Location Season  Sale
+0          Europe    DEC   520
+1          Europe    JUN   470
+2          Europe    MAR   950
+3          Europe    SEP   390
+4           Japan    DEC     0
+5           Japan    JUN     0
+6           Japan    MAR    10
+7           Japan    SEP     0
+8   North America    DEC   910
+9   North America    JUN   610
+10  North America    MAR  2890
+11  North America    SEP   630
+12          Other    DEC   150
+13          Other    JUN   150
+14          Other    MAR   440
+15          Other    SEP   120
+------------------
+insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Microsoft, Brand = Xbox One (XOne)]
+In the filtered subspace, the insight is: 
+Type: dominance
+Score: 0.6116504854368932
+Category: point
+Description: The Sale of North America dominates among all Locations.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Microsoft', 'Xbox One (XOne)', 2016)
+aggregated data:
+        Location       Season  Sale
+0         Europe  all Seasons  2330
+1          Japan  all Seasons    10
+2  North America  all Seasons  5040
+3          Other  all Seasons   860
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

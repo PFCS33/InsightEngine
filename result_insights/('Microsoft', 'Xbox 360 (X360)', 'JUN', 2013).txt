@@ -1,0 +1,15 @@
+header:
+('Microsoft', 'Xbox 360 (X360)', 'JUN', 2013)
+row data:
+        Location  Sale
+0         Europe   980
+1          Japan     0
+2  North America  1470
+3          Other   240
+insights:
+{'point': [
+(Type: top2
+Score: 0.5464684014869888
+Category: point
+Description: The Sale proportion of North America and Europe is significantly higher than that of other Locations.)
+], 'shape': [], 'compound': []}

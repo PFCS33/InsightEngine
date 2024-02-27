@@ -1,0 +1,23 @@
+header:
+('Nintendo Switch (NS)', 'MAR', 2019)
+row data:
+    Company       Location  Sale
+0  Nintendo         Europe  2280
+1  Nintendo          Japan  1650
+2  Nintendo  North America  3350
+3  Nintendo          Other  1240
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo Switch (NS)', 'MAR', 2019, 'Nintendo')
+aggregated data:
+        Location  Sale
+0         Europe  2280
+1          Japan  1650
+2  North America  3350
+3          Other  1240
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

@@ -1,0 +1,23 @@
+header:
+('Microsoft', 'Xbox One (XOne)', 'Europe', 2020)
+row data:
+  Season  Sale
+0    DEC    70
+1    JUN   280
+2    MAR   170
+3    SEP   120
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Microsoft', 'Xbox One (XOne)', 'Europe', 2020)
+aggregated data:
+  Season  Sale
+0    DEC    70
+1    JUN   280
+2    MAR   170
+3    SEP   120
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

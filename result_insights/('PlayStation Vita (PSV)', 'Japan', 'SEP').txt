@@ -1,0 +1,14 @@
+header:
+('PlayStation Vita (PSV)', 'Japan', 'SEP')
+row data:
+  Company  Year  Sale
+0    Sony  2013   230
+1    Sony  2014   270
+2    Sony  2015   150
+3    Sony  2016   170
+4    Sony  2017    50
+5    Sony  2018    40
+6    Sony  2019     0
+7    Sony  2020     0
+insights:
+{'point': [], 'shape': [], 'compound': []}

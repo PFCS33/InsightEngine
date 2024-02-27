@@ -1,0 +1,15 @@
+header:
+('Xbox One (XOne)', 'North America', 2014)
+row data:
+     Company Season  Sale
+0  Microsoft    DEC  1260
+1  Microsoft    JUN   730
+2  Microsoft    MAR  2430
+3  Microsoft    SEP   390
+insights:
+{'point': [
+(Type: dominance
+Score: 0.5051975051975052
+Category: point
+Description: The Sale of Microsoft dominates among all Companys.)
+], 'shape': [], 'compound': []}

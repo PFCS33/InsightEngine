@@ -1,0 +1,15 @@
+header:
+('Nintendo', 'Wii U (WiiU)', 'SEP', 2014)
+row data:
+        Location  Sale
+0         Europe   340
+1          Japan   140
+2  North America   360
+3          Other    40
+insights:
+{'point': [
+(Type: top2
+Score: 0.4090909090909091
+Category: point
+Description: The Sale proportion of North America and Europe is significantly higher than that of other Locations.)
+], 'shape': [], 'compound': []}

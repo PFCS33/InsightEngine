@@ -1,0 +1,39 @@
+header:
+('Wii U (WiiU)', 'Japan', 2016)
+row data:
+    Company Season  Sale
+0  Nintendo    DEC    30
+1  Nintendo    JUN    80
+2  Nintendo    MAR   410
+3  Nintendo    SEP    80
+------------------
+insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Brand = Wii U (WiiU), Location = Japan, Company = Nintendo]
+In the filtered subspace, the insight is: 
+Type: dominance
+Score: 0.6833333333333333
+Category: point
+Description: The Sale of MAR dominates among all Seasons.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Wii U (WiiU)', 'Japan', 2016, 'Nintendo')
+aggregated data:
+  Season  Sale
+0    DEC    30
+1    JUN    80
+2    MAR   410
+3    SEP    80
+------------------
+aggregated insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Brand = Wii U (WiiU), Location = Japan]
+In the filtered subspace, the insight is: 
+Type: dominance
+Score: 0.6833333333333333
+Category: point
+Description: The Sale of Nintendo dominates among all Companys.)
+], 'shape': [], 'compound': []}

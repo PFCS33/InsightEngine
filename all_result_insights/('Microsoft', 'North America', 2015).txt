@@ -1,0 +1,33 @@
+header:
+('Microsoft', 'North America', 2015)
+row data:
+             Brand Season  Sale
+0  Xbox 360 (X360)    DEC    90
+1  Xbox 360 (X360)    JUN   160
+2  Xbox 360 (X360)    MAR   650
+3  Xbox 360 (X360)    SEP    30
+4  Xbox One (XOne)    DEC  1170
+5  Xbox One (XOne)    JUN   710
+6  Xbox One (XOne)    MAR  2270
+7  Xbox One (XOne)    SEP   600
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Microsoft', 'North America', 2015)
+aggregated data:
+             Brand       Season  Sale
+0  Xbox 360 (X360)  all Seasons   930
+1  Xbox One (XOne)  all Seasons  4750
+------------------
+aggregated insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Microsoft, Location = North America]
+In the filtered subspace, the insight is: 
+Type: outlier
+Score: 2.2604541659998345
+Category: point
+Description: The Sale of Brand Xbox One (XOne) of Season MAR is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Seasons.)
+], 'shape': [], 'compound': []}

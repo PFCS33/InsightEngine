@@ -1,0 +1,38 @@
+header:
+('Microsoft', 2016)
+row data:
+              Brand       Location Season  Sale
+0   Xbox 360 (X360)         Europe    DEC    10
+1   Xbox 360 (X360)         Europe    JUN    20
+2   Xbox 360 (X360)         Europe    MAR    50
+3   Xbox 360 (X360)         Europe    SEP    20
+4   Xbox 360 (X360)          Japan    DEC     0
+5   Xbox 360 (X360)          Japan    JUN     0
+6   Xbox 360 (X360)          Japan    MAR     0
+7   Xbox 360 (X360)          Japan    SEP     0
+8   Xbox 360 (X360)  North America    DEC    30
+9   Xbox 360 (X360)  North America    JUN    70
+10  Xbox 360 (X360)  North America    MAR   260
+11  Xbox 360 (X360)  North America    SEP    40
+12  Xbox 360 (X360)          Other    DEC    10
+13  Xbox 360 (X360)          Other    JUN    10
+14  Xbox 360 (X360)          Other    MAR    20
+15  Xbox 360 (X360)          Other    SEP    10
+16  Xbox One (XOne)         Europe    DEC   520
+17  Xbox One (XOne)         Europe    JUN   470
+18  Xbox One (XOne)         Europe    MAR   950
+19  Xbox One (XOne)         Europe    SEP   390
+20  Xbox One (XOne)          Japan    DEC     0
+21  Xbox One (XOne)          Japan    JUN     0
+22  Xbox One (XOne)          Japan    MAR    10
+23  Xbox One (XOne)          Japan    SEP     0
+24  Xbox One (XOne)  North America    DEC   910
+25  Xbox One (XOne)  North America    JUN   610
+26  Xbox One (XOne)  North America    MAR  2890
+27  Xbox One (XOne)  North America    SEP   630
+28  Xbox One (XOne)          Other    DEC   150
+29  Xbox One (XOne)          Other    JUN   150
+30  Xbox One (XOne)          Other    MAR   440
+31  Xbox One (XOne)          Other    SEP   120
+insights:
+{'point': [], 'shape': [], 'compound': []}

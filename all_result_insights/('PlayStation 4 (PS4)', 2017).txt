@@ -1,0 +1,35 @@
+header:
+('PlayStation 4 (PS4)', 2017)
+row data:
+   Company       Location Season  Sale
+0     Sony         Europe    DEC  1760
+1     Sony         Europe    JUN  1090
+2     Sony         Europe    MAR  3330
+3     Sony         Europe    SEP  1990
+4     Sony          Japan    DEC   540
+5     Sony          Japan    JUN   350
+6     Sony          Japan    MAR   900
+7     Sony          Japan    SEP   280
+8     Sony  North America    DEC   930
+9     Sony  North America    JUN   880
+10    Sony  North America    MAR  3210
+11    Sony  North America    SEP   910
+12    Sony          Other    DEC  1320
+13    Sony          Other    JUN   520
+14    Sony          Other    MAR  1600
+15    Sony          Other    SEP   640
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('PlayStation 4 (PS4)', 2017, 'Sony')
+aggregated data:
+        Location       Season  Sale
+0         Europe  all Seasons  8170
+1          Japan  all Seasons  2070
+2  North America  all Seasons  5930
+3          Other  all Seasons  4080
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

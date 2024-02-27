@@ -1,0 +1,15 @@
+header:
+('Microsoft', 'Xbox 360 (X360)', 'MAR', 2013)
+row data:
+        Location  Sale
+0         Europe   670
+1          Japan    20
+2  North America  1580
+3          Other   180
+insights:
+{'point': [
+(Type: dominance
+Score: 0.6448979591836734
+Category: point
+Description: The Sale of North America dominates among all Locations.)
+], 'shape': [], 'compound': []}

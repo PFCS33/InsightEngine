@@ -1,0 +1,10 @@
+header:
+('Nintendo 3DS (3DS)', 'JUN', 2014)
+row data:
+    Company       Location  Sale
+0  Nintendo         Europe   440
+1  Nintendo          Japan   440
+2  Nintendo  North America   420
+3  Nintendo          Other   210
+insights:
+{'point': [], 'shape': [], 'compound': []}

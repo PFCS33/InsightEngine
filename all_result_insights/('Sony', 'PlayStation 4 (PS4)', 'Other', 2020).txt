@@ -1,0 +1,23 @@
+header:
+('Sony', 'PlayStation 4 (PS4)', 'Other', 2020)
+row data:
+  Season  Sale
+0    DEC   110
+1    JUN   420
+2    MAR   700
+3    SEP   250
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Sony', 'PlayStation 4 (PS4)', 'Other', 2020)
+aggregated data:
+  Season  Sale
+0    DEC   110
+1    JUN   420
+2    MAR   700
+3    SEP   250
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

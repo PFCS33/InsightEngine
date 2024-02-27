@@ -1,0 +1,14 @@
+header:
+('PlayStation 4 (PS4)', 'North America', 'SEP')
+row data:
+  Company  Year  Sale
+0    Sony  2013     0
+1    Sony  2014   750
+2    Sony  2015   720
+3    Sony  2016   740
+4    Sony  2017   910
+5    Sony  2018   740
+6    Sony  2019   760
+7    Sony  2020   570
+insights:
+{'point': [], 'shape': [], 'compound': []}

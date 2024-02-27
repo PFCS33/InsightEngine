@@ -1,0 +1,38 @@
+header:
+('Nintendo', 'Nintendo Switch (NS)', 'DEC')
+row data:
+         Location  Year  Sale
+0          Europe  2013     0
+1          Europe  2014     0
+2          Europe  2015     0
+3          Europe  2016     0
+4          Europe  2017   680
+5          Europe  2018   790
+6          Europe  2019  1600
+7          Europe  2020  1740
+8           Japan  2013     0
+9           Japan  2014     0
+10          Japan  2015     0
+11          Japan  2016     0
+12          Japan  2017   950
+13          Japan  2018   630
+14          Japan  2019  1780
+15          Japan  2020  1260
+16  North America  2013     0
+17  North America  2014     0
+18  North America  2015     0
+19  North America  2016     0
+20  North America  2017  1090
+21  North America  2018   880
+22  North America  2019  2090
+23  North America  2020  2550
+24          Other  2013     0
+25          Other  2014     0
+26          Other  2015     0
+27          Other  2016     0
+28          Other  2017   360
+29          Other  2018   380
+30          Other  2019   750
+31          Other  2020   900
+insights:
+{'point': [], 'shape': [], 'compound': []}

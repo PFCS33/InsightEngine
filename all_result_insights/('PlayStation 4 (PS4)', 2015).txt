@@ -1,0 +1,43 @@
+header:
+('PlayStation 4 (PS4)', 2015)
+row data:
+   Company       Location Season  Sale
+0     Sony         Europe    DEC  1360
+1     Sony         Europe    JUN  1200
+2     Sony         Europe    MAR  1480
+3     Sony         Europe    SEP   820
+4     Sony          Japan    DEC   360
+5     Sony          Japan    JUN   350
+6     Sony          Japan    MAR   290
+7     Sony          Japan    SEP   160
+8     Sony  North America    DEC  1240
+9     Sony  North America    JUN   850
+10    Sony  North America    MAR  1890
+11    Sony  North America    SEP   720
+12    Sony          Other    DEC   640
+13    Sony          Other    JUN   870
+14    Sony          Other    MAR   660
+15    Sony          Other    SEP   390
+------------------
+insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Brand = PlayStation 4 (PS4), Company = Sony]
+In the filtered subspace, the insight is: 
+Type: top2
+Score: 0.36596385542168675
+Category: point
+Description: The Sale proportion of Europe and North America is significantly higher than that of other Locations.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('PlayStation 4 (PS4)', 2015, 'Sony')
+aggregated data:
+        Location       Season  Sale
+0         Europe  all Seasons  4860
+1          Japan  all Seasons  1160
+2  North America  all Seasons  4700
+3          Other  all Seasons  2560
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

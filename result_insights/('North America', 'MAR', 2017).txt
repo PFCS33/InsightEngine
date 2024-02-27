@@ -1,0 +1,21 @@
+header:
+('North America', 'MAR', 2017)
+row data:
+     Company                   Brand  Sale
+0   Nintendo      Nintendo 3DS (3DS)  1260
+1   Nintendo        Nintendo DS (DS)     0
+2   Nintendo    Nintendo Switch (NS)     0
+3   Nintendo               Wii (Wii)     0
+4   Nintendo            Wii U (WiiU)    90
+5       Sony     PlayStation 3 (PS3)    40
+6       Sony     PlayStation 4 (PS4)  3210
+7       Sony  PlayStation Vita (PSV)    20
+8  Microsoft         Xbox 360 (X360)   110
+9  Microsoft         Xbox One (XOne)  2940
+insights:
+{'point': [
+(Type: top2
+Score: 0.41851368970013036
+Category: point
+Description: The Sale proportion of Sony and Microsoft is significantly higher than that of other Companys.)
+], 'shape': [], 'compound': []}

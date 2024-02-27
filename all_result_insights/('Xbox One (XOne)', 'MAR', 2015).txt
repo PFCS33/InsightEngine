@@ -1,0 +1,39 @@
+header:
+('Xbox One (XOne)', 'MAR', 2015)
+row data:
+     Company       Location  Sale
+0  Microsoft         Europe   790
+1  Microsoft          Japan    10
+2  Microsoft  North America  2270
+3  Microsoft          Other   340
+------------------
+insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Brand = Xbox One (XOne), Season = MAR, Company = Microsoft]
+In the filtered subspace, the insight is: 
+Type: dominance
+Score: 0.6656891495601173
+Category: point
+Description: The Sale of North America dominates among all Locations.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Xbox One (XOne)', 'MAR', 2015, 'Microsoft')
+aggregated data:
+        Location  Sale
+0         Europe   790
+1          Japan    10
+2  North America  2270
+3          Other   340
+------------------
+aggregated insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Brand = Xbox One (XOne), Season = MAR]
+In the filtered subspace, the insight is: 
+Type: dominance
+Score: 0.6656891495601173
+Category: point
+Description: The Sale of Microsoft dominates among all Companys.)
+], 'shape': [], 'compound': []}

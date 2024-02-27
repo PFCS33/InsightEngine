@@ -1,0 +1,10 @@
+header:
+('PlayStation 3 (PS3)', 'Japan', 2013)
+row data:
+  Company Season  Sale
+0    Sony    DEC   110
+1    Sony    JUN   180
+2    Sony    MAR   380
+3    Sony    SEP   180
+insights:
+{'point': [], 'shape': [], 'compound': []}

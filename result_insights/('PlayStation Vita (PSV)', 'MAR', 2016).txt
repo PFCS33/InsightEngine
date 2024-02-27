@@ -1,0 +1,15 @@
+header:
+('PlayStation Vita (PSV)', 'MAR', 2016)
+row data:
+  Company       Location  Sale
+0    Sony         Europe     0
+1    Sony          Japan   410
+2    Sony  North America   100
+3    Sony          Other    30
+insights:
+{'point': [
+(Type: dominance
+Score: 0.7592592592592593
+Category: point
+Description: The Sale of Sony dominates among all Companys.)
+], 'shape': [], 'compound': []}

@@ -1,0 +1,19 @@
+header:
+('Microsoft', 'Europe')
+row data:
+              Brand Season  Year  Sale
+0   Xbox 360 (X360)    DEC  2013   310
+1   Xbox 360 (X360)    DEC  2014   140
+2   Xbox 360 (X360)    DEC  2015    40
+3   Xbox 360 (X360)    DEC  2016    10
+4   Xbox 360 (X360)    DEC  2017     0
+..              ...    ...   ...   ...
+59  Xbox One (XOne)    SEP  2016   390
+60  Xbox One (XOne)    SEP  2017   350
+61  Xbox One (XOne)    SEP  2018   260
+62  Xbox One (XOne)    SEP  2019     0
+63  Xbox One (XOne)    SEP  2020   120
+
+[64 rows x 4 columns]
+insights:
+{'point': [], 'shape': [], 'compound': []}

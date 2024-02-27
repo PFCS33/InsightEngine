@@ -1,0 +1,39 @@
+header:
+('Sony', 'PlayStation 4 (PS4)', 'Other', 2017)
+row data:
+  Season  Sale
+0    DEC  1320
+1    JUN   520
+2    MAR  1600
+3    SEP   640
+------------------
+insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Sony, Brand = PlayStation 4 (PS4), Location = Other]
+In the filtered subspace, the insight is: 
+Type: top2
+Score: 0.39215686274509803
+Category: point
+Description: The Sale proportion of MAR and DEC is significantly higher than that of other Seasons.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Sony', 'PlayStation 4 (PS4)', 'Other', 2017)
+aggregated data:
+  Season  Sale
+0    DEC  1320
+1    JUN   520
+2    MAR  1600
+3    SEP   640
+------------------
+aggregated insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Sony, Brand = PlayStation 4 (PS4), Location = Other]
+In the filtered subspace, the insight is: 
+Type: top2
+Score: 0.39215686274509803
+Category: point
+Description: The Sale proportion of MAR and DEC is significantly higher than that of other Seasons.)
+], 'shape': [], 'compound': []}

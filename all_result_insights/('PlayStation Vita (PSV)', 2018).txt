@@ -1,0 +1,43 @@
+header:
+('PlayStation Vita (PSV)', 2018)
+row data:
+   Company       Location Season  Sale
+0     Sony         Europe    DEC     0
+1     Sony         Europe    JUN    10
+2     Sony         Europe    MAR    50
+3     Sony         Europe    SEP     0
+4     Sony          Japan    DEC    30
+5     Sony          Japan    JUN    60
+6     Sony          Japan    MAR    90
+7     Sony          Japan    SEP    40
+8     Sony  North America    DEC     0
+9     Sony  North America    JUN     0
+10    Sony  North America    MAR    10
+11    Sony  North America    SEP     0
+12    Sony          Other    DEC     0
+13    Sony          Other    JUN    10
+14    Sony          Other    MAR    20
+15    Sony          Other    SEP     0
+------------------
+insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Brand = PlayStation Vita (PSV), Company = Sony]
+In the filtered subspace, the insight is: 
+Type: dominance
+Score: 0.6875
+Category: point
+Description: The Sale of Japan dominates among all Locations.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('PlayStation Vita (PSV)', 2018, 'Sony')
+aggregated data:
+        Location       Season  Sale
+0         Europe  all Seasons    60
+1          Japan  all Seasons   220
+2  North America  all Seasons    10
+3          Other  all Seasons    30
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

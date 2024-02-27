@@ -1,0 +1,15 @@
+header:
+('Sony', 'PlayStation 3 (PS3)', 'SEP', 2014)
+row data:
+        Location  Sale
+0         Europe     0
+1          Japan    80
+2  North America   120
+3          Other   360
+insights:
+{'point': [
+(Type: dominance
+Score: 0.6428571428571429
+Category: point
+Description: The Sale of Other dominates among all Locations.)
+], 'shape': [], 'compound': []}

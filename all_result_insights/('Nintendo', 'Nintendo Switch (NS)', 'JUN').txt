@@ -1,0 +1,51 @@
+header:
+('Nintendo', 'Nintendo Switch (NS)', 'JUN')
+row data:
+         Location  Year  Sale
+0          Europe  2013     0
+1          Europe  2014     0
+2          Europe  2015     0
+3          Europe  2016     0
+4          Europe  2017   840
+5          Europe  2018   770
+6          Europe  2019   860
+7          Europe  2020   970
+8           Japan  2013     0
+9           Japan  2014     0
+10          Japan  2015     0
+11          Japan  2016     0
+12          Japan  2017   650
+13          Japan  2018   620
+14          Japan  2019  1040
+15          Japan  2020  1240
+16  North America  2013     0
+17  North America  2014     0
+18  North America  2015     0
+19  North America  2016     0
+20  North America  2017  1150
+21  North America  2018   950
+22  North America  2019  1410
+23  North America  2020  2510
+24          Other  2013     0
+25          Other  2014     0
+26          Other  2015     0
+27          Other  2016     0
+28          Other  2017   240
+29          Other  2018   410
+30          Other  2019   300
+31          Other  2020   840
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo', 'Nintendo Switch (NS)', 'JUN')
+aggregated data:
+        Location       Year  Sale
+0         Europe  all Years  3440
+1          Japan  all Years  3550
+2  North America  all Years  6020
+3          Other  all Years  1790
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

@@ -1,0 +1,38 @@
+header:
+('Sony', 'Japan', 2014)
+row data:
+                     Brand Season  Sale
+0      PlayStation 3 (PS3)    DEC    70
+1      PlayStation 3 (PS3)    JUN   140
+2      PlayStation 3 (PS3)    MAR   260
+3      PlayStation 3 (PS3)    SEP    80
+4      PlayStation 4 (PS4)    DEC   130
+5      PlayStation 4 (PS4)    JUN   260
+6      PlayStation 4 (PS4)    MAR   320
+7      PlayStation 4 (PS4)    SEP    90
+8   PlayStation Vita (PSV)    DEC   180
+9   PlayStation Vita (PSV)    JUN   330
+10  PlayStation Vita (PSV)    MAR   580
+11  PlayStation Vita (PSV)    SEP   270
+------------------
+insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Sony, Location = Japan]
+In the filtered subspace, the insight is: 
+Type: dominance
+Score: 0.5018450184501845
+Category: point
+Description: The Sale of PlayStation Vita (PSV) dominates among all Brands.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Sony', 'Japan', 2014)
+aggregated data:
+                    Brand       Season  Sale
+0     PlayStation 3 (PS3)  all Seasons   550
+1     PlayStation 4 (PS4)  all Seasons   800
+2  PlayStation Vita (PSV)  all Seasons  1360
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

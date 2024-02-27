@@ -1,0 +1,66 @@
+header:
+('DEC', 2014)
+row data:
+      Company                   Brand       Location  Sale
+0    Nintendo      Nintendo 3DS (3DS)         Europe     0
+1    Nintendo      Nintendo 3DS (3DS)          Japan   960
+2    Nintendo      Nintendo 3DS (3DS)  North America   580
+3    Nintendo      Nintendo 3DS (3DS)          Other     0
+4    Nintendo        Nintendo DS (DS)         Europe     0
+5    Nintendo        Nintendo DS (DS)          Japan     0
+6    Nintendo        Nintendo DS (DS)  North America     0
+7    Nintendo        Nintendo DS (DS)          Other     0
+8    Nintendo    Nintendo Switch (NS)         Europe     0
+9    Nintendo    Nintendo Switch (NS)          Japan     0
+10   Nintendo    Nintendo Switch (NS)  North America     0
+11   Nintendo    Nintendo Switch (NS)          Other     0
+12   Nintendo               Wii (Wii)         Europe     0
+13   Nintendo               Wii (Wii)          Japan    10
+14   Nintendo               Wii (Wii)  North America    60
+15   Nintendo               Wii (Wii)          Other     0
+16   Nintendo            Wii U (WiiU)         Europe   100
+17   Nintendo            Wii U (WiiU)          Japan    90
+18   Nintendo            Wii U (WiiU)  North America   330
+19   Nintendo            Wii U (WiiU)          Other    20
+20       Sony     PlayStation 3 (PS3)         Europe   120
+21       Sony     PlayStation 3 (PS3)          Japan    70
+22       Sony     PlayStation 3 (PS3)  North America   170
+23       Sony     PlayStation 3 (PS3)          Other   160
+24       Sony     PlayStation 4 (PS4)         Europe  2430
+25       Sony     PlayStation 4 (PS4)          Japan   130
+26       Sony     PlayStation 4 (PS4)  North America  1540
+27       Sony     PlayStation 4 (PS4)          Other   940
+28       Sony  PlayStation Vita (PSV)         Europe    90
+29       Sony  PlayStation Vita (PSV)          Japan   180
+30       Sony  PlayStation Vita (PSV)  North America    50
+31       Sony  PlayStation Vita (PSV)          Other    70
+32  Microsoft         Xbox 360 (X360)         Europe   140
+33  Microsoft         Xbox 360 (X360)          Japan     0
+34  Microsoft         Xbox 360 (X360)  North America   310
+35  Microsoft         Xbox 360 (X360)          Other    70
+36  Microsoft         Xbox One (XOne)         Europe  1000
+37  Microsoft         Xbox One (XOne)          Japan    40
+38  Microsoft         Xbox One (XOne)  North America  1260
+39  Microsoft         Xbox One (XOne)          Other   620
+------------------
+insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Season = DEC]
+In the filtered subspace, the insight is: 
+Type: dominance
+Score: 0.5155979202772963
+Category: point
+Description: The Sale of Sony dominates among all Companys.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('DEC', 2014)
+aggregated data:
+     Company       Brand       Location  Sale
+0  Microsoft  all Brands  all Locations  3440
+1   Nintendo  all Brands  all Locations  2150
+2       Sony  all Brands  all Locations  5950
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

@@ -1,0 +1,23 @@
+header:
+('Nintendo Switch (NS)', 'Other', 2015)
+row data:
+    Company Season  Sale
+0  Nintendo    DEC     0
+1  Nintendo    JUN     0
+2  Nintendo    MAR     0
+3  Nintendo    SEP     0
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo Switch (NS)', 'Other', 2015, 'Nintendo')
+aggregated data:
+  Season  Sale
+0    DEC     0
+1    JUN     0
+2    MAR     0
+3    SEP     0
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

@@ -1,0 +1,43 @@
+header:
+('PlayStation 3 (PS3)', 2013)
+row data:
+   Company       Location Season  Sale
+0     Sony         Europe    DEC   670
+1     Sony         Europe    JUN  2010
+2     Sony         Europe    MAR  1330
+3     Sony         Europe    SEP   700
+4     Sony          Japan    DEC   110
+5     Sony          Japan    JUN   180
+6     Sony          Japan    MAR   380
+7     Sony          Japan    SEP   180
+8     Sony  North America    DEC   390
+9     Sony  North America    JUN   490
+10    Sony  North America    MAR   960
+11    Sony  North America    SEP   380
+12    Sony          Other    DEC   280
+13    Sony          Other    JUN  1300
+14    Sony          Other    MAR   490
+15    Sony          Other    SEP   390
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('PlayStation 3 (PS3)', 2013, 'Sony')
+aggregated data:
+        Location       Season  Sale
+0         Europe  all Seasons  4710
+1          Japan  all Seasons   850
+2  North America  all Seasons  2220
+3          Other  all Seasons  2460
+------------------
+aggregated insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Brand = PlayStation 3 (PS3)]
+In the filtered subspace, the insight is: 
+Type: outlier
+Score: 2.728293453343865
+Category: point
+Description: The Sale of Company Sony of Location Europe of Season JUN is an outlier, which is significantly higher than the normal Sale of other Companys in the corresponding Locations, Seasons.)
+], 'shape': [], 'compound': []}

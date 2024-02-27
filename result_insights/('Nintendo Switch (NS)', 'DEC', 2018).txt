@@ -1,0 +1,10 @@
+header:
+('Nintendo Switch (NS)', 'DEC', 2018)
+row data:
+    Company       Location  Sale
+0  Nintendo         Europe   790
+1  Nintendo          Japan   630
+2  Nintendo  North America   880
+3  Nintendo          Other   380
+insights:
+{'point': [], 'shape': [], 'compound': []}

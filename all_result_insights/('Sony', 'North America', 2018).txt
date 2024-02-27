@@ -1,0 +1,30 @@
+header:
+('Sony', 'North America', 2018)
+row data:
+                     Brand Season  Sale
+0      PlayStation 3 (PS3)    DEC     0
+1      PlayStation 3 (PS3)    JUN     0
+2      PlayStation 3 (PS3)    MAR     0
+3      PlayStation 3 (PS3)    SEP     0
+4      PlayStation 4 (PS4)    DEC  1150
+5      PlayStation 4 (PS4)    JUN  1290
+6      PlayStation 4 (PS4)    MAR  3160
+7      PlayStation 4 (PS4)    SEP   740
+8   PlayStation Vita (PSV)    DEC     0
+9   PlayStation Vita (PSV)    JUN     0
+10  PlayStation Vita (PSV)    MAR    10
+11  PlayStation Vita (PSV)    SEP     0
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Sony', 'North America', 2018)
+aggregated data:
+                    Brand       Season  Sale
+0     PlayStation 3 (PS3)  all Seasons     0
+1     PlayStation 4 (PS4)  all Seasons  6340
+2  PlayStation Vita (PSV)  all Seasons    10
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

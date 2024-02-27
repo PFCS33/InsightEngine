@@ -1,0 +1,15 @@
+header:
+('PlayStation 4 (PS4)', 'JUN', 2020)
+row data:
+  Company       Location  Sale
+0    Sony         Europe  1810
+1    Sony          Japan   280
+2    Sony  North America   990
+3    Sony          Other   420
+insights:
+{'point': [
+(Type: dominance
+Score: 0.5171428571428571
+Category: point
+Description: The Sale of Sony dominates among all Companys.)
+], 'shape': [], 'compound': []}

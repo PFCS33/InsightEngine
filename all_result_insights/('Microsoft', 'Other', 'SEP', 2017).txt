@@ -1,0 +1,19 @@
+header:
+('Microsoft', 'Other', 'SEP', 2017)
+row data:
+             Brand  Sale
+0  Xbox 360 (X360)     0
+1  Xbox One (XOne)   160
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Microsoft', 'Other', 'SEP', 2017)
+aggregated data:
+             Brand  Sale
+0  Xbox 360 (X360)     0
+1  Xbox One (XOne)   160
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

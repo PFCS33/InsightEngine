@@ -1,0 +1,23 @@
+header:
+('Sony', 'PlayStation Vita (PSV)', 'MAR', 2015)
+row data:
+        Location  Sale
+0         Europe   170
+1          Japan   290
+2  North America   190
+3          Other   150
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Sony', 'PlayStation Vita (PSV)', 'MAR', 2015)
+aggregated data:
+        Location  Sale
+0         Europe   170
+1          Japan   290
+2  North America   190
+3          Other   150
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

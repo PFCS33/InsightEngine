@@ -1,0 +1,59 @@
+header:
+('Microsoft', 'Xbox 360 (X360)', 'North America')
+row data:
+   Season  Year  Sale
+0     DEC  2013   350
+1     DEC  2014   310
+2     DEC  2015    90
+3     DEC  2016    30
+4     DEC  2017     0
+5     DEC  2018     0
+6     DEC  2019     0
+7     DEC  2020     0
+8     JUN  2013  1470
+9     JUN  2014   210
+10    JUN  2015   160
+11    JUN  2016    70
+12    JUN  2017    10
+13    JUN  2018     0
+14    JUN  2019     0
+15    JUN  2020     0
+16    MAR  2013  1580
+17    MAR  2014  1500
+18    MAR  2015   650
+19    MAR  2016   260
+20    MAR  2017   110
+21    MAR  2018     0
+22    MAR  2019     0
+23    MAR  2020     0
+24    SEP  2013   520
+25    SEP  2014   770
+26    SEP  2015    30
+27    SEP  2016    40
+28    SEP  2017    10
+29    SEP  2018     0
+30    SEP  2019     0
+31    SEP  2020     0
+------------------
+insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Microsoft, Brand = Xbox 360 (X360), Location = North America]
+In the filtered subspace, the insight is: 
+Type: dominance
+Score: 0.5018359853121175
+Category: point
+Description: The Sale of MAR dominates among all Seasons.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Microsoft', 'Xbox 360 (X360)', 'North America')
+aggregated data:
+  Season       Year  Sale
+0    DEC  all Years   780
+1    JUN  all Years  1920
+2    MAR  all Years  4100
+3    SEP  all Years  1370
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

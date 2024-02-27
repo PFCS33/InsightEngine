@@ -1,0 +1,15 @@
+header:
+('Nintendo 3DS (3DS)', 'Europe', 2017)
+row data:
+    Company Season  Sale
+0  Nintendo    DEC  1400
+1  Nintendo    JUN   170
+2  Nintendo    MAR   760
+3  Nintendo    SEP   200
+insights:
+{'point': [
+(Type: top2
+Score: 0.5533596837944664
+Category: point
+Description: The Sale proportion of Nintendo and Nintendo is significantly higher than that of other Companys.)
+], 'shape': [], 'compound': []}

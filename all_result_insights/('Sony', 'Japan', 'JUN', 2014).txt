@@ -1,0 +1,37 @@
+header:
+('Sony', 'Japan', 'JUN', 2014)
+row data:
+                    Brand  Sale
+0     PlayStation 3 (PS3)   140
+1     PlayStation 4 (PS4)   260
+2  PlayStation Vita (PSV)   330
+------------------
+insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Sony, Location = Japan, Season = JUN]
+In the filtered subspace, the insight is: 
+Type: top2
+Score: 0.4520547945205479
+Category: point
+Description: The Sale proportion of PlayStation Vita (PSV) and PlayStation 4 (PS4) is significantly higher than that of other Brands.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Sony', 'Japan', 'JUN', 2014)
+aggregated data:
+                    Brand  Sale
+0     PlayStation 3 (PS3)   140
+1     PlayStation 4 (PS4)   260
+2  PlayStation Vita (PSV)   330
+------------------
+aggregated insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Sony, Location = Japan, Season = JUN]
+In the filtered subspace, the insight is: 
+Type: top2
+Score: 0.4520547945205479
+Category: point
+Description: The Sale proportion of PlayStation Vita (PSV) and PlayStation 4 (PS4) is significantly higher than that of other Brands.)
+], 'shape': [], 'compound': []}

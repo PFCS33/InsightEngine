@@ -1,0 +1,47 @@
+header:
+('Nintendo Switch (NS)', 'Europe', 'MAR')
+row data:
+    Company  Year  Sale
+0  Nintendo  2013     0
+1  Nintendo  2014     0
+2  Nintendo  2015     0
+3  Nintendo  2016     0
+4  Nintendo  2017     0
+5  Nintendo  2018  1790
+6  Nintendo  2019  2280
+7  Nintendo  2020  2450
+------------------
+insights:
+{'point': [], 'shape': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Brand = Nintendo Switch (NS), Location = Europe, Season = MAR, Company = Nintendo]
+In the filtered subspace, the insight is: 
+Type: trend
+Score: 0.7494038953214794
+Category: shape
+Description: Sales exhibit a clear upward trend over the Years from 2013 to 2020.)
+], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo Switch (NS)', 'Europe', 'MAR', 'Nintendo')
+aggregated data:
+   Year  Sale
+0  2013     0
+1  2014     0
+2  2015     0
+3  2016     0
+4  2017     0
+5  2018  1790
+6  2019  2280
+7  2020  2450
+------------------
+aggregated insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Brand = Nintendo Switch (NS), Location = Europe, Season = MAR]
+In the filtered subspace, the insight is: 
+Type: top2
+Score: 0.37576687116564417
+Category: point
+Description: The Sale proportion of Nintendo and Nintendo is significantly higher than that of other Companys.)
+], 'shape': [], 'compound': []}

@@ -1,0 +1,9 @@
+header:
+('Sony', 'Europe', 'JUN', 2019)
+row data:
+                    Brand  Sale
+0     PlayStation 3 (PS3)   440
+1     PlayStation 4 (PS4)  1740
+2  PlayStation Vita (PSV)     0
+insights:
+{'point': [], 'shape': [], 'compound': []}

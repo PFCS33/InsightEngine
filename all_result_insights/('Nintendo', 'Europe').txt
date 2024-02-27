@@ -1,0 +1,41 @@
+header:
+('Nintendo', 'Europe')
+row data:
+                  Brand Season  Year  Sale
+0    Nintendo 3DS (3DS)    DEC  2013   950
+1    Nintendo 3DS (3DS)    DEC  2014     0
+2    Nintendo 3DS (3DS)    DEC  2015   530
+3    Nintendo 3DS (3DS)    DEC  2016   160
+4    Nintendo 3DS (3DS)    DEC  2017  1400
+..                  ...    ...   ...   ...
+155        Wii U (WiiU)    SEP  2016    40
+156        Wii U (WiiU)    SEP  2017    30
+157        Wii U (WiiU)    SEP  2018     0
+158        Wii U (WiiU)    SEP  2019     0
+159        Wii U (WiiU)    SEP  2020     0
+
+[160 rows x 4 columns]
+------------------
+insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Nintendo, Location = Europe]
+In the filtered subspace, the insight is: 
+Type: top2
+Score: 0.4829753797799895
+Category: point
+Description: The Sale proportion of Nintendo Switch (NS) and Nintendo 3DS (3DS) is significantly higher than that of other Brands.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo', 'Europe')
+aggregated data:
+                  Brand       Season       Year   Sale
+0    Nintendo 3DS (3DS)  all Seasons  all Years  14560
+1      Nintendo DS (DS)  all Seasons  all Years    290
+2  Nintendo Switch (NS)  all Seasons  all Years  18440
+3             Wii (Wii)  all Seasons  all Years   1620
+4          Wii U (WiiU)  all Seasons  all Years   3270
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

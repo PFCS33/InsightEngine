@@ -1,0 +1,23 @@
+header:
+('Nintendo Switch (NS)', 'SEP', 2020)
+row data:
+    Company       Location  Sale
+0  Nintendo         Europe  1920
+1  Nintendo          Japan  1520
+2  Nintendo  North America  1470
+3  Nintendo          Other  1110
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo Switch (NS)', 'SEP', 2020, 'Nintendo')
+aggregated data:
+        Location  Sale
+0         Europe  1920
+1          Japan  1520
+2  North America  1470
+3          Other  1110
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

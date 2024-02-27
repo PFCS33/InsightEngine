@@ -1,0 +1,23 @@
+header:
+('Xbox One (XOne)', 'North America', 2015)
+row data:
+     Company Season  Sale
+0  Microsoft    DEC  1170
+1  Microsoft    JUN   710
+2  Microsoft    MAR  2270
+3  Microsoft    SEP   600
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Xbox One (XOne)', 'North America', 2015, 'Microsoft')
+aggregated data:
+  Season  Sale
+0    DEC  1170
+1    JUN   710
+2    MAR  2270
+3    SEP   600
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

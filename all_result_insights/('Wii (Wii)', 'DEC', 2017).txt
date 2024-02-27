@@ -1,0 +1,23 @@
+header:
+('Wii (Wii)', 'DEC', 2017)
+row data:
+    Company       Location  Sale
+0  Nintendo         Europe   130
+1  Nintendo          Japan     0
+2  Nintendo  North America   130
+3  Nintendo          Other   200
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Wii (Wii)', 'DEC', 2017, 'Nintendo')
+aggregated data:
+        Location  Sale
+0         Europe   130
+1          Japan     0
+2  North America   130
+3          Other   200
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

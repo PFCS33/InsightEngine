@@ -1,0 +1,8 @@
+header:
+('Microsoft', 'Europe', 'SEP', 2015)
+row data:
+             Brand  Sale
+0  Xbox 360 (X360)    20
+1  Xbox One (XOne)   250
+insights:
+{'point': [], 'shape': [], 'compound': []}

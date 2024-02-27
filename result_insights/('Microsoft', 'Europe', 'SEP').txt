@@ -1,0 +1,22 @@
+header:
+('Microsoft', 'Europe', 'SEP')
+row data:
+              Brand  Year  Sale
+0   Xbox 360 (X360)  2013   400
+1   Xbox 360 (X360)  2014    60
+2   Xbox 360 (X360)  2015    20
+3   Xbox 360 (X360)  2016    20
+4   Xbox 360 (X360)  2017    10
+5   Xbox 360 (X360)  2018     0
+6   Xbox 360 (X360)  2019     0
+7   Xbox 360 (X360)  2020     0
+8   Xbox One (XOne)  2013     0
+9   Xbox One (XOne)  2014   120
+10  Xbox One (XOne)  2015   250
+11  Xbox One (XOne)  2016   390
+12  Xbox One (XOne)  2017   350
+13  Xbox One (XOne)  2018   260
+14  Xbox One (XOne)  2019     0
+15  Xbox One (XOne)  2020   120
+insights:
+{'point': [], 'shape': [], 'compound': []}

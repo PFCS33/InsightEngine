@@ -1,0 +1,31 @@
+header:
+('Microsoft', 'Xbox One (XOne)', 'North America', 'JUN')
+row data:
+   Year  Sale
+0  2013     0
+1  2014   730
+2  2015   710
+3  2016   610
+4  2017   680
+5  2018   910
+6  2019   690
+7  2020   850
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Microsoft', 'Xbox One (XOne)', 'North America', 'JUN')
+aggregated data:
+   Year  Sale
+0  2013     0
+1  2014   730
+2  2015   710
+3  2016   610
+4  2017   680
+5  2018   910
+6  2019   690
+7  2020   850
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

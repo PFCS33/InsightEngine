@@ -1,0 +1,10 @@
+header:
+('Wii U (WiiU)', 'JUN', 2014)
+row data:
+    Company       Location  Sale
+0  Nintendo         Europe   110
+1  Nintendo          Japan   100
+2  Nintendo  North America   190
+3  Nintendo          Other    30
+insights:
+{'point': [], 'shape': [], 'compound': []}

@@ -1,0 +1,32 @@
+header:
+('Nintendo', 'Nintendo Switch (NS)')
+row data:
+    Location Season  Year  Sale
+0     Europe    DEC  2013     0
+1     Europe    DEC  2014     0
+2     Europe    DEC  2015     0
+3     Europe    DEC  2016     0
+4     Europe    DEC  2017   680
+..       ...    ...   ...   ...
+123    Other    SEP  2016     0
+124    Other    SEP  2017   300
+125    Other    SEP  2018   300
+126    Other    SEP  2019   380
+127    Other    SEP  2020  1110
+
+[128 rows x 4 columns]
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo', 'Nintendo Switch (NS)')
+aggregated data:
+        Location       Season       Year   Sale
+0         Europe  all Seasons  all Years  18440
+1          Japan  all Seasons  all Years  16270
+2  North America  all Seasons  all Years  25810
+3          Other  all Seasons  all Years   9340
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

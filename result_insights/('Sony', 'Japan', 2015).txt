@@ -1,0 +1,18 @@
+header:
+('Sony', 'Japan', 2015)
+row data:
+                     Brand Season  Sale
+0      PlayStation 3 (PS3)    DEC    40
+1      PlayStation 3 (PS3)    JUN    60
+2      PlayStation 3 (PS3)    MAR   100
+3      PlayStation 3 (PS3)    SEP    30
+4      PlayStation 4 (PS4)    DEC   360
+5      PlayStation 4 (PS4)    JUN   350
+6      PlayStation 4 (PS4)    MAR   290
+7      PlayStation 4 (PS4)    SEP   160
+8   PlayStation Vita (PSV)    DEC   210
+9   PlayStation Vita (PSV)    JUN   270
+10  PlayStation Vita (PSV)    MAR   290
+11  PlayStation Vita (PSV)    SEP   150
+insights:
+{'point': [], 'shape': [], 'compound': []}

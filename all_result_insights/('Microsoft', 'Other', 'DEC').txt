@@ -1,0 +1,33 @@
+header:
+('Microsoft', 'Other', 'DEC')
+row data:
+              Brand  Year  Sale
+0   Xbox 360 (X360)  2013    80
+1   Xbox 360 (X360)  2014    70
+2   Xbox 360 (X360)  2015    30
+3   Xbox 360 (X360)  2016    10
+4   Xbox 360 (X360)  2017     0
+5   Xbox 360 (X360)  2018     0
+6   Xbox 360 (X360)  2019     0
+7   Xbox 360 (X360)  2020     0
+8   Xbox One (XOne)  2013     0
+9   Xbox One (XOne)  2014   620
+10  Xbox One (XOne)  2015   260
+11  Xbox One (XOne)  2016   150
+12  Xbox One (XOne)  2017   220
+13  Xbox One (XOne)  2018   180
+14  Xbox One (XOne)  2019     0
+15  Xbox One (XOne)  2020    20
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Microsoft', 'Other', 'DEC')
+aggregated data:
+             Brand       Year  Sale
+0  Xbox 360 (X360)  all Years   190
+1  Xbox One (XOne)  all Years  1450
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

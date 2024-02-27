@@ -1,0 +1,23 @@
+header:
+('Nintendo', 'Nintendo Switch (NS)', 'DEC', 2019)
+row data:
+        Location  Sale
+0         Europe  1600
+1          Japan  1780
+2  North America  2090
+3          Other   750
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo', 'Nintendo Switch (NS)', 'DEC', 2019)
+aggregated data:
+        Location  Sale
+0         Europe  1600
+1          Japan  1780
+2  North America  2090
+3          Other   750
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

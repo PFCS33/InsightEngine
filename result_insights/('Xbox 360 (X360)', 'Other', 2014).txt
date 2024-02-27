@@ -1,0 +1,15 @@
+header:
+('Xbox 360 (X360)', 'Other', 2014)
+row data:
+     Company Season  Sale
+0  Microsoft    DEC    70
+1  Microsoft    JUN     0
+2  Microsoft    MAR   100
+3  Microsoft    SEP   950
+insights:
+{'point': [
+(Type: dominance
+Score: 0.8482142857142857
+Category: point
+Description: The Sale of Microsoft dominates among all Companys.)
+], 'shape': [], 'compound': []}

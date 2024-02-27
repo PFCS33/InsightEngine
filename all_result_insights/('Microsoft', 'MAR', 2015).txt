@@ -1,0 +1,33 @@
+header:
+('Microsoft', 'MAR', 2015)
+row data:
+             Brand       Location  Sale
+0  Xbox 360 (X360)         Europe   170
+1  Xbox 360 (X360)          Japan     0
+2  Xbox 360 (X360)  North America   650
+3  Xbox 360 (X360)          Other   130
+4  Xbox One (XOne)         Europe   790
+5  Xbox One (XOne)          Japan    10
+6  Xbox One (XOne)  North America  2270
+7  Xbox One (XOne)          Other   340
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Microsoft', 'MAR', 2015)
+aggregated data:
+             Brand       Location  Sale
+0  Xbox 360 (X360)  all Locations   950
+1  Xbox One (XOne)  all Locations  3410
+------------------
+aggregated insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Microsoft, Season = MAR]
+In the filtered subspace, the insight is: 
+Type: dominance
+Score: 0.5206422018348624
+Category: point
+Description: The Sale of Xbox One (XOne) dominates among all Brands.)
+], 'shape': [], 'compound': []}

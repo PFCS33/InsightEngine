@@ -1,0 +1,15 @@
+header:
+('PlayStation Vita (PSV)', 'Europe', 2017)
+row data:
+  Company Season  Sale
+0    Sony    DEC    40
+1    Sony    JUN    60
+2    Sony    MAR   270
+3    Sony    SEP    30
+insights:
+{'point': [
+(Type: dominance
+Score: 0.675
+Category: point
+Description: The Sale of Sony dominates among all Companys.)
+], 'shape': [], 'compound': []}

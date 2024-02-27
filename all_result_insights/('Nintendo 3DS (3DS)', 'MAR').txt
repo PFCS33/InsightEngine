@@ -1,0 +1,51 @@
+header:
+('Nintendo 3DS (3DS)', 'MAR')
+row data:
+     Company       Location  Year  Sale
+0   Nintendo         Europe  2013  1370
+1   Nintendo         Europe  2014  2180
+2   Nintendo         Europe  2015   950
+3   Nintendo         Europe  2016   720
+4   Nintendo         Europe  2017   760
+5   Nintendo         Europe  2018  1190
+6   Nintendo         Europe  2019   320
+7   Nintendo         Europe  2020    70
+8   Nintendo          Japan  2013  2090
+9   Nintendo          Japan  2014  1490
+10  Nintendo          Japan  2015  1250
+11  Nintendo          Japan  2016   990
+12  Nintendo          Japan  2017  1030
+13  Nintendo          Japan  2018   490
+14  Nintendo          Japan  2019   120
+15  Nintendo          Japan  2020    20
+16  Nintendo  North America  2013  1410
+17  Nintendo  North America  2014  2130
+18  Nintendo  North America  2015  1480
+19  Nintendo  North America  2016  1030
+20  Nintendo  North America  2017  1260
+21  Nintendo  North America  2018  1320
+22  Nintendo  North America  2019   630
+23  Nintendo  North America  2020   110
+24  Nintendo          Other  2013   310
+25  Nintendo          Other  2014   390
+26  Nintendo          Other  2015   300
+27  Nintendo          Other  2016   190
+28  Nintendo          Other  2017     0
+29  Nintendo          Other  2018   320
+30  Nintendo          Other  2019   100
+31  Nintendo          Other  2020     0
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo 3DS (3DS)', 'MAR', 'Nintendo')
+aggregated data:
+        Location       Year  Sale
+0         Europe  all Years  7560
+1          Japan  all Years  7480
+2  North America  all Years  9370
+3          Other  all Years  1610
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

@@ -1,0 +1,15 @@
+header:
+('Sony', 'PlayStation 3 (PS3)', 'Japan', 2016)
+row data:
+  Season  Sale
+0    DEC    10
+1    JUN    20
+2    MAR    20
+3    SEP    10
+insights:
+{'point': [
+(Type: top2
+Score: 0.3333333333333333
+Category: point
+Description: The Sale proportion of JUN and MAR is significantly higher than that of other Seasons.)
+], 'shape': [], 'compound': []}

@@ -1,0 +1,24 @@
+header:
+('Microsoft', 'North America', 2016)
+row data:
+             Brand Season  Sale
+0  Xbox 360 (X360)    DEC    30
+1  Xbox 360 (X360)    JUN    70
+2  Xbox 360 (X360)    MAR   260
+3  Xbox 360 (X360)    SEP    40
+4  Xbox One (XOne)    DEC   910
+5  Xbox One (XOne)    JUN   610
+6  Xbox One (XOne)    MAR  2890
+7  Xbox One (XOne)    SEP   630
+insights:
+{'point': [
+(Type: dominance
+Score: 0.53125
+Category: point
+Description: The Sale of Xbox One (XOne) dominates among all Brands.)
+, 
+(Type: outlier
+Score: 2.485461282450657
+Category: point
+Description: The Sale of Brand Xbox One (XOne) of Season MAR is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Sale.)
+], 'shape': [], 'compound': []}

@@ -1,0 +1,31 @@
+header:
+('Sony', 'PlayStation 4 (PS4)', 'Other', 'JUN')
+row data:
+   Year  Sale
+0  2013     0
+1  2014   190
+2  2015   870
+3  2016   670
+4  2017   520
+5  2018   630
+6  2019   660
+7  2020   420
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Sony', 'PlayStation 4 (PS4)', 'Other', 'JUN')
+aggregated data:
+   Year  Sale
+0  2013     0
+1  2014   190
+2  2015   870
+3  2016   670
+4  2017   520
+5  2018   630
+6  2019   660
+7  2020   420
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

@@ -1,0 +1,23 @@
+header:
+('Nintendo', 'Wii U (WiiU)', 'DEC', 2013)
+row data:
+        Location  Sale
+0         Europe   130
+1          Japan    90
+2  North America   190
+3          Other    30
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo', 'Wii U (WiiU)', 'DEC', 2013)
+aggregated data:
+        Location  Sale
+0         Europe   130
+1          Japan    90
+2  North America   190
+3          Other    30
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

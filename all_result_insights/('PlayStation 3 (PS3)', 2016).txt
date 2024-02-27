@@ -1,0 +1,35 @@
+header:
+('PlayStation 3 (PS3)', 2016)
+row data:
+   Company       Location Season  Sale
+0     Sony         Europe    DEC    40
+1     Sony         Europe    JUN    50
+2     Sony         Europe    MAR   110
+3     Sony         Europe    SEP    50
+4     Sony          Japan    DEC    10
+5     Sony          Japan    JUN    20
+6     Sony          Japan    MAR    20
+7     Sony          Japan    SEP    10
+8     Sony  North America    DEC    30
+9     Sony  North America    JUN    30
+10    Sony  North America    MAR    70
+11    Sony  North America    SEP    30
+12    Sony          Other    DEC    20
+13    Sony          Other    JUN    30
+14    Sony          Other    MAR    50
+15    Sony          Other    SEP    20
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('PlayStation 3 (PS3)', 2016, 'Sony')
+aggregated data:
+        Location       Season  Sale
+0         Europe  all Seasons   250
+1          Japan  all Seasons    60
+2  North America  all Seasons   160
+3          Other  all Seasons   120
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

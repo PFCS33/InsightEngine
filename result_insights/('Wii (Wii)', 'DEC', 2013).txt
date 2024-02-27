@@ -1,0 +1,15 @@
+header:
+('Wii (Wii)', 'DEC', 2013)
+row data:
+    Company       Location  Sale
+0  Nintendo         Europe   140
+1  Nintendo          Japan    10
+2  Nintendo  North America   120
+3  Nintendo          Other     0
+insights:
+{'point': [
+(Type: top2
+Score: 0.5185185185185185
+Category: point
+Description: The Sale proportion of Nintendo and Nintendo is significantly higher than that of other Companys.)
+], 'shape': [], 'compound': []}

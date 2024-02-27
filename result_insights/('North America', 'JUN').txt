@@ -1,0 +1,19 @@
+header:
+('North America', 'JUN')
+row data:
+      Company               Brand  Year  Sale
+0    Nintendo  Nintendo 3DS (3DS)  2013   580
+1    Nintendo  Nintendo 3DS (3DS)  2014   420
+2    Nintendo  Nintendo 3DS (3DS)  2015   680
+3    Nintendo  Nintendo 3DS (3DS)  2016   440
+4    Nintendo  Nintendo 3DS (3DS)  2017   250
+..        ...                 ...   ...   ...
+75  Microsoft     Xbox One (XOne)  2016   610
+76  Microsoft     Xbox One (XOne)  2017   680
+77  Microsoft     Xbox One (XOne)  2018   910
+78  Microsoft     Xbox One (XOne)  2019   690
+79  Microsoft     Xbox One (XOne)  2020   850
+
+[80 rows x 4 columns]
+insights:
+{'point': [], 'shape': [], 'compound': []}

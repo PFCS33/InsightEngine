@@ -1,0 +1,19 @@
+header:
+('PlayStation Vita (PSV)',)
+row data:
+    Company Location Season  Year  Sale
+0      Sony   Europe    DEC  2013   230
+1      Sony   Europe    DEC  2014    90
+2      Sony   Europe    DEC  2015   240
+3      Sony   Europe    DEC  2016   140
+4      Sony   Europe    DEC  2017    40
+..      ...      ...    ...   ...   ...
+123    Sony    Other    SEP  2016    80
+124    Sony    Other    SEP  2017    30
+125    Sony    Other    SEP  2018     0
+126    Sony    Other    SEP  2019     0
+127    Sony    Other    SEP  2020     0
+
+[128 rows x 5 columns]
+insights:
+{'point': [], 'shape': [], 'compound': []}

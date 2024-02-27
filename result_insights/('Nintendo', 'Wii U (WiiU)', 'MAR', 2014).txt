@@ -1,0 +1,10 @@
+header:
+('Nintendo', 'Wii U (WiiU)', 'MAR', 2014)
+row data:
+        Location  Sale
+0         Europe   360
+1          Japan   500
+2  North America   850
+3          Other   140
+insights:
+{'point': [], 'shape': [], 'compound': []}

@@ -1,0 +1,47 @@
+header:
+('Nintendo', 'Nintendo 3DS (3DS)', 'North America', 'SEP')
+row data:
+   Year  Sale
+0  2013   640
+1  2014   400
+2  2015   260
+3  2016   110
+4  2017   280
+5  2018   210
+6  2019    80
+7  2020   350
+------------------
+insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Nintendo, Brand = Nintendo 3DS (3DS), Location = North America, Season = SEP]
+In the filtered subspace, the insight is: 
+Type: outlier-temporal
+Score: 2.0931345776115893
+Category: point
+Description: The Sale of Year 2013 is an outlier, which is significantly higher than the normal Sale of other Years.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo', 'Nintendo 3DS (3DS)', 'North America', 'SEP')
+aggregated data:
+   Year  Sale
+0  2013   640
+1  2014   400
+2  2015   260
+3  2016   110
+4  2017   280
+5  2018   210
+6  2019    80
+7  2020   350
+------------------
+aggregated insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Nintendo, Brand = Nintendo 3DS (3DS), Location = North America, Season = SEP]
+In the filtered subspace, the insight is: 
+Type: outlier-temporal
+Score: 2.0931345776115893
+Category: point
+Description: The Sale of Year 2013 is an outlier, which is significantly higher than the normal Sale of other Years.)
+], 'shape': [], 'compound': []}

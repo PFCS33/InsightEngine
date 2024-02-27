@@ -1,0 +1,15 @@
+header:
+('Nintendo', 'Nintendo Switch (NS)', 'North America', 2018)
+row data:
+  Season  Sale
+0    DEC   880
+1    JUN   950
+2    MAR  2690
+3    SEP   730
+insights:
+{'point': [
+(Type: dominance
+Score: 0.5123809523809524
+Category: point
+Description: The Sale of MAR dominates among all Seasons.)
+], 'shape': [], 'compound': []}

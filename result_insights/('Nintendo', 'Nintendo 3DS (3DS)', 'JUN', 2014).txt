@@ -1,0 +1,10 @@
+header:
+('Nintendo', 'Nintendo 3DS (3DS)', 'JUN', 2014)
+row data:
+        Location  Sale
+0         Europe   440
+1          Japan   440
+2  North America   420
+3          Other   210
+insights:
+{'point': [], 'shape': [], 'compound': []}

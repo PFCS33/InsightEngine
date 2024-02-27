@@ -1,0 +1,39 @@
+header:
+('Xbox One (XOne)', 'Europe', 2014)
+row data:
+     Company Season  Sale
+0  Microsoft    DEC  1000
+1  Microsoft    JUN   220
+2  Microsoft    MAR   890
+3  Microsoft    SEP   120
+------------------
+insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Brand = Xbox One (XOne), Location = Europe, Company = Microsoft]
+In the filtered subspace, the insight is: 
+Type: top2
+Score: 0.4484304932735426
+Category: point
+Description: The Sale proportion of DEC and MAR is significantly higher than that of other Seasons.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Xbox One (XOne)', 'Europe', 2014, 'Microsoft')
+aggregated data:
+  Season  Sale
+0    DEC  1000
+1    JUN   220
+2    MAR   890
+3    SEP   120
+------------------
+aggregated insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Brand = Xbox One (XOne), Location = Europe]
+In the filtered subspace, the insight is: 
+Type: top2
+Score: 0.4484304932735426
+Category: point
+Description: The Sale proportion of Microsoft and Microsoft is significantly higher than that of other Companys.)
+], 'shape': [], 'compound': []}

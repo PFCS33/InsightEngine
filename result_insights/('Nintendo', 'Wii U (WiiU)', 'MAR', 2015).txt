@@ -1,0 +1,15 @@
+header:
+('Nintendo', 'Wii U (WiiU)', 'MAR', 2015)
+row data:
+        Location  Sale
+0         Europe   380
+1          Japan   240
+2  North America   910
+3          Other    80
+insights:
+{'point': [
+(Type: dominance
+Score: 0.5652173913043478
+Category: point
+Description: The Sale of North America dominates among all Locations.)
+], 'shape': [], 'compound': []}

@@ -1,0 +1,31 @@
+header:
+('Nintendo 3DS (3DS)', 'North America', 'JUN')
+row data:
+    Company  Year  Sale
+0  Nintendo  2013   580
+1  Nintendo  2014   420
+2  Nintendo  2015   680
+3  Nintendo  2016   440
+4  Nintendo  2017   250
+5  Nintendo  2018   460
+6  Nintendo  2019   260
+7  Nintendo  2020    90
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo 3DS (3DS)', 'North America', 'JUN', 'Nintendo')
+aggregated data:
+   Year  Sale
+0  2013   580
+1  2014   420
+2  2015   680
+3  2016   440
+4  2017   250
+5  2018   460
+6  2019   260
+7  2020    90
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

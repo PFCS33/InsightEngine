@@ -1,0 +1,23 @@
+header:
+('Sony', 'PlayStation 3 (PS3)', 'SEP', 2015)
+row data:
+        Location  Sale
+0         Europe    70
+1          Japan    30
+2  North America    20
+3          Other    40
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Sony', 'PlayStation 3 (PS3)', 'SEP', 2015)
+aggregated data:
+        Location  Sale
+0         Europe    70
+1          Japan    30
+2  North America    20
+3          Other    40
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

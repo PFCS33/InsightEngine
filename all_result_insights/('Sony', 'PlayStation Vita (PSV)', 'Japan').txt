@@ -1,0 +1,51 @@
+header:
+('Sony', 'PlayStation Vita (PSV)', 'Japan')
+row data:
+   Season  Year  Sale
+0     DEC  2013   180
+1     DEC  2014   180
+2     DEC  2015   210
+3     DEC  2016    90
+4     DEC  2017    70
+5     DEC  2018    30
+6     DEC  2019     0
+7     DEC  2020     0
+8     JUN  2013   230
+9     JUN  2014   330
+10    JUN  2015   270
+11    JUN  2016   240
+12    JUN  2017    90
+13    JUN  2018    60
+14    JUN  2019    30
+15    JUN  2020     0
+16    MAR  2013   270
+17    MAR  2014   580
+18    MAR  2015   290
+19    MAR  2016   410
+20    MAR  2017   280
+21    MAR  2018    90
+22    MAR  2019    20
+23    MAR  2020     0
+24    SEP  2013   230
+25    SEP  2014   270
+26    SEP  2015   150
+27    SEP  2016   170
+28    SEP  2017    50
+29    SEP  2018    40
+30    SEP  2019     0
+31    SEP  2020     0
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Sony', 'PlayStation Vita (PSV)', 'Japan')
+aggregated data:
+  Season       Year  Sale
+0    DEC  all Years   760
+1    JUN  all Years  1250
+2    MAR  all Years  1940
+3    SEP  all Years   910
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

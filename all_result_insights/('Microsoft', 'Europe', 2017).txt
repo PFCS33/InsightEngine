@@ -1,0 +1,25 @@
+header:
+('Microsoft', 'Europe', 2017)
+row data:
+             Brand Season  Sale
+0  Xbox 360 (X360)    DEC     0
+1  Xbox 360 (X360)    JUN     0
+2  Xbox 360 (X360)    MAR    30
+3  Xbox 360 (X360)    SEP    10
+4  Xbox One (XOne)    DEC   500
+5  Xbox One (XOne)    JUN   340
+6  Xbox One (XOne)    MAR  1040
+7  Xbox One (XOne)    SEP   350
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Microsoft', 'Europe', 2017)
+aggregated data:
+             Brand       Season  Sale
+0  Xbox 360 (X360)  all Seasons    40
+1  Xbox One (XOne)  all Seasons  2230
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

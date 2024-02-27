@@ -1,0 +1,38 @@
+header:
+('Nintendo', 'Nintendo Switch (NS)', 'North America')
+row data:
+   Season  Year  Sale
+0     DEC  2013     0
+1     DEC  2014     0
+2     DEC  2015     0
+3     DEC  2016     0
+4     DEC  2017  1090
+5     DEC  2018   880
+6     DEC  2019  2090
+7     DEC  2020  2550
+8     JUN  2013     0
+9     JUN  2014     0
+10    JUN  2015     0
+11    JUN  2016     0
+12    JUN  2017  1150
+13    JUN  2018   950
+14    JUN  2019  1410
+15    JUN  2020  2510
+16    MAR  2013     0
+17    MAR  2014     0
+18    MAR  2015     0
+19    MAR  2016     0
+20    MAR  2017     0
+21    MAR  2018  2690
+22    MAR  2019  3350
+23    MAR  2020  3210
+24    SEP  2013     0
+25    SEP  2014     0
+26    SEP  2015     0
+27    SEP  2016     0
+28    SEP  2017   740
+29    SEP  2018   730
+30    SEP  2019   990
+31    SEP  2020  1470
+insights:
+{'point': [], 'shape': [], 'compound': []}

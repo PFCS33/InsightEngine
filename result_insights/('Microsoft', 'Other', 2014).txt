@@ -1,0 +1,14 @@
+header:
+('Microsoft', 'Other', 2014)
+row data:
+             Brand Season  Sale
+0  Xbox 360 (X360)    DEC    70
+1  Xbox 360 (X360)    JUN     0
+2  Xbox 360 (X360)    MAR   100
+3  Xbox 360 (X360)    SEP   950
+4  Xbox One (XOne)    DEC   620
+5  Xbox One (XOne)    JUN    80
+6  Xbox One (XOne)    MAR   220
+7  Xbox One (XOne)    SEP    60
+insights:
+{'point': [], 'shape': [], 'compound': []}

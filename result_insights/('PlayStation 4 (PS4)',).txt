@@ -1,0 +1,19 @@
+header:
+('PlayStation 4 (PS4)',)
+row data:
+    Company Location Season  Year  Sale
+0      Sony   Europe    DEC  2013     0
+1      Sony   Europe    DEC  2014  2430
+2      Sony   Europe    DEC  2015  1360
+3      Sony   Europe    DEC  2016  1020
+4      Sony   Europe    DEC  2017  1760
+..      ...      ...    ...   ...   ...
+123    Sony    Other    SEP  2016   450
+124    Sony    Other    SEP  2017   640
+125    Sony    Other    SEP  2018   340
+126    Sony    Other    SEP  2019   720
+127    Sony    Other    SEP  2020   250
+
+[128 rows x 5 columns]
+insights:
+{'point': [], 'shape': [], 'compound': []}

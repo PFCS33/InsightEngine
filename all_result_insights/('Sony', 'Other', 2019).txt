@@ -1,0 +1,30 @@
+header:
+('Sony', 'Other', 2019)
+row data:
+                     Brand Season  Sale
+0      PlayStation 3 (PS3)    DEC     0
+1      PlayStation 3 (PS3)    JUN    70
+2      PlayStation 3 (PS3)    MAR     0
+3      PlayStation 3 (PS3)    SEP     0
+4      PlayStation 4 (PS4)    DEC   610
+5      PlayStation 4 (PS4)    JUN   660
+6      PlayStation 4 (PS4)    MAR  1000
+7      PlayStation 4 (PS4)    SEP   720
+8   PlayStation Vita (PSV)    DEC     0
+9   PlayStation Vita (PSV)    JUN     0
+10  PlayStation Vita (PSV)    MAR     0
+11  PlayStation Vita (PSV)    SEP     0
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Sony', 'Other', 2019)
+aggregated data:
+                    Brand       Season  Sale
+0     PlayStation 3 (PS3)  all Seasons    70
+1     PlayStation 4 (PS4)  all Seasons  2990
+2  PlayStation Vita (PSV)  all Seasons     0
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

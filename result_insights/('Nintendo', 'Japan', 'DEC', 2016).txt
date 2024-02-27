@@ -1,0 +1,11 @@
+header:
+('Nintendo', 'Japan', 'DEC', 2016)
+row data:
+                  Brand  Sale
+0    Nintendo 3DS (3DS)   280
+1      Nintendo DS (DS)     0
+2  Nintendo Switch (NS)     0
+3             Wii (Wii)     0
+4          Wii U (WiiU)    30
+insights:
+{'point': [], 'shape': [], 'compound': []}

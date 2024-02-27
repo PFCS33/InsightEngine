@@ -1,0 +1,22 @@
+header:
+('Sony', 'PlayStation Vita (PSV)', 2016)
+row data:
+         Location Season  Sale
+0          Europe    DEC   140
+1          Europe    JUN   130
+2          Europe    MAR     0
+3          Europe    SEP   140
+4           Japan    DEC    90
+5           Japan    JUN   240
+6           Japan    MAR   410
+7           Japan    SEP   170
+8   North America    DEC    10
+9   North America    JUN    30
+10  North America    MAR   100
+11  North America    SEP     0
+12          Other    DEC    50
+13          Other    JUN   110
+14          Other    MAR    30
+15          Other    SEP    80
+insights:
+{'point': [], 'shape': [], 'compound': []}

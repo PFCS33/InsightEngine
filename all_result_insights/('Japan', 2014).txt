@@ -1,0 +1,66 @@
+header:
+('Japan', 2014)
+row data:
+      Company                   Brand Season  Sale
+0    Nintendo      Nintendo 3DS (3DS)    DEC   960
+1    Nintendo      Nintendo 3DS (3DS)    JUN   440
+2    Nintendo      Nintendo 3DS (3DS)    MAR  1490
+3    Nintendo      Nintendo 3DS (3DS)    SEP   470
+4    Nintendo        Nintendo DS (DS)    DEC     0
+5    Nintendo        Nintendo DS (DS)    JUN     0
+6    Nintendo        Nintendo DS (DS)    MAR     0
+7    Nintendo        Nintendo DS (DS)    SEP     0
+8    Nintendo    Nintendo Switch (NS)    DEC     0
+9    Nintendo    Nintendo Switch (NS)    JUN     0
+10   Nintendo    Nintendo Switch (NS)    MAR     0
+11   Nintendo    Nintendo Switch (NS)    SEP     0
+12   Nintendo               Wii (Wii)    DEC    10
+13   Nintendo               Wii (Wii)    JUN     0
+14   Nintendo               Wii (Wii)    MAR    10
+15   Nintendo               Wii (Wii)    SEP     0
+16   Nintendo            Wii U (WiiU)    DEC    90
+17   Nintendo            Wii U (WiiU)    JUN   100
+18   Nintendo            Wii U (WiiU)    MAR   500
+19   Nintendo            Wii U (WiiU)    SEP   140
+20       Sony     PlayStation 3 (PS3)    DEC    70
+21       Sony     PlayStation 3 (PS3)    JUN   140
+22       Sony     PlayStation 3 (PS3)    MAR   260
+23       Sony     PlayStation 3 (PS3)    SEP    80
+24       Sony     PlayStation 4 (PS4)    DEC   130
+25       Sony     PlayStation 4 (PS4)    JUN   260
+26       Sony     PlayStation 4 (PS4)    MAR   320
+27       Sony     PlayStation 4 (PS4)    SEP    90
+28       Sony  PlayStation Vita (PSV)    DEC   180
+29       Sony  PlayStation Vita (PSV)    JUN   330
+30       Sony  PlayStation Vita (PSV)    MAR   580
+31       Sony  PlayStation Vita (PSV)    SEP   270
+32  Microsoft         Xbox 360 (X360)    DEC     0
+33  Microsoft         Xbox 360 (X360)    JUN     0
+34  Microsoft         Xbox 360 (X360)    MAR    10
+35  Microsoft         Xbox 360 (X360)    SEP     0
+36  Microsoft         Xbox One (XOne)    DEC    40
+37  Microsoft         Xbox One (XOne)    JUN     0
+38  Microsoft         Xbox One (XOne)    MAR     0
+39  Microsoft         Xbox One (XOne)    SEP     0
+------------------
+insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Location = Japan]
+In the filtered subspace, the insight is: 
+Type: top2
+Score: 0.6040172166427547
+Category: point
+Description: The Sale proportion of Nintendo and Sony is significantly higher than that of other Companys.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Japan', 2014)
+aggregated data:
+     Company       Brand       Season  Sale
+0  Microsoft  all Brands  all Seasons    50
+1   Nintendo  all Brands  all Seasons  4210
+2       Sony  all Brands  all Seasons  2710
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

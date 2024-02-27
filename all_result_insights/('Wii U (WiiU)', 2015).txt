@@ -1,0 +1,43 @@
+header:
+('Wii U (WiiU)', 2015)
+row data:
+     Company       Location Season  Sale
+0   Nintendo         Europe    DEC   190
+1   Nintendo         Europe    JUN   110
+2   Nintendo         Europe    MAR   380
+3   Nintendo         Europe    SEP   100
+4   Nintendo          Japan    DEC   200
+5   Nintendo          Japan    JUN   100
+6   Nintendo          Japan    MAR   240
+7   Nintendo          Japan    SEP   150
+8   Nintendo  North America    DEC   280
+9   Nintendo  North America    JUN   220
+10  Nintendo  North America    MAR   910
+11  Nintendo  North America    SEP   160
+12  Nintendo          Other    DEC    50
+13  Nintendo          Other    JUN    30
+14  Nintendo          Other    MAR    80
+15  Nintendo          Other    SEP    30
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Wii U (WiiU)', 2015, 'Nintendo')
+aggregated data:
+        Location       Season  Sale
+0         Europe  all Seasons   780
+1          Japan  all Seasons   690
+2  North America  all Seasons  1570
+3          Other  all Seasons   190
+------------------
+aggregated insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Brand = Wii U (WiiU)]
+In the filtered subspace, the insight is: 
+Type: outlier
+Score: 3.4556979697403847
+Category: point
+Description: The Sale of Company Nintendo of Location North America of Season MAR is an outlier, which is significantly higher than the normal Sale of other Companys in the corresponding Locations, Seasons.)
+], 'shape': [], 'compound': []}

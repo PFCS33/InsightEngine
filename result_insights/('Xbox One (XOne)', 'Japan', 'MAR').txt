@@ -1,0 +1,14 @@
+header:
+('Xbox One (XOne)', 'Japan', 'MAR')
+row data:
+     Company  Year  Sale
+0  Microsoft  2013     0
+1  Microsoft  2014     0
+2  Microsoft  2015    10
+3  Microsoft  2016    10
+4  Microsoft  2017    10
+5  Microsoft  2018    10
+6  Microsoft  2019    10
+7  Microsoft  2020     0
+insights:
+{'point': [], 'shape': [], 'compound': []}

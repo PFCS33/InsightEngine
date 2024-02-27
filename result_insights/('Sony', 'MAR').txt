@@ -1,0 +1,19 @@
+header:
+('Sony', 'MAR')
+row data:
+                     Brand Location  Year  Sale
+0      PlayStation 3 (PS3)   Europe  2013  1330
+1      PlayStation 3 (PS3)   Europe  2014   720
+2      PlayStation 3 (PS3)   Europe  2015   730
+3      PlayStation 3 (PS3)   Europe  2016   110
+4      PlayStation 3 (PS3)   Europe  2017    60
+..                     ...      ...   ...   ...
+91  PlayStation Vita (PSV)    Other  2016    30
+92  PlayStation Vita (PSV)    Other  2017   140
+93  PlayStation Vita (PSV)    Other  2018    20
+94  PlayStation Vita (PSV)    Other  2019     0
+95  PlayStation Vita (PSV)    Other  2020     0
+
+[96 rows x 4 columns]
+insights:
+{'point': [], 'shape': [], 'compound': []}

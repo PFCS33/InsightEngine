@@ -1,0 +1,51 @@
+header:
+('PlayStation Vita (PSV)', 'Europe')
+row data:
+   Company Season  Year  Sale
+0     Sony    DEC  2013   230
+1     Sony    DEC  2014    90
+2     Sony    DEC  2015   240
+3     Sony    DEC  2016   140
+4     Sony    DEC  2017    40
+5     Sony    DEC  2018     0
+6     Sony    DEC  2019     0
+7     Sony    DEC  2020     0
+8     Sony    JUN  2013   330
+9     Sony    JUN  2014   110
+10    Sony    JUN  2015   150
+11    Sony    JUN  2016   130
+12    Sony    JUN  2017    60
+13    Sony    JUN  2018    10
+14    Sony    JUN  2019     0
+15    Sony    JUN  2020     0
+16    Sony    MAR  2013   170
+17    Sony    MAR  2014   390
+18    Sony    MAR  2015   170
+19    Sony    MAR  2016     0
+20    Sony    MAR  2017   270
+21    Sony    MAR  2018    50
+22    Sony    MAR  2019     0
+23    Sony    MAR  2020     0
+24    Sony    SEP  2013   130
+25    Sony    SEP  2014    70
+26    Sony    SEP  2015  1080
+27    Sony    SEP  2016   140
+28    Sony    SEP  2017    30
+29    Sony    SEP  2018     0
+30    Sony    SEP  2019     0
+31    Sony    SEP  2020     0
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('PlayStation Vita (PSV)', 'Europe', 'Sony')
+aggregated data:
+  Season       Year  Sale
+0    DEC  all Years   740
+1    JUN  all Years   790
+2    MAR  all Years  1050
+3    SEP  all Years  1450
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

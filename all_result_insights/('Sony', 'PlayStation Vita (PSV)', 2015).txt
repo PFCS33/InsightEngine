@@ -1,0 +1,43 @@
+header:
+('Sony', 'PlayStation Vita (PSV)', 2015)
+row data:
+         Location Season  Sale
+0          Europe    DEC   240
+1          Europe    JUN   150
+2          Europe    MAR   170
+3          Europe    SEP  1080
+4           Japan    DEC   210
+5           Japan    JUN   270
+6           Japan    MAR   290
+7           Japan    SEP   150
+8   North America    DEC    30
+9   North America    JUN    70
+10  North America    MAR   190
+11  North America    SEP    30
+12          Other    DEC   120
+13          Other    JUN   120
+14          Other    MAR   150
+15          Other    SEP   440
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Sony', 'PlayStation Vita (PSV)', 2015)
+aggregated data:
+        Location       Season  Sale
+0         Europe  all Seasons  1640
+1          Japan  all Seasons   920
+2  North America  all Seasons   320
+3          Other  all Seasons   830
+------------------
+aggregated insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Sony, Brand = PlayStation Vita (PSV)]
+In the filtered subspace, the insight is: 
+Type: outlier
+Score: 3.5246039891721006
+Category: point
+Description: The Sale of Location Europe of Season SEP is an outlier, which is significantly higher than the normal Sale of other Locations in the corresponding Seasons.)
+], 'shape': [], 'compound': []}

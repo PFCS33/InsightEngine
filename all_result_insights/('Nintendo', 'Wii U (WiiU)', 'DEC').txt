@@ -1,0 +1,51 @@
+header:
+('Nintendo', 'Wii U (WiiU)', 'DEC')
+row data:
+         Location  Year  Sale
+0          Europe  2013   130
+1          Europe  2014   100
+2          Europe  2015   190
+3          Europe  2016    90
+4          Europe  2017    10
+5          Europe  2018     0
+6          Europe  2019     0
+7          Europe  2020     0
+8           Japan  2013    90
+9           Japan  2014    90
+10          Japan  2015   200
+11          Japan  2016    30
+12          Japan  2017    10
+13          Japan  2018     0
+14          Japan  2019     0
+15          Japan  2020     0
+16  North America  2013   190
+17  North America  2014   330
+18  North America  2015   280
+19  North America  2016    80
+20  North America  2017     0
+21  North America  2018     0
+22  North America  2019     0
+23  North America  2020     0
+24          Other  2013    30
+25          Other  2014    20
+26          Other  2015    50
+27          Other  2016     0
+28          Other  2017    10
+29          Other  2018     0
+30          Other  2019     0
+31          Other  2020     0
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo', 'Wii U (WiiU)', 'DEC')
+aggregated data:
+        Location       Year  Sale
+0         Europe  all Years   520
+1          Japan  all Years   420
+2  North America  all Years   880
+3          Other  all Years   110
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

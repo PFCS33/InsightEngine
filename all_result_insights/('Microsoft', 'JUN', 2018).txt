@@ -1,0 +1,25 @@
+header:
+('Microsoft', 'JUN', 2018)
+row data:
+             Brand       Location  Sale
+0  Xbox 360 (X360)         Europe     0
+1  Xbox 360 (X360)          Japan     0
+2  Xbox 360 (X360)  North America     0
+3  Xbox 360 (X360)          Other     0
+4  Xbox One (XOne)         Europe    30
+5  Xbox One (XOne)          Japan     0
+6  Xbox One (XOne)  North America   910
+7  Xbox One (XOne)          Other     0
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Microsoft', 'JUN', 2018)
+aggregated data:
+             Brand       Location  Sale
+0  Xbox 360 (X360)  all Locations     0
+1  Xbox One (XOne)  all Locations   940
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

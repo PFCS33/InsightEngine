@@ -1,0 +1,27 @@
+header:
+('Nintendo', 'Wii U (WiiU)', 2014)
+row data:
+         Location Season  Sale
+0          Europe    DEC   100
+1          Europe    JUN   110
+2          Europe    MAR   360
+3          Europe    SEP   340
+4           Japan    DEC    90
+5           Japan    JUN   100
+6           Japan    MAR   500
+7           Japan    SEP   140
+8   North America    DEC   330
+9   North America    JUN   190
+10  North America    MAR   850
+11  North America    SEP   360
+12          Other    DEC    20
+13          Other    JUN    30
+14          Other    MAR   140
+15          Other    SEP    40
+insights:
+{'point': [
+(Type: outlier
+Score: 2.918893897267301
+Category: point
+Description: The Sale of Location North America of Season MAR is an outlier, which is significantly higher than the normal Sale of other Locations in the corresponding Sale.)
+], 'shape': [], 'compound': []}

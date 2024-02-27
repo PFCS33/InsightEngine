@@ -1,0 +1,39 @@
+header:
+('PlayStation 3 (PS3)', 'DEC', 2014)
+row data:
+  Company       Location  Sale
+0    Sony         Europe   120
+1    Sony          Japan    70
+2    Sony  North America   170
+3    Sony          Other   160
+------------------
+insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Brand = PlayStation 3 (PS3), Season = DEC, Company = Sony]
+In the filtered subspace, the insight is: 
+Type: top2
+Score: 0.3269230769230769
+Category: point
+Description: The Sale proportion of North America and Other is significantly higher than that of other Locations.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('PlayStation 3 (PS3)', 'DEC', 2014, 'Sony')
+aggregated data:
+        Location  Sale
+0         Europe   120
+1          Japan    70
+2  North America   170
+3          Other   160
+------------------
+aggregated insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Brand = PlayStation 3 (PS3), Season = DEC]
+In the filtered subspace, the insight is: 
+Type: top2
+Score: 0.3269230769230769
+Category: point
+Description: The Sale proportion of Sony and Sony is significantly higher than that of other Companys.)
+], 'shape': [], 'compound': []}

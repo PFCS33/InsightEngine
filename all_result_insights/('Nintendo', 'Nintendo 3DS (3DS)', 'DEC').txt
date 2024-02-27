@@ -1,0 +1,51 @@
+header:
+('Nintendo', 'Nintendo 3DS (3DS)', 'DEC')
+row data:
+         Location  Year  Sale
+0          Europe  2013   950
+1          Europe  2014     0
+2          Europe  2015   530
+3          Europe  2016   160
+4          Europe  2017  1400
+5          Europe  2018   200
+6          Europe  2019    40
+7          Europe  2020    10
+8           Japan  2013  1380
+9           Japan  2014   960
+10          Japan  2015   430
+11          Japan  2016   280
+12          Japan  2017   590
+13          Japan  2018   110
+14          Japan  2019    20
+15          Japan  2020    20
+16  North America  2013   860
+17  North America  2014   580
+18  North America  2015   500
+19  North America  2016   400
+20  North America  2017   620
+21  North America  2018   280
+22  North America  2019    80
+23  North America  2020    70
+24          Other  2013   170
+25          Other  2014     0
+26          Other  2015   110
+27          Other  2016     0
+28          Other  2017    60
+29          Other  2018    50
+30          Other  2019     0
+31          Other  2020     0
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo', 'Nintendo 3DS (3DS)', 'DEC')
+aggregated data:
+        Location       Year  Sale
+0         Europe  all Years  3290
+1          Japan  all Years  3790
+2  North America  all Years  3390
+3          Other  all Years   390
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

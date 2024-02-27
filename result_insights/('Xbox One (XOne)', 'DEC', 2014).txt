@@ -1,0 +1,15 @@
+header:
+('Xbox One (XOne)', 'DEC', 2014)
+row data:
+     Company       Location  Sale
+0  Microsoft         Europe  1000
+1  Microsoft          Japan    40
+2  Microsoft  North America  1260
+3  Microsoft          Other   620
+insights:
+{'point': [
+(Type: top2
+Score: 0.4315068493150685
+Category: point
+Description: The Sale proportion of Microsoft and Microsoft is significantly higher than that of other Companys.)
+], 'shape': [], 'compound': []}

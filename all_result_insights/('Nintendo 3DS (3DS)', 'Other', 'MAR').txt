@@ -1,0 +1,31 @@
+header:
+('Nintendo 3DS (3DS)', 'Other', 'MAR')
+row data:
+    Company  Year  Sale
+0  Nintendo  2013   310
+1  Nintendo  2014   390
+2  Nintendo  2015   300
+3  Nintendo  2016   190
+4  Nintendo  2017     0
+5  Nintendo  2018   320
+6  Nintendo  2019   100
+7  Nintendo  2020     0
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo 3DS (3DS)', 'Other', 'MAR', 'Nintendo')
+aggregated data:
+   Year  Sale
+0  2013   310
+1  2014   390
+2  2015   300
+3  2016   190
+4  2017     0
+5  2018   320
+6  2019   100
+7  2020     0
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

@@ -1,0 +1,68 @@
+header:
+('Nintendo', 'Europe', 'SEP')
+row data:
+                   Brand  Year  Sale
+0     Nintendo 3DS (3DS)  2013   660
+1     Nintendo 3DS (3DS)  2014     0
+2     Nintendo 3DS (3DS)  2015   210
+3     Nintendo 3DS (3DS)  2016     0
+4     Nintendo 3DS (3DS)  2017   200
+5     Nintendo 3DS (3DS)  2018     0
+6     Nintendo 3DS (3DS)  2019     0
+7     Nintendo 3DS (3DS)  2020    70
+8       Nintendo DS (DS)  2013     0
+9       Nintendo DS (DS)  2014     0
+10      Nintendo DS (DS)  2015     0
+11      Nintendo DS (DS)  2016     0
+12      Nintendo DS (DS)  2017     0
+13      Nintendo DS (DS)  2018     0
+14      Nintendo DS (DS)  2019     0
+15      Nintendo DS (DS)  2020     0
+16  Nintendo Switch (NS)  2013     0
+17  Nintendo Switch (NS)  2014     0
+18  Nintendo Switch (NS)  2015     0
+19  Nintendo Switch (NS)  2016     0
+20  Nintendo Switch (NS)  2017   490
+21  Nintendo Switch (NS)  2018   600
+22  Nintendo Switch (NS)  2019   660
+23  Nintendo Switch (NS)  2020  1920
+24             Wii (Wii)  2013   150
+25             Wii (Wii)  2014     0
+26             Wii (Wii)  2015     0
+27             Wii (Wii)  2016     0
+28             Wii (Wii)  2017     0
+29             Wii (Wii)  2018     0
+30             Wii (Wii)  2019     0
+31             Wii (Wii)  2020     0
+32          Wii U (WiiU)  2013    90
+33          Wii U (WiiU)  2014   340
+34          Wii U (WiiU)  2015   100
+35          Wii U (WiiU)  2016    40
+36          Wii U (WiiU)  2017    30
+37          Wii U (WiiU)  2018     0
+38          Wii U (WiiU)  2019     0
+39          Wii U (WiiU)  2020     0
+------------------
+insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Nintendo, Location = Europe, Season = SEP]
+In the filtered subspace, the insight is: 
+Type: dominance
+Score: 0.6600719424460432
+Category: point
+Description: The Sale of Nintendo Switch (NS) dominates among all Brands.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo', 'Europe', 'SEP')
+aggregated data:
+                  Brand       Year  Sale
+0    Nintendo 3DS (3DS)  all Years  1140
+1      Nintendo DS (DS)  all Years     0
+2  Nintendo Switch (NS)  all Years  3670
+3             Wii (Wii)  all Years   150
+4          Wii U (WiiU)  all Years   600
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

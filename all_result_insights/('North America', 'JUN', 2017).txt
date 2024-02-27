@@ -1,0 +1,28 @@
+header:
+('North America', 'JUN', 2017)
+row data:
+     Company                   Brand  Sale
+0   Nintendo      Nintendo 3DS (3DS)   250
+1   Nintendo        Nintendo DS (DS)     0
+2   Nintendo    Nintendo Switch (NS)  1150
+3   Nintendo               Wii (Wii)     0
+4   Nintendo            Wii U (WiiU)    20
+5       Sony     PlayStation 3 (PS3)    10
+6       Sony     PlayStation 4 (PS4)   880
+7       Sony  PlayStation Vita (PSV)    10
+8  Microsoft         Xbox 360 (X360)    10
+9  Microsoft         Xbox One (XOne)   680
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('North America', 'JUN', 2017)
+aggregated data:
+     Company       Brand  Sale
+0  Microsoft  all Brands   690
+1   Nintendo  all Brands  1420
+2       Sony  all Brands   900
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

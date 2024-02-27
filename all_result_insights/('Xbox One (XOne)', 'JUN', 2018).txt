@@ -1,0 +1,23 @@
+header:
+('Xbox One (XOne)', 'JUN', 2018)
+row data:
+     Company       Location  Sale
+0  Microsoft         Europe    30
+1  Microsoft          Japan     0
+2  Microsoft  North America   910
+3  Microsoft          Other     0
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Xbox One (XOne)', 'JUN', 2018, 'Microsoft')
+aggregated data:
+        Location  Sale
+0         Europe    30
+1          Japan     0
+2  North America   910
+3          Other     0
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

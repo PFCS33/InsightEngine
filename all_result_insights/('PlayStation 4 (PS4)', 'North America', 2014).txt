@@ -1,0 +1,23 @@
+header:
+('PlayStation 4 (PS4)', 'North America', 2014)
+row data:
+  Company Season  Sale
+0    Sony    DEC  1540
+1    Sony    JUN   870
+2    Sony    MAR  2750
+3    Sony    SEP   750
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('PlayStation 4 (PS4)', 'North America', 2014, 'Sony')
+aggregated data:
+  Season  Sale
+0    DEC  1540
+1    JUN   870
+2    MAR  2750
+3    SEP   750
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

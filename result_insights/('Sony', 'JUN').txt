@@ -1,0 +1,19 @@
+header:
+('Sony', 'JUN')
+row data:
+                     Brand Location  Year  Sale
+0      PlayStation 3 (PS3)   Europe  2013  2010
+1      PlayStation 3 (PS3)   Europe  2014     0
+2      PlayStation 3 (PS3)   Europe  2015   180
+3      PlayStation 3 (PS3)   Europe  2016    50
+4      PlayStation 3 (PS3)   Europe  2017    20
+..                     ...      ...   ...   ...
+91  PlayStation Vita (PSV)    Other  2016   110
+92  PlayStation Vita (PSV)    Other  2017    50
+93  PlayStation Vita (PSV)    Other  2018    10
+94  PlayStation Vita (PSV)    Other  2019     0
+95  PlayStation Vita (PSV)    Other  2020     0
+
+[96 rows x 4 columns]
+insights:
+{'point': [], 'shape': [], 'compound': []}

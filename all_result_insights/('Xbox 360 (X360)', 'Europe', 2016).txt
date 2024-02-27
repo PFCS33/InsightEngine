@@ -1,0 +1,23 @@
+header:
+('Xbox 360 (X360)', 'Europe', 2016)
+row data:
+     Company Season  Sale
+0  Microsoft    DEC    10
+1  Microsoft    JUN    20
+2  Microsoft    MAR    50
+3  Microsoft    SEP    20
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Xbox 360 (X360)', 'Europe', 2016, 'Microsoft')
+aggregated data:
+  Season  Sale
+0    DEC    10
+1    JUN    20
+2    MAR    50
+3    SEP    20
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

@@ -1,0 +1,46 @@
+header:
+('Nintendo', 'Other', 'DEC')
+row data:
+                   Brand  Year  Sale
+0     Nintendo 3DS (3DS)  2013   170
+1     Nintendo 3DS (3DS)  2014     0
+2     Nintendo 3DS (3DS)  2015   110
+3     Nintendo 3DS (3DS)  2016     0
+4     Nintendo 3DS (3DS)  2017    60
+5     Nintendo 3DS (3DS)  2018    50
+6     Nintendo 3DS (3DS)  2019     0
+7     Nintendo 3DS (3DS)  2020     0
+8       Nintendo DS (DS)  2013     0
+9       Nintendo DS (DS)  2014     0
+10      Nintendo DS (DS)  2015     0
+11      Nintendo DS (DS)  2016     0
+12      Nintendo DS (DS)  2017     0
+13      Nintendo DS (DS)  2018     0
+14      Nintendo DS (DS)  2019     0
+15      Nintendo DS (DS)  2020     0
+16  Nintendo Switch (NS)  2013     0
+17  Nintendo Switch (NS)  2014     0
+18  Nintendo Switch (NS)  2015     0
+19  Nintendo Switch (NS)  2016     0
+20  Nintendo Switch (NS)  2017   360
+21  Nintendo Switch (NS)  2018   380
+22  Nintendo Switch (NS)  2019   750
+23  Nintendo Switch (NS)  2020   900
+24             Wii (Wii)  2013     0
+25             Wii (Wii)  2014     0
+26             Wii (Wii)  2015     0
+27             Wii (Wii)  2016     0
+28             Wii (Wii)  2017   200
+29             Wii (Wii)  2018     0
+30             Wii (Wii)  2019     0
+31             Wii (Wii)  2020     0
+32          Wii U (WiiU)  2013    30
+33          Wii U (WiiU)  2014    20
+34          Wii U (WiiU)  2015    50
+35          Wii U (WiiU)  2016     0
+36          Wii U (WiiU)  2017    10
+37          Wii U (WiiU)  2018     0
+38          Wii U (WiiU)  2019     0
+39          Wii U (WiiU)  2020     0
+insights:
+{'point': [], 'shape': [], 'compound': []}

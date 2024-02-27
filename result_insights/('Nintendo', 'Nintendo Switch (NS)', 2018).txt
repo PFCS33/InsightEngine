@@ -1,0 +1,27 @@
+header:
+('Nintendo', 'Nintendo Switch (NS)', 2018)
+row data:
+         Location Season  Sale
+0          Europe    DEC   790
+1          Europe    JUN   770
+2          Europe    MAR  1790
+3          Europe    SEP   600
+4           Japan    DEC   630
+5           Japan    JUN   620
+6           Japan    MAR  1640
+7           Japan    SEP   500
+8   North America    DEC   880
+9   North America    JUN   950
+10  North America    MAR  2690
+11  North America    SEP   730
+12          Other    DEC   380
+13          Other    JUN   410
+14          Other    MAR   430
+15          Other    SEP   300
+insights:
+{'point': [
+(Type: outlier
+Score: 2.930265254829344
+Category: point
+Description: The Sale of Location Europe of Season MAR is an outlier, which is significantly higher than the normal Sale of other Locations in the corresponding Sale.)
+], 'shape': [], 'compound': []}

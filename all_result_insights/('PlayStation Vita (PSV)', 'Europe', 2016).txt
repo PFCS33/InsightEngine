@@ -1,0 +1,23 @@
+header:
+('PlayStation Vita (PSV)', 'Europe', 2016)
+row data:
+  Company Season  Sale
+0    Sony    DEC   140
+1    Sony    JUN   130
+2    Sony    MAR     0
+3    Sony    SEP   140
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('PlayStation Vita (PSV)', 'Europe', 2016, 'Sony')
+aggregated data:
+  Season  Sale
+0    DEC   140
+1    JUN   130
+2    MAR     0
+3    SEP   140
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

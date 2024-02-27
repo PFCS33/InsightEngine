@@ -1,0 +1,22 @@
+header:
+('Xbox One (XOne)', 2018)
+row data:
+      Company       Location Season  Sale
+0   Microsoft         Europe    DEC   470
+1   Microsoft         Europe    JUN    30
+2   Microsoft         Europe    MAR  1220
+3   Microsoft         Europe    SEP   260
+4   Microsoft          Japan    DEC     0
+5   Microsoft          Japan    JUN     0
+6   Microsoft          Japan    MAR    10
+7   Microsoft          Japan    SEP    10
+8   Microsoft  North America    DEC   710
+9   Microsoft  North America    JUN   910
+10  Microsoft  North America    MAR  3230
+11  Microsoft  North America    SEP   510
+12  Microsoft          Other    DEC   180
+13  Microsoft          Other    JUN     0
+14  Microsoft          Other    MAR   530
+15  Microsoft          Other    SEP    70
+insights:
+{'point': [], 'shape': [], 'compound': []}

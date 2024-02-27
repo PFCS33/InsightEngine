@@ -1,0 +1,35 @@
+header:
+('Nintendo 3DS (3DS)', 2017)
+row data:
+     Company       Location Season  Sale
+0   Nintendo         Europe    DEC  1400
+1   Nintendo         Europe    JUN   170
+2   Nintendo         Europe    MAR   760
+3   Nintendo         Europe    SEP   200
+4   Nintendo          Japan    DEC   590
+5   Nintendo          Japan    JUN   320
+6   Nintendo          Japan    MAR  1030
+7   Nintendo          Japan    SEP   210
+8   Nintendo  North America    DEC   620
+9   Nintendo  North America    JUN   250
+10  Nintendo  North America    MAR  1260
+11  Nintendo  North America    SEP   280
+12  Nintendo          Other    DEC    60
+13  Nintendo          Other    JUN     0
+14  Nintendo          Other    MAR     0
+15  Nintendo          Other    SEP     0
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo 3DS (3DS)', 2017, 'Nintendo')
+aggregated data:
+        Location       Season  Sale
+0         Europe  all Seasons  2530
+1          Japan  all Seasons  2150
+2  North America  all Seasons  2410
+3          Other  all Seasons    60
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

@@ -1,0 +1,14 @@
+header:
+('Microsoft', 'Europe', 2019)
+row data:
+             Brand Season  Sale
+0  Xbox 360 (X360)    DEC     0
+1  Xbox 360 (X360)    JUN     0
+2  Xbox 360 (X360)    MAR     0
+3  Xbox 360 (X360)    SEP     0
+4  Xbox One (XOne)    DEC     0
+5  Xbox One (XOne)    JUN     0
+6  Xbox One (XOne)    MAR   820
+7  Xbox One (XOne)    SEP     0
+insights:
+{'point': [], 'shape': [], 'compound': []}

@@ -1,0 +1,28 @@
+header:
+('Other', 'SEP', 2019)
+row data:
+     Company                   Brand  Sale
+0   Nintendo      Nintendo 3DS (3DS)     0
+1   Nintendo        Nintendo DS (DS)     0
+2   Nintendo    Nintendo Switch (NS)   380
+3   Nintendo               Wii (Wii)     0
+4   Nintendo            Wii U (WiiU)     0
+5       Sony     PlayStation 3 (PS3)     0
+6       Sony     PlayStation 4 (PS4)   720
+7       Sony  PlayStation Vita (PSV)     0
+8  Microsoft         Xbox 360 (X360)     0
+9  Microsoft         Xbox One (XOne)     0
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Other', 'SEP', 2019)
+aggregated data:
+     Company       Brand  Sale
+0  Microsoft  all Brands     0
+1   Nintendo  all Brands   380
+2       Sony  all Brands   720
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

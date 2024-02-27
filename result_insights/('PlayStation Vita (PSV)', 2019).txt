@@ -1,0 +1,27 @@
+header:
+('PlayStation Vita (PSV)', 2019)
+row data:
+   Company       Location Season  Sale
+0     Sony         Europe    DEC     0
+1     Sony         Europe    JUN     0
+2     Sony         Europe    MAR     0
+3     Sony         Europe    SEP     0
+4     Sony          Japan    DEC     0
+5     Sony          Japan    JUN    30
+6     Sony          Japan    MAR    20
+7     Sony          Japan    SEP     0
+8     Sony  North America    DEC    80
+9     Sony  North America    JUN     0
+10    Sony  North America    MAR    10
+11    Sony  North America    SEP     0
+12    Sony          Other    DEC     0
+13    Sony          Other    JUN     0
+14    Sony          Other    MAR     0
+15    Sony          Other    SEP     0
+insights:
+{'point': [
+(Type: dominance
+Score: 0.5714285714285714
+Category: point
+Description: The Sale of Sony dominates among all Companys.)
+], 'shape': [], 'compound': []}

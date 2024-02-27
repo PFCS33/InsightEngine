@@ -1,0 +1,43 @@
+header:
+('Wii U (WiiU)', 2017)
+row data:
+     Company       Location Season  Sale
+0   Nintendo         Europe    DEC    10
+1   Nintendo         Europe    JUN    30
+2   Nintendo         Europe    MAR   140
+3   Nintendo         Europe    SEP    30
+4   Nintendo          Japan    DEC    10
+5   Nintendo          Japan    JUN     0
+6   Nintendo          Japan    MAR    50
+7   Nintendo          Japan    SEP     0
+8   Nintendo  North America    DEC     0
+9   Nintendo  North America    JUN    20
+10  Nintendo  North America    MAR    90
+11  Nintendo  North America    SEP    10
+12  Nintendo          Other    DEC    10
+13  Nintendo          Other    JUN    10
+14  Nintendo          Other    MAR     0
+15  Nintendo          Other    SEP     0
+------------------
+insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Brand = Wii U (WiiU), Company = Nintendo]
+In the filtered subspace, the insight is: 
+Type: dominance
+Score: 0.5121951219512195
+Category: point
+Description: The Sale of Europe dominates among all Locations.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Wii U (WiiU)', 2017, 'Nintendo')
+aggregated data:
+        Location       Season  Sale
+0         Europe  all Seasons   210
+1          Japan  all Seasons    60
+2  North America  all Seasons   120
+3          Other  all Seasons    20
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

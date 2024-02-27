@@ -1,0 +1,41 @@
+header:
+('Nintendo', 'North America', 'SEP', 2014)
+row data:
+                  Brand  Sale
+0    Nintendo 3DS (3DS)   400
+1      Nintendo DS (DS)     0
+2  Nintendo Switch (NS)     0
+3             Wii (Wii)    40
+4          Wii U (WiiU)   360
+------------------
+insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Nintendo, Location = North America, Season = SEP]
+In the filtered subspace, the insight is: 
+Type: top2
+Score: 0.5
+Category: point
+Description: The Sale proportion of Nintendo 3DS (3DS) and Wii U (WiiU) is significantly higher than that of other Brands.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo', 'North America', 'SEP', 2014)
+aggregated data:
+                  Brand  Sale
+0    Nintendo 3DS (3DS)   400
+1      Nintendo DS (DS)     0
+2  Nintendo Switch (NS)     0
+3             Wii (Wii)    40
+4          Wii U (WiiU)   360
+------------------
+aggregated insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Nintendo, Location = North America, Season = SEP]
+In the filtered subspace, the insight is: 
+Type: top2
+Score: 0.5
+Category: point
+Description: The Sale proportion of Nintendo 3DS (3DS) and Wii U (WiiU) is significantly higher than that of other Brands.)
+], 'shape': [], 'compound': []}

@@ -1,0 +1,23 @@
+header:
+('PlayStation 3 (PS3)', 'North America', 2016)
+row data:
+  Company Season  Sale
+0    Sony    DEC    30
+1    Sony    JUN    30
+2    Sony    MAR    70
+3    Sony    SEP    30
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('PlayStation 3 (PS3)', 'North America', 2016, 'Sony')
+aggregated data:
+  Season  Sale
+0    DEC    30
+1    JUN    30
+2    MAR    70
+3    SEP    30
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

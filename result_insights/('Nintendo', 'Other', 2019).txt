@@ -1,0 +1,26 @@
+header:
+('Nintendo', 'Other', 2019)
+row data:
+                   Brand Season  Sale
+0     Nintendo 3DS (3DS)    DEC     0
+1     Nintendo 3DS (3DS)    JUN     0
+2     Nintendo 3DS (3DS)    MAR   100
+3     Nintendo 3DS (3DS)    SEP     0
+4       Nintendo DS (DS)    DEC     0
+5       Nintendo DS (DS)    JUN     0
+6       Nintendo DS (DS)    MAR     0
+7       Nintendo DS (DS)    SEP     0
+8   Nintendo Switch (NS)    DEC   750
+9   Nintendo Switch (NS)    JUN   300
+10  Nintendo Switch (NS)    MAR  1240
+11  Nintendo Switch (NS)    SEP   380
+12             Wii (Wii)    DEC     0
+13             Wii (Wii)    JUN     0
+14             Wii (Wii)    MAR     0
+15             Wii (Wii)    SEP     0
+16          Wii U (WiiU)    DEC     0
+17          Wii U (WiiU)    JUN     0
+18          Wii U (WiiU)    MAR     0
+19          Wii U (WiiU)    SEP     0
+insights:
+{'point': [], 'shape': [], 'compound': []}

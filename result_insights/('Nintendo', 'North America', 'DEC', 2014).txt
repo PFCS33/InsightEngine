@@ -1,0 +1,16 @@
+header:
+('Nintendo', 'North America', 'DEC', 2014)
+row data:
+                  Brand  Sale
+0    Nintendo 3DS (3DS)   580
+1      Nintendo DS (DS)     0
+2  Nintendo Switch (NS)     0
+3             Wii (Wii)    60
+4          Wii U (WiiU)   330
+insights:
+{'point': [
+(Type: top2
+Score: 0.5979381443298969
+Category: point
+Description: The Sale proportion of Nintendo 3DS (3DS) and Wii U (WiiU) is significantly higher than that of other Brands.)
+], 'shape': [], 'compound': []}

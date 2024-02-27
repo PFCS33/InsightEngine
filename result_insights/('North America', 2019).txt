@@ -1,0 +1,46 @@
+header:
+('North America', 2019)
+row data:
+      Company                   Brand Season  Sale
+0    Nintendo      Nintendo 3DS (3DS)    DEC    80
+1    Nintendo      Nintendo 3DS (3DS)    JUN   260
+2    Nintendo      Nintendo 3DS (3DS)    MAR   630
+3    Nintendo      Nintendo 3DS (3DS)    SEP    80
+4    Nintendo        Nintendo DS (DS)    DEC     0
+5    Nintendo        Nintendo DS (DS)    JUN     0
+6    Nintendo        Nintendo DS (DS)    MAR     0
+7    Nintendo        Nintendo DS (DS)    SEP     0
+8    Nintendo    Nintendo Switch (NS)    DEC  2090
+9    Nintendo    Nintendo Switch (NS)    JUN  1410
+10   Nintendo    Nintendo Switch (NS)    MAR  3350
+11   Nintendo    Nintendo Switch (NS)    SEP   990
+12   Nintendo               Wii (Wii)    DEC     0
+13   Nintendo               Wii (Wii)    JUN     0
+14   Nintendo               Wii (Wii)    MAR     0
+15   Nintendo               Wii (Wii)    SEP     0
+16   Nintendo            Wii U (WiiU)    DEC     0
+17   Nintendo            Wii U (WiiU)    JUN     0
+18   Nintendo            Wii U (WiiU)    MAR     0
+19   Nintendo            Wii U (WiiU)    SEP     0
+20       Sony     PlayStation 3 (PS3)    DEC     0
+21       Sony     PlayStation 3 (PS3)    JUN     0
+22       Sony     PlayStation 3 (PS3)    MAR     0
+23       Sony     PlayStation 3 (PS3)    SEP     0
+24       Sony     PlayStation 4 (PS4)    DEC   880
+25       Sony     PlayStation 4 (PS4)    JUN  1020
+26       Sony     PlayStation 4 (PS4)    MAR  2380
+27       Sony     PlayStation 4 (PS4)    SEP   760
+28       Sony  PlayStation Vita (PSV)    DEC    80
+29       Sony  PlayStation Vita (PSV)    JUN     0
+30       Sony  PlayStation Vita (PSV)    MAR    10
+31       Sony  PlayStation Vita (PSV)    SEP     0
+32  Microsoft         Xbox 360 (X360)    DEC     0
+33  Microsoft         Xbox 360 (X360)    JUN     0
+34  Microsoft         Xbox 360 (X360)    MAR     0
+35  Microsoft         Xbox 360 (X360)    SEP     0
+36  Microsoft         Xbox One (XOne)    DEC   550
+37  Microsoft         Xbox One (XOne)    JUN   690
+38  Microsoft         Xbox One (XOne)    MAR  2340
+39  Microsoft         Xbox One (XOne)    SEP   350
+insights:
+{'point': [], 'shape': [], 'compound': []}

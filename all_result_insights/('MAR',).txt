@@ -1,0 +1,39 @@
+header:
+('MAR',)
+row data:
+       Company               Brand Location  Year  Sale
+0     Nintendo  Nintendo 3DS (3DS)   Europe  2013  1370
+1     Nintendo  Nintendo 3DS (3DS)   Europe  2014  2180
+2     Nintendo  Nintendo 3DS (3DS)   Europe  2015   950
+3     Nintendo  Nintendo 3DS (3DS)   Europe  2016   720
+4     Nintendo  Nintendo 3DS (3DS)   Europe  2017   760
+..         ...                 ...      ...   ...   ...
+315  Microsoft     Xbox One (XOne)    Other  2016   440
+316  Microsoft     Xbox One (XOne)    Other  2017   460
+317  Microsoft     Xbox One (XOne)    Other  2018   530
+318  Microsoft     Xbox One (XOne)    Other  2019   270
+319  Microsoft     Xbox One (XOne)    Other  2020     0
+
+[320 rows x 5 columns]
+------------------
+insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Season = MAR]
+In the filtered subspace, the insight is: 
+Type: top2
+Score: 0.39594245176688986
+Category: point
+Description: The Sale proportion of Sony and Nintendo is significantly higher than that of other Companys.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('MAR',)
+aggregated data:
+     Company       Brand       Location       Year   Sale
+0  Microsoft  all Brands  all Locations  all Years  31920
+1   Nintendo  all Brands  all Locations  all Years  59190
+2       Sony  all Brands  all Locations  all Years  59720
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

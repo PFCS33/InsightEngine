@@ -1,0 +1,35 @@
+header:
+('Nintendo', 'Wii U (WiiU)', 2016)
+row data:
+         Location Season  Sale
+0          Europe    DEC    90
+1          Europe    JUN   180
+2          Europe    MAR   460
+3          Europe    SEP    40
+4           Japan    DEC    30
+5           Japan    JUN    80
+6           Japan    MAR   410
+7           Japan    SEP    80
+8   North America    DEC    80
+9   North America    JUN   160
+10  North America    MAR   830
+11  North America    SEP   100
+12          Other    DEC     0
+13          Other    JUN    30
+14          Other    MAR   130
+15          Other    SEP     0
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo', 'Wii U (WiiU)', 2016)
+aggregated data:
+        Location       Season  Sale
+0         Europe  all Seasons   770
+1          Japan  all Seasons   600
+2  North America  all Seasons  1170
+3          Other  all Seasons   160
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

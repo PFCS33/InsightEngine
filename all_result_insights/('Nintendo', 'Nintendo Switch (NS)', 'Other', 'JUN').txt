@@ -1,0 +1,47 @@
+header:
+('Nintendo', 'Nintendo Switch (NS)', 'Other', 'JUN')
+row data:
+   Year  Sale
+0  2013     0
+1  2014     0
+2  2015     0
+3  2016     0
+4  2017   240
+5  2018   410
+6  2019   300
+7  2020   840
+------------------
+insights:
+{'point': [], 'shape': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Nintendo, Brand = Nintendo Switch (NS), Location = Other, Season = JUN]
+In the filtered subspace, the insight is: 
+Type: trend
+Score: 0.7469670113924886
+Category: shape
+Description: Sales exhibit a clear upward trend over the Years from 2013 to 2020.)
+], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo', 'Nintendo Switch (NS)', 'Other', 'JUN')
+aggregated data:
+   Year  Sale
+0  2013     0
+1  2014     0
+2  2015     0
+3  2016     0
+4  2017   240
+5  2018   410
+6  2019   300
+7  2020   840
+------------------
+aggregated insights:
+{'point': [], 'shape': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Nintendo, Brand = Nintendo Switch (NS), Location = Other, Season = JUN]
+In the filtered subspace, the insight is: 
+Type: trend
+Score: 0.7469670113924886
+Category: shape
+Description: Sales exhibit a clear upward trend over the Years from 2013 to 2020.)
+], 'compound': []}

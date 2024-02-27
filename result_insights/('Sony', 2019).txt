@@ -1,0 +1,54 @@
+header:
+('Sony', 2019)
+row data:
+                     Brand       Location Season  Sale
+0      PlayStation 3 (PS3)         Europe    DEC     0
+1      PlayStation 3 (PS3)         Europe    JUN   440
+2      PlayStation 3 (PS3)         Europe    MAR     0
+3      PlayStation 3 (PS3)         Europe    SEP     0
+4      PlayStation 3 (PS3)          Japan    DEC     0
+5      PlayStation 3 (PS3)          Japan    JUN     0
+6      PlayStation 3 (PS3)          Japan    MAR     0
+7      PlayStation 3 (PS3)          Japan    SEP     0
+8      PlayStation 3 (PS3)  North America    DEC     0
+9      PlayStation 3 (PS3)  North America    JUN     0
+10     PlayStation 3 (PS3)  North America    MAR     0
+11     PlayStation 3 (PS3)  North America    SEP     0
+12     PlayStation 3 (PS3)          Other    DEC     0
+13     PlayStation 3 (PS3)          Other    JUN    70
+14     PlayStation 3 (PS3)          Other    MAR     0
+15     PlayStation 3 (PS3)          Other    SEP     0
+16     PlayStation 4 (PS4)         Europe    DEC  1880
+17     PlayStation 4 (PS4)         Europe    JUN  1740
+18     PlayStation 4 (PS4)         Europe    MAR  2540
+19     PlayStation 4 (PS4)         Europe    SEP  1490
+20     PlayStation 4 (PS4)          Japan    DEC   200
+21     PlayStation 4 (PS4)          Japan    JUN   400
+22     PlayStation 4 (PS4)          Japan    MAR   500
+23     PlayStation 4 (PS4)          Japan    SEP   200
+24     PlayStation 4 (PS4)  North America    DEC   880
+25     PlayStation 4 (PS4)  North America    JUN  1020
+26     PlayStation 4 (PS4)  North America    MAR  2380
+27     PlayStation 4 (PS4)  North America    SEP   760
+28     PlayStation 4 (PS4)          Other    DEC   610
+29     PlayStation 4 (PS4)          Other    JUN   660
+30     PlayStation 4 (PS4)          Other    MAR  1000
+31     PlayStation 4 (PS4)          Other    SEP   720
+32  PlayStation Vita (PSV)         Europe    DEC     0
+33  PlayStation Vita (PSV)         Europe    JUN     0
+34  PlayStation Vita (PSV)         Europe    MAR     0
+35  PlayStation Vita (PSV)         Europe    SEP     0
+36  PlayStation Vita (PSV)          Japan    DEC     0
+37  PlayStation Vita (PSV)          Japan    JUN    30
+38  PlayStation Vita (PSV)          Japan    MAR    20
+39  PlayStation Vita (PSV)          Japan    SEP     0
+40  PlayStation Vita (PSV)  North America    DEC    80
+41  PlayStation Vita (PSV)  North America    JUN     0
+42  PlayStation Vita (PSV)  North America    MAR    10
+43  PlayStation Vita (PSV)  North America    SEP     0
+44  PlayStation Vita (PSV)          Other    DEC     0
+45  PlayStation Vita (PSV)          Other    JUN     0
+46  PlayStation Vita (PSV)          Other    MAR     0
+47  PlayStation Vita (PSV)          Other    SEP     0
+insights:
+{'point': [], 'shape': [], 'compound': []}

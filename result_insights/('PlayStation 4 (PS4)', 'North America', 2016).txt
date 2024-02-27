@@ -1,0 +1,15 @@
+header:
+('PlayStation 4 (PS4)', 'North America', 2016)
+row data:
+  Company Season  Sale
+0    Sony    DEC   640
+1    Sony    JUN   740
+2    Sony    MAR  3620
+3    Sony    SEP   740
+insights:
+{'point': [
+(Type: dominance
+Score: 0.6306620209059234
+Category: point
+Description: The Sale of Sony dominates among all Companys.)
+], 'shape': [], 'compound': []}

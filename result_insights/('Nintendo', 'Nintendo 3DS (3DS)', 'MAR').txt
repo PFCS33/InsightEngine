@@ -1,0 +1,38 @@
+header:
+('Nintendo', 'Nintendo 3DS (3DS)', 'MAR')
+row data:
+         Location  Year  Sale
+0          Europe  2013  1370
+1          Europe  2014  2180
+2          Europe  2015   950
+3          Europe  2016   720
+4          Europe  2017   760
+5          Europe  2018  1190
+6          Europe  2019   320
+7          Europe  2020    70
+8           Japan  2013  2090
+9           Japan  2014  1490
+10          Japan  2015  1250
+11          Japan  2016   990
+12          Japan  2017  1030
+13          Japan  2018   490
+14          Japan  2019   120
+15          Japan  2020    20
+16  North America  2013  1410
+17  North America  2014  2130
+18  North America  2015  1480
+19  North America  2016  1030
+20  North America  2017  1260
+21  North America  2018  1320
+22  North America  2019   630
+23  North America  2020   110
+24          Other  2013   310
+25          Other  2014   390
+26          Other  2015   300
+27          Other  2016   190
+28          Other  2017     0
+29          Other  2018   320
+30          Other  2019   100
+31          Other  2020     0
+insights:
+{'point': [], 'shape': [], 'compound': []}

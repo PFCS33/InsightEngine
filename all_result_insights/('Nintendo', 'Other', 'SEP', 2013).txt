@@ -1,0 +1,25 @@
+header:
+('Nintendo', 'Other', 'SEP', 2013)
+row data:
+                  Brand  Sale
+0    Nintendo 3DS (3DS)   130
+1      Nintendo DS (DS)     0
+2  Nintendo Switch (NS)     0
+3             Wii (Wii)     0
+4          Wii U (WiiU)    30
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo', 'Other', 'SEP', 2013)
+aggregated data:
+                  Brand  Sale
+0    Nintendo 3DS (3DS)   130
+1      Nintendo DS (DS)     0
+2  Nintendo Switch (NS)     0
+3             Wii (Wii)     0
+4          Wii U (WiiU)    30
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

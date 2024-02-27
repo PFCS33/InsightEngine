@@ -1,0 +1,51 @@
+header:
+('Sony', 'PlayStation Vita (PSV)', 'MAR')
+row data:
+         Location  Year  Sale
+0          Europe  2013   170
+1          Europe  2014   390
+2          Europe  2015   170
+3          Europe  2016     0
+4          Europe  2017   270
+5          Europe  2018    50
+6          Europe  2019     0
+7          Europe  2020     0
+8           Japan  2013   270
+9           Japan  2014   580
+10          Japan  2015   290
+11          Japan  2016   410
+12          Japan  2017   280
+13          Japan  2018    90
+14          Japan  2019    20
+15          Japan  2020     0
+16  North America  2013   140
+17  North America  2014   260
+18  North America  2015   190
+19  North America  2016   100
+20  North America  2017    20
+21  North America  2018    10
+22  North America  2019    10
+23  North America  2020     0
+24          Other  2013    60
+25          Other  2014   160
+26          Other  2015   150
+27          Other  2016    30
+28          Other  2017   140
+29          Other  2018    20
+30          Other  2019     0
+31          Other  2020     0
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Sony', 'PlayStation Vita (PSV)', 'MAR')
+aggregated data:
+        Location       Year  Sale
+0         Europe  all Years  1050
+1          Japan  all Years  1940
+2  North America  all Years   730
+3          Other  all Years   560
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

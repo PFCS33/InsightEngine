@@ -1,0 +1,48 @@
+header:
+('Nintendo', 'Japan', 2014)
+row data:
+                   Brand Season  Sale
+0     Nintendo 3DS (3DS)    DEC   960
+1     Nintendo 3DS (3DS)    JUN   440
+2     Nintendo 3DS (3DS)    MAR  1490
+3     Nintendo 3DS (3DS)    SEP   470
+4       Nintendo DS (DS)    DEC     0
+5       Nintendo DS (DS)    JUN     0
+6       Nintendo DS (DS)    MAR     0
+7       Nintendo DS (DS)    SEP     0
+8   Nintendo Switch (NS)    DEC     0
+9   Nintendo Switch (NS)    JUN     0
+10  Nintendo Switch (NS)    MAR     0
+11  Nintendo Switch (NS)    SEP     0
+12             Wii (Wii)    DEC    10
+13             Wii (Wii)    JUN     0
+14             Wii (Wii)    MAR    10
+15             Wii (Wii)    SEP     0
+16          Wii U (WiiU)    DEC    90
+17          Wii U (WiiU)    JUN   100
+18          Wii U (WiiU)    MAR   500
+19          Wii U (WiiU)    SEP   140
+------------------
+insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Nintendo, Location = Japan]
+In the filtered subspace, the insight is: 
+Type: dominance
+Score: 0.7980997624703088
+Category: point
+Description: The Sale of Nintendo 3DS (3DS) dominates among all Brands.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo', 'Japan', 2014)
+aggregated data:
+                  Brand       Season  Sale
+0    Nintendo 3DS (3DS)  all Seasons  3360
+1      Nintendo DS (DS)  all Seasons     0
+2  Nintendo Switch (NS)  all Seasons     0
+3             Wii (Wii)  all Seasons    20
+4          Wii U (WiiU)  all Seasons   830
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

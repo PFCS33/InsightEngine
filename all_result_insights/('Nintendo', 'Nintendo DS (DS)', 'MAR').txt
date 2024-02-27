@@ -1,0 +1,59 @@
+header:
+('Nintendo', 'Nintendo DS (DS)', 'MAR')
+row data:
+         Location  Year  Sale
+0          Europe  2013   250
+1          Europe  2014     0
+2          Europe  2015     0
+3          Europe  2016     0
+4          Europe  2017     0
+5          Europe  2018     0
+6          Europe  2019     0
+7          Europe  2020     0
+8           Japan  2013     0
+9           Japan  2014     0
+10          Japan  2015     0
+11          Japan  2016     0
+12          Japan  2017     0
+13          Japan  2018     0
+14          Japan  2019     0
+15          Japan  2020     0
+16  North America  2013   470
+17  North America  2014    70
+18  North America  2015     0
+19  North America  2016     0
+20  North America  2017     0
+21  North America  2018     0
+22  North America  2019     0
+23  North America  2020     0
+24          Other  2013     0
+25          Other  2014     0
+26          Other  2015     0
+27          Other  2016     0
+28          Other  2017     0
+29          Other  2018     0
+30          Other  2019     0
+31          Other  2020     0
+------------------
+insights:
+{'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo', 'Nintendo DS (DS)', 'MAR')
+aggregated data:
+        Location       Year  Sale
+0         Europe  all Years   250
+1          Japan  all Years     0
+2  North America  all Years   540
+3          Other  all Years     0
+------------------
+aggregated insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Nintendo, Brand = Nintendo DS (DS), Season = MAR]
+In the filtered subspace, the insight is: 
+Type: top2
+Score: 0.5949367088607594
+Category: point
+Description: The Sale proportion of North America and Europe is significantly higher than that of other Locations.)
+], 'shape': [], 'compound': []}

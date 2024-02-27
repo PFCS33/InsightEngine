@@ -5,7 +5,10 @@ from insight import get_insight
 from visualization import get_visualization
 from graph import get_node, get_links, get_state_links, get_id
 import itertools
+import os
+import copy
 
+subspace_list = {}
 
 class HierarchicalTable:
     def __init__(self, data_source):
@@ -76,22 +79,58 @@ class HierarchicalTable:
         # get raw data through header
         block_data = self.get_block_data(header)
 
-        insight_list = get_insight(header, block_data)
+        aggregated_header = ""
+        aggregated_data = None
+        aggregated_header, insight_list, aggregated_data, aggregated_insight_list = get_insight(header, block_data, aggregated_data)
         # self.block_insight[header] = insight_list   # save the insight of the block
-        vis_list = get_visualization(insight_list)
+        # vis_list = get_visualization(insight_list)
         # self.block_vis[header] = vis_list   # save the visulization of the block
 
         node = None
-        if vis_list != []:
-            node = get_node(header, vis_list)
+
+        file_name = os.path.join('all_result_insights', str(header) + '.txt')
+
+        if insight_list != []:
+            # node = get_node(header, vis_list)
             print("header:\n", header)
             print('row data:\n', block_data)
+            print("------------------\n")
             print('insights:\n', insight_list)
+
+            with open(file_name, 'w') as file:
+                file.write("header:\n" + str(header) + "\n")
+                file.write('row data:\n' + str(block_data) + "\n")
+                file.write('------------------\n')
+                file.write('insights:\n' + str(insight_list) + "\n")
+
+            # header is the main key
+            subspace_list.setdefault(header, {}).setdefault('insight_list', []).extend(insight_list)
+
+        if aggregated_insight_list != []:
+            print("------------------\n")
+            print('aggregated header:\n', aggregated_header)
+            print('aggregated data:\n', aggregated_data)
+            print("------------------\n")
+            print('aggregated insights:\n', aggregated_insight_list)
+            print("---------------------------------------------------")
+
+            file_name = os.path.join('all_result_insights', str(header) + '.txt')
+            with open(file_name, 'a') as file:
+                file.write('---------------------------\n')
+                file.write('aggregated header:\n' + str(aggregated_header) + "\n")
+                file.write('aggregated data:\n' + str(aggregated_data) + "\n")
+                file.write('------------------\n')
+                file.write('aggregated insights:\n' + str(aggregated_insight_list) + "\n")
+
+            subspace_list.setdefault(header, {})['header2'] = aggregated_header
+            subspace_list.setdefault(header, {}).setdefault('aggregated_insight_list', []).extend(aggregated_insight_list)
+
 
         # print('node complete!')
         e_time = time.time()
 
-        return node
+        # return node
+        return insight_list
 
     def get_block_data(self, header):
         '''
@@ -142,12 +181,12 @@ class HierarchicalTable:
         #     if type(header) == tuple:
         #         for j in range(1, len(header)):
         #             new_header = header[:j]
-        #             if new_header not in res:   # avoid duplicate
-        #                 res.append(new_header)
+        #             if new_header not in result_insights:   # avoid duplicate
+        #                 result_insights.append(new_header)
         #     else:   # header is a list
         #         header_list[i] = (header,)
-        # res.extend(header_list)
-        # return list(res)
+        # result_insights.extend(header_list)
+        # return list(result_insights)
 
     # def get_unique_value_dict(self, non_value_columns):
     #     df = self.origin_data

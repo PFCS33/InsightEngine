@@ -1,0 +1,41 @@
+header:
+('Nintendo', 2015)
+row data:
+                 Brand       Location Season  Sale
+0   Nintendo 3DS (3DS)         Europe    DEC   530
+1   Nintendo 3DS (3DS)         Europe    JUN   650
+2   Nintendo 3DS (3DS)         Europe    MAR   950
+3   Nintendo 3DS (3DS)         Europe    SEP   210
+4   Nintendo 3DS (3DS)          Japan    DEC   430
+..                 ...            ...    ...   ...
+75        Wii U (WiiU)  North America    SEP   160
+76        Wii U (WiiU)          Other    DEC    50
+77        Wii U (WiiU)          Other    JUN    30
+78        Wii U (WiiU)          Other    MAR    80
+79        Wii U (WiiU)          Other    SEP    30
+
+[80 rows x 4 columns]
+------------------
+insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Nintendo]
+In the filtered subspace, the insight is: 
+Type: dominance
+Score: 0.7134146341463414
+Category: point
+Description: The Sale of Nintendo 3DS (3DS) dominates among all Brands.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo', 2015)
+aggregated data:
+                  Brand       Location       Season  Sale
+0    Nintendo 3DS (3DS)  all Locations  all Seasons  8190
+1      Nintendo DS (DS)  all Locations  all Seasons     0
+2  Nintendo Switch (NS)  all Locations  all Seasons     0
+3             Wii (Wii)  all Locations  all Seasons    60
+4          Wii U (WiiU)  all Locations  all Seasons  3230
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

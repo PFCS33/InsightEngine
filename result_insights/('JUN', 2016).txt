@@ -1,0 +1,46 @@
+header:
+('JUN', 2016)
+row data:
+      Company                   Brand       Location  Sale
+0    Nintendo      Nintendo 3DS (3DS)         Europe   560
+1    Nintendo      Nintendo 3DS (3DS)          Japan   300
+2    Nintendo      Nintendo 3DS (3DS)  North America   440
+3    Nintendo      Nintendo 3DS (3DS)          Other   110
+4    Nintendo        Nintendo DS (DS)         Europe     0
+5    Nintendo        Nintendo DS (DS)          Japan     0
+6    Nintendo        Nintendo DS (DS)  North America     0
+7    Nintendo        Nintendo DS (DS)          Other     0
+8    Nintendo    Nintendo Switch (NS)         Europe     0
+9    Nintendo    Nintendo Switch (NS)          Japan     0
+10   Nintendo    Nintendo Switch (NS)  North America     0
+11   Nintendo    Nintendo Switch (NS)          Other     0
+12   Nintendo               Wii (Wii)         Europe     0
+13   Nintendo               Wii (Wii)          Japan     0
+14   Nintendo               Wii (Wii)  North America     0
+15   Nintendo               Wii (Wii)          Other     0
+16   Nintendo            Wii U (WiiU)         Europe   180
+17   Nintendo            Wii U (WiiU)          Japan    80
+18   Nintendo            Wii U (WiiU)  North America   160
+19   Nintendo            Wii U (WiiU)          Other    30
+20       Sony     PlayStation 3 (PS3)         Europe    50
+21       Sony     PlayStation 3 (PS3)          Japan    20
+22       Sony     PlayStation 3 (PS3)  North America    30
+23       Sony     PlayStation 3 (PS3)          Other    30
+24       Sony     PlayStation 4 (PS4)         Europe  1800
+25       Sony     PlayStation 4 (PS4)          Japan   350
+26       Sony     PlayStation 4 (PS4)  North America   740
+27       Sony     PlayStation 4 (PS4)          Other   670
+28       Sony  PlayStation Vita (PSV)         Europe   130
+29       Sony  PlayStation Vita (PSV)          Japan   240
+30       Sony  PlayStation Vita (PSV)  North America    30
+31       Sony  PlayStation Vita (PSV)          Other   110
+32  Microsoft         Xbox 360 (X360)         Europe    20
+33  Microsoft         Xbox 360 (X360)          Japan     0
+34  Microsoft         Xbox 360 (X360)  North America    70
+35  Microsoft         Xbox 360 (X360)          Other    10
+36  Microsoft         Xbox One (XOne)         Europe   470
+37  Microsoft         Xbox One (XOne)          Japan     0
+38  Microsoft         Xbox One (XOne)  North America   610
+39  Microsoft         Xbox One (XOne)          Other   150
+insights:
+{'point': [], 'shape': [], 'compound': []}

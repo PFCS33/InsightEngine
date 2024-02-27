@@ -1,0 +1,14 @@
+header:
+('Nintendo 3DS (3DS)', 'Other', 'SEP')
+row data:
+    Company  Year  Sale
+0  Nintendo  2013   130
+1  Nintendo  2014     0
+2  Nintendo  2015    50
+3  Nintendo  2016     0
+4  Nintendo  2017     0
+5  Nintendo  2018    30
+6  Nintendo  2019     0
+7  Nintendo  2020    70
+insights:
+{'point': [], 'shape': [], 'compound': []}
