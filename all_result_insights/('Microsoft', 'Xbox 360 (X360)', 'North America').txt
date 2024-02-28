@@ -45,15 +45,3 @@ Score: 0.5018359853121175
 Category: point
 Description: The Sale of MAR dominates among all Seasons.)
 ], 'shape': [], 'compound': []}
----------------------------
-aggregated header:
-('Microsoft', 'Xbox 360 (X360)', 'North America')
-aggregated data:
-  Season       Year  Sale
-0    DEC  all Years   780
-1    JUN  all Years  1920
-2    MAR  all Years  4100
-3    SEP  all Years  1370
-------------------
-aggregated insights:
-{'point': [], 'shape': [], 'compound': []}

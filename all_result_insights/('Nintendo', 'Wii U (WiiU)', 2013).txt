@@ -29,15 +29,3 @@ Score: 0.3493975903614458
 Category: point
 Description: The Sale proportion of North America and Japan is significantly higher than that of other Locations.)
 ], 'shape': [], 'compound': []}
----------------------------
-aggregated header:
-('Nintendo', 'Wii U (WiiU)', 2013)
-aggregated data:
-        Location       Season  Sale
-0         Europe  all Seasons   600
-1          Japan  all Seasons   840
-2  North America  all Seasons   870
-3          Other  all Seasons   180
-------------------
-aggregated insights:
-{'point': [], 'shape': [], 'compound': []}

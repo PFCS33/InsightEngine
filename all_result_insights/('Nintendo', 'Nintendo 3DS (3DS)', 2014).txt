@@ -29,15 +29,3 @@ Score: 0.34915924826904055
 Category: point
 Description: The Sale proportion of North America and Japan is significantly higher than that of other Locations.)
 ], 'shape': [], 'compound': []}
----------------------------
-aggregated header:
-('Nintendo', 'Nintendo 3DS (3DS)', 2014)
-aggregated data:
-        Location       Season  Sale
-0         Europe  all Seasons  2620
-1          Japan  all Seasons  3360
-2  North America  all Seasons  3530
-3          Other  all Seasons   600
-------------------
-aggregated insights:
-{'point': [], 'shape': [], 'compound': []}

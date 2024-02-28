@@ -53,14 +53,3 @@ Score: 0.7164835164835165
 Category: point
 Description: The Sale of Nintendo dominates among all Companys.)
 ], 'shape': [], 'compound': []}
----------------------------
-aggregated header:
-('SEP', 2020)
-aggregated data:
-     Company       Brand       Location  Sale
-0  Microsoft  all Brands  all Locations   540
-1   Nintendo  all Brands  all Locations  6520
-2       Sony  all Brands  all Locations  2040
-------------------
-aggregated insights:
-{'point': [], 'shape': [], 'compound': []}

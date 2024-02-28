@@ -29,15 +29,3 @@ Score: 0.36596385542168675
 Category: point
 Description: The Sale proportion of Europe and North America is significantly higher than that of other Locations.)
 ], 'shape': [], 'compound': []}
----------------------------
-aggregated header:
-('Sony', 'PlayStation 4 (PS4)', 2015)
-aggregated data:
-        Location       Season  Sale
-0         Europe  all Seasons  4860
-1          Japan  all Seasons  1160
-2  North America  all Seasons  4700
-3          Other  all Seasons  2560
-------------------
-aggregated insights:
-{'point': [], 'shape': [], 'compound': []}

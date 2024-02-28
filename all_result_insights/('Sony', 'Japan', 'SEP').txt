@@ -37,14 +37,3 @@ Score: 0.5234375
 Category: point
 Description: The Sale proportion of PlayStation 4 (PS4) and PlayStation Vita (PSV) is significantly higher than that of other Brands.)
 ], 'shape': [], 'compound': []}
----------------------------
-aggregated header:
-('Sony', 'Japan', 'SEP')
-aggregated data:
-                    Brand       Year  Sale
-0     PlayStation 3 (PS3)  all Years   310
-1     PlayStation 4 (PS4)  all Years  1340
-2  PlayStation Vita (PSV)  all Years   910
-------------------
-aggregated insights:
-{'point': [], 'shape': [], 'compound': []}

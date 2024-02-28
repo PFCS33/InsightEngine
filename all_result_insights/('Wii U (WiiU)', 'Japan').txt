@@ -45,15 +45,3 @@ Score: 0.5662251655629139
 Category: point
 Description: The Sale of MAR dominates among all Seasons.)
 ], 'shape': [], 'compound': []}
----------------------------
-aggregated header:
-('Wii U (WiiU)', 'Japan', 'Nintendo')
-aggregated data:
-  Season       Year  Sale
-0    DEC  all Years   420
-1    JUN  all Years   390
-2    MAR  all Years  1710
-3    SEP  all Years   500
-------------------
-aggregated insights:
-{'point': [], 'shape': [], 'compound': []}

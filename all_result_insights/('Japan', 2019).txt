@@ -53,14 +53,3 @@ Score: 0.797317436661699
 Category: point
 Description: The Sale of Nintendo dominates among all Companys.)
 ], 'shape': [], 'compound': []}
----------------------------
-aggregated header:
-('Japan', 2019)
-aggregated data:
-     Company       Brand       Season  Sale
-0  Microsoft  all Brands  all Seasons    10
-1   Nintendo  all Brands  all Seasons  5350
-2       Sony  all Brands  all Seasons  1350
-------------------
-aggregated insights:
-{'point': [], 'shape': [], 'compound': []}

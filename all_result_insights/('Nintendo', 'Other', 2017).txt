@@ -33,16 +33,3 @@ Score: 0.7627118644067796
 Category: point
 Description: The Sale of Nintendo Switch (NS) dominates among all Brands.)
 ], 'shape': [], 'compound': []}
----------------------------
-aggregated header:
-('Nintendo', 'Other', 2017)
-aggregated data:
-                  Brand       Season  Sale
-0    Nintendo 3DS (3DS)  all Seasons    60
-1      Nintendo DS (DS)  all Seasons     0
-2  Nintendo Switch (NS)  all Seasons   900
-3             Wii (Wii)  all Seasons   200
-4          Wii U (WiiU)  all Seasons    20
-------------------
-aggregated insights:
-{'point': [], 'shape': [], 'compound': []}

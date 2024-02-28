@@ -25,14 +25,3 @@ Score: 0.5941422594142259
 Category: point
 Description: The Sale proportion of PlayStation 4 (PS4) and PlayStation Vita (PSV) is significantly higher than that of other Brands.)
 ], 'shape': [], 'compound': []}
----------------------------
-aggregated header:
-('Sony', 'Japan', 2016)
-aggregated data:
-                    Brand       Season  Sale
-0     PlayStation 3 (PS3)  all Seasons    60
-1     PlayStation 4 (PS4)  all Seasons  1420
-2  PlayStation Vita (PSV)  all Seasons   910
-------------------
-aggregated insights:
-{'point': [], 'shape': [], 'compound': []}

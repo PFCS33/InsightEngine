@@ -25,14 +25,3 @@ Score: 0.8761467889908257
 Category: point
 Description: The Sale of PlayStation 4 (PS4) dominates among all Brands.)
 ], 'shape': [], 'compound': []}
----------------------------
-aggregated header:
-('Sony', 'JUN', 2019)
-aggregated data:
-                    Brand       Location  Sale
-0     PlayStation 3 (PS3)  all Locations   510
-1     PlayStation 4 (PS4)  all Locations  3820
-2  PlayStation Vita (PSV)  all Locations    30
-------------------
-aggregated insights:
-{'point': [], 'shape': [], 'compound': []}

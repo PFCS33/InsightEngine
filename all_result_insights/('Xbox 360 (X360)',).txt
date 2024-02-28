@@ -26,15 +26,3 @@ Score: 0.603397341211226
 Category: point
 Description: The Sale of North America dominates among all Locations.)
 ], 'shape': [], 'compound': []}
----------------------------
-aggregated header:
-('Xbox 360 (X360)', 'Microsoft')
-aggregated data:
-        Location       Season       Year  Sale
-0         Europe  all Seasons  all Years  3360
-1          Japan  all Seasons  all Years    40
-2  North America  all Seasons  all Years  8170
-3          Other  all Seasons  all Years  1970
-------------------
-aggregated insights:
-{'point': [], 'shape': [], 'compound': []}

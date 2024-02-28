@@ -45,15 +45,3 @@ Score: 0.5279755849440488
 Category: point
 Description: The Sale proportion of North America and Europe is significantly higher than that of other Locations.)
 ], 'shape': [], 'compound': []}
----------------------------
-aggregated header:
-('Microsoft', 'Xbox One (XOne)', 'DEC')
-aggregated data:
-        Location       Year  Sale
-0         Europe  all Years  3150
-1          Japan  all Years    40
-2  North America  all Years  5190
-3          Other  all Years  1450
-------------------
-aggregated insights:
-{'point': [], 'shape': [], 'compound': []}

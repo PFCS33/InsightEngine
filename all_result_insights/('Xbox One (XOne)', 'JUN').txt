@@ -45,15 +45,3 @@ Score: 0.7057220708446866
 Category: point
 Description: The Sale of North America dominates among all Locations.)
 ], 'shape': [], 'compound': []}
----------------------------
-aggregated header:
-('Xbox One (XOne)', 'JUN', 'Microsoft')
-aggregated data:
-        Location       Year  Sale
-0         Europe  all Years  1640
-1          Japan  all Years    10
-2  North America  all Years  5180
-3          Other  all Years   510
-------------------
-aggregated insights:
-{'point': [], 'shape': [], 'compound': []}

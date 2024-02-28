@@ -53,14 +53,3 @@ Score: 0.626
 Category: point
 Description: The Sale of Sony dominates among all Companys.)
 ], 'shape': [], 'compound': []}
----------------------------
-aggregated header:
-('SEP', 2016)
-aggregated data:
-     Company       Brand       Location  Sale
-0  Microsoft  all Brands  all Locations  1210
-1   Nintendo  all Brands  all Locations   660
-2       Sony  all Brands  all Locations  3130
-------------------
-aggregated insights:
-{'point': [], 'shape': [], 'compound': []}

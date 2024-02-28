@@ -26,15 +26,3 @@ Score: 0.3897353648757017
 Category: point
 Description: The Sale proportion of Japan and Europe is significantly higher than that of other Locations.)
 ], 'shape': [], 'compound': []}
----------------------------
-aggregated header:
-('PlayStation Vita (PSV)', 'Sony')
-aggregated data:
-        Location       Season       Year  Sale
-0         Europe  all Seasons  all Years  4030
-1          Japan  all Seasons  all Years  4860
-2  North America  all Seasons  all Years  1410
-3          Other  all Seasons  all Years  2170
-------------------
-aggregated insights:
-{'point': [], 'shape': [], 'compound': []}

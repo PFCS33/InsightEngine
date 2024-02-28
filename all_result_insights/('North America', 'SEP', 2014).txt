@@ -23,14 +23,3 @@ Score: 0.39862542955326463
 Category: point
 Description: The Sale proportion of Microsoft and Sony is significantly higher than that of other Companys.)
 ], 'shape': [], 'compound': []}
----------------------------
-aggregated header:
-('North America', 'SEP', 2014)
-aggregated data:
-     Company       Brand  Sale
-0  Microsoft  all Brands  1160
-1   Nintendo  all Brands   800
-2       Sony  all Brands   950
-------------------
-aggregated insights:
-{'point': [], 'shape': [], 'compound': []}

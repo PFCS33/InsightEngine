@@ -45,15 +45,3 @@ Score: 0.42592592592592593
 Category: point
 Description: The Sale proportion of MAR and JUN is significantly higher than that of other Seasons.)
 ], 'shape': [], 'compound': []}
----------------------------
-aggregated header:
-('Wii (Wii)', 'Europe', 'Nintendo')
-aggregated data:
-  Season       Year  Sale
-0    DEC  all Years   270
-1    JUN  all Years   510
-2    MAR  all Years   690
-3    SEP  all Years   150
-------------------
-aggregated insights:
-{'point': [], 'shape': [], 'compound': []}

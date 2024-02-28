@@ -45,15 +45,3 @@ Score: 0.33067729083665337
 Category: point
 Description: The Sale proportion of Europe and Other is significantly higher than that of other Locations.)
 ], 'shape': [], 'compound': []}
----------------------------
-aggregated header:
-('PlayStation 3 (PS3)', 'SEP', 'Sony')
-aggregated data:
-        Location       Year  Sale
-0         Europe  all Years   830
-1          Japan  all Years   310
-2  North America  all Years   550
-3          Other  all Years   820
-------------------
-aggregated insights:
-{'point': [], 'shape': [], 'compound': []}

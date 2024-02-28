@@ -33,16 +33,3 @@ Score: 0.49162011173184356
 Category: point
 Description: The Sale proportion of Wii U (WiiU) and Nintendo 3DS (3DS) is significantly higher than that of other Brands.)
 ], 'shape': [], 'compound': []}
----------------------------
-aggregated header:
-('Nintendo', 'SEP', 2014)
-aggregated data:
-                  Brand       Location  Sale
-0    Nintendo 3DS (3DS)  all Locations   870
-1      Nintendo DS (DS)  all Locations     0
-2  Nintendo Switch (NS)  all Locations     0
-3             Wii (Wii)  all Locations    40
-4          Wii U (WiiU)  all Locations   880
-------------------
-aggregated insights:
-{'point': [], 'shape': [], 'compound': []}

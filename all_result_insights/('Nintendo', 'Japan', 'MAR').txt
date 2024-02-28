@@ -53,16 +53,3 @@ Score: 0.522711390635919
 Category: point
 Description: The Sale proportion of Nintendo 3DS (3DS) and Nintendo Switch (NS) is significantly higher than that of other Brands.)
 ], 'shape': [], 'compound': []}
----------------------------
-aggregated header:
-('Nintendo', 'Japan', 'MAR')
-aggregated data:
-                  Brand       Year  Sale
-0    Nintendo 3DS (3DS)  all Years  7480
-1      Nintendo DS (DS)  all Years     0
-2  Nintendo Switch (NS)  all Years  5060
-3             Wii (Wii)  all Years    60
-4          Wii U (WiiU)  all Years  1710
-------------------
-aggregated insights:
-{'point': [], 'shape': [], 'compound': []}

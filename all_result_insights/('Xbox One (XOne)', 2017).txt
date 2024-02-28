@@ -29,15 +29,3 @@ Score: 0.5852713178294574
 Category: point
 Description: The Sale of North America dominates among all Locations.)
 ], 'shape': [], 'compound': []}
----------------------------
-aggregated header:
-('Xbox One (XOne)', 2017, 'Microsoft')
-aggregated data:
-        Location       Season  Sale
-0         Europe  all Seasons  2230
-1          Japan  all Seasons    10
-2  North America  all Seasons  4530
-3          Other  all Seasons   970
-------------------
-aggregated insights:
-{'point': [], 'shape': [], 'compound': []}

@@ -41,3 +41,43 @@ Score: 2.4432085481844177
 Category: point
 Description: The Sale of Company Nintendo of Location North America of Season MAR is an outlier, which is significantly higher than the normal Sale of other Companys in the corresponding Locations, Seasons.)
 ], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo 3DS (3DS)', 2015, 'Nintendo')
+aggregated data:
+        Location       Season  Sale
+0         Europe  all Seasons  2340
+1          Japan  all Seasons  2330
+2  North America  all Seasons  2920
+3          Other  all Seasons   600
+------------------
+aggregated insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Brand = Nintendo 3DS (3DS)]
+In the filtered subspace, the insight is: 
+Type: outlier
+Score: 2.4432085481844177
+Category: point
+Description: The Sale of Company Nintendo of Location North America of Season MAR is an outlier, which is significantly higher than the normal Sale of other Companys in the corresponding Locations, Seasons.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo 3DS (3DS)', 2015, 'Nintendo')
+aggregated data:
+        Location       Season  Sale
+0         Europe  all Seasons  2340
+1          Japan  all Seasons  2330
+2  North America  all Seasons  2920
+3          Other  all Seasons   600
+------------------
+aggregated insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Brand = Nintendo 3DS (3DS)]
+In the filtered subspace, the insight is: 
+Type: outlier
+Score: 2.4432085481844177
+Category: point
+Description: The Sale of Company Nintendo of Location North America of Season MAR is an outlier, which is significantly higher than the normal Sale of other Companys in the corresponding Locations, Seasons.)
+], 'shape': [], 'compound': []}

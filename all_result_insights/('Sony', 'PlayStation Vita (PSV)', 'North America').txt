@@ -45,15 +45,3 @@ Score: 0.5177304964539007
 Category: point
 Description: The Sale of MAR dominates among all Seasons.)
 ], 'shape': [], 'compound': []}
----------------------------
-aggregated header:
-('Sony', 'PlayStation Vita (PSV)', 'North America')
-aggregated data:
-  Season       Year  Sale
-0    DEC  all Years   250
-1    JUN  all Years   210
-2    MAR  all Years   730
-3    SEP  all Years   220
-------------------
-aggregated insights:
-{'point': [], 'shape': [], 'compound': []}

@@ -29,15 +29,3 @@ Score: 0.5260115606936416
 Category: point
 Description: The Sale of Japan dominates among all Locations.)
 ], 'shape': [], 'compound': []}
----------------------------
-aggregated header:
-('Sony', 'PlayStation Vita (PSV)', 2016)
-aggregated data:
-        Location       Season  Sale
-0         Europe  all Seasons   410
-1          Japan  all Seasons   910
-2  North America  all Seasons   140
-3          Other  all Seasons   270
-------------------
-aggregated insights:
-{'point': [], 'shape': [], 'compound': []}

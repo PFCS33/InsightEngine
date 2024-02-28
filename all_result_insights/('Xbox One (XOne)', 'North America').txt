@@ -45,15 +45,3 @@ Score: 0.5665821179454661
 Category: point
 Description: The Sale of MAR dominates among all Seasons.)
 ], 'shape': [], 'compound': []}
----------------------------
-aggregated header:
-('Xbox One (XOne)', 'North America', 'Microsoft')
-aggregated data:
-  Season       Year   Sale
-0    DEC  all Years   5190
-1    JUN  all Years   5180
-2    MAR  all Years  17870
-3    SEP  all Years   3300
-------------------
-aggregated insights:
-{'point': [], 'shape': [], 'compound': []}

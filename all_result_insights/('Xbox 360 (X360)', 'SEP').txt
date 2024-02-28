@@ -45,15 +45,3 @@ Score: 0.46598639455782315
 Category: point
 Description: The Sale proportion of North America and Other is significantly higher than that of other Locations.)
 ], 'shape': [], 'compound': []}
----------------------------
-aggregated header:
-('Xbox 360 (X360)', 'SEP', 'Microsoft')
-aggregated data:
-        Location       Year  Sale
-0         Europe  all Years   510
-1          Japan  all Years    10
-2  North America  all Years  1370
-3          Other  all Years  1050
-------------------
-aggregated insights:
-{'point': [], 'shape': [], 'compound': []}

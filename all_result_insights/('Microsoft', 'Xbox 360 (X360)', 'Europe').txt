@@ -45,15 +45,3 @@ Score: 0.38095238095238093
 Category: point
 Description: The Sale proportion of MAR and JUN is significantly higher than that of other Seasons.)
 ], 'shape': [], 'compound': []}
----------------------------
-aggregated header:
-('Microsoft', 'Xbox 360 (X360)', 'Europe')
-aggregated data:
-  Season       Year  Sale
-0    DEC  all Years   500
-1    JUN  all Years  1070
-2    MAR  all Years  1280
-3    SEP  all Years   510
-------------------
-aggregated insights:
-{'point': [], 'shape': [], 'compound': []}

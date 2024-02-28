@@ -9,7 +9,8 @@ import os
 import copy
 import pickle
 
-subspace_list = {}
+# subspace_list = {}
+cnt_insight_num = 0
 
 
 class HierarchicalTable:
@@ -56,6 +57,10 @@ class HierarchicalTable:
         print('processing blocks...')
         # no multi-processing
         # start here
+        global cnt_insight_num
+        cnt_insight_num = 0
+        if os.path.exists('subspace_list.txt'):
+            os.remove('subspace_list.txt')
         for header in header_dict:
             node = self.process_block(header)
             if node != None:
@@ -64,9 +69,9 @@ class HierarchicalTable:
                 self.all_nodes.append(node)
                 # self.block_has_insight.append(header)
 
-        file_path = 'subspace_list.txt'
-        with open(file_path, 'w') as file:
-            json.dump(subspace_list, file)
+        # file_path = 'subspace_list.txt'
+        # with open(file_path, 'w') as file:
+        #     json.dump(subspace_list, file, indent=4)
 
         # end here
         print(self.all_nodes)
@@ -79,6 +84,7 @@ class HierarchicalTable:
         # print(self.all_links)
 
     def process_block(self, header):
+        global cnt_insight_num
         s_time = time.time()
         src_data = self.origin_data
         header_dict = self.header_dict
@@ -98,8 +104,9 @@ class HierarchicalTable:
 
         file_name = os.path.join('all_result_insights', str(header) + '.txt')
         header_str = '-'.join(map(str, header))
+        result_file = "subspace_list.txt"
 
-        if insight_list != []:
+        if any(insight_list.values()):
             # node = get_node(header, vis_list)
             print("header:\n", header)
             print('row data:\n', block_data)
@@ -112,10 +119,16 @@ class HierarchicalTable:
                 file.write('------------------\n')
                 file.write('insights:\n' + str(insight_list) + "\n")
 
-            # header is the main key
-            subspace_list.setdefault(header_str, {}).setdefault('insight_list', []).extend(insight_list)
+            with open(result_file, 'a') as file:
+                cnt_insight_num += 1
+                file.write("Number" + str(cnt_insight_num) + "\n")
+                file.write("header:" + str(header) + "\n")
+                file.write('insights:' + str(insight_list) + "\n")
 
-        if aggregated_insight_list != []:
+            # header is the main key
+            # subspace_list.setdefault(header_str, {}).setdefault('insight_list', []).extend(insight_list_str)
+
+        if any(aggregated_insight_list.values()):
             print("------------------\n")
             print('aggregated header:\n', aggregated_header)
             print('aggregated data:\n', aggregated_data)
@@ -131,10 +144,14 @@ class HierarchicalTable:
                 file.write('------------------\n')
                 file.write('aggregated insights:\n' + str(aggregated_insight_list) + "\n")
 
-            aggregated_header_str = '-'.join(map(str, aggregated_header))
-            subspace_list.setdefault(header_str, {})['aggregated_header'] = aggregated_header_str
-            subspace_list.setdefault(header_str, {}).setdefault('aggregated_insight_list', []).extend(
-                aggregated_insight_list)
+            with open(result_file, 'a') as file:
+                file.write('aggregated header:' + str(aggregated_header) + "\n")
+                file.write('aggregated insights:' + str(aggregated_insight_list) + "\n")
+
+            # aggregated_header_str = '-'.join(map(str, aggregated_header))
+            # subspace_list.setdefault(header_str, {})['aggregated_header'] = aggregated_header_str
+            # subspace_list.setdefault(header_str, {}).setdefault('aggregated_insight_list', []).extend(
+            #     aggregated_insight_list_str)
 
         # print('node complete!')
         e_time = time.time()

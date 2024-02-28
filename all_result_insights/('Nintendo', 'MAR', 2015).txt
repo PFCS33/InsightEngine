@@ -33,16 +33,3 @@ Score: 0.7056737588652482
 Category: point
 Description: The Sale of Nintendo 3DS (3DS) dominates among all Brands.)
 ], 'shape': [], 'compound': []}
----------------------------
-aggregated header:
-('Nintendo', 'MAR', 2015)
-aggregated data:
-                  Brand       Location  Sale
-0    Nintendo 3DS (3DS)  all Locations  3980
-1      Nintendo DS (DS)  all Locations     0
-2  Nintendo Switch (NS)  all Locations     0
-3             Wii (Wii)  all Locations    50
-4          Wii U (WiiU)  all Locations  1610
-------------------
-aggregated insights:
-{'point': [], 'shape': [], 'compound': []}

@@ -37,14 +37,3 @@ Score: 0.7879069767441861
 Category: point
 Description: The Sale of PlayStation 4 (PS4) dominates among all Brands.)
 ], 'shape': [], 'compound': []}
----------------------------
-aggregated header:
-('Sony', 'Europe', 'SEP')
-aggregated data:
-                    Brand       Year  Sale
-0     PlayStation 3 (PS3)  all Years   830
-1     PlayStation 4 (PS4)  all Years  8470
-2  PlayStation Vita (PSV)  all Years  1450
-------------------
-aggregated insights:
-{'point': [], 'shape': [], 'compound': []}

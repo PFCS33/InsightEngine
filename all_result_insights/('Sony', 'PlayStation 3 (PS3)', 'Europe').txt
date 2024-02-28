@@ -45,15 +45,3 @@ Score: 0.396505376344086
 Category: point
 Description: The Sale proportion of MAR and JUN is significantly higher than that of other Seasons.)
 ], 'shape': [], 'compound': []}
----------------------------
-aggregated header:
-('Sony', 'PlayStation 3 (PS3)', 'Europe')
-aggregated data:
-  Season       Year  Sale
-0    DEC  all Years   960
-1    JUN  all Years  2700
-2    MAR  all Years  2950
-3    SEP  all Years   830
-------------------
-aggregated insights:
-{'point': [], 'shape': [], 'compound': []}

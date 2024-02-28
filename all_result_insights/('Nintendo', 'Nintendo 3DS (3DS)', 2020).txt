@@ -29,15 +29,3 @@ Score: 0.6526315789473685
 Category: point
 Description: The Sale of North America dominates among all Locations.)
 ], 'shape': [], 'compound': []}
----------------------------
-aggregated header:
-('Nintendo', 'Nintendo 3DS (3DS)', 2020)
-aggregated data:
-        Location       Season  Sale
-0         Europe  all Seasons   180
-1          Japan  all Seasons    70
-2  North America  all Seasons   620
-3          Other  all Seasons    80
-------------------
-aggregated insights:
-{'point': [], 'shape': [], 'compound': []}

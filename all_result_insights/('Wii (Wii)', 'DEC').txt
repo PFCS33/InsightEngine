@@ -45,15 +45,3 @@ Score: 0.3950617283950617
 Category: point
 Description: The Sale proportion of North America and Europe is significantly higher than that of other Locations.)
 ], 'shape': [], 'compound': []}
----------------------------
-aggregated header:
-('Wii (Wii)', 'DEC', 'Nintendo')
-aggregated data:
-        Location       Year  Sale
-0         Europe  all Years   270
-1          Japan  all Years    20
-2  North America  all Years   320
-3          Other  all Years   200
-------------------
-aggregated insights:
-{'point': [], 'shape': [], 'compound': []}

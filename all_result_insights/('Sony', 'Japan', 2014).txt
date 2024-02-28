@@ -25,14 +25,3 @@ Score: 0.5018450184501845
 Category: point
 Description: The Sale of PlayStation Vita (PSV) dominates among all Brands.)
 ], 'shape': [], 'compound': []}
----------------------------
-aggregated header:
-('Sony', 'Japan', 2014)
-aggregated data:
-                    Brand       Season  Sale
-0     PlayStation 3 (PS3)  all Seasons   550
-1     PlayStation 4 (PS4)  all Seasons   800
-2  PlayStation Vita (PSV)  all Seasons  1360
-------------------
-aggregated insights:
-{'point': [], 'shape': [], 'compound': []}

@@ -26,14 +26,3 @@ Score: 0.7538330494037478
 Category: point
 Description: The Sale of Nintendo dominates among all Companys.)
 ], 'shape': [], 'compound': []}
----------------------------
-aggregated header:
-('Japan', 'DEC')
-aggregated data:
-     Company       Brand       Year  Sale
-0  Microsoft  all Brands  all Years    40
-1   Nintendo  all Brands  all Years  8850
-2       Sony  all Brands  all Years  2850
-------------------
-aggregated insights:
-{'point': [], 'shape': [], 'compound': []}

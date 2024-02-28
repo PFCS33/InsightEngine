@@ -29,15 +29,3 @@ Score: 0.5121951219512195
 Category: point
 Description: The Sale of Europe dominates among all Locations.)
 ], 'shape': [], 'compound': []}
----------------------------
-aggregated header:
-('Wii U (WiiU)', 2017, 'Nintendo')
-aggregated data:
-        Location       Season  Sale
-0         Europe  all Seasons   210
-1          Japan  all Seasons    60
-2  North America  all Seasons   120
-3          Other  all Seasons    20
-------------------
-aggregated insights:
-{'point': [], 'shape': [], 'compound': []}

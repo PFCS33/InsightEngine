@@ -45,15 +45,3 @@ Score: 0.4166666666666667
 Category: point
 Description: The Sale proportion of MAR and DEC is significantly higher than that of other Seasons.)
 ], 'shape': [], 'compound': []}
----------------------------
-aggregated header:
-('Microsoft', 'Xbox One (XOne)', 'Japan')
-aggregated data:
-  Season       Year  Sale
-0    DEC  all Years    40
-1    JUN  all Years    10
-2    MAR  all Years    50
-3    SEP  all Years    20
-------------------
-aggregated insights:
-{'point': [], 'shape': [], 'compound': []}

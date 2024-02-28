@@ -45,15 +45,3 @@ Score: 0.5322195704057279
 Category: point
 Description: The Sale of MAR dominates among all Seasons.)
 ], 'shape': [], 'compound': []}
----------------------------
-aggregated header:
-('Sony', 'PlayStation 3 (PS3)', 'North America')
-aggregated data:
-  Season       Year  Sale
-0    DEC  all Years   620
-1    JUN  all Years   790
-2    MAR  all Years  2230
-3    SEP  all Years   550
-------------------
-aggregated insights:
-{'point': [], 'shape': [], 'compound': []}
