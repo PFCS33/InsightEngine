@@ -7,6 +7,7 @@ from graph import get_node, get_links, get_state_links, get_id
 import itertools
 import os
 import copy
+import pickle
 
 subspace_list = {}
 
@@ -62,6 +63,11 @@ class HierarchicalTable:
                 #     continue
                 self.all_nodes.append(node)
                 # self.block_has_insight.append(header)
+
+        file_path = 'subspace_list.txt'
+        with open(file_path, 'w') as file:
+            json.dump(subspace_list, file)
+
         # end here
         print(self.all_nodes)
 
@@ -91,6 +97,7 @@ class HierarchicalTable:
         node = None
 
         file_name = os.path.join('all_result_insights', str(header) + '.txt')
+        header_str = '-'.join(map(str, header))
 
         if insight_list != []:
             # node = get_node(header, vis_list)
@@ -106,7 +113,7 @@ class HierarchicalTable:
                 file.write('insights:\n' + str(insight_list) + "\n")
 
             # header is the main key
-            subspace_list.setdefault(header, {}).setdefault('insight_list', []).extend(insight_list)
+            subspace_list.setdefault(header_str, {}).setdefault('insight_list', []).extend(insight_list)
 
         if aggregated_insight_list != []:
             print("------------------\n")
@@ -124,8 +131,9 @@ class HierarchicalTable:
                 file.write('------------------\n')
                 file.write('aggregated insights:\n' + str(aggregated_insight_list) + "\n")
 
-            subspace_list.setdefault(header, {})['header2'] = aggregated_header
-            subspace_list.setdefault(header, {}).setdefault('aggregated_insight_list', []).extend(
+            aggregated_header_str = '-'.join(map(str, aggregated_header))
+            subspace_list.setdefault(header_str, {})['aggregated_header'] = aggregated_header_str
+            subspace_list.setdefault(header_str, {}).setdefault('aggregated_insight_list', []).extend(
                 aggregated_insight_list)
 
         # print('node complete!')
