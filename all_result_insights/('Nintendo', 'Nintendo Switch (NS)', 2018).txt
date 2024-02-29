@@ -81,3 +81,43 @@ Score: 2.930265254829344
 Category: point
 Description: The Sale of Location Europe of Season MAR is an outlier, which is significantly higher than the normal Sale of other Locations in the corresponding Seasons.)
 ], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo', 'Nintendo Switch (NS)', 2018)
+aggregated data:
+        Location       Season  Sale
+0         Europe  all Seasons  3950
+1          Japan  all Seasons  3390
+2  North America  all Seasons  5250
+3          Other  all Seasons  1520
+------------------
+aggregated insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Nintendo, Brand = Nintendo Switch (NS)]
+In the filtered subspace, the insight is: 
+Type: outlier
+Score: 2.930265254829344
+Category: point
+Description: The Sale of Location Europe of Season MAR is an outlier, which is significantly higher than the normal Sale of other Locations in the corresponding Seasons.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo', 'Nintendo Switch (NS)', 2018)
+aggregated data:
+        Location       Season  Sale
+0         Europe  all Seasons  3950
+1          Japan  all Seasons  3390
+2  North America  all Seasons  5250
+3          Other  all Seasons  1520
+------------------
+aggregated insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Nintendo, Brand = Nintendo Switch (NS)]
+In the filtered subspace, the insight is: 
+Type: outlier
+Score: 2.930265254829344
+Category: point
+Description: The Sale of Location Europe of Season MAR is an outlier, which is significantly higher than the normal Sale of other Locations in the corresponding Seasons.)
+], 'shape': [], 'compound': []}

@@ -28,6 +28,7 @@ def parse_subspace_list(file_path):
         elif line.startswith("aggregated header:"):
             current_aggregated_header = line.split(":")[1].strip()
         elif line.startswith("aggregated insights:"):
+            current_insight_type = None
             current_aggregated_insight_type = 'aggregated_insight_list'
         elif line:
             if current_insight_type:
@@ -58,21 +59,55 @@ def query_subspace(header, subspace_list):
         return None
 
 
+def get_related_headers(input_header, header_dict):
+    same_level_headers = []
+    elaboration_headers = []
+    generalization_headers = []
+    for header in header_dict:
+        if len(header) == len(input_header) and sum([1 for i, j in zip(header, input_header) if i == j]) == len(
+                input_header) - 1:
+            same_level_headers.append(header)
+        if len(header) == len(input_header) - 1 and all(item in input_header for item in header):
+            elaboration_headers.append(header)
+        if len(header) == len(input_header) + 1 and all(item in header for item in input_header):
+            generalization_headers.append(header)
+    return same_level_headers, elaboration_headers, generalization_headers
+
+
 if __name__ == "__main__":
     file_path = 'subspace_list.txt'
     subspace_list = parse_subspace_list(file_path)
 
-    header = "('Nintendo', 'Europe', 'DEC', 2013)"
-    result = query_subspace(header, subspace_list)
-
-    if result:
-        print("Header:", result['header'])
-        print("Insight List:")
-        for insight in result['insight_list']:
-            print("  ", insight)
-        print("Aggregated Header:", result['aggregated_header'])
-        print("Aggregated Insight List:")
-        for insight in result['aggregated_insight_list']:
-            print("  ", insight)
-    else:
+    # test
+    input_header = "('Nintendo', 'Europe', 'DEC', 2013)"
+    check_header = query_subspace(input_header, subspace_list)
+    if not check_header:
         print("Header not found.")
+
+    with open('headers.txt', 'r') as file:
+        header_dict = [eval(line.strip()) for line in file]
+
+    same_level_headers, elaboration_headers, generalization_headers = get_related_headers(input_header, header_dict)
+
+    combined_headers = {}
+    combined_headers.update(same_level_headers)
+    combined_headers.update(elaboration_headers)
+    combined_headers.update(generalization_headers)
+
+    result_headers = []
+    for header in combined_headers:
+        result_headers.append(query_subspace(header, subspace_list))
+
+    if not result_headers:
+        print("Related header not found.")
+    else:
+        for result in result_headers:
+            print("Header:", result['header'])
+            print("Insight List:")
+            for insight in result['insight_list']:
+                print("  ", insight)
+            print("Aggregated Header:", result['aggregated_header'])
+            print("Aggregated Insight List:")
+            for insight in result['aggregated_insight_list']:
+                print("  ", insight)
+

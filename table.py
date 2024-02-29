@@ -53,6 +53,7 @@ class HierarchicalTable:
 
         src_data = self.origin_data
         header_dict = self.header_dict
+        print(header_dict)
 
         print('processing blocks...')
         # no multi-processing
@@ -62,6 +63,9 @@ class HierarchicalTable:
         if os.path.exists('subspace_list.txt'):
             os.remove('subspace_list.txt')
         for header in header_dict:
+            with open('headers.txt', 'w') as file:
+                for key in header_dict.keys():
+                    file.write(str(key) + '\n')
             node = self.process_block(header)
             if node != None:
                 # if set(idx+col) in curr_focus_headers:
@@ -123,7 +127,7 @@ class HierarchicalTable:
                 cnt_insight_num += 1
                 file.write("Number" + str(cnt_insight_num) + "\n")
                 file.write("header:" + str(header) + "\n")
-                file.write('insights:' + str(insight_list) + "\n")
+                file.write('insights:\n' + str(insight_list) + "\n")
 
             # header is the main key
             # subspace_list.setdefault(header_str, {}).setdefault('insight_list', []).extend(insight_list_str)
@@ -146,7 +150,7 @@ class HierarchicalTable:
 
             with open(result_file, 'a') as file:
                 file.write('aggregated header:' + str(aggregated_header) + "\n")
-                file.write('aggregated insights:' + str(aggregated_insight_list) + "\n")
+                file.write('aggregated insights:\n' + str(aggregated_insight_list) + "\n")
 
             # aggregated_header_str = '-'.join(map(str, aggregated_header))
             # subspace_list.setdefault(header_str, {})['aggregated_header'] = aggregated_header_str

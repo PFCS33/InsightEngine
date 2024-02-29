@@ -72,3 +72,41 @@ Score: 0.6617647058823529
 Category: point
 Description: The Sale of Sony dominates among all Companys.)
 ], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Other', 'SEP', 2016)
+aggregated data:
+     Company       Brand  Sale
+0  Microsoft  all Brands   130
+1   Nintendo  all Brands     0
+2       Sony  all Brands   550
+------------------
+aggregated insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Location = Other, Season = SEP]
+In the filtered subspace, the insight is: 
+Type: dominance
+Score: 0.6617647058823529
+Category: point
+Description: The Sale of Sony dominates among all Companys.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Other', 'SEP', 2016)
+aggregated data:
+     Company       Brand  Sale
+0  Microsoft  all Brands   130
+1   Nintendo  all Brands     0
+2       Sony  all Brands   550
+------------------
+aggregated insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Location = Other, Season = SEP]
+In the filtered subspace, the insight is: 
+Type: dominance
+Score: 0.6617647058823529
+Category: point
+Description: The Sale of Sony dominates among all Companys.)
+], 'shape': [], 'compound': []}
