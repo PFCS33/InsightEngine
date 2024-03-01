@@ -21,3 +21,15 @@ aggregated data:
 ------------------
 aggregated insights:
 {'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo Switch (NS)', 'Europe', 2019, 'Nintendo')
+aggregated data:
+  Season  Sale
+0    DEC  1600
+1    JUN   860
+2    MAR  2280
+3    SEP   660
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

@@ -29,3 +29,19 @@ aggregated data:
 ------------------
 aggregated insights:
 {'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo 3DS (3DS)', 'Other', 'MAR', 'Nintendo')
+aggregated data:
+   Year  Sale
+0  2013   310
+1  2014   390
+2  2015   300
+3  2016   190
+4  2017     0
+5  2018   320
+6  2019   100
+7  2020     0
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

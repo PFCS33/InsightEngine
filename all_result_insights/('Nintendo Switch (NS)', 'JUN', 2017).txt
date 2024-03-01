@@ -21,3 +21,15 @@ aggregated data:
 ------------------
 aggregated insights:
 {'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo Switch (NS)', 'JUN', 2017, 'Nintendo')
+aggregated data:
+        Location  Sale
+0         Europe   840
+1          Japan   650
+2  North America  1150
+3          Other   240
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

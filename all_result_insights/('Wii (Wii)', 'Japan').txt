@@ -49,3 +49,15 @@ aggregated data:
 ------------------
 aggregated insights:
 {'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Wii (Wii)', 'Japan', 'Nintendo')
+aggregated data:
+  Season       Year  Sale
+0    DEC  all Years    20
+1    JUN  all Years    20
+2    MAR  all Years    60
+3    SEP  all Years    20
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

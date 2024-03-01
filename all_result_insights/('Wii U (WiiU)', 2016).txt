@@ -33,3 +33,15 @@ aggregated data:
 ------------------
 aggregated insights:
 {'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Wii U (WiiU)', 2016, 'Nintendo')
+aggregated data:
+        Location       Season  Sale
+0         Europe  all Seasons   770
+1          Japan  all Seasons   600
+2  North America  all Seasons  1170
+3          Other  all Seasons   160
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

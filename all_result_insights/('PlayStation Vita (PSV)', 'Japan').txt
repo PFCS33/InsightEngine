@@ -49,3 +49,15 @@ aggregated data:
 ------------------
 aggregated insights:
 {'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('PlayStation Vita (PSV)', 'Japan', 'Sony')
+aggregated data:
+  Season       Year  Sale
+0    DEC  all Years   760
+1    JUN  all Years  1250
+2    MAR  all Years  1940
+3    SEP  all Years   910
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

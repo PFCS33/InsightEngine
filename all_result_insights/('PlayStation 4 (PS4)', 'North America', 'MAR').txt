@@ -29,3 +29,19 @@ aggregated data:
 ------------------
 aggregated insights:
 {'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('PlayStation 4 (PS4)', 'North America', 'MAR', 'Sony')
+aggregated data:
+   Year  Sale
+0  2013     0
+1  2014  2750
+2  2015  1890
+3  2016  3620
+4  2017  3210
+5  2018  3160
+6  2019  2380
+7  2020  1980
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

@@ -21,3 +21,15 @@ aggregated data:
 ------------------
 aggregated insights:
 {'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Wii U (WiiU)', 'DEC', 2020, 'Nintendo')
+aggregated data:
+        Location  Sale
+0         Europe     0
+1          Japan     0
+2  North America     0
+3          Other     0
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

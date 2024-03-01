@@ -33,3 +33,15 @@ aggregated data:
 ------------------
 aggregated insights:
 {'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('PlayStation 4 (PS4)', 2013, 'Sony')
+aggregated data:
+        Location       Season  Sale
+0         Europe  all Seasons     0
+1          Japan  all Seasons     0
+2  North America  all Seasons     0
+3          Other  all Seasons     0
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

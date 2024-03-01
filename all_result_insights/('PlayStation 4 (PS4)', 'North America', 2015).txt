@@ -21,3 +21,15 @@ aggregated data:
 ------------------
 aggregated insights:
 {'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('PlayStation 4 (PS4)', 'North America', 2015, 'Sony')
+aggregated data:
+  Season  Sale
+0    DEC  1240
+1    JUN   850
+2    MAR  1890
+3    SEP   720
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

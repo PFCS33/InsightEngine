@@ -49,3 +49,15 @@ aggregated data:
 ------------------
 aggregated insights:
 {'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('PlayStation Vita (PSV)', 'JUN', 'Sony')
+aggregated data:
+        Location       Year  Sale
+0         Europe  all Years   790
+1          Japan  all Years  1250
+2  North America  all Years   210
+3          Other  all Years   630
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

@@ -149,6 +149,7 @@ class HierarchicalTable:
                 file.write('aggregated insights:\n' + str(aggregated_insight_list) + "\n")
 
             with open(result_file, 'a') as file:
+                cnt_insight_num += 1
                 file.write('aggregated header:' + str(aggregated_header) + "\n")
                 file.write('aggregated insights:\n' + str(aggregated_insight_list) + "\n")
 

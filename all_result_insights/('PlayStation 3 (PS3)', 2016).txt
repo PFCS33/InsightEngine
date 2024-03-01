@@ -33,3 +33,15 @@ aggregated data:
 ------------------
 aggregated insights:
 {'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('PlayStation 3 (PS3)', 2016, 'Sony')
+aggregated data:
+        Location       Season  Sale
+0         Europe  all Seasons   250
+1          Japan  all Seasons    60
+2  North America  all Seasons   160
+3          Other  all Seasons   120
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

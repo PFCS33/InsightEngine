@@ -21,3 +21,15 @@ aggregated data:
 ------------------
 aggregated insights:
 {'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo 3DS (3DS)', 'JUN', 2014, 'Nintendo')
+aggregated data:
+        Location  Sale
+0         Europe   440
+1          Japan   440
+2  North America   420
+3          Other   210
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

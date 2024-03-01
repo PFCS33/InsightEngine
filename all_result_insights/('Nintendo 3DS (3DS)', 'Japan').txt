@@ -137,3 +137,43 @@ Score: 3.16454861828454
 Category: point
 Description: The Sale of Company Nintendo of Season MAR of Year 2013 is an outlier, which is significantly higher than the normal Sale of other Companys in the corresponding Seasons, Years.)
 ], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo 3DS (3DS)', 'Japan', 'Nintendo')
+aggregated data:
+  Season       Year  Sale
+0    DEC  all Years  3790
+1    JUN  all Years  2340
+2    MAR  all Years  7480
+3    SEP  all Years  2230
+------------------
+aggregated insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Brand = Nintendo 3DS (3DS), Location = Japan]
+In the filtered subspace, the insight is: 
+Type: outlier
+Score: 3.16454861828454
+Category: point
+Description: The Sale of Company Nintendo of Season MAR of Year 2013 is an outlier, which is significantly higher than the normal Sale of other Companys in the corresponding Seasons, Years.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo 3DS (3DS)', 'Japan', 'Nintendo')
+aggregated data:
+  Season       Year  Sale
+0    DEC  all Years  3790
+1    JUN  all Years  2340
+2    MAR  all Years  7480
+3    SEP  all Years  2230
+------------------
+aggregated insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Brand = Nintendo 3DS (3DS), Location = Japan]
+In the filtered subspace, the insight is: 
+Type: outlier
+Score: 3.16454861828454
+Category: point
+Description: The Sale of Company Nintendo of Season MAR of Year 2013 is an outlier, which is significantly higher than the normal Sale of other Companys in the corresponding Seasons, Years.)
+], 'shape': [], 'compound': []}

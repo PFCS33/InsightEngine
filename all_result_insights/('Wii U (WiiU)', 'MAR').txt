@@ -49,3 +49,15 @@ aggregated data:
 ------------------
 aggregated insights:
 {'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Wii U (WiiU)', 'MAR', 'Nintendo')
+aggregated data:
+        Location       Year  Sale
+0         Europe  all Years  1630
+1          Japan  all Years  1710
+2  North America  all Years  3090
+3          Other  all Years   440
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

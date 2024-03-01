@@ -49,3 +49,15 @@ aggregated data:
 ------------------
 aggregated insights:
 {'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo DS (DS)', 'Europe', 'Nintendo')
+aggregated data:
+  Season       Year  Sale
+0    DEC  all Years     0
+1    JUN  all Years    40
+2    MAR  all Years   250
+3    SEP  all Years     0
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

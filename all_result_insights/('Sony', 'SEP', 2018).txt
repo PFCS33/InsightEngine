@@ -112,3 +112,22 @@ Score: 0.4199134199134199
 Category: point
 Description: The Sale proportion of PlayStation 4 (PS4) and PlayStation 4 (PS4) is significantly higher than that of other Brands.)
 ], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Sony', 'SEP', 2018)
+aggregated data:
+                    Brand       Location  Sale
+0     PlayStation 3 (PS3)  all Locations     0
+1     PlayStation 4 (PS4)  all Locations  2270
+2  PlayStation Vita (PSV)  all Locations    40
+------------------
+aggregated insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Sony, Season = SEP]
+In the filtered subspace, the insight is: 
+Type: top2
+Score: 0.4199134199134199
+Category: point
+Description: The Sale proportion of PlayStation 4 (PS4) and PlayStation 4 (PS4) is significantly higher than that of other Brands.)
+], 'shape': [], 'compound': []}

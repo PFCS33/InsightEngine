@@ -49,3 +49,15 @@ aggregated data:
 ------------------
 aggregated insights:
 {'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Wii U (WiiU)', 'JUN', 'Nintendo')
+aggregated data:
+        Location       Year  Sale
+0         Europe  all Years   520
+1          Japan  all Years   390
+2  North America  all Years   720
+3          Other  all Years   130
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

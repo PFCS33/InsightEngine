@@ -49,3 +49,15 @@ aggregated data:
 ------------------
 aggregated insights:
 {'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('PlayStation 3 (PS3)', 'Other', 'Sony')
+aggregated data:
+  Season       Year  Sale
+0    DEC  all Years   520
+1    JUN  all Years  1510
+2    MAR  all Years   900
+3    SEP  all Years   820
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

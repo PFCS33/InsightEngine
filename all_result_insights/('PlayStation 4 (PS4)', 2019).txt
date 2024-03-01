@@ -33,3 +33,15 @@ aggregated data:
 ------------------
 aggregated insights:
 {'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('PlayStation 4 (PS4)', 2019, 'Sony')
+aggregated data:
+        Location       Season  Sale
+0         Europe  all Seasons  7650
+1          Japan  all Seasons  1300
+2  North America  all Seasons  5040
+3          Other  all Seasons  2990
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

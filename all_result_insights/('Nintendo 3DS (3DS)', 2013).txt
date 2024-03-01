@@ -33,3 +33,15 @@ aggregated data:
 ------------------
 aggregated insights:
 {'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo 3DS (3DS)', 2013, 'Nintendo')
+aggregated data:
+        Location       Season  Sale
+0         Europe  all Seasons  3530
+1          Japan  all Seasons  4920
+2  North America  all Seasons  3490
+3          Other  all Seasons   680
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

@@ -49,3 +49,15 @@ aggregated data:
 ------------------
 aggregated insights:
 {'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo 3DS (3DS)', 'JUN', 'Nintendo')
+aggregated data:
+        Location       Year  Sale
+0         Europe  all Years  2570
+1          Japan  all Years  2340
+2  North America  all Years  3180
+3          Other  all Years   580
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

@@ -49,3 +49,15 @@ aggregated data:
 ------------------
 aggregated insights:
 {'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('PlayStation 4 (PS4)', 'SEP', 'Sony')
+aggregated data:
+        Location       Year  Sale
+0         Europe  all Years  8470
+1          Japan  all Years  1340
+2  North America  all Years  5190
+3          Other  all Years  3250
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

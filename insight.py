@@ -65,7 +65,7 @@ def get_insight(header, block_data, aggregated_data):
     get_scope_no_breakdown(header, block_data)
 
     # only consider the first layer of headers as breakdown and aggregate
-    abstract_header, aggregated_header, aggregated_data = get_scope_with_aggregate(header, block_data, 0,
+    aggregated_header, aggregated_data = get_scope_with_aggregate(header, block_data, 0,
                                                                                    aggregate)  # index header
     # consider all layers and generate groups, no aggregate, compound insights
     # get_scope_rearrange(header, block_data)
@@ -143,7 +143,7 @@ def get_scope_with_aggregate(header, block_data, breakdown, aggregate):
 
     calc_insight(aggregated_header, scope_data, breakdown, aggregate)
 
-    return abstract_header, aggregated_header, scope_data
+    return aggregated_header, scope_data
 
 
 def get_scope_rearrange_old(header, block_data, header_split):

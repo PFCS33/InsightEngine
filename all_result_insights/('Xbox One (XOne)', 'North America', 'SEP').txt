@@ -29,3 +29,19 @@ aggregated data:
 ------------------
 aggregated insights:
 {'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Xbox One (XOne)', 'North America', 'SEP', 'Microsoft')
+aggregated data:
+   Year  Sale
+0  2013     0
+1  2014   390
+2  2015   600
+3  2016   630
+4  2017   470
+5  2018   510
+6  2019   350
+7  2020   350
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

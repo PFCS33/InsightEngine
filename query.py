@@ -1,3 +1,6 @@
+import ast
+
+
 def parse_subspace_list(file_path):
     with open(file_path, 'r') as file:
         lines = file.readlines()
@@ -79,35 +82,36 @@ if __name__ == "__main__":
     subspace_list = parse_subspace_list(file_path)
 
     # test
-    input_header = "('Nintendo', 'Europe', 'DEC', 2013)"
-    check_header = query_subspace(input_header, subspace_list)
+    input_header_str = "('Nintendo', 'Europe', 'DEC', 2013)"
+    check_header = query_subspace(input_header_str, subspace_list)
     if not check_header:
         print("Header not found.")
 
     with open('headers.txt', 'r') as file:
         header_dict = [eval(line.strip()) for line in file]
-
+    input_header = ast.literal_eval(input_header_str)
     same_level_headers, elaboration_headers, generalization_headers = get_related_headers(input_header, header_dict)
 
-    combined_headers = {}
-    combined_headers.update(same_level_headers)
-    combined_headers.update(elaboration_headers)
-    combined_headers.update(generalization_headers)
+    merged_headers = same_level_headers + elaboration_headers + generalization_headers
 
     result_headers = []
-    for header in combined_headers:
-        result_headers.append(query_subspace(header, subspace_list))
+    for header in merged_headers:
+        result = query_subspace(str(header), subspace_list)
+        if result is not None:
+            result_headers.append(result)
 
     if not result_headers:
         print("Related header not found.")
     else:
+        cnt = 0
         for result in result_headers:
-            print("Header:", result['header'])
+            cnt += 1
+            print("Subspace", cnt, ": ", result['header'])
             print("Insight List:")
             for insight in result['insight_list']:
                 print("  ", insight)
-            print("Aggregated Header:", result['aggregated_header'])
-            print("Aggregated Insight List:")
-            for insight in result['aggregated_insight_list']:
-                print("  ", insight)
-
+            if result['aggregated_header'] != None:
+                print("Aggregated Header:", result['aggregated_header'])
+                print("Aggregated Insight List:")
+                for insight in result['aggregated_insight_list']:
+                    print("  ", insight)

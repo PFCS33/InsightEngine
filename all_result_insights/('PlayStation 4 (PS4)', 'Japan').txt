@@ -49,3 +49,15 @@ aggregated data:
 ------------------
 aggregated insights:
 {'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('PlayStation 4 (PS4)', 'Japan', 'Sony')
+aggregated data:
+  Season       Year  Sale
+0    DEC  all Years  1860
+1    JUN  all Years  2400
+2    MAR  all Years  3650
+3    SEP  all Years  1340
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

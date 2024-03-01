@@ -21,3 +21,15 @@ aggregated data:
 ------------------
 aggregated insights:
 {'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Wii U (WiiU)', 'MAR', 2016, 'Nintendo')
+aggregated data:
+        Location  Sale
+0         Europe   460
+1          Japan   410
+2  North America   830
+3          Other   130
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

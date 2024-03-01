@@ -49,3 +49,15 @@ aggregated data:
 ------------------
 aggregated insights:
 {'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Xbox One (XOne)', 'Europe', 'Microsoft')
+aggregated data:
+  Season       Year  Sale
+0    DEC  all Years  3150
+1    JUN  all Years  1640
+2    MAR  all Years  5880
+3    SEP  all Years  1490
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

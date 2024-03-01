@@ -21,3 +21,15 @@ aggregated data:
 ------------------
 aggregated insights:
 {'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Xbox 360 (X360)', 'JUN', 2014, 'Microsoft')
+aggregated data:
+        Location  Sale
+0         Europe     0
+1          Japan     0
+2  North America   210
+3          Other     0
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

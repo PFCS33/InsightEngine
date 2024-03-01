@@ -33,3 +33,15 @@ aggregated data:
 ------------------
 aggregated insights:
 {'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo Switch (NS)', 2017, 'Nintendo')
+aggregated data:
+        Location       Season  Sale
+0         Europe  all Seasons  2010
+1          Japan  all Seasons  2020
+2  North America  all Seasons  2980
+3          Other  all Seasons   900
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

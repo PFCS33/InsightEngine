@@ -21,3 +21,15 @@ aggregated data:
 ------------------
 aggregated insights:
 {'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('PlayStation 3 (PS3)', 'JUN', 2015, 'Sony')
+aggregated data:
+        Location  Sale
+0         Europe   180
+1          Japan    60
+2  North America   100
+3          Other   100
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}

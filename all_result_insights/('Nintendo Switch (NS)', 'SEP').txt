@@ -49,3 +49,15 @@ aggregated data:
 ------------------
 aggregated insights:
 {'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo Switch (NS)', 'SEP', 'Nintendo')
+aggregated data:
+        Location       Year  Sale
+0         Europe  all Years  3670
+1          Japan  all Years  3040
+2  North America  all Years  3930
+3          Other  all Years  2090
+------------------
+aggregated insights:
+{'point': [], 'shape': [], 'compound': []}
