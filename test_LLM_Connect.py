@@ -5,9 +5,9 @@ os.environ["http_proxy"] = "http://localhost:7890"
 os.environ["https_proxy"] = "http://localhost:7890"
 
 
-openai.api_key = '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'
+openai.api_key = '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'
 
-def get_completion_from_messages(messages, model="gpt-3.5-turbo-16k", temperature=0):
+def get_completion_from_messages(messages, model="gpt-4", temperature=0):
     response = openai.ChatCompletion.create(
         model=model,
         messages=messages,
@@ -18,9 +18,6 @@ def get_completion_from_messages(messages, model="gpt-3.5-turbo-16k", temperatur
 
 
 if __name__ == '__main__':
-    nl_query = "Show all the ranks and the number of male and female faculty for each rank in a bar chart."
-    database_name = "activity_1"
-    index = "11"
 
     messages = [
         {"role": "system", "content": "You are a helpful assistant."},

@@ -1,3 +1,5 @@
+import os
+
 import numpy as np
 import pandas as pd
 from scipy.stats import linregress, pearsonr, skewtest, kurtosistest, skew, kurtosis, zscore, kstest
@@ -47,18 +49,21 @@ def calc_outlier(d):
         outliers, lower_threshold, upper_threshold = result
         if len(outliers) != 0 and len(outliers) < 3:
             ins_type = 'outlier'
-            max_ins_score = 0
+            # max_ins_score = 0
             for outlier in outliers:
                 index = np.where(sorted_values == outlier)[0]
                 if outlier < lower_threshold:
-                    ins_score = (sorted_values[-1] - sorted_values.mean()) / sorted_values.std()
+                    ins_score = (outlier - sorted_values.mean()) / sorted_values.std()
                     description = generate_outlier_description(sorted_d, index, 'lower')
+                    # TODO
+                    # output_insight(ins_type, ins_score, description)
                 elif outlier > upper_threshold:
-                    ins_score = (sorted_values[0] - sorted_values.mean()) / sorted_values.std()
+                    ins_score = (outlier - sorted_values.mean()) / sorted_values.std()
                     description = generate_outlier_description(sorted_d, index, 'higher')
-                if ins_score > max_ins_score:
-                    max_ins_score = ins_score
-            return ins_type, max_ins_score, description
+                    # output_insight(ins_type, ins_score, description)
+                # if ins_score > max_ins_score:
+                #     max_ins_score = ins_score
+            return ins_type, ins_score, description
         else:
             # else no outlier
             return ins_type, ins_score, description
@@ -247,22 +252,30 @@ def test_slope(d):
 
 
 def check_is_temporal(data):
-    # value = str(data.index[0])
-    # # a really naive way to check temporal
-    # if len(value) < 4:
-    #     return False
-    # eg_index = str(value)[:4]
-    # if eg_index.isdigit():
-    #     if int(eg_index) >= 1800 and int(eg_index) <= 2300 and len(value) <= 10:
-    #         return True
-    #     else:
-    #         return False
-    # else:
-    #     return False
-    if data.columns[0] == 'Year':
+    def process_value(value):
+        value_str = str(value)
+        if len(value_str) < 4:
+            return False
+        eg_index = str(value_str)[:4]
+        if eg_index.isdigit():
+            if int(eg_index) >= 1800 and int(eg_index) <= 2300:
+                return True
+            else:
+                return False
+        else:
+            return False
+
+    # for every row in column 1
+    result = data.iloc[:, 0].apply(process_value)
+    if result.all():
         return True
     else:
         return False
+
+    # if data.columns[0] == 'Year':
+    #     return True
+    # else:
+    #     return False
 
 
 def check_zero(d):
@@ -306,38 +319,25 @@ def correlation_detection(x, y):
 
 def calc_distribution_insight(d):
     d_value = d.iloc[:, -1].values
+    # remove all zeros when calculating distribution insight
+    d_value = d_value[d_value != 0]
+    d_value = d_value.astype(float)
 
-    if d_value.shape[0] <= 20:
+    if d_value.shape[0] <= 5:
         return '', 0, ""
     ins_type = ''
     ins_score = 0
     description = ""
 
-    _, p_s = skewtest(d_value)
-    s = skew(d_value)
-    _, p_k = kurtosistest(d_value)
-    k = kurtosis(d_value)
-    # e = abs(d.std() / d.mean())         # evenness
-    _, p_e = kstest(d_value, 'uniform', args=(0, 1))
-    has_skew = p_s < 0.03 and abs(s) > 2
-    has_kurtosis = p_k < 0.05 and abs(k) > 3 and abs(s) < 3
-    has_evenness = p_e > 0.01
-
     value_col_name = d.columns[-1]
-    # test
-    # has_kurtosis = True
-    if has_skew and has_kurtosis:
-        if p_s < p_k:
-            ins_type, ins_score, description = set_skew(p_s, s, value_col_name)
-        else:
-            ins_type, ins_score, description = set_kurtosis(p_k, k, value_col_name)
-    elif has_skew:
-        ins_type, ins_score, description = set_skew(p_s, s, value_col_name)
-    elif has_kurtosis:
-        ins_type, ins_score, description = set_kurtosis(p_k, k, value_col_name)
-    elif has_evenness:
+
+    # evenness
+    e = abs(d_value.std() / d_value.mean())
+    # _, p_e = kstest(d_value, 'uniform', args=(0, 1))
+    if e < 0.2:
+        has_evenness = True
         ins_type = 'evenness'
-        ins_score = p_e
+        ins_score = 1 - e
         column_name = d.columns[0]
         description = f"The {value_col_name}s are relatively evenly distributed across different {column_name}s"
         if d.shape[1] > 2:
@@ -347,7 +347,29 @@ def calc_distribution_insight(d):
             column_name = d.columns[d.shape[1] - 2]
             description += f" and {column_name}s"
         description += "."
-    return ins_type, ins_score, description
+        return ins_type, ins_score, description
+
+    elif d_value.shape[0] < 20:
+        return '', 0, ""
+
+    elif d_value.shape[0] >= 20:
+        _, p_s = skewtest(d_value)
+        s = skew(d_value)
+        _, p_k = kurtosistest(d_value)
+        k = kurtosis(d_value)
+        has_skew = p_s < 0.03 and abs(s) > 2
+        has_kurtosis = p_k < 0.05 and abs(k) > 3 and abs(s) < 3
+
+        if has_skew and has_kurtosis:
+            if p_s < p_k:
+                ins_type, ins_score, description = set_skew(p_s, s, value_col_name)
+            else:
+                ins_type, ins_score, description = set_kurtosis(p_k, k, value_col_name)
+        elif has_skew:
+            ins_type, ins_score, description = set_skew(p_s, s, value_col_name)
+        elif has_kurtosis:
+            ins_type, ins_score, description = set_kurtosis(p_k, k, value_col_name)
+        return ins_type, ins_score, description
 
     # if abs(s) >= thres_s and abs(k) < thres_k:
     #     return 'skewness', abs(s)/10

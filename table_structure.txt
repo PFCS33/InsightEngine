@@ -1,4 +1,4 @@
-table_data = {
+table_structure = {
     'Company': ['Nintendo', 'Sony', 'Microsoft'],
     'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)',
               'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)',
@@ -7,3 +7,4 @@ table_data = {
     'Season': ['DEC', 'JUN', 'MAR', 'SEP'],
     'Year': ['2013','2014','2015','2016','2017','2018','2019','2020']
 }
+

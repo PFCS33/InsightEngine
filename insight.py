@@ -301,7 +301,7 @@ def calc_insight(header, scope_data, breakdown, aggregate, no_aggreate=False):
                          ins_score, header_description, ins_description, breakdown, aggregate)
 
         # remove all zeros when calculating distribution insight
-        scope_data = scope_data[scope_data != 0]
+        # scope_data = scope_data[scope_data != 0]
         ins_type, ins_score, ins_description = calc_distribution_insight(scope_data)
         if ins_score > 0:
             save_insight(scope_data, 'shape', ins_type,

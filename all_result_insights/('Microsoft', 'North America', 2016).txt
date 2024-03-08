@@ -169,3 +169,367 @@ Score: 2.485461282450657
 Category: point
 Description: The Sale of Brand Xbox One (XOne) of Season MAR is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Seasons.)
 ], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Microsoft', 'North America', 2016)
+aggregated data:
+             Brand       Season  Sale
+0  Xbox 360 (X360)  all Seasons   400
+1  Xbox One (XOne)  all Seasons  5040
+------------------
+aggregated insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Microsoft, Location = North America]
+In the filtered subspace, the insight is: 
+Type: dominance
+Score: 0.53125
+Category: point
+Description: The Sale of Xbox One (XOne) dominates among all Brands.)
+, 
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Microsoft, Location = North America]
+In the filtered subspace, the insight is: 
+Type: outlier
+Score: 2.485461282450657
+Category: point
+Description: The Sale of Brand Xbox One (XOne) of Season MAR is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Seasons.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Microsoft', 'North America', 2016)
+aggregated data:
+             Brand       Season  Sale
+0  Xbox 360 (X360)  all Seasons   400
+1  Xbox One (XOne)  all Seasons  5040
+------------------
+aggregated insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Microsoft, Location = North America]
+In the filtered subspace, the insight is: 
+Type: dominance
+Score: 0.53125
+Category: point
+Description: The Sale of Xbox One (XOne) dominates among all Brands.)
+, 
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Microsoft, Location = North America]
+In the filtered subspace, the insight is: 
+Type: outlier
+Score: 2.485461282450657
+Category: point
+Description: The Sale of Brand Xbox One (XOne) of Season MAR is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Seasons.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Microsoft', 'North America', 2016)
+aggregated data:
+             Brand       Season  Sale
+0  Xbox 360 (X360)  all Seasons   400
+1  Xbox One (XOne)  all Seasons  5040
+------------------
+aggregated insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Microsoft, Location = North America]
+In the filtered subspace, the insight is: 
+Type: dominance
+Score: 0.53125
+Category: point
+Description: The Sale of Xbox One (XOne) dominates among all Brands.)
+, 
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Microsoft, Location = North America]
+In the filtered subspace, the insight is: 
+Type: outlier
+Score: 2.485461282450657
+Category: point
+Description: The Sale of Brand Xbox One (XOne) of Season MAR is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Seasons.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Microsoft', 'North America', 2016)
+aggregated data:
+             Brand       Season  Sale
+0  Xbox 360 (X360)  all Seasons   400
+1  Xbox One (XOne)  all Seasons  5040
+------------------
+aggregated insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Microsoft, Location = North America]
+In the filtered subspace, the insight is: 
+Type: dominance
+Score: 0.53125
+Category: point
+Description: The Sale of Xbox One (XOne) dominates among all Brands.)
+, 
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Microsoft, Location = North America]
+In the filtered subspace, the insight is: 
+Type: outlier
+Score: 2.485461282450657
+Category: point
+Description: The Sale of Brand Xbox One (XOne) of Season MAR is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Seasons.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Microsoft', 'North America', 2016)
+aggregated data:
+             Brand       Season  Sale
+0  Xbox 360 (X360)  all Seasons   400
+1  Xbox One (XOne)  all Seasons  5040
+------------------
+aggregated insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Microsoft, Location = North America]
+In the filtered subspace, the insight is: 
+Type: dominance
+Score: 0.53125
+Category: point
+Description: The Sale of Xbox One (XOne) dominates among all Brands.)
+, 
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Microsoft, Location = North America]
+In the filtered subspace, the insight is: 
+Type: outlier
+Score: 2.485461282450657
+Category: point
+Description: The Sale of Brand Xbox One (XOne) of Season MAR is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Seasons.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Microsoft', 'North America', 2016)
+aggregated data:
+             Brand       Season  Sale
+0  Xbox 360 (X360)  all Seasons   400
+1  Xbox One (XOne)  all Seasons  5040
+------------------
+aggregated insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Microsoft, Location = North America]
+In the filtered subspace, the insight is: 
+Type: dominance
+Score: 0.53125
+Category: point
+Description: The Sale of Xbox One (XOne) dominates among all Brands.)
+, 
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Microsoft, Location = North America]
+In the filtered subspace, the insight is: 
+Type: outlier
+Score: 2.485461282450657
+Category: point
+Description: The Sale of Brand Xbox One (XOne) of Season MAR is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Seasons.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Microsoft', 'North America', 2016)
+aggregated data:
+             Brand       Season  Sale
+0  Xbox 360 (X360)  all Seasons   400
+1  Xbox One (XOne)  all Seasons  5040
+------------------
+aggregated insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Microsoft, Location = North America]
+In the filtered subspace, the insight is: 
+Type: dominance
+Score: 0.53125
+Category: point
+Description: The Sale of Xbox One (XOne) dominates among all Brands.)
+, 
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Microsoft, Location = North America]
+In the filtered subspace, the insight is: 
+Type: outlier
+Score: 2.485461282450657
+Category: point
+Description: The Sale of Brand Xbox One (XOne) of Season MAR is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Seasons.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Microsoft', 'North America', 2016)
+aggregated data:
+             Brand       Season  Sale
+0  Xbox 360 (X360)  all Seasons   400
+1  Xbox One (XOne)  all Seasons  5040
+------------------
+aggregated insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Microsoft, Location = North America]
+In the filtered subspace, the insight is: 
+Type: dominance
+Score: 0.53125
+Category: point
+Description: The Sale of Xbox One (XOne) dominates among all Brands.)
+, 
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Microsoft, Location = North America]
+In the filtered subspace, the insight is: 
+Type: outlier
+Score: 2.485461282450657
+Category: point
+Description: The Sale of Brand Xbox One (XOne) of Season MAR is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Seasons.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Microsoft', 'North America', 2016)
+aggregated data:
+             Brand       Season  Sale
+0  Xbox 360 (X360)  all Seasons   400
+1  Xbox One (XOne)  all Seasons  5040
+------------------
+aggregated insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Microsoft, Location = North America]
+In the filtered subspace, the insight is: 
+Type: dominance
+Score: 0.53125
+Category: point
+Description: The Sale of Xbox One (XOne) dominates among all Brands.)
+, 
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Microsoft, Location = North America]
+In the filtered subspace, the insight is: 
+Type: outlier
+Score: 2.485461282450657
+Category: point
+Description: The Sale of Brand Xbox One (XOne) of Season MAR is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Seasons.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Microsoft', 'North America', 2016)
+aggregated data:
+             Brand       Season  Sale
+0  Xbox 360 (X360)  all Seasons   400
+1  Xbox One (XOne)  all Seasons  5040
+------------------
+aggregated insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Microsoft, Location = North America]
+In the filtered subspace, the insight is: 
+Type: dominance
+Score: 0.53125
+Category: point
+Description: The Sale of Xbox One (XOne) dominates among all Brands.)
+, 
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Microsoft, Location = North America]
+In the filtered subspace, the insight is: 
+Type: outlier
+Score: 2.485461282450657
+Category: point
+Description: The Sale of Brand Xbox One (XOne) of Season MAR is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Seasons.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Microsoft', 'North America', 2016)
+aggregated data:
+             Brand       Season  Sale
+0  Xbox 360 (X360)  all Seasons   400
+1  Xbox One (XOne)  all Seasons  5040
+------------------
+aggregated insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Microsoft, Location = North America]
+In the filtered subspace, the insight is: 
+Type: dominance
+Score: 0.53125
+Category: point
+Description: The Sale of Xbox One (XOne) dominates among all Brands.)
+, 
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Microsoft, Location = North America]
+In the filtered subspace, the insight is: 
+Type: outlier
+Score: 2.485461282450657
+Category: point
+Description: The Sale of Brand Xbox One (XOne) of Season MAR is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Seasons.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Microsoft', 'North America', 2016)
+aggregated data:
+             Brand       Season  Sale
+0  Xbox 360 (X360)  all Seasons   400
+1  Xbox One (XOne)  all Seasons  5040
+------------------
+aggregated insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Microsoft, Location = North America]
+In the filtered subspace, the insight is: 
+Type: dominance
+Score: 0.53125
+Category: point
+Description: The Sale of Xbox One (XOne) dominates among all Brands.)
+, 
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Microsoft, Location = North America]
+In the filtered subspace, the insight is: 
+Type: outlier
+Score: 2.485461282450657
+Category: point
+Description: The Sale of Brand Xbox One (XOne) of Season MAR is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Seasons.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Microsoft', 'North America', 2016)
+aggregated data:
+             Brand       Season  Sale
+0  Xbox 360 (X360)  all Seasons   400
+1  Xbox One (XOne)  all Seasons  5040
+------------------
+aggregated insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Microsoft, Location = North America]
+In the filtered subspace, the insight is: 
+Type: dominance
+Score: 0.53125
+Category: point
+Description: The Sale of Xbox One (XOne) dominates among all Brands.)
+, 
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Microsoft, Location = North America]
+In the filtered subspace, the insight is: 
+Type: outlier
+Score: 2.485461282450657
+Category: point
+Description: The Sale of Brand Xbox One (XOne) of Season MAR is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Seasons.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Microsoft', 'North America', 2016)
+aggregated data:
+             Brand       Season  Sale
+0  Xbox 360 (X360)  all Seasons   400
+1  Xbox One (XOne)  all Seasons  5040
+------------------
+aggregated insights:
+{'point': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Microsoft, Location = North America]
+In the filtered subspace, the insight is: 
+Type: dominance
+Score: 0.53125
+Category: point
+Description: The Sale of Xbox One (XOne) dominates among all Brands.)
+, 
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Microsoft, Location = North America]
+In the filtered subspace, the insight is: 
+Type: outlier
+Score: 2.485461282450657
+Category: point
+Description: The Sale of Brand Xbox One (XOne) of Season MAR is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Seasons.)
+], 'shape': [], 'compound': []}

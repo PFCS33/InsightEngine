@@ -26,3 +26,22 @@ Score: 0.5355591748099892
 Category: point
 Description: The Sale of Sony dominates among all Companys.)
 ], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+(2016,)
+aggregated data:
+     Company       Brand       Location       Season   Sale
+0  Microsoft  all Brands  all Locations  all Seasons   8790
+1   Nintendo  all Brands  all Locations  all Seasons   8320
+2       Sony  all Brands  all Locations  all Seasons  19730
+------------------
+aggregated insights:
+{'point': [], 'shape': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: []
+In the filtered subspace, the insight is: 
+Type: skewness
+Score: 3.454811920520117
+Category: shape
+Description: The Sale has a positively skewed distribution, which means that there are more extreme Sale values on the right side, and the distribution is skewed to the right.)
+], 'compound': []}

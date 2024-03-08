@@ -26,3 +26,24 @@ Score: 0.5640243902439024
 Category: point
 Description: The Sale proportion of Nintendo Switch (NS) and Nintendo 3DS (3DS) is significantly higher than that of other Brands.)
 ], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo', 'JUN')
+aggregated data:
+                  Brand       Location       Year   Sale
+0    Nintendo 3DS (3DS)  all Locations  all Years   8670
+1      Nintendo DS (DS)  all Locations  all Years    210
+2  Nintendo Switch (NS)  all Locations  all Years  14800
+3             Wii (Wii)  all Locations  all Years    800
+4          Wii U (WiiU)  all Locations  all Years   1760
+------------------
+aggregated insights:
+{'point': [], 'shape': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: [Company = Nintendo, Season = JUN]
+In the filtered subspace, the insight is: 
+Type: skewness
+Score: 2.313755339289851
+Category: shape
+Description: The Sale has a positively skewed distribution, which means that there are more extreme Sale values on the right side, and the distribution is skewed to the right.)
+], 'compound': []}

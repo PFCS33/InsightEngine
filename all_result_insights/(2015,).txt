@@ -29,3 +29,364 @@ aggregated data:
 ------------------
 aggregated insights:
 {'point': [], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+(2015,)
+aggregated data:
+     Company       Brand       Location       Season   Sale
+0  Microsoft  all Brands  all Locations  all Seasons   8960
+1   Nintendo  all Brands  all Locations  all Seasons  11480
+2       Sony  all Brands  all Locations  all Seasons  19170
+------------------
+aggregated insights:
+{'point': [], 'shape': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: []
+In the filtered subspace, the insight is: 
+Type: kurtosis
+Score: 4.03474306384197
+Category: shape
+Description: The Sale exhibit leptokurtic behavior with heavy tails and a sharp peak, indicating a distribution with positive kurtosis.)
+], 'compound': []}
+---------------------------
+aggregated header:
+(2015,)
+aggregated data:
+     Company       Brand       Location       Season   Sale
+0  Microsoft  all Brands  all Locations  all Seasons   8960
+1   Nintendo  all Brands  all Locations  all Seasons  11480
+2       Sony  all Brands  all Locations  all Seasons  19170
+------------------
+aggregated insights:
+{'point': [], 'shape': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: []
+In the filtered subspace, the insight is: 
+Type: kurtosis
+Score: 4.03474306384197
+Category: shape
+Description: The Sale exhibit leptokurtic behavior with heavy tails and a sharp peak, indicating a distribution with positive kurtosis.)
+], 'compound': []}
+---------------------------
+aggregated header:
+(2015,)
+aggregated data:
+     Company       Brand       Location       Season   Sale
+0  Microsoft  all Brands  all Locations  all Seasons   8960
+1   Nintendo  all Brands  all Locations  all Seasons  11480
+2       Sony  all Brands  all Locations  all Seasons  19170
+------------------
+aggregated insights:
+{'point': [], 'shape': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: []
+In the filtered subspace, the insight is: 
+Type: kurtosis
+Score: 4.03474306384197
+Category: shape
+Description: The Sale exhibit leptokurtic behavior with heavy tails and a sharp peak, indicating a distribution with positive kurtosis.)
+], 'compound': []}
+---------------------------
+aggregated header:
+(2015,)
+aggregated data:
+     Company       Brand       Location       Season   Sale
+0  Microsoft  all Brands  all Locations  all Seasons   8960
+1   Nintendo  all Brands  all Locations  all Seasons  11480
+2       Sony  all Brands  all Locations  all Seasons  19170
+------------------
+aggregated insights:
+{'point': [], 'shape': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: []
+In the filtered subspace, the insight is: 
+Type: kurtosis
+Score: 4.03474306384197
+Category: shape
+Description: The Sale exhibit leptokurtic behavior with heavy tails and a sharp peak, indicating a distribution with positive kurtosis.)
+], 'compound': []}
+---------------------------
+aggregated header:
+(2015,)
+aggregated data:
+     Company       Brand       Location       Season   Sale
+0  Microsoft  all Brands  all Locations  all Seasons   8960
+1   Nintendo  all Brands  all Locations  all Seasons  11480
+2       Sony  all Brands  all Locations  all Seasons  19170
+------------------
+aggregated insights:
+{'point': [], 'shape': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: []
+In the filtered subspace, the insight is: 
+Type: kurtosis
+Score: 4.03474306384197
+Category: shape
+Description: The Sale exhibit leptokurtic behavior with heavy tails and a sharp peak, indicating a distribution with positive kurtosis.)
+], 'compound': []}
+---------------------------
+aggregated header:
+(2015,)
+aggregated data:
+     Company       Brand       Location       Season   Sale
+0  Microsoft  all Brands  all Locations  all Seasons   8960
+1   Nintendo  all Brands  all Locations  all Seasons  11480
+2       Sony  all Brands  all Locations  all Seasons  19170
+------------------
+aggregated insights:
+{'point': [], 'shape': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: []
+In the filtered subspace, the insight is: 
+Type: kurtosis
+Score: 4.03474306384197
+Category: shape
+Description: The Sale exhibit leptokurtic behavior with heavy tails and a sharp peak, indicating a distribution with positive kurtosis.)
+], 'compound': []}
+---------------------------
+aggregated header:
+(2015,)
+aggregated data:
+     Company       Brand       Location       Season   Sale
+0  Microsoft  all Brands  all Locations  all Seasons   8960
+1   Nintendo  all Brands  all Locations  all Seasons  11480
+2       Sony  all Brands  all Locations  all Seasons  19170
+------------------
+aggregated insights:
+{'point': [], 'shape': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: []
+In the filtered subspace, the insight is: 
+Type: kurtosis
+Score: 4.03474306384197
+Category: shape
+Description: The Sale exhibit leptokurtic behavior with heavy tails and a sharp peak, indicating a distribution with positive kurtosis.)
+], 'compound': []}
+---------------------------
+aggregated header:
+(2015,)
+aggregated data:
+     Company       Brand       Location       Season   Sale
+0  Microsoft  all Brands  all Locations  all Seasons   8960
+1   Nintendo  all Brands  all Locations  all Seasons  11480
+2       Sony  all Brands  all Locations  all Seasons  19170
+------------------
+aggregated insights:
+{'point': [], 'shape': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: []
+In the filtered subspace, the insight is: 
+Type: kurtosis
+Score: 4.03474306384197
+Category: shape
+Description: The Sale exhibit leptokurtic behavior with heavy tails and a sharp peak, indicating a distribution with positive kurtosis.)
+], 'compound': []}
+---------------------------
+aggregated header:
+(2015,)
+aggregated data:
+     Company       Brand       Location       Season   Sale
+0  Microsoft  all Brands  all Locations  all Seasons   8960
+1   Nintendo  all Brands  all Locations  all Seasons  11480
+2       Sony  all Brands  all Locations  all Seasons  19170
+------------------
+aggregated insights:
+{'point': [], 'shape': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: []
+In the filtered subspace, the insight is: 
+Type: kurtosis
+Score: 4.03474306384197
+Category: shape
+Description: The Sale exhibit leptokurtic behavior with heavy tails and a sharp peak, indicating a distribution with positive kurtosis.)
+], 'compound': []}
+---------------------------
+aggregated header:
+(2015,)
+aggregated data:
+     Company       Brand       Location       Season   Sale
+0  Microsoft  all Brands  all Locations  all Seasons   8960
+1   Nintendo  all Brands  all Locations  all Seasons  11480
+2       Sony  all Brands  all Locations  all Seasons  19170
+------------------
+aggregated insights:
+{'point': [], 'shape': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: []
+In the filtered subspace, the insight is: 
+Type: kurtosis
+Score: 4.03474306384197
+Category: shape
+Description: The Sale exhibit leptokurtic behavior with heavy tails and a sharp peak, indicating a distribution with positive kurtosis.)
+], 'compound': []}
+---------------------------
+aggregated header:
+(2015,)
+aggregated data:
+     Company       Brand       Location       Season   Sale
+0  Microsoft  all Brands  all Locations  all Seasons   8960
+1   Nintendo  all Brands  all Locations  all Seasons  11480
+2       Sony  all Brands  all Locations  all Seasons  19170
+------------------
+aggregated insights:
+{'point': [], 'shape': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: []
+In the filtered subspace, the insight is: 
+Type: kurtosis
+Score: 4.03474306384197
+Category: shape
+Description: The Sale exhibit leptokurtic behavior with heavy tails and a sharp peak, indicating a distribution with positive kurtosis.)
+], 'compound': []}
+---------------------------
+aggregated header:
+(2015,)
+aggregated data:
+     Company       Brand       Location       Season   Sale
+0  Microsoft  all Brands  all Locations  all Seasons   8960
+1   Nintendo  all Brands  all Locations  all Seasons  11480
+2       Sony  all Brands  all Locations  all Seasons  19170
+------------------
+aggregated insights:
+{'point': [], 'shape': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: []
+In the filtered subspace, the insight is: 
+Type: kurtosis
+Score: 4.03474306384197
+Category: shape
+Description: The Sale exhibit leptokurtic behavior with heavy tails and a sharp peak, indicating a distribution with positive kurtosis.)
+], 'compound': []}
+---------------------------
+aggregated header:
+(2015,)
+aggregated data:
+     Company       Brand       Location       Season   Sale
+0  Microsoft  all Brands  all Locations  all Seasons   8960
+1   Nintendo  all Brands  all Locations  all Seasons  11480
+2       Sony  all Brands  all Locations  all Seasons  19170
+------------------
+aggregated insights:
+{'point': [], 'shape': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: []
+In the filtered subspace, the insight is: 
+Type: kurtosis
+Score: 4.03474306384197
+Category: shape
+Description: The Sale exhibit leptokurtic behavior with heavy tails and a sharp peak, indicating a distribution with positive kurtosis.)
+], 'compound': []}
+---------------------------
+aggregated header:
+(2015,)
+aggregated data:
+     Company       Brand       Location       Season   Sale
+0  Microsoft  all Brands  all Locations  all Seasons   8960
+1   Nintendo  all Brands  all Locations  all Seasons  11480
+2       Sony  all Brands  all Locations  all Seasons  19170
+------------------
+aggregated insights:
+{'point': [], 'shape': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: []
+In the filtered subspace, the insight is: 
+Type: kurtosis
+Score: 4.03474306384197
+Category: shape
+Description: The Sale exhibit leptokurtic behavior with heavy tails and a sharp peak, indicating a distribution with positive kurtosis.)
+], 'compound': []}
+---------------------------
+aggregated header:
+(2015,)
+aggregated data:
+     Company       Brand       Location       Season   Sale
+0  Microsoft  all Brands  all Locations  all Seasons   8960
+1   Nintendo  all Brands  all Locations  all Seasons  11480
+2       Sony  all Brands  all Locations  all Seasons  19170
+------------------
+aggregated insights:
+{'point': [], 'shape': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: []
+In the filtered subspace, the insight is: 
+Type: kurtosis
+Score: 4.03474306384197
+Category: shape
+Description: The Sale exhibit leptokurtic behavior with heavy tails and a sharp peak, indicating a distribution with positive kurtosis.)
+], 'compound': []}
+---------------------------
+aggregated header:
+(2015,)
+aggregated data:
+     Company       Brand       Location       Season   Sale
+0  Microsoft  all Brands  all Locations  all Seasons   8960
+1   Nintendo  all Brands  all Locations  all Seasons  11480
+2       Sony  all Brands  all Locations  all Seasons  19170
+------------------
+aggregated insights:
+{'point': [], 'shape': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: []
+In the filtered subspace, the insight is: 
+Type: kurtosis
+Score: 4.03474306384197
+Category: shape
+Description: The Sale exhibit leptokurtic behavior with heavy tails and a sharp peak, indicating a distribution with positive kurtosis.)
+], 'compound': []}
+---------------------------
+aggregated header:
+(2015,)
+aggregated data:
+     Company       Brand       Location       Season   Sale
+0  Microsoft  all Brands  all Locations  all Seasons   8960
+1   Nintendo  all Brands  all Locations  all Seasons  11480
+2       Sony  all Brands  all Locations  all Seasons  19170
+------------------
+aggregated insights:
+{'point': [], 'shape': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: []
+In the filtered subspace, the insight is: 
+Type: kurtosis
+Score: 4.03474306384197
+Category: shape
+Description: The Sale exhibit leptokurtic behavior with heavy tails and a sharp peak, indicating a distribution with positive kurtosis.)
+], 'compound': []}
+---------------------------
+aggregated header:
+(2015,)
+aggregated data:
+     Company       Brand       Location       Season   Sale
+0  Microsoft  all Brands  all Locations  all Seasons   8960
+1   Nintendo  all Brands  all Locations  all Seasons  11480
+2       Sony  all Brands  all Locations  all Seasons  19170
+------------------
+aggregated insights:
+{'point': [], 'shape': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: []
+In the filtered subspace, the insight is: 
+Type: kurtosis
+Score: 4.03474306384197
+Category: shape
+Description: The Sale exhibit leptokurtic behavior with heavy tails and a sharp peak, indicating a distribution with positive kurtosis.)
+], 'compound': []}
+---------------------------
+aggregated header:
+(2015,)
+aggregated data:
+     Company       Brand       Location       Season   Sale
+0  Microsoft  all Brands  all Locations  all Seasons   8960
+1   Nintendo  all Brands  all Locations  all Seasons  11480
+2       Sony  all Brands  all Locations  all Seasons  19170
+------------------
+aggregated insights:
+{'point': [], 'shape': [
+(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+Context: Filtered the original data table with the conditions: []
+In the filtered subspace, the insight is: 
+Type: kurtosis
+Score: 4.03474306384197
+Category: shape
+Description: The Sale exhibit leptokurtic behavior with heavy tails and a sharp peak, indicating a distribution with positive kurtosis.)
+], 'compound': []}
