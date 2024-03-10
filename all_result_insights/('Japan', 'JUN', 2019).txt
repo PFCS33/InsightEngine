@@ -433,3 +433,54 @@ Score: 0.6624203821656051
 Category: point
 Description: The Sale of Nintendo dominates among all Companys.)
 ], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Japan', 'JUN', 2019)
+aggregated data:
+     Company       Brand  Sale
+0  Microsoft  all Brands     0
+1   Nintendo  all Brands  1140
+2       Sony  all Brands   430
+------------------
+aggregated insights:
+{'point': [
+(Context: Filtered the original data table with the conditions: [Location = Japan, Season = JUN]
+In the filtered subspace, the insight is: 
+Type: dominance
+Score: 0.6624203821656051
+Category: point
+Description: The Sale of Nintendo dominates among all Companys.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Japan', 'JUN', 2019)
+aggregated data:
+     Company       Brand  Sale
+0  Microsoft  all Brands     0
+1   Nintendo  all Brands  1140
+2       Sony  all Brands   430
+------------------
+aggregated insights:
+{'point': [
+Type: dominance
+Score: 0.6624203821656051
+Category: point
+Description: The Sale of Nintendo dominates among all Companys.
+
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Japan', 'JUN', 2019)
+aggregated data:
+     Company       Brand  Sale
+0  Microsoft  all Brands     0
+1   Nintendo  all Brands  1140
+2       Sony  all Brands   430
+------------------
+aggregated insights:
+{'point': [
+Type: dominance
+Score: 0.6624203821656051
+Category: point
+Description: The Sale of Nintendo dominates among all Companys.
+], 'shape': [], 'compound': []}

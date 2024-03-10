@@ -9,13 +9,10 @@ row data:
 ------------------
 insights:
 {'point': [
-(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
-Context: Filtered the original data table with the conditions: [Brand = Xbox One (XOne), Location = Europe, Company = Microsoft]
-In the filtered subspace, the insight is: 
 Type: top2
 Score: 0.40932642487046633
 Category: point
-Description: The Sale proportion of MAR and DEC is significantly higher than that of other Seasons.)
+Description: The Sale proportion of MAR and DEC is significantly higher than that of other Seasons.
 ], 'shape': [], 'compound': []}
 ---------------------------
 aggregated header:
@@ -29,11 +26,8 @@ aggregated data:
 ------------------
 aggregated insights:
 {'point': [
-(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
-Context: Filtered the original data table with the conditions: [Brand = Xbox One (XOne), Location = Europe]
-In the filtered subspace, the insight is: 
 Type: top2
 Score: 0.40932642487046633
 Category: point
-Description: The Sale proportion of Microsoft and Microsoft is significantly higher than that of other Companys.)
+Description: The Sale proportion of Microsoft and Microsoft is significantly higher than that of other Companys.
 ], 'shape': [], 'compound': []}

@@ -477,3 +477,57 @@ Score: 0.5949367088607594
 Category: point
 Description: The Sale proportion of Nintendo and Nintendo is significantly higher than that of other Companys.)
 ], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo DS (DS)', 'MAR', 'Nintendo')
+aggregated data:
+        Location       Year  Sale
+0         Europe  all Years   250
+1          Japan  all Years     0
+2  North America  all Years   540
+3          Other  all Years     0
+------------------
+aggregated insights:
+{'point': [
+(Context: Filtered the original data table with the conditions: [Brand = Nintendo DS (DS), Season = MAR]
+In the filtered subspace, the insight is: 
+Type: top2
+Score: 0.5949367088607594
+Category: point
+Description: The Sale proportion of Nintendo and Nintendo is significantly higher than that of other Companys.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo DS (DS)', 'MAR', 'Nintendo')
+aggregated data:
+        Location       Year  Sale
+0         Europe  all Years   250
+1          Japan  all Years     0
+2  North America  all Years   540
+3          Other  all Years     0
+------------------
+aggregated insights:
+{'point': [
+Type: top2
+Score: 0.5949367088607594
+Category: point
+Description: The Sale proportion of Nintendo and Nintendo is significantly higher than that of other Companys.
+
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo DS (DS)', 'MAR', 'Nintendo')
+aggregated data:
+        Location       Year  Sale
+0         Europe  all Years   250
+1          Japan  all Years     0
+2  North America  all Years   540
+3          Other  all Years     0
+------------------
+aggregated insights:
+{'point': [
+Type: top2
+Score: 0.5949367088607594
+Category: point
+Description: The Sale proportion of Nintendo and Nintendo is significantly higher than that of other Companys.
+], 'shape': [], 'compound': []}

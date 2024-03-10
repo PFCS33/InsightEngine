@@ -18,11 +18,8 @@ row data:
 ------------------
 insights:
 {'point': [
-(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
-Context: Filtered the original data table with the conditions: [Company = Sony, Location = Other]
-In the filtered subspace, the insight is: 
 Type: dominance
 Score: 0.76875
 Category: point
-Description: The Sale of PlayStation 4 (PS4) dominates among all Brands.)
+Description: The Sale of PlayStation 4 (PS4) dominates among all Brands.
 ], 'shape': [], 'compound': []}

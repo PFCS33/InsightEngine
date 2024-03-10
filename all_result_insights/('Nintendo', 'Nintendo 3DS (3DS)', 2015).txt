@@ -601,3 +601,57 @@ Score: 2.4432085481844177
 Category: point
 Description: The Sale of Location North America of Season MAR is an outlier, which is significantly higher than the normal Sale of other Locations in the corresponding Seasons.)
 ], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo', 'Nintendo 3DS (3DS)', 2015)
+aggregated data:
+        Location       Season  Sale
+0         Europe  all Seasons  2340
+1          Japan  all Seasons  2330
+2  North America  all Seasons  2920
+3          Other  all Seasons   600
+------------------
+aggregated insights:
+{'point': [
+(Context: Filtered the original data table with the conditions: [Company = Nintendo, Brand = Nintendo 3DS (3DS)]
+In the filtered subspace, the insight is: 
+Type: outlier
+Score: 2.4432085481844177
+Category: point
+Description: The Sale of Location North America of Season MAR is an outlier, which is significantly higher than the normal Sale of other Locations in the corresponding Seasons.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo', 'Nintendo 3DS (3DS)', 2015)
+aggregated data:
+        Location       Season  Sale
+0         Europe  all Seasons  2340
+1          Japan  all Seasons  2330
+2  North America  all Seasons  2920
+3          Other  all Seasons   600
+------------------
+aggregated insights:
+{'point': [
+Type: outlier
+Score: 2.4432085481844177
+Category: point
+Description: The Sale of Location North America of Season MAR is an outlier, which is significantly higher than the normal Sale of other Locations in the corresponding Seasons.
+
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo', 'Nintendo 3DS (3DS)', 2015)
+aggregated data:
+        Location       Season  Sale
+0         Europe  all Seasons  2340
+1          Japan  all Seasons  2330
+2  North America  all Seasons  2920
+3          Other  all Seasons   600
+------------------
+aggregated insights:
+{'point': [
+Type: outlier
+Score: 2.4432085481844177
+Category: point
+Description: The Sale of Location North America of Season MAR is an outlier, which is significantly higher than the normal Sale of other Locations in the corresponding Seasons.
+], 'shape': [], 'compound': []}

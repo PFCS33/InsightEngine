@@ -30,7 +30,7 @@ class Insight:
         self.type = None
         self.score = None
         self.category = None
-        self.table_structure = table_structure
+        # self.table_structure = table_structure
         self.context = None  # header description, which is the filter condition of subspace
         self.description = None
 
@@ -38,23 +38,19 @@ class Insight:
         return self.score < other.score
 
     def __str__(self) -> str:
-        return f"\n(Table structure: {self.table_structure}\nContext: {self.context}\n" \
-               f"In the filtered subspace, the insight is: " \
-               f"\nType: {self.type}\nScore: {self.score}\nCategory: {self.category}\nDescription: {self.description})\n"
+        return f"\nType: {self.type}\nScore: {self.score}\nCategory: {self.category}\nDescription: {self.description}\n"
 
     def __repr__(self):
-        return f"\n(Table structure: {self.table_structure}\nContext: {self.context}\n" \
-               f"In the filtered subspace, the insight is: " \
-               f"\nType: {self.type}\nScore: {self.score}\nCategory: {self.category}\nDescription: {self.description})\n"
+        return f"\nType: {self.type}\nScore: {self.score}\nCategory: {self.category}\nDescription: {self.description}\n"
 
 
-def get_insight(header, block_data, aggregated_data):
+def get_insight(header, block_data):
     aggregate = 'sum'
-    global block_insight  # record the insights for the current block
-    global aggregated_block_insight
+    global block_insight  # record the insights for the current block # group by insight type
+    global subspace_insight
     # contains three types of insight
     block_insight = {'point': [], 'shape': [], 'compound': []}
-    aggregated_block_insight = {'point': [], 'shape': [], 'compound': []}
+    subspace_insight = {}
 
     # change categorical to string
     for col in block_data.columns:
@@ -64,13 +60,14 @@ def get_insight(header, block_data, aggregated_data):
     # no breakdown, consider all data together
     get_scope_no_breakdown(header, block_data)
 
-    # only consider the first layer of headers as breakdown and aggregate
-    aggregated_header, aggregated_data = get_scope_with_aggregate(header, block_data, 0,
-                                                                                   aggregate)  # index header
+    # aggregate by every column
+    for i in range(len(block_data.columns) - 1):
+        get_scope_with_aggregate(header, block_data, i, aggregate)  # i is the breakdown index
+
     # consider all layers and generate groups, no aggregate, compound insights
     # get_scope_rearrange(header, block_data)
 
-    return aggregated_header, block_insight, aggregated_data, aggregated_block_insight
+    return block_insight, subspace_insight
 
 
 def merge_columns(block_data, start, end, name='Merged'):
@@ -101,6 +98,9 @@ def get_scope_no_breakdown(header, block_data):
 
 
 def get_scope_with_aggregate(header, block_data, breakdown, aggregate):
+    scope_data = block_data.groupby(block_data.columns[breakdown]).agg('sum')
+    scope_data = scope_data.reset_index()
+
     # check if main column has only one entity
     abstract_header = ""
     if len(set(block_data.iloc[:, 0])) == 1 and len(block_data.columns) > 2:
@@ -113,9 +113,6 @@ def get_scope_with_aggregate(header, block_data, breakdown, aggregate):
     else:
         aggregated_header = header
 
-    scope_data = block_data.groupby(
-        block_data.columns[breakdown]).agg(aggregate)
-    scope_data = scope_data.reset_index()
 
     # -----process duplicated content in cell-----
     columns_to_update = scope_data.columns[1:-1]
@@ -142,8 +139,6 @@ def get_scope_with_aggregate(header, block_data, breakdown, aggregate):
         scope_data.index = scope_data.index.to_series().replace(letter2month, regex=True)
 
     calc_insight(aggregated_header, scope_data, breakdown, aggregate)
-
-    return aggregated_header, scope_data
 
 
 def get_scope_rearrange_old(header, block_data, header_split):
@@ -240,7 +235,7 @@ def get_scope_rearrange_advanced(origin_data, header_name, idx_num, col_num):
         save_insight(scope_data, 'compound', 'correlation-temporal', tmp_score)
 
 
-def save_insight(scope_data, ins_category, ins_type, ins_score, header_description, ins_description, breakdown=None,
+def save_insight(header, scope_data, ins_category, ins_type, ins_score, header_description, ins_description, breakdown=None,
                  aggregate=None):
     insight = Insight(scope_data, breakdown, aggregate)
     insight.type = ins_type
@@ -249,6 +244,10 @@ def save_insight(scope_data, ins_category, ins_type, ins_score, header_descripti
     insight.context = header_description
     insight.description = ins_description
 
+    if header not in subspace_insight:
+        subspace_insight[header] = []
+    subspace_insight[header].append(insight)
+
     # # keep the top1 insight for each category
     # if block_insight[ins_category] is None:
     #     block_insight[ins_category] = insight
@@ -256,10 +255,7 @@ def save_insight(scope_data, ins_category, ins_type, ins_score, header_descripti
     #     block_insight[ins_category] = insight
 
     # keep_top_k(ins_category, insight, 3)
-    if aggregate is None:
-        aggregated_block_insight[ins_category].append(insight)
-    else:
-        block_insight[ins_category].append(insight)
+
 
     # sort the insight list
     # if len(block_insight[ins_category]) > 1:
@@ -284,27 +280,27 @@ def calc_insight(header, scope_data, breakdown, aggregate, no_aggreate=False):
     if check_is_temporal(scope_data):
         ins_type, ins_score, ins_description = calc_shape_insight(scope_data)
         if ins_score > 0:
-            save_insight(scope_data, 'shape', ins_type,
+            save_insight(header, scope_data, 'shape', ins_type,
                          ins_score, header_description, ins_description, breakdown, aggregate)
-        ins_type, ins_score, ins_description = calc_outlier_temporal(scope_data)
-        if ins_score > 0:
-            save_insight(scope_data, 'point', ins_type,
-                         ins_score, header_description, ins_description, breakdown, aggregate)
+        insights = calc_outlier_temporal(scope_data)
+        for insight in insights:
+            save_insight(header, scope_data, 'point', insight['ins_type'],
+                         insight['ins_score'], header_description, insight['ins_description'], breakdown, aggregate)
     else:
         ins_type, ins_score, ins_description = calc_point_insight(scope_data, no_aggreate)
         if ins_score > 0:
-            save_insight(scope_data, 'point', ins_type,
+            save_insight(header, scope_data, 'point', ins_type,
                          ins_score, header_description, ins_description, breakdown, aggregate)
-        ins_type, ins_score, ins_description = calc_outlier(scope_data)
-        if ins_score > 0:
-            save_insight(scope_data, 'point', ins_type,
-                         ins_score, header_description, ins_description, breakdown, aggregate)
+        insights = calc_outlier(scope_data)
+        for insight in insights:
+            save_insight(header, scope_data, 'point', insight['ins_type'],
+                         insight['ins_score'], header_description, insight['ins_description'], breakdown, aggregate)
 
         # remove all zeros when calculating distribution insight
         # scope_data = scope_data[scope_data != 0]
         ins_type, ins_score, ins_description = calc_distribution_insight(scope_data)
         if ins_score > 0:
-            save_insight(scope_data, 'shape', ins_type,
+            save_insight(header, scope_data, 'shape', ins_type,
                          ins_score, header_description, ins_description, breakdown, aggregate)
 
 

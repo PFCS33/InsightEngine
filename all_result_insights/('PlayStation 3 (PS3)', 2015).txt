@@ -21,13 +21,10 @@ row data:
 ------------------
 insights:
 {'point': [
-(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
-Context: Filtered the original data table with the conditions: [Brand = PlayStation 3 (PS3), Company = Sony]
-In the filtered subspace, the insight is: 
 Type: dominance
 Score: 0.5045871559633027
 Category: point
-Description: The Sale of Europe dominates among all Locations.)
+Description: The Sale of Europe dominates among all Locations.
 ], 'shape': [], 'compound': []}
 ---------------------------
 aggregated header:
@@ -41,11 +38,8 @@ aggregated data:
 ------------------
 aggregated insights:
 {'point': [
-(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
-Context: Filtered the original data table with the conditions: [Brand = PlayStation 3 (PS3)]
-In the filtered subspace, the insight is: 
 Type: outlier
 Score: 3.507948044350897
 Category: point
-Description: The Sale of Company Sony of Location Europe of Season MAR is an outlier, which is significantly higher than the normal Sale of other Companys in the corresponding Locations, Seasons.)
+Description: The Sale of Company Sony of Location Europe of Season MAR is an outlier, which is significantly higher than the normal Sale of other Companys in the corresponding Locations, Seasons.
 ], 'shape': [], 'compound': []}

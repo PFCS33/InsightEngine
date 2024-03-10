@@ -12,36 +12,9 @@ row data:
 7  Nintendo  2020   110
 ------------------
 insights:
-{'point': [], 'shape': [], 'compound': []}
----------------------------
-aggregated header:
-('Nintendo 3DS (3DS)', 'North America', 'MAR', 'Nintendo')
-aggregated data:
-   Year  Sale
-0  2013  1410
-1  2014  2130
-2  2015  1480
-3  2016  1030
-4  2017  1260
-5  2018  1320
-6  2019   630
-7  2020   110
-------------------
-aggregated insights:
-{'point': [], 'shape': [], 'compound': []}
----------------------------
-aggregated header:
-('Nintendo 3DS (3DS)', 'North America', 'MAR', 'Nintendo')
-aggregated data:
-   Year  Sale
-0  2013  1410
-1  2014  2130
-2  2015  1480
-3  2016  1030
-4  2017  1260
-5  2018  1320
-6  2019   630
-7  2020   110
-------------------
-aggregated insights:
-{'point': [], 'shape': [], 'compound': []}
+{'point': [
+Type: outlier-temporal
+Score: -1.8831593517752274
+Category: point
+Description: The Sale of Year 2020 is an outlier, which is significantly lower than the normal Sale of other Years.
+], 'shape': [], 'compound': []}

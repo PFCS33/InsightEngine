@@ -37,13 +37,10 @@ row data:
 ------------------
 insights:
 {'point': [
-(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
-Context: Filtered the original data table with the conditions: [Company = Nintendo, Brand = Wii (Wii), Location = Other]
-In the filtered subspace, the insight is: 
 Type: dominance
 Score: 0.7407407407407407
 Category: point
-Description: The Sale of DEC dominates among all Seasons.)
+Description: The Sale of DEC dominates among all Seasons.
 ], 'shape': [], 'compound': []}
 ---------------------------
 aggregated header:
@@ -57,11 +54,8 @@ aggregated data:
 ------------------
 aggregated insights:
 {'point': [
-(Table structure: {'Company': ['Nintendo', 'Sony', 'Microsoft'], 'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 'Location': ['Europe', 'Japan', 'North America', 'Other'], 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
-Context: Filtered the original data table with the conditions: [Company = Nintendo, Brand = Wii (Wii), Location = Other]
-In the filtered subspace, the insight is: 
 Type: dominance
 Score: 0.7407407407407407
 Category: point
-Description: The Sale of DEC dominates among all Seasons.)
+Description: The Sale of DEC dominates among all Seasons.
 ], 'shape': [], 'compound': []}

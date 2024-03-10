@@ -414,3 +414,54 @@ Score: 0.3102785782901057
 Category: point
 Description: The Sale proportion of Microsoft and Sony is significantly higher than that of other Companys.)
 ], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('North America', 'MAR', 2018)
+aggregated data:
+     Company       Brand  Sale
+0  Microsoft  all Brands  3230
+1   Nintendo  all Brands  4010
+2       Sony  all Brands  3170
+------------------
+aggregated insights:
+{'point': [
+(Context: Filtered the original data table with the conditions: [Location = North America, Season = MAR]
+In the filtered subspace, the insight is: 
+Type: top2
+Score: 0.3102785782901057
+Category: point
+Description: The Sale proportion of Microsoft and Sony is significantly higher than that of other Companys.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('North America', 'MAR', 2018)
+aggregated data:
+     Company       Brand  Sale
+0  Microsoft  all Brands  3230
+1   Nintendo  all Brands  4010
+2       Sony  all Brands  3170
+------------------
+aggregated insights:
+{'point': [
+Type: top2
+Score: 0.3102785782901057
+Category: point
+Description: The Sale proportion of Microsoft and Sony is significantly higher than that of other Companys.
+
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('North America', 'MAR', 2018)
+aggregated data:
+     Company       Brand  Sale
+0  Microsoft  all Brands  3230
+1   Nintendo  all Brands  4010
+2       Sony  all Brands  3170
+------------------
+aggregated insights:
+{'point': [
+Type: top2
+Score: 0.3102785782901057
+Category: point
+Description: The Sale proportion of Microsoft and Sony is significantly higher than that of other Companys.
+], 'shape': [], 'compound': []}

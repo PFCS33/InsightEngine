@@ -541,3 +541,69 @@ Score: 0.40625
 Category: point
 Description: The Sale proportion of Nintendo and Nintendo is significantly higher than that of other Companys.)
 ], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Wii (Wii)', 'North America', 'DEC', 'Nintendo')
+aggregated data:
+   Year  Sale
+0  2013   120
+1  2014    60
+2  2015    10
+3  2016     0
+4  2017   130
+5  2018     0
+6  2019     0
+7  2020     0
+------------------
+aggregated insights:
+{'point': [
+(Context: Filtered the original data table with the conditions: [Brand = Wii (Wii), Location = North America, Season = DEC]
+In the filtered subspace, the insight is: 
+Type: top2
+Score: 0.40625
+Category: point
+Description: The Sale proportion of Nintendo and Nintendo is significantly higher than that of other Companys.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Wii (Wii)', 'North America', 'DEC', 'Nintendo')
+aggregated data:
+   Year  Sale
+0  2013   120
+1  2014    60
+2  2015    10
+3  2016     0
+4  2017   130
+5  2018     0
+6  2019     0
+7  2020     0
+------------------
+aggregated insights:
+{'point': [
+Type: top2
+Score: 0.40625
+Category: point
+Description: The Sale proportion of Nintendo and Nintendo is significantly higher than that of other Companys.
+
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Wii (Wii)', 'North America', 'DEC', 'Nintendo')
+aggregated data:
+   Year  Sale
+0  2013   120
+1  2014    60
+2  2015    10
+3  2016     0
+4  2017   130
+5  2018     0
+6  2019     0
+7  2020     0
+------------------
+aggregated insights:
+{'point': [
+Type: top2
+Score: 0.40625
+Category: point
+Description: The Sale proportion of Nintendo and Nintendo is significantly higher than that of other Companys.
+], 'shape': [], 'compound': []}

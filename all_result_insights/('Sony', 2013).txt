@@ -254,3 +254,54 @@ Score: 2.1499148140706583
 Category: shape
 Description: The Sale has a positively skewed distribution, which means that there are more extreme Sale values on the right side, and the distribution is skewed to the right.)
 ], 'compound': []}
+---------------------------
+aggregated header:
+('Sony', 2013)
+aggregated data:
+                    Brand       Location       Season   Sale
+0     PlayStation 3 (PS3)  all Locations  all Seasons  10240
+1     PlayStation 4 (PS4)  all Locations  all Seasons      0
+2  PlayStation Vita (PSV)  all Locations  all Seasons   2480
+------------------
+aggregated insights:
+{'point': [], 'shape': [
+(Context: Filtered the original data table with the conditions: [Company = Sony]
+In the filtered subspace, the insight is: 
+Type: skewness
+Score: 2.1499148140706583
+Category: shape
+Description: The Sale has a positively skewed distribution, which means that there are more extreme Sale values on the right side, and the distribution is skewed to the right.)
+], 'compound': []}
+---------------------------
+aggregated header:
+('Sony', 2013)
+aggregated data:
+                    Brand       Location       Season   Sale
+0     PlayStation 3 (PS3)  all Locations  all Seasons  10240
+1     PlayStation 4 (PS4)  all Locations  all Seasons      0
+2  PlayStation Vita (PSV)  all Locations  all Seasons   2480
+------------------
+aggregated insights:
+{'point': [], 'shape': [
+Type: skewness
+Score: 2.1499148140706583
+Category: shape
+Description: The Sale has a positively skewed distribution, which means that there are more extreme Sale values on the right side, and the distribution is skewed to the right.
+
+], 'compound': []}
+---------------------------
+aggregated header:
+('Sony', 2013)
+aggregated data:
+                    Brand       Location       Season   Sale
+0     PlayStation 3 (PS3)  all Locations  all Seasons  10240
+1     PlayStation 4 (PS4)  all Locations  all Seasons      0
+2  PlayStation Vita (PSV)  all Locations  all Seasons   2480
+------------------
+aggregated insights:
+{'point': [], 'shape': [
+Type: skewness
+Score: 2.1499148140706583
+Category: shape
+Description: The Sale has a positively skewed distribution, which means that there are more extreme Sale values on the right side, and the distribution is skewed to the right.
+], 'compound': []}

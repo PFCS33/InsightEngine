@@ -373,3 +373,51 @@ Score: 0.4030612244897959
 Category: point
 Description: The Sale proportion of Xbox 360 (X360) and Xbox 360 (X360) is significantly higher than that of other Brands.)
 ], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Microsoft', 'North America', 2013)
+aggregated data:
+             Brand       Season  Sale
+0  Xbox 360 (X360)  all Seasons  3920
+1  Xbox One (XOne)  all Seasons     0
+------------------
+aggregated insights:
+{'point': [
+(Context: Filtered the original data table with the conditions: [Company = Microsoft, Location = North America]
+In the filtered subspace, the insight is: 
+Type: top2
+Score: 0.4030612244897959
+Category: point
+Description: The Sale proportion of Xbox 360 (X360) and Xbox 360 (X360) is significantly higher than that of other Brands.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Microsoft', 'North America', 2013)
+aggregated data:
+             Brand       Season  Sale
+0  Xbox 360 (X360)  all Seasons  3920
+1  Xbox One (XOne)  all Seasons     0
+------------------
+aggregated insights:
+{'point': [
+Type: top2
+Score: 0.4030612244897959
+Category: point
+Description: The Sale proportion of Xbox 360 (X360) and Xbox 360 (X360) is significantly higher than that of other Brands.
+
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Microsoft', 'North America', 2013)
+aggregated data:
+             Brand       Season  Sale
+0  Xbox 360 (X360)  all Seasons  3920
+1  Xbox One (XOne)  all Seasons     0
+------------------
+aggregated insights:
+{'point': [
+Type: top2
+Score: 0.4030612244897959
+Category: point
+Description: The Sale proportion of Xbox 360 (X360) and Xbox 360 (X360) is significantly higher than that of other Brands.
+], 'shape': [], 'compound': []}

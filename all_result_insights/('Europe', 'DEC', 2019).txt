@@ -547,3 +547,54 @@ Score: 0.5340909090909091
 Category: point
 Description: The Sale proportion of Sony and Nintendo is significantly higher than that of other Companys.)
 ], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Europe', 'DEC', 2019)
+aggregated data:
+     Company       Brand  Sale
+0  Microsoft  all Brands     0
+1   Nintendo  all Brands  1640
+2       Sony  all Brands  1880
+------------------
+aggregated insights:
+{'point': [
+(Context: Filtered the original data table with the conditions: [Location = Europe, Season = DEC]
+In the filtered subspace, the insight is: 
+Type: top2
+Score: 0.5340909090909091
+Category: point
+Description: The Sale proportion of Sony and Nintendo is significantly higher than that of other Companys.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Europe', 'DEC', 2019)
+aggregated data:
+     Company       Brand  Sale
+0  Microsoft  all Brands     0
+1   Nintendo  all Brands  1640
+2       Sony  all Brands  1880
+------------------
+aggregated insights:
+{'point': [
+Type: top2
+Score: 0.5340909090909091
+Category: point
+Description: The Sale proportion of Sony and Nintendo is significantly higher than that of other Companys.
+
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Europe', 'DEC', 2019)
+aggregated data:
+     Company       Brand  Sale
+0  Microsoft  all Brands     0
+1   Nintendo  all Brands  1640
+2       Sony  all Brands  1880
+------------------
+aggregated insights:
+{'point': [
+Type: top2
+Score: 0.5340909090909091
+Category: point
+Description: The Sale proportion of Sony and Nintendo is significantly higher than that of other Companys.
+], 'shape': [], 'compound': []}

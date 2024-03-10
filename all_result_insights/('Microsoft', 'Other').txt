@@ -190,3 +190,51 @@ Score: 2.0897080786323197
 Category: shape
 Description: The Sale has a positively skewed distribution, which means that there are more extreme Sale values on the right side, and the distribution is skewed to the right.)
 ], 'compound': []}
+---------------------------
+aggregated header:
+('Microsoft', 'Other')
+aggregated data:
+             Brand       Season       Year  Sale
+0  Xbox 360 (X360)  all Seasons  all Years  1970
+1  Xbox One (XOne)  all Seasons  all Years  4780
+------------------
+aggregated insights:
+{'point': [], 'shape': [
+(Context: Filtered the original data table with the conditions: [Company = Microsoft, Location = Other]
+In the filtered subspace, the insight is: 
+Type: skewness
+Score: 2.0897080786323197
+Category: shape
+Description: The Sale has a positively skewed distribution, which means that there are more extreme Sale values on the right side, and the distribution is skewed to the right.)
+], 'compound': []}
+---------------------------
+aggregated header:
+('Microsoft', 'Other')
+aggregated data:
+             Brand       Season       Year  Sale
+0  Xbox 360 (X360)  all Seasons  all Years  1970
+1  Xbox One (XOne)  all Seasons  all Years  4780
+------------------
+aggregated insights:
+{'point': [], 'shape': [
+Type: skewness
+Score: 2.0897080786323197
+Category: shape
+Description: The Sale has a positively skewed distribution, which means that there are more extreme Sale values on the right side, and the distribution is skewed to the right.
+
+], 'compound': []}
+---------------------------
+aggregated header:
+('Microsoft', 'Other')
+aggregated data:
+             Brand       Season       Year  Sale
+0  Xbox 360 (X360)  all Seasons  all Years  1970
+1  Xbox One (XOne)  all Seasons  all Years  4780
+------------------
+aggregated insights:
+{'point': [], 'shape': [
+Type: skewness
+Score: 2.0897080786323197
+Category: shape
+Description: The Sale has a positively skewed distribution, which means that there are more extreme Sale values on the right side, and the distribution is skewed to the right.
+], 'compound': []}

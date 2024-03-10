@@ -381,3 +381,51 @@ Score: 0.5900621118012422
 Category: point
 Description: The Sale of Xbox 360 (X360) dominates among all Brands.)
 ], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Microsoft', 'Other', 'SEP')
+aggregated data:
+             Brand       Year  Sale
+0  Xbox 360 (X360)  all Years  1050
+1  Xbox One (XOne)  all Years   560
+------------------
+aggregated insights:
+{'point': [
+(Context: Filtered the original data table with the conditions: [Company = Microsoft, Location = Other, Season = SEP]
+In the filtered subspace, the insight is: 
+Type: dominance
+Score: 0.5900621118012422
+Category: point
+Description: The Sale of Xbox 360 (X360) dominates among all Brands.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Microsoft', 'Other', 'SEP')
+aggregated data:
+             Brand       Year  Sale
+0  Xbox 360 (X360)  all Years  1050
+1  Xbox One (XOne)  all Years   560
+------------------
+aggregated insights:
+{'point': [
+Type: dominance
+Score: 0.5900621118012422
+Category: point
+Description: The Sale of Xbox 360 (X360) dominates among all Brands.
+
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Microsoft', 'Other', 'SEP')
+aggregated data:
+             Brand       Year  Sale
+0  Xbox 360 (X360)  all Years  1050
+1  Xbox One (XOne)  all Years   560
+------------------
+aggregated insights:
+{'point': [
+Type: dominance
+Score: 0.5900621118012422
+Category: point
+Description: The Sale of Xbox 360 (X360) dominates among all Brands.
+], 'shape': [], 'compound': []}

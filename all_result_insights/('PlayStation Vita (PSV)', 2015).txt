@@ -441,3 +441,57 @@ Score: 3.5246039891721006
 Category: point
 Description: The Sale of Company Sony of Location Europe of Season SEP is an outlier, which is significantly higher than the normal Sale of other Companys in the corresponding Locations, Seasons.)
 ], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('PlayStation Vita (PSV)', 2015, 'Sony')
+aggregated data:
+        Location       Season  Sale
+0         Europe  all Seasons  1640
+1          Japan  all Seasons   920
+2  North America  all Seasons   320
+3          Other  all Seasons   830
+------------------
+aggregated insights:
+{'point': [
+(Context: Filtered the original data table with the conditions: [Brand = PlayStation Vita (PSV)]
+In the filtered subspace, the insight is: 
+Type: outlier
+Score: 3.5246039891721006
+Category: point
+Description: The Sale of Company Sony of Location Europe of Season SEP is an outlier, which is significantly higher than the normal Sale of other Companys in the corresponding Locations, Seasons.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('PlayStation Vita (PSV)', 2015, 'Sony')
+aggregated data:
+        Location       Season  Sale
+0         Europe  all Seasons  1640
+1          Japan  all Seasons   920
+2  North America  all Seasons   320
+3          Other  all Seasons   830
+------------------
+aggregated insights:
+{'point': [
+Type: outlier
+Score: 3.5246039891721006
+Category: point
+Description: The Sale of Company Sony of Location Europe of Season SEP is an outlier, which is significantly higher than the normal Sale of other Companys in the corresponding Locations, Seasons.
+
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('PlayStation Vita (PSV)', 2015, 'Sony')
+aggregated data:
+        Location       Season  Sale
+0         Europe  all Seasons  1640
+1          Japan  all Seasons   920
+2  North America  all Seasons   320
+3          Other  all Seasons   830
+------------------
+aggregated insights:
+{'point': [
+Type: outlier
+Score: 3.5246039891721006
+Category: point
+Description: The Sale of Company Sony of Location Europe of Season SEP is an outlier, which is significantly higher than the normal Sale of other Companys in the corresponding Locations, Seasons.
+], 'shape': [], 'compound': []}

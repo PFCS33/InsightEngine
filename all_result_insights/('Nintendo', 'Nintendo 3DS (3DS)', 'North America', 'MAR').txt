@@ -12,7 +12,12 @@ row data:
 7  2020   110
 ------------------
 insights:
-{'point': [], 'shape': [], 'compound': []}
+{'point': [
+Type: outlier-temporal
+Score: -1.8831593517752274
+Category: point
+Description: The Sale of Year 2020 is an outlier, which is significantly lower than the normal Sale of other Years.
+], 'shape': [], 'compound': []}
 ---------------------------
 aggregated header:
 ('Nintendo', 'Nintendo 3DS (3DS)', 'North America', 'MAR')
@@ -28,4 +33,9 @@ aggregated data:
 7  2020   110
 ------------------
 aggregated insights:
-{'point': [], 'shape': [], 'compound': []}
+{'point': [
+Type: outlier-temporal
+Score: -1.8831593517752274
+Category: point
+Description: The Sale of Year 2020 is an outlier, which is significantly lower than the normal Sale of other Years.
+], 'shape': [], 'compound': []}

@@ -461,3 +461,57 @@ Score: 3.4556979697403847
 Category: point
 Description: The Sale of Company Nintendo of Location North America of Season MAR is an outlier, which is significantly higher than the normal Sale of other Companys in the corresponding Locations, Seasons.)
 ], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Wii U (WiiU)', 2015, 'Nintendo')
+aggregated data:
+        Location       Season  Sale
+0         Europe  all Seasons   780
+1          Japan  all Seasons   690
+2  North America  all Seasons  1570
+3          Other  all Seasons   190
+------------------
+aggregated insights:
+{'point': [
+(Context: Filtered the original data table with the conditions: [Brand = Wii U (WiiU)]
+In the filtered subspace, the insight is: 
+Type: outlier
+Score: 3.4556979697403847
+Category: point
+Description: The Sale of Company Nintendo of Location North America of Season MAR is an outlier, which is significantly higher than the normal Sale of other Companys in the corresponding Locations, Seasons.)
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Wii U (WiiU)', 2015, 'Nintendo')
+aggregated data:
+        Location       Season  Sale
+0         Europe  all Seasons   780
+1          Japan  all Seasons   690
+2  North America  all Seasons  1570
+3          Other  all Seasons   190
+------------------
+aggregated insights:
+{'point': [
+Type: outlier
+Score: 3.4556979697403847
+Category: point
+Description: The Sale of Company Nintendo of Location North America of Season MAR is an outlier, which is significantly higher than the normal Sale of other Companys in the corresponding Locations, Seasons.
+
+], 'shape': [], 'compound': []}
+---------------------------
+aggregated header:
+('Wii U (WiiU)', 2015, 'Nintendo')
+aggregated data:
+        Location       Season  Sale
+0         Europe  all Seasons   780
+1          Japan  all Seasons   690
+2  North America  all Seasons  1570
+3          Other  all Seasons   190
+------------------
+aggregated insights:
+{'point': [
+Type: outlier
+Score: 3.4556979697403847
+Category: point
+Description: The Sale of Company Nintendo of Location North America of Season MAR is an outlier, which is significantly higher than the normal Sale of other Companys in the corresponding Locations, Seasons.
+], 'shape': [], 'compound': []}

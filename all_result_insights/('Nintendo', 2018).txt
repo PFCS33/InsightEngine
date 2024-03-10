@@ -409,3 +409,60 @@ Score: 3.1784288210336866
 Category: shape
 Description: The Sale exhibit leptokurtic behavior with heavy tails and a sharp peak, indicating a distribution with positive kurtosis.)
 ], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo', 2018)
+aggregated data:
+                  Brand       Location       Season   Sale
+0    Nintendo 3DS (3DS)  all Locations  all Seasons   5100
+1      Nintendo DS (DS)  all Locations  all Seasons      0
+2  Nintendo Switch (NS)  all Locations  all Seasons  14110
+3             Wii (Wii)  all Locations  all Seasons      0
+4          Wii U (WiiU)  all Locations  all Seasons      0
+------------------
+aggregated insights:
+{'point': [], 'shape': [
+(Context: Filtered the original data table with the conditions: [Company = Nintendo]
+In the filtered subspace, the insight is: 
+Type: kurtosis
+Score: 3.1784288210336866
+Category: shape
+Description: The Sale exhibit leptokurtic behavior with heavy tails and a sharp peak, indicating a distribution with positive kurtosis.)
+], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo', 2018)
+aggregated data:
+                  Brand       Location       Season   Sale
+0    Nintendo 3DS (3DS)  all Locations  all Seasons   5100
+1      Nintendo DS (DS)  all Locations  all Seasons      0
+2  Nintendo Switch (NS)  all Locations  all Seasons  14110
+3             Wii (Wii)  all Locations  all Seasons      0
+4          Wii U (WiiU)  all Locations  all Seasons      0
+------------------
+aggregated insights:
+{'point': [], 'shape': [
+Type: kurtosis
+Score: 3.1784288210336866
+Category: shape
+Description: The Sale exhibit leptokurtic behavior with heavy tails and a sharp peak, indicating a distribution with positive kurtosis.
+
+], 'compound': []}
+---------------------------
+aggregated header:
+('Nintendo', 2018)
+aggregated data:
+                  Brand       Location       Season   Sale
+0    Nintendo 3DS (3DS)  all Locations  all Seasons   5100
+1      Nintendo DS (DS)  all Locations  all Seasons      0
+2  Nintendo Switch (NS)  all Locations  all Seasons  14110
+3             Wii (Wii)  all Locations  all Seasons      0
+4          Wii U (WiiU)  all Locations  all Seasons      0
+------------------
+aggregated insights:
+{'point': [], 'shape': [
+Type: kurtosis
+Score: 3.1784288210336866
+Category: shape
+Description: The Sale exhibit leptokurtic behavior with heavy tails and a sharp peak, indicating a distribution with positive kurtosis.
+], 'compound': []}

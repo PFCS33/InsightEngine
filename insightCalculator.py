@@ -37,12 +37,13 @@ def calc_outlier(d):
     ins_type = ''
     ins_score = 0
     description = ""
+    insights = []
 
     sorted_d = d.sort_values(by=d.columns[-1], ascending=False)
     sorted_values = sorted_d.iloc[:, -1].values
 
     if len(sorted_values) < 8 or np.sum(sorted_values) == 0 or np.std(sorted_values) == 0:
-        return ins_type, ins_score, description  # too few data or all zero
+        return insights  # too few data or all zero
 
     result = outlier_detection(sorted_values, 2)
     if result:
@@ -55,57 +56,59 @@ def calc_outlier(d):
                 if outlier < lower_threshold:
                     ins_score = (outlier - sorted_values.mean()) / sorted_values.std()
                     description = generate_outlier_description(sorted_d, index, 'lower')
-                    # TODO
-                    # output_insight(ins_type, ins_score, description)
+                    insights.append({"ins_type": ins_type, "ins_score": ins_score, "ins_description": description})
                 elif outlier > upper_threshold:
                     ins_score = (outlier - sorted_values.mean()) / sorted_values.std()
                     description = generate_outlier_description(sorted_d, index, 'higher')
-                    # output_insight(ins_type, ins_score, description)
+                    insights.append({"ins_type": ins_type, "ins_score": ins_score, "ins_description": description})
                 # if ins_score > max_ins_score:
                 #     max_ins_score = ins_score
-            return ins_type, ins_score, description
+            return insights
         else:
             # else no outlier
-            return ins_type, ins_score, description
+            return insights
     else:
         # else no outlier
-        return ins_type, ins_score, description
+        return insights
 
 
 def calc_outlier_temporal(d):
     ins_type = ''
     ins_score = 0
     description = ""
+    insights = []
 
     sorted_d = d.sort_values(by=d.columns[-1], ascending=False)
     sorted_values = sorted_d.iloc[:, -1].values
 
     if len(sorted_values) < 5 or np.sum(sorted_values) == 0 or np.std(sorted_values) == 0:
-        return ins_type, ins_score, description  # too few data or all zero
+        return insights  # too few data or all zero
 
     result = outlier_detection(sorted_values, 1.5)
     if result:
         outliers, lower_threshold, upper_threshold = result
         if len(outliers) != 0 and len(outliers) < 3:
             ins_type = 'outlier-temporal'
-            max_ins_score = 0
+            # max_ins_score = 0
             for outlier in outliers:
                 index = np.where(sorted_values == outlier)[0]
                 if outlier < lower_threshold:
                     ins_score = (sorted_values[-1] - sorted_values.mean()) / sorted_values.std()
                     description = generate_outlier_description(sorted_d, index, 'lower')
+                    insights.append({"ins_type": ins_type, "ins_score": ins_score, "ins_description": description})
                 elif outlier > upper_threshold:
                     ins_score = (sorted_values[0] - sorted_values.mean()) / sorted_values.std()
                     description = generate_outlier_description(sorted_d, index, 'higher')
-                if ins_score > max_ins_score:
-                    max_ins_score = ins_score
-            return ins_type, max_ins_score, description
+                    insights.append({"ins_type": ins_type, "ins_score": ins_score, "ins_description": description})
+                # if ins_score > max_ins_score:
+                #     max_ins_score = ins_score
+            return insights
         else:
             # else no outlier
-            return ins_type, ins_score, description
+            return insights
     else:
         # else no outlier
-        return ins_type, ins_score, description
+        return insights
 
 
 
