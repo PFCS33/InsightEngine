@@ -235,6 +235,17 @@ def get_scope_rearrange_advanced(origin_data, header_name, idx_num, col_num):
         save_insight(scope_data, 'compound', 'correlation-temporal', tmp_score)
 
 
+def insight_exists(header, insight):
+    for existing_insight in subspace_insight[header]:
+        if existing_insight.type == insight.type \
+           and existing_insight.score == insight.score \
+           and existing_insight.category == insight.category \
+           and existing_insight.context == insight.context \
+           and existing_insight.description == insight.description:
+            return True
+    return False
+
+
 def save_insight(header, scope_data, ins_category, ins_type, ins_score, header_description, ins_description, breakdown=None,
                  aggregate=None):
     insight = Insight(scope_data, breakdown, aggregate)
@@ -246,7 +257,8 @@ def save_insight(header, scope_data, ins_category, ins_type, ins_score, header_d
 
     if header not in subspace_insight:
         subspace_insight[header] = []
-    subspace_insight[header].append(insight)
+    if not insight_exists(header, insight):
+        subspace_insight[header].append(insight)
 
     # # keep the top1 insight for each category
     # if block_insight[ins_category] is None:

@@ -72,7 +72,7 @@ class HierarchicalTable:
             #     # if set(idx+col) in curr_focus_headers:
             #     #     continue
             #     self.all_nodes.append(node)
-                # self.block_has_insight.append(header)
+            # self.block_has_insight.append(header)
 
         # file_path = 'subspace_list.txt'
         # with open(file_path, 'w') as file:
