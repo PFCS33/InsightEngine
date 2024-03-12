@@ -64,6 +64,8 @@ class HierarchicalTable:
         if os.path.exists('subspace_insight.txt'):
             os.remove('subspace_insight.txt')
         for header in header_dict:
+            if header == ('Xbox One (XOne)', 'Other', 2018):
+                print("done")
             with open('headers.txt', 'w') as file:
                 for key in header_dict.keys():
                     file.write(str(key) + '\n')

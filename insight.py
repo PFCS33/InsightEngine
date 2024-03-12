@@ -82,19 +82,32 @@ def merge_columns(block_data, start, end, name='Merged'):
 
 
 def get_scope_no_breakdown(header, block_data):
-    scope_data = None
-    # merge the first [merge_num] columns as the breakdown column
-    merge_num = block_data.shape[1] - 1
-    scope_data = merge_columns(block_data, 0, merge_num)
-    # merged_column = block_data.iloc[:, :merge_num].apply(lambda x: ' - '.join(x.astype(str)), axis=1)
-    # scope_data = pd.concat([merged_column, block_data.iloc[:, merge_num]], axis=1)
+    # scope_data = None
+    # # merge the first [merge_num] columns as the breakdown column
+    # merge_num = block_data.shape[1] - 1
+    # scope_data = merge_columns(block_data, 0, merge_num)
+    # # merged_column = block_data.iloc[:, :merge_num].apply(lambda x: ' - '.join(x.astype(str)), axis=1)
+    # # scope_data = pd.concat([merged_column, block_data.iloc[:, merge_num]], axis=1)
+    #
+    # # set the breakdown column as index
+    # scope_data = scope_data.set_index(scope_data.columns[0])
+    # # turn the dataframe to series
+    # scope_data = scope_data[scope_data.columns[0]]
 
-    # set the breakdown column as index
-    scope_data = scope_data.set_index(scope_data.columns[0])
-    # turn the dataframe to series
-    scope_data = scope_data[scope_data.columns[0]]
+    # check if main column has only one entity
+    abstract_header = ""
+    if len(set(block_data.iloc[:, 0])) == 1 and len(block_data.columns) > 2:
+        while len(set(block_data.iloc[:, 0])) == 1 and len(block_data.columns) > 2:
+            abstract_header += block_data.iloc[0, 0] + ","
+            block_data = block_data.drop(columns=block_data.columns[0])
+        abstract_header = abstract_header[:-1]
+        abstract_header_tuple = (abstract_header,)
+        aggregated_header = header + abstract_header_tuple
+    else:
+        aggregated_header = header
+
     # calc_insight(scope_data, None, None, True)
-    calc_insight(header, block_data, None, None, True)
+    calc_insight(aggregated_header, block_data, None, None, True)
 
 
 def get_scope_with_aggregate(header, block_data, breakdown, aggregate):
@@ -238,9 +251,9 @@ def get_scope_rearrange_advanced(origin_data, header_name, idx_num, col_num):
 def insight_exists(header, insight):
     for existing_insight in subspace_insight[header]:
         if existing_insight.type == insight.type \
+           and existing_insight.scope_data.equals(insight.scope_data) \
            and existing_insight.score == insight.score \
            and existing_insight.category == insight.category \
-           and existing_insight.context == insight.context \
            and existing_insight.description == insight.description:
             return True
     return False
@@ -248,6 +261,8 @@ def insight_exists(header, insight):
 
 def save_insight(header, scope_data, ins_category, ins_type, ins_score, header_description, ins_description, breakdown=None,
                  aggregate=None):
+    # avoid duplicate headers caused by different orders
+    sorted_header = tuple(sorted(map(str, header)))
     insight = Insight(scope_data, breakdown, aggregate)
     insight.type = ins_type
     insight.score = ins_score
@@ -255,10 +270,10 @@ def save_insight(header, scope_data, ins_category, ins_type, ins_score, header_d
     insight.context = header_description
     insight.description = ins_description
 
-    if header not in subspace_insight:
-        subspace_insight[header] = []
-    if not insight_exists(header, insight):
-        subspace_insight[header].append(insight)
+    if sorted_header not in subspace_insight:
+        subspace_insight[sorted_header] = []
+    if not insight_exists(sorted_header, insight):
+        subspace_insight[sorted_header].append(insight)
 
     # # keep the top1 insight for each category
     # if block_insight[ins_category] is None:
