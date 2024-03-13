@@ -27,7 +27,7 @@ def calc_point_insight(d, no_aggr):
     elif top2_detection(sorted_values):
         ins_type = 'top2'
         # TODO check formula right??
-        ins_score = sorted_values[0] / np.sum(sorted_values)
+        ins_score = sorted_values[0] + sorted_values[1] / np.sum(sorted_values) / 2
         description = generate_top2_description(sorted_d)
 
     return ins_type, ins_score, description
