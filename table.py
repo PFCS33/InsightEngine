@@ -64,17 +64,36 @@ class HierarchicalTable:
         if os.path.exists('subspace_insight.txt'):
             os.remove('subspace_insight.txt')
         for header in header_dict:
-            if header == ('Xbox One (XOne)', 'Other', 2018):
-                print("done")
             with open('headers.txt', 'w') as file:
                 for key in header_dict.keys():
                     file.write(str(key) + '\n')
-            this_insight = self.process_block(header)
+            subspace_insight = self.process_block(header)
             # if node != None:
             #     # if set(idx+col) in curr_focus_headers:
             #     #     continue
             #     self.all_nodes.append(node)
             # self.block_has_insight.append(header)
+        if any(subspace_insight.values()):
+            result_file = "subspace_insight.txt"
+            with open(result_file, 'a') as file:
+
+                for header, insights_list in subspace_insight.items():
+                    file.write('-'*100)
+                    file.write("\n")
+                    cnt_header_num += 1
+                    file.write(f"Header num: {cnt_header_num}\n")
+                    file.write(f"Header: {header}\n")
+                    for insight in insights_list:
+                        cnt_insight_num += 1
+                        file.write(f"Insight num: {cnt_insight_num}\n")
+                        file.write(f"Scope Data: \n{insight.scope_data}\n")
+                        file.write(f"Type: {insight.type}\n")
+                        file.write(f"Score: {insight.score}\n")
+                        file.write(f"Category: {insight.category}\n")
+                        # file.write(f"Context: {insight.context}\n")
+                        file.write(f"Description: {insight.description}\n")
+                        file.write("\n")
+
 
         # file_path = 'subspace_list.txt'
         # with open(file_path, 'w') as file:
@@ -112,6 +131,7 @@ class HierarchicalTable:
         header_str = '-'.join(map(str, header))
         result_file = "subspace_insight.txt"
 
+
         if any(block_insight.values()):
             pass
             # node = get_node(header, vis_list)
@@ -136,6 +156,7 @@ class HierarchicalTable:
         #     cnt_none_insight_num += 1
         #     print("No.", cnt_none_insight_num, "header: ", header)
         if any(subspace_insight.values()):
+            pass
             # print("------------------\n")
             # print('aggregated header:\n', aggregated_header)
             # print('aggregated data:\n', aggregated_data)
@@ -151,26 +172,24 @@ class HierarchicalTable:
             #     file.write('------------------\n')
             #     file.write('aggregated insights:\n' + str(subspace_insight) + "\n")
 
-            with open(result_file, 'a') as file:
+            # with open(result_file, 'a') as file:
                 # # cnt_insight_num += 1
-                # file.write('aggregated header:' + str(aggregated_header) + "\n")
-                # file.write('aggregated insights:\n' + str(subspace_insight) + "\n")
-                for header, insights_list in subspace_insight.items():
-                    file.write('-'*100)
-                    file.write("\n")
-                    cnt_header_num += 1
-                    file.write(f"Header num: {cnt_header_num}\n")
-                    file.write(f"Header: {header}\n")
-                    for insight in insights_list:
-                        cnt_insight_num += 1
-                        file.write(f"Insight num: {cnt_insight_num}\n")
-                        file.write(f"Scope Data: \n{insight.scope_data}\n")
-                        file.write(f"Type: {insight.type}\n")
-                        file.write(f"Score: {insight.score}\n")
-                        file.write(f"Category: {insight.category}\n")
-                        # file.write(f"Context: {insight.context}\n")
-                        file.write(f"Description: {insight.description}\n")
-                        file.write("\n")
+                # for header, insights_list in subspace_insight.items():
+                #     file.write('-'*100)
+                #     file.write("\n")
+                #     cnt_header_num += 1
+                #     file.write(f"Header num: {cnt_header_num}\n")
+                #     file.write(f"Header: {header}\n")
+                #     for insight in insights_list:
+                #         cnt_insight_num += 1
+                #         file.write(f"Insight num: {cnt_insight_num}\n")
+                #         file.write(f"Scope Data: \n{insight.scope_data}\n")
+                #         file.write(f"Type: {insight.type}\n")
+                #         file.write(f"Score: {insight.score}\n")
+                #         file.write(f"Category: {insight.category}\n")
+                #         # file.write(f"Context: {insight.context}\n")
+                #         file.write(f"Description: {insight.description}\n")
+                #         file.write("\n")
 
             # aggregated_header_str = '-'.join(map(str, aggregated_header))
             # subspace_list.setdefault(header_str, {})['aggregated_header'] = aggregated_header_str

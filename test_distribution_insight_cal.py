@@ -46,7 +46,9 @@ def calc_distribution_insight(d):
     s = skew(d_value)
     _, p_k = kurtosistest(d_value)
     k = kurtosis(d_value)
-    e = abs(d_value.std() / d_value.mean())         # evenness
+    a = d_value.std()
+    b = d_value.mean()
+    e = abs(a/b)         # evenness
     # _, p_e = kstest(d_value, 'uniform', args=(0, 1))
     has_skew = p_s < 0.03 and abs(s) > 2
     has_kurtosis = p_k < 0.05 and abs(k) > 3 and abs(s) < 3

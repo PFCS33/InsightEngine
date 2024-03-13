@@ -20,6 +20,7 @@ table_structure = {
     'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']
 }
 
+subspace_insight = {}
 
 class Insight:
     def __init__(self, scope_data, breakdown=None, aggregate=None):
@@ -50,7 +51,6 @@ def get_insight(header, block_data):
     global subspace_insight
     # contains three types of insight
     block_insight = {'point': [], 'shape': [], 'compound': []}
-    subspace_insight = {}
 
     # change categorical to string
     for col in block_data.columns:
@@ -111,20 +111,25 @@ def get_scope_no_breakdown(header, block_data):
 
 
 def get_scope_with_aggregate(header, block_data, breakdown, aggregate):
-    scope_data = block_data.groupby(block_data.columns[breakdown]).agg('sum')
-    scope_data = scope_data.reset_index()
+    scope_data = copy.deepcopy(block_data)
+
+    # make the breakdown_column be the main col
+    breakdown_col = scope_data.columns[breakdown]
+    scope_data.insert(0, breakdown_col, scope_data.pop(breakdown_col))
 
     # check if main column has only one entity
     abstract_header = ""
-    if len(set(block_data.iloc[:, 0])) == 1 and len(block_data.columns) > 2:
-        while len(set(block_data.iloc[:, 0])) == 1 and len(block_data.columns) > 2:
-            abstract_header += block_data.iloc[0, 0] + ","
-            block_data = block_data.drop(columns=block_data.columns[0])
+    if len(set(scope_data.iloc[:, 0])) == 1 and len(scope_data.columns) > 2:
+        while len(set(scope_data.iloc[:, 0])) == 1 and len(scope_data.columns) > 2:
+            abstract_header += scope_data.iloc[0, 0] + ","
+            scope_data = scope_data.drop(columns=scope_data.columns[0])
         abstract_header = abstract_header[:-1]
         abstract_header_tuple = (abstract_header,)
         aggregated_header = header + abstract_header_tuple
     else:
         aggregated_header = header
+
+
 
 
     # -----process duplicated content in cell-----
@@ -139,6 +144,10 @@ def get_scope_with_aggregate(header, block_data, breakdown, aggregate):
     # avoid duplication
     # scope_data = scope_data.applymap(lambda x: ', '.join(sorted(set(x.split(',')))) if isinstance(x, str) else x)
     # print(scope_data)
+
+    # merge the main col
+    scope_data = scope_data.groupby(scope_data.columns[0]).agg('sum')
+    scope_data = scope_data.reset_index()
 
     numeric_columns = scope_data.select_dtypes(include='number').columns
     scope_data[numeric_columns] = scope_data[numeric_columns].apply(lambda x: round(x, 2))
@@ -249,6 +258,7 @@ def get_scope_rearrange_advanced(origin_data, header_name, idx_num, col_num):
 
 
 def insight_exists(header, insight):
+    global subspace_insight
     for existing_insight in subspace_insight[header]:
         if existing_insight.type == insight.type \
            and existing_insight.scope_data.equals(insight.scope_data) \
@@ -261,6 +271,8 @@ def insight_exists(header, insight):
 
 def save_insight(header, scope_data, ins_category, ins_type, ins_score, header_description, ins_description, breakdown=None,
                  aggregate=None):
+    global subspace_insight
+
     # avoid duplicate headers caused by different orders
     sorted_header = tuple(sorted(map(str, header)))
     insight = Insight(scope_data, breakdown, aggregate)
