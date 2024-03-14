@@ -63,6 +63,8 @@ class HierarchicalTable:
         cnt_header_num = 0
         if os.path.exists('subspace_insight.txt'):
             os.remove('subspace_insight.txt')
+        if os.path.exists('headers.txt'):
+            os.remove('headers.txt')
         for header in header_dict:
             with open('headers.txt', 'w') as file:
                 for key in header_dict.keys():
@@ -89,6 +91,9 @@ class HierarchicalTable:
                         file.write(f"Scope Data: \n{insight.scope_data}\n")
                         file.write(f"Type: {insight.type}\n")
                         file.write(f"Score: {insight.score}\n")
+                        if insight.score > 1 or insight.score <= 0:
+                            print(f"Header num: {cnt_header_num}\n")
+                            print(f"Insight num: {cnt_insight_num}\n")
                         file.write(f"Category: {insight.category}\n")
                         # file.write(f"Context: {insight.context}\n")
                         file.write(f"Description: {insight.description}\n")
