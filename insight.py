@@ -94,20 +94,35 @@ def get_scope_no_breakdown(header, block_data):
     # # turn the dataframe to series
     # scope_data = scope_data[scope_data.columns[0]]
 
+    scope_data = copy.deepcopy(block_data)
     # check if main column has only one entity
     abstract_header = ""
-    if len(set(block_data.iloc[:, 0])) == 1 and len(block_data.columns) > 2:
-        while len(set(block_data.iloc[:, 0])) == 1 and len(block_data.columns) > 2:
-            abstract_header += block_data.iloc[0, 0] + ","
-            block_data = block_data.drop(columns=block_data.columns[0])
+    if len(set(scope_data.iloc[:, 0])) == 1 and len(scope_data.columns) > 2:
+        while len(set(scope_data.iloc[:, 0])) == 1 and len(scope_data.columns) > 2:
+            abstract_header += scope_data.iloc[0, 0] + ","
+            scope_data = scope_data.drop(columns=scope_data.columns[0])
         abstract_header = abstract_header[:-1]
         abstract_header_tuple = (abstract_header,)
         aggregated_header = header + abstract_header_tuple
     else:
         aggregated_header = header
 
-    # calc_insight(scope_data, None, None, True)
-    calc_insight(aggregated_header, block_data, None, None, True)
+    is_month = False
+    if (scope_data.iloc[:, 0] == 'MAR').any(): # Check if 'MAR' is in the first column
+        # record the origin order
+        scope_data.iloc[:, 0] = scope_data.iloc[:, 0].replace(month2letter, regex=True)
+        # sort the data by origin order
+        scope_data = scope_data.sort_values(by=scope_data.columns[0])
+        # change back to the origin name
+        scope_data.iloc[:, 0] = scope_data.iloc[:, 0].replace(letter2month, regex=True)
+        is_month = True
+
+    scope_data = scope_data.reset_index(drop=True)
+
+    numeric_columns = scope_data.select_dtypes(include='number').columns
+    scope_data[numeric_columns] = scope_data[numeric_columns].apply(lambda x: round(x, 2))
+
+    calc_insight(aggregated_header, scope_data, None, None, True, is_month=is_month)
 
 
 def get_scope_with_aggregate(header, block_data, breakdown, aggregate):
@@ -147,11 +162,8 @@ def get_scope_with_aggregate(header, block_data, breakdown, aggregate):
 
     # merge the main col
     scope_data = scope_data.groupby(scope_data.columns[0]).agg('sum')
-    scope_data = scope_data.reset_index()
 
-    numeric_columns = scope_data.select_dtypes(include='number').columns
-    scope_data[numeric_columns] = scope_data[numeric_columns].apply(lambda x: round(x, 2))
-
+    is_month = False
     if scope_data.index.__contains__('MAR'):  # trick to sort months
         # record the origin order
         scope_data.index = scope_data.index.to_series().replace(month2letter, regex=True)
@@ -159,8 +171,14 @@ def get_scope_with_aggregate(header, block_data, breakdown, aggregate):
         scope_data = scope_data.sort_index()
         # change back to the origin name
         scope_data.index = scope_data.index.to_series().replace(letter2month, regex=True)
+        is_month = True
 
-    calc_insight(aggregated_header, scope_data, breakdown, aggregate)
+    scope_data = scope_data.reset_index()
+
+    numeric_columns = scope_data.select_dtypes(include='number').columns
+    scope_data[numeric_columns] = scope_data[numeric_columns].apply(lambda x: round(x, 2))
+
+    calc_insight(aggregated_header, scope_data, breakdown, aggregate, is_month=is_month)
 
 
 def get_scope_rearrange_old(header, block_data, header_split):
@@ -308,7 +326,7 @@ def get_scope_rearrange_more(d):
             calc_insight(scope_data, None, 'compound')
 
 
-def calc_insight(header, scope_data, breakdown, aggregate, no_aggreate=False):
+def calc_insight(header, scope_data, breakdown, aggregate, no_aggreate=False, is_month=False):
     ins_type = ''
     ins_score = 0
     header_description = "Filtered the original data table with the conditions: "
@@ -316,25 +334,46 @@ def calc_insight(header, scope_data, breakdown, aggregate, no_aggreate=False):
 
     # ins_des = "The insight of the filtered subspace is: \n"
 
-    if check_is_temporal(scope_data):
+    if check_is_temporal(scope_data, is_month):
+        # shape only temporal
         ins_type, ins_score, ins_description = calc_shape_insight(scope_data)
         if ins_score > 0:
             save_insight(header, scope_data, 'shape', ins_type,
                          ins_score, header_description, ins_description, breakdown, aggregate)
+
+        # outlier_temporal
         insights = calc_outlier_temporal(scope_data)
         for insight in insights:
             save_insight(header, scope_data, 'point', insight['ins_type'],
                          insight['ins_score'], header_description, insight['ins_description'], breakdown, aggregate)
-    else:
+
+        # point
         ins_type, ins_score, ins_description = calc_point_insight(scope_data, no_aggreate)
         if ins_score > 0:
             save_insight(header, scope_data, 'point', ins_type,
                          ins_score, header_description, ins_description, breakdown, aggregate)
+
+        # distribution
+        # remove all zeros when calculating distribution insight
+        # scope_data = scope_data[scope_data != 0]
+        ins_type, ins_score, ins_description = calc_distribution_insight(scope_data)
+        if ins_score > 0:
+            save_insight(header, scope_data, 'shape', ins_type,
+                         ins_score, header_description, ins_description, breakdown, aggregate)
+    else:
+        # point
+        ins_type, ins_score, ins_description = calc_point_insight(scope_data, no_aggreate)
+        if ins_score > 0:
+            save_insight(header, scope_data, 'point', ins_type,
+                         ins_score, header_description, ins_description, breakdown, aggregate)
+
+        # outlier
         insights = calc_outlier(scope_data)
         for insight in insights:
             save_insight(header, scope_data, 'point', insight['ins_type'],
                          insight['ins_score'], header_description, insight['ins_description'], breakdown, aggregate)
 
+        # distribution
         # remove all zeros when calculating distribution insight
         # scope_data = scope_data[scope_data != 0]
         ins_type, ins_score, ins_description = calc_distribution_insight(scope_data)
