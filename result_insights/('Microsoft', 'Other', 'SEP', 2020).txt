@@ -1,8 +1,0 @@
-header:
-('Microsoft', 'Other', 'SEP', 2020)
-row data:
-             Brand  Sale
-0  Xbox 360 (X360)     0
-1  Xbox One (XOne)    70
-insights:
-{'point': [], 'shape': [], 'compound': []}

@@ -1,8 +1,0 @@
-header:
-('Microsoft', 'Europe', 'MAR', 2014)
-row data:
-             Brand  Sale
-0  Xbox 360 (X360)   360
-1  Xbox One (XOne)   890
-insights:
-{'point': [], 'shape': [], 'compound': []}

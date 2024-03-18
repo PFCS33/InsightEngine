@@ -1,9 +1,0 @@
-header:
-('Sony', 'North America', 'MAR', 2020)
-row data:
-                    Brand  Sale
-0     PlayStation 3 (PS3)     0
-1     PlayStation 4 (PS4)  1980
-2  PlayStation Vita (PSV)     0
-insights:
-{'point': [], 'shape': [], 'compound': []}
