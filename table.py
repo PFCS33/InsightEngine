@@ -65,6 +65,8 @@ class HierarchicalTable:
             os.remove('subspace_insight.txt')
         if os.path.exists('headers.txt'):
             os.remove('headers.txt')
+        if os.path.exists('vis_list.txt'):
+            os.remove('vis_list.txt')
         for header in header_dict:
             with open('headers.txt', 'w') as file:
                 for key in header_dict.keys():
@@ -75,6 +77,7 @@ class HierarchicalTable:
             #     #     continue
             #     self.all_nodes.append(node)
             # self.block_has_insight.append(header)
+        vis_list = get_visualization(subspace_insight)
         if any(subspace_insight.values()):
             result_file = "subspace_insight.txt"
             with open(result_file, 'a') as file:
@@ -91,14 +94,29 @@ class HierarchicalTable:
                         file.write(f"Scope Data: \n{insight.scope_data}\n")
                         file.write(f"Type: {insight.type}\n")
                         file.write(f"Score: {insight.score}\n")
-                        if insight.score > 1 or insight.score <= 0:
-                            print(f"Header num: {cnt_header_num}\n")
-                            print(f"Insight num: {cnt_insight_num}\n")
                         file.write(f"Category: {insight.category}\n")
                         # file.write(f"Context: {insight.context}\n")
                         file.write(f"Description: {insight.description}\n")
                         file.write("\n")
+        cnt_header_num = 0
+        cnt_insight_num = 0
+        if any(vis_list.values()):
+            result_file = "vis_list.txt"
+            with open(result_file, 'a') as file:
 
+                for header, insights_list in vis_list.items():
+                    cnt_header_num += 1
+                    file.write('='*30 + ' [Header] ' + str(cnt_header_num) + ' ' + str(header) + '='*30 + '\n')
+                    for insight in insights_list:
+                        cnt_insight_num += 1
+                        file.write(f"Insight num: {cnt_insight_num}\n")
+                        file.write(f"Data: \n{insight.data}\n")
+                        file.write(f"Type: {insight.insight_type}\n")
+                        file.write(f"Score: {insight.insight_score}\n")
+                        file.write(f"Category: {insight.insight_category}\n")
+                        file.write(f"Description: {insight.description}\n")
+                        file.write(f"Vega-Lite Json: {insight.vega_json}\n")
+                        file.write("\n")
 
         # file_path = 'subspace_list.txt'
         # with open(file_path, 'w') as file:
@@ -127,7 +145,7 @@ class HierarchicalTable:
 
         block_insight, subspace_insight = get_insight(header, block_data)
         # self.block_insight[header] = insight_list   # save the insight of the block
-        # vis_list = get_visualization(insight_list)
+        # vis_list = get_visualization(subspace_insight)
         # self.block_vis[header] = vis_list   # save the visulization of the block
 
         node = None

@@ -1,5 +1,6 @@
 import json
 import pandas as pd
+import copy
 
 class VisualForm:
     def __init__(self, data, insight_type, insight_category, insight_score):
@@ -23,7 +24,19 @@ class VisualForm:
                     'skewness': create_density_plot,
                     'evenness': create_bar_chart
                     }
-        vega_obj = func_list[self.insight_type](self.data)                     
+        scope_data = None
+        # merge the first [merge_num] columns as the breakdown column
+        merge_num = self.data.shape[1] - 1
+        scope_data = merge_columns(self.data, 0, merge_num)
+        # merged_column = block_data.iloc[:, :merge_num].apply(lambda x: ' - '.join(x.astype(str)), axis=1)
+        # scope_data = pd.concat([merged_column, block_data.iloc[:, merge_num]], axis=1)
+
+        # set the breakdown column as index
+        scope_data = scope_data.set_index(scope_data.columns[0])
+        # turn the dataframe to series
+        scope_data = scope_data[scope_data.columns[0]]
+
+        vega_obj = func_list[self.insight_type](scope_data)
         # vega_obj['description'] =  self.description
         self.vega_json = json.dumps(vega_obj)
 
@@ -33,6 +46,18 @@ class VisualForm:
 #         self.data = data
 #         self.mark = mark
 #         self.encoding = encoding
+
+
+def merge_columns(block_data, start, end, name='Merged'):
+    data = copy.deepcopy(block_data)
+    merged_col = data.iloc[:, start:end].apply(
+        lambda x: ' - '.join(x.astype(str)), axis=1)
+    merged_col.name = name
+    res = pd.concat([data.iloc[:, :start], merged_col,
+                     data.iloc[:, end:]], axis=1)
+
+    return res
+
 
 def create_bar_chart(d):
     values = []
@@ -365,16 +390,22 @@ def create_trail_plot(d):
     return {'data': data, 'mark': mark, 'encoding': encoding}
 
 def get_visualization(insight_list):
-    vis_list = []
-    if insight_list['point'] != [] \
-        or insight_list['shape'] != [] \
-        or insight_list['compound'] != []:
-        for category in insight_list:
-            insights = insight_list[category]
-            for insight in insights:  
-                vis = VisualForm(insight.scope_data, insight.type, insight.category, insight.score)
-                vis_list.append(vis)
-    # sort the vis list
-    if len(vis_list) > 1:
-        vis_list.sort(key=lambda x: x.insight_score, reverse=True)
+    vis_list = {}
+    # if insight_list['point'] != [] \
+    #     or insight_list['shape'] != [] \
+    #     or insight_list['compound'] != []:
+    #     for category in insight_list:
+    #         insights = insight_list[category]
+    #         for insight in insights:
+    #             vis = VisualForm(insight.scope_data, insight.type, insight.category, insight.score)
+    #             vis_list.append(vis)
+    for sorted_header, insights in insight_list.items():
+        if sorted_header not in vis_list:
+            vis_list[sorted_header] = []
+        for insight in insights:
+            vis = VisualForm(insight.scope_data, insight.type, insight.category, insight.score)
+            vis_list[sorted_header].append(vis)
+        # sort the vis_list for each header
+        vis_list[sorted_header].sort(key=lambda x: x.insight_score, reverse=True)
+
     return vis_list

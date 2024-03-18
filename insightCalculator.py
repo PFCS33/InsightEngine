@@ -15,7 +15,6 @@ def calc_point_insight(d, no_aggr):
     # the value column
     sorted_values = sorted_d.iloc[:, -1].values
 
-    # TODO CHECK
     # if len(sorted_values) < 3 or np.sum(sorted_values) == 0 or np.std(sorted_values) == 0 or no_aggr:
     if len(sorted_values) < 3 or np.sum(sorted_values) == 0 or np.std(sorted_values) == 0:
         return ins_type, ins_score, description  # too few data or all zero
@@ -23,11 +22,17 @@ def calc_point_insight(d, no_aggr):
     if dominance_detection(sorted_values):
         ins_type = 'dominance'
         ins_score = sorted_values[0] / np.sum(sorted_values)
+        # ins_score = 0.4 * (ins_score - 0.5) + 0.6     # enlarge to 0.6
+        min_score = 0.5
+        max_score = 1.0
+        ins_score = (ins_score - min_score) / (max_score - min_score)      # Normalize
         description = generate_dominance_description(sorted_d)
     elif top2_detection(sorted_values):
         ins_type = 'top2'
-        # TODO check formula right??
-        ins_score = sorted_values[0] + sorted_values[1] / np.sum(sorted_values) / 2
+        ins_score = (sorted_values[0] + sorted_values[1]) / np.sum(sorted_values)
+        min_score = 0.6
+        max_score = 1.0
+        ins_score = (ins_score - min_score) / (max_score - min_score)        # Normalize
         description = generate_top2_description(sorted_d)
 
     return ins_type, ins_score, description
@@ -50,19 +55,28 @@ def calc_outlier(d):
         outliers, lower_threshold, upper_threshold = result
         if len(outliers) != 0 and len(outliers) < 3:
             ins_type = 'outlier'
-            # max_ins_score = 0
             for outlier in outliers:
                 index = np.where(sorted_values == outlier)[0]
                 if outlier < lower_threshold:
                     ins_score = (outlier - sorted_values.mean()) / sorted_values.std()
+                    ins_score = -ins_score
+                    # ins_score = min(ins_score, 3)  # Cap at 3
+                    # ins_score = ins_score / 3  # Normalize to [0, 1]
+                    min_score = 0.6
+                    max_score = 3.7
+                    ins_score = (ins_score - min_score) / (max_score - min_score)  # Normalize
+                    ins_score = max(0, min(1, ins_score))
                     description = generate_outlier_description(sorted_d, index, 'lower')
                     insights.append({"ins_type": ins_type, "ins_score": ins_score, "ins_description": description})
                 elif outlier > upper_threshold:
                     ins_score = (outlier - sorted_values.mean()) / sorted_values.std()
+                    min_score = 0.6
+                    max_score = 3.7
+                    ins_score = (ins_score - min_score) / (max_score - min_score)  # Normalize
+                    ins_score = max(0, min(1, ins_score))
                     description = generate_outlier_description(sorted_d, index, 'higher')
                     insights.append({"ins_type": ins_type, "ins_score": ins_score, "ins_description": description})
-                # if ins_score > max_ins_score:
-                #     max_ins_score = ins_score
+
             return insights
         else:
             # else no outlier
@@ -94,10 +108,21 @@ def calc_outlier_temporal(d):
                 index = np.where(sorted_values == outlier)[0]
                 if outlier < lower_threshold:
                     ins_score = (sorted_values[-1] - sorted_values.mean()) / sorted_values.std()
+                    ins_score = -ins_score
+                    # ins_score = min(ins_score, 3)  # Cap at 3
+                    # ins_score = ins_score / 3  # Normalize to [0, 1]
+                    min_score = 0.6
+                    max_score = 3.7
+                    ins_score = (ins_score - min_score) / (max_score - min_score)  # Normalize
+                    ins_score = max(0, min(1, ins_score))
                     description = generate_outlier_description(sorted_d, index, 'lower')
                     insights.append({"ins_type": ins_type, "ins_score": ins_score, "ins_description": description})
                 elif outlier > upper_threshold:
                     ins_score = (sorted_values[0] - sorted_values.mean()) / sorted_values.std()
+                    min_score = 0.6
+                    max_score = 3.7
+                    ins_score = (ins_score - min_score) / (max_score - min_score)  # Normalize
+                    ins_score = max(0, min(1, ins_score))
                     description = generate_outlier_description(sorted_d, index, 'higher')
                     insights.append({"ins_type": ins_type, "ins_score": ins_score, "ins_description": description})
                 # if ins_score > max_ins_score:
@@ -231,6 +256,9 @@ def calc_shape_insight(d):
     if trend > 0.7:
         ins_type = 'trend'
         ins_score = trend
+        min_score = 0.7
+        max_score = 1.0
+        ins_score = (ins_score - min_score) / (max_score - min_score)  # Normalize
         description = f"{value_name}s exhibit a clear {trend_direction} trend over the {main_col_name}s from {start_year} to {end_year}."
 
     return ins_type, ins_score, description
@@ -254,7 +282,7 @@ def test_slope(d):
     # p_value = 2 * (1 - t.cdf(abs(t_statistic), df=degrees_of_freedom))
 
 
-def check_is_temporal(data):
+def check_is_temporal(data, is_month=False):
     def process_value(value):
         value_str = str(value)
         if len(value_str) < 4:
@@ -267,6 +295,9 @@ def check_is_temporal(data):
                 return False
         else:
             return False
+
+    if is_month:
+        return True
 
     # for every row in column 1
     result = data.iloc[:, 0].apply(process_value)
@@ -337,10 +368,13 @@ def calc_distribution_insight(d):
     # evenness
     e = abs(d_value.std() / d_value.mean())
     # _, p_e = kstest(d_value, 'uniform', args=(0, 1))
-    if e < 0.35:
+    if e < 0.5:
         has_evenness = True
         ins_type = 'evenness'
         ins_score = 1 - e
+        min_score = 0.5
+        max_score = 1.0
+        ins_score = (ins_score - min_score) / (max_score - min_score)  # Normalize
         column_name = d.columns[0]
         description = f"The {value_col_name}s are relatively evenly distributed across different {column_name}s"
         if d.shape[1] > 2:
@@ -352,10 +386,10 @@ def calc_distribution_insight(d):
         description += "."
         return ins_type, ins_score, description
 
-    elif d_value.shape[0] < 20:
+    elif d_value.shape[0] <= 20:
         return '', 0, ""
 
-    elif d_value.shape[0] >= 20:
+    elif d_value.shape[0] > 20:
         _, p_s = skewtest(d_value)
         s = skew(d_value)
         _, p_k = kurtosistest(d_value)
@@ -385,6 +419,12 @@ def calc_distribution_insight(d):
 def set_skew(p_s, s, value_col_name):
     ins_type = 'skewness'
     ins_score = (1 - p_s) * abs(s)
+    # ins_score = min(ins_score, 3.5)  # Cap at 3.5
+    # ins_score = ins_score / 3.5  # Normalize to [0, 1]
+    min_score = 1.94
+    max_score = 3.6
+    ins_score = (ins_score - min_score) / (max_score - min_score)  # Normalize
+    ins_score = max(0, min(1, ins_score))
     if s > 0:
         description = (f"The {value_col_name} has a positively skewed distribution, "
                        f"which means that there are more extreme {value_col_name} values "
@@ -399,6 +439,12 @@ def set_skew(p_s, s, value_col_name):
 def set_kurtosis(p_k, k, value_col_name):
     ins_type = 'kurtosis'
     ins_score = (1 - p_k) * abs(k)
+    # ins_score = min(ins_score, 4)  # Cap at 4
+    # ins_score = ins_score / 4  # Normalize to [0, 1]
+    min_score = 2.85
+    max_score = 4.3
+    ins_score = (ins_score - min_score) / (max_score - min_score)  # Normalize
+    ins_score = max(0, min(1, ins_score))
     if k > 0:
         description = (f"The {value_col_name} exhibit leptokurtic behavior with heavy tails and a sharp peak, "
                        "indicating a distribution with positive kurtosis.")
