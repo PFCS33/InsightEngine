@@ -3,12 +3,12 @@ import pandas as pd
 import copy
 
 class VisualForm:
-    def __init__(self, data, insight_type, insight_category, insight_score):
+    def __init__(self, data, insight_type, insight_category, insight_score, insight_description):
         self.data = data
         self.insight_type = insight_type
         self.insight_category = insight_category
         self.insight_score = insight_score
-        self.description = str(insight_type)
+        self.description = insight_description
         self.vega_json = None
         self.create_vegalite()
     
@@ -403,7 +403,7 @@ def get_visualization(insight_list):
         if sorted_header not in vis_list:
             vis_list[sorted_header] = []
         for insight in insights:
-            vis = VisualForm(insight.scope_data, insight.type, insight.category, insight.score)
+            vis = VisualForm(insight.scope_data, insight.type, insight.category, insight.score, insight.description)
             vis_list[sorted_header].append(vis)
         # sort the vis_list for each header
         vis_list[sorted_header].sort(key=lambda x: x.insight_score, reverse=True)

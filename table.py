@@ -61,8 +61,6 @@ class HierarchicalTable:
         global cnt_insight_num, cnt_header_num, subspace_insight, this_insight
         cnt_insight_num = 0
         cnt_header_num = 0
-        if os.path.exists('subspace_insight.txt'):
-            os.remove('subspace_insight.txt')
         if os.path.exists('headers.txt'):
             os.remove('headers.txt')
         if os.path.exists('vis_list.txt'):
@@ -78,26 +76,6 @@ class HierarchicalTable:
             #     self.all_nodes.append(node)
             # self.block_has_insight.append(header)
         vis_list = get_visualization(subspace_insight)
-        if any(subspace_insight.values()):
-            result_file = "subspace_insight.txt"
-            with open(result_file, 'a') as file:
-
-                for header, insights_list in subspace_insight.items():
-                    file.write('-'*100)
-                    file.write("\n")
-                    cnt_header_num += 1
-                    file.write(f"Header num: {cnt_header_num}\n")
-                    file.write(f"Header: {header}\n")
-                    for insight in insights_list:
-                        cnt_insight_num += 1
-                        file.write(f"Insight num: {cnt_insight_num}\n")
-                        file.write(f"Scope Data: \n{insight.scope_data}\n")
-                        file.write(f"Type: {insight.type}\n")
-                        file.write(f"Score: {insight.score}\n")
-                        file.write(f"Category: {insight.category}\n")
-                        # file.write(f"Context: {insight.context}\n")
-                        file.write(f"Description: {insight.description}\n")
-                        file.write("\n")
         cnt_header_num = 0
         cnt_insight_num = 0
         if any(vis_list.values()):
