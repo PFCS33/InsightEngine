@@ -1,6 +1,5 @@
-*.txt
 results/
 all_result_insights/
 result_insights/
-config.py
+config_api.py
 *.json
