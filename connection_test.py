@@ -1,12 +1,12 @@
 import openai
 import os
-import config
+import config_api
 
 os.environ["http_proxy"] = "http://localhost:7890"
 os.environ["https_proxy"] = "http://localhost:7890"
 
 
-openai.api_key = config.api_key
+openai.api_key = config_api.api_key
 
 def get_completion_from_messages(messages, model="gpt-3.5-turbo-16k", temperature=0):
     response = openai.ChatCompletion.create(

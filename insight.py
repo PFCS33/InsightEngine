@@ -254,7 +254,7 @@ def get_scope_rearrange_advanced(origin_data, header_name, idx_num, col_num):
                 for l in range(len(grouped_data_processed[j].columns)):
                     scope_data_subset = pd.concat(
                         [grouped_data_processed[i].iloc[:, k], grouped_data_processed[j].iloc[:, l]], axis=1)
-                    ins_type, ins_score = calc_compound_insight(
+                    ins_type, ins_score, ins_description = calc_compound_insight(
                         scope_data_subset)
 
                     if ins_type == 'correlation-temporal':  # only merge when temporal data

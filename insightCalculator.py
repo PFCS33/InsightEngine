@@ -324,6 +324,8 @@ def calc_compound_insight(d):
         return ins_type, ins_score, description  # too few data
     if check_zero(d.iloc[:, 0]) > 0.5 or check_zero(d.iloc[:, 1]) > 0.5:
         return ins_type, ins_score, description  # too many zero
+
+    # calculate the relevance between 1st column and 2nd column
     corr, p_value = correlation_detection(d.iloc[:, 0], d.iloc[:, 1])
     score = corr ** 2 * (1 - p_value)
     # if check_is_temporal(d):
@@ -343,12 +345,15 @@ def calc_compound_insight(d):
 
 
 def correlation_detection(x, y):
-    if len(np.unique(x)) > 1 and len(np.unique(y)) > 1:
-        corr_coef, p_value = pearsonr(x, y)
-    else:
-        corr_coef = 0
-        p_value = 1
-    return corr_coef, p_value
+    return 0, 0
+    # TODO temporal annotate in 3.21
+
+    # if len(np.unique(x)) > 1 and len(np.unique(y)) > 1:
+    #     corr_coef, p_value = pearsonr(x, y)
+    # else:
+    #     corr_coef = 0
+    #     p_value = 1
+    # return corr_coef, p_value
 
 
 def calc_distribution_insight(d):

@@ -66,6 +66,9 @@ class HierarchicalTable:
         if os.path.exists('vis_list.txt'):
             os.remove('vis_list.txt')
         for header in header_dict:
+            if header == "('2014',)":
+                print("here")
+
             with open('headers.txt', 'w') as file:
                 for key in header_dict.keys():
                     file.write(str(key) + '\n')
@@ -79,8 +82,8 @@ class HierarchicalTable:
         cnt_header_num = 0
         cnt_insight_num = 0
         if any(vis_list.values()):
-            result_file = "vis_list.txt"
-            with open(result_file, 'a') as file:
+            result_file = "vis_list_VegaLite.txt"
+            with open(result_file, 'w') as file:
 
                 for header, insights_list in vis_list.items():
                     cnt_header_num += 1
@@ -95,7 +98,19 @@ class HierarchicalTable:
                         file.write(f"Description: {insight.description}\n")
                         file.write(f"Vega-Lite Json: {insight.vega_json}\n")
                         file.write("\n")
-
+        if any(vis_list.values()):
+            result_file = "vis_list.txt"
+            with open(result_file, 'w') as file:
+                for header, insights_list in vis_list.items():
+                    file.write('=' * 100 + '\nHeader: ' + str(header) + '\n')
+                    cnt_ins = 0
+                    for insight in insights_list:
+                        cnt_ins += 1
+                        file.write(f"Insight{cnt_ins}: \n")
+                        file.write(f"Type: {insight.insight_type}\n")
+                        file.write(f"Score: {insight.insight_score}\n")
+                        file.write(f"Description: {insight.description}\n")
+                        file.write("\n")
         # file_path = 'subspace_list.txt'
         # with open(file_path, 'w') as file:
         #     json.dump(subspace_list, file, indent=4)
