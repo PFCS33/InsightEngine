@@ -1,5 +1,6 @@
 import openai
 import os
+import config
 
 proxy = {
 'http': 'http://localhost:7890',
@@ -10,7 +11,7 @@ openai.proxy = proxy
 
 # gpt4.0 key
 
-openai.api_key = api_key
+openai.api_key = config.api_key
 
 question1 = """
 You are assisting me in exploring a dataset to analyze patterns and extract insights. Data exploration involves filtering data to extract subspaces and analyzing these subspaces to identify important patterns, known as insights.
