@@ -66,9 +66,6 @@ class HierarchicalTable:
         if os.path.exists('vis_list.txt'):
             os.remove('vis_list.txt')
         for header in header_dict:
-            if header == "('2014',)":
-                print("here")
-
             with open('headers.txt', 'w') as file:
                 for key in header_dict.keys():
                     file.write(str(key) + '\n')
