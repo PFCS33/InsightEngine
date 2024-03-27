@@ -78,7 +78,7 @@ def get_related_headers(input_header, header_dict):
 
 
 if __name__ == "__main__":
-    file_path = 'subspace_list.txt'
+    file_path = 'vis_list.txt'
     subspace_list = parse_subspace_list(file_path)
 
     # test
