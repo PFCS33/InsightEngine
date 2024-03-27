@@ -64,6 +64,7 @@ def get_insight(header, block_data):
     for i in range(len(block_data.columns) - 1):
         get_scope_with_aggregate(header, block_data, i, aggregate)  # i is the breakdown index
 
+    get_scope_for_compound(header, block_data)
     # consider all layers and generate groups, no aggregate, compound insights
     # get_scope_rearrange(header, block_data)
 
@@ -144,9 +145,6 @@ def get_scope_with_aggregate(header, block_data, breakdown, aggregate):
     else:
         aggregated_header = header
 
-
-
-
     # -----process duplicated content in cell-----
     columns_to_update = scope_data.columns[1:-1]
 
@@ -179,6 +177,17 @@ def get_scope_with_aggregate(header, block_data, breakdown, aggregate):
     scope_data[numeric_columns] = scope_data[numeric_columns].apply(lambda x: round(x, 2))
 
     calc_insight(aggregated_header, scope_data, breakdown, aggregate, is_month=is_month)
+
+
+def get_scope_for_compound(header, block_data):
+    """
+    枚举列表头中所有能作为x轴，z轴的表头对（x，z）
+    对每一个表头对（x，z），把x和z对应的data从header的date中提取出来
+    计算任意两组z属性（zi，zj）间的相关性
+    如果具有相关性（score > 0.7），就把（x，（zi，zj））加入到该header的compound insight里
+
+    """
+    pass
 
 
 def get_scope_rearrange_old(header, block_data, header_split):
