@@ -4,8 +4,8 @@ import os
 import config_api
 
 proxy = {
-'http': 'http://localhost:7890',
-'https': 'http://localhost:7890'
+    'http': 'http://localhost:7890',
+    'https': 'http://localhost:7890'
 }
 
 openai.proxy = proxy
@@ -33,7 +33,6 @@ Table structure: {} # The structure of the original data table, including column
 "
 """
 
-
 subspaces = [
     "('Nintendo', 'Europe', 'DEC', 2017)",
     "('Nintendo', 'Europe', 'JUN', 2013)",
@@ -48,7 +47,6 @@ subspaces = [
     "('Europe', 'DEC', 2013)"
 ]
 
-
 question2_prompt = """
 Table structure: {
 'Company': ['Nintendo', 'Sony', 'Microsoft'], 
@@ -62,33 +60,43 @@ Do you understand the questions I want to explore and the current exploration st
 
 question3_prompt = """
 Based on the question and current subspace, I need you to suggest five possible next steps for exploration and explain the reasons for each. Predict the information that may be explored.
-You need to reply to me in the following form
-subspace: ""
-reason: ""
+Your answer must follow the format below: 
+Subspace1: ""
+Reason: ""
+Subspace2: ""
+Reason: ""
+...
 """
+global insight_list
+global header_dict
+
 
 def read_vis_list(file_path):
+    global insight_list
     insight_list = []
-    with open(file_path, 'r') as file:
-        header = None
-        insight = {}
-        for line in file:
-            line = line.strip()
+
+    with open('vis_list.txt', 'r') as file:
+        lines = file.readlines()
+        i = 0
+        while i < len(lines):
+            line = lines[i].strip()
             if line.startswith("Header:"):
-                if header is not None:
-                    insight_list.append({'header': header, 'insights': insight})
-                header = tuple(line.split(": ")[1].strip("()").split(", "))
-                insight = {}
-            elif line.startswith("Insight"):
-                insight_type = line.split(": ")[1]
-            elif line.startswith("Type:"):
-                insight['type'] = line.split(": ")[1]
-            elif line.startswith("Score:"):
-                insight['score'] = float(line.split(": ")[1])
-            elif line.startswith("Description:"):
-                insight['description'] = line.split(": ")[1]
-        if header is not None:
-            insight_list.append({'header': header, 'insights': insight})
+                header = eval(line.split(":")[1].strip())
+                insights = []
+                i += 1
+                while i < len(lines) and not lines[i].startswith("Header:"):
+                    if lines[i].startswith("Insight"):
+                        insight_type = lines[i + 1].split(":")[1].strip()
+                        insight_score = float(lines[i + 2].split(":")[1].strip())
+                        insight_description = lines[i + 3].split(":")[1].strip()
+                        insights.append(
+                            {"Type": insight_type, "Score": insight_score, "Description": insight_description})
+                        i += 4
+                    else:
+                        i += 1
+                insight_list.append({"Header": header, "Insights": insights})
+            else:
+                i += 1
     return insight_list
 
 
@@ -108,14 +116,14 @@ def get_completion_from_messages(messages, temperature=0):
 
 def get_insights_for_header(header, insight_list):
     for item in insight_list:
-        if item['header'] == header:
+        if str(item['Header']) == header:
             insights_info = []
-            for i, insight in enumerate(item['insights'].values(), start=1):
+            for i, insight in enumerate(item['Insights'], start=1):
                 insight_info = {
                     'Insight': f"Insight {i}",
-                    'Type': insight['type'],
-                    'Score': insight['score'],
-                    'Description': insight['description']
+                    'Type': insight['Type'],
+                    'Score': insight['Score'],
+                    'Description': insight['Description']
                 }
                 insights_info.append(insight_info)
             return insights_info
@@ -139,7 +147,9 @@ def combine_question2(query, crt_header):
     return question2
 
 
-def get_related_subspace(input_header, header_dict):
+def get_related_subspace(input_header_str, header_dict):
+    # transform to tuple
+    input_header = ast.literal_eval(input_header_str)
     same_level_headers = []
     elaboration_headers = []
     generalization_headers = []
@@ -168,9 +178,8 @@ def combine_question3(crt_header, insight_list):
         #     question3 += "Generalization Headers:\n"
         for header in headers:
             question3 += str(header) + "\n"
+    question3 += question3_prompt
     return question3
-
-
 
 
 def get_response(question):
@@ -187,15 +196,16 @@ def parse_response(response):
     subspace_reason_info = {}
     for line in response.split("\n"):
         line = line.strip()
-        if line.startswith("subspace:"):
+        if line.startswith("Subspace"):
             if subspace_reason_info:
                 response_list.append(subspace_reason_info)
             subspace_reason_info = {"subspace": line.split(":")[1].strip()}
-        elif line.startswith("reason:"):
+        elif line.startswith("Reason"):
             subspace_reason_info["reason"] = line.split(":")[1].strip()
     if subspace_reason_info:
         response_list.append(subspace_reason_info)
     return response_list
+
 
 
 def qa_process():
@@ -207,6 +217,7 @@ def qa_process():
 
     with open('qa_log.txt', 'w') as f:
         response = get_response(question1)
+        f.write('=' * 100)
         f.write(f"Q: {question1}\nA: {response}\n")
 
         # while not signal_received:
@@ -215,6 +226,7 @@ def qa_process():
             question2 = combine_question2(query, crt_header)
             question3 = combine_question3(crt_header, insight_list)
             response = get_response(question2 + question3)
+            f.write('=' * 100)
             f.write(f"Q: {question2 + question3}\nA: {response}\n")
 
             # abstract structured info from response

@@ -1,0 +1,104 @@
+====================================================================================================Q: 
+You are assisting me in exploring a dataset to analyze patterns and extract insights. Data exploration involves filtering data to extract subspaces and analyzing these subspaces to identify important patterns, known as insights.
+There are eight types of insights, divided into two categories: point insights and shape insights. Point insights include dominance, top2, outlier, and outlier-temporal, while shape insights include trend, kurtosis, skewness, and evenness.
+The data analysis process is divided into two iterative steps. The first step is to select a data sub-area to be explored (this step is selected by LLM), and the second step is to calculate the existing insights in this sub-area (this step is done by an external actuator).
+I will first provide you with the question I want to explore in the data table, the current exploration status, and the data table structure. I will present this information to you in the following format, where the information after the # sign can help you understand the meaning of each item:
+"
+Question: {} # A problem I want to analyze in the data table.
+Current subspace: () # Current exploration status
+Insight: # The insight in the current subspace
+{
+Filter condition: [] # Explains how to filter the original data table to obtain this subspace
+Type: {} # Insight type
+Category: {} # Insight category
+Description:{} # Insight description
+}
+Table structure: {} # The structure of the original data table, including column names and the attribute list for each column, with the last column representing sales value (not listed)
+"
+
+A: Sure, I understand the format and the process. Please provide me with the question you want to explore, the current exploration status, and the table structure. I will then assist you in analyzing the data and extracting insights.
+====================================================================================================Q: Queation: I want to know the sales information of Nintendo 3DS in different years.
+Current Subspace: ('Nintendo', 'Nintendo 3DS (3DS)')
+Insight 1:
+Type: trend
+Score: 0.778532224866023
+Description: Locations exhibit a clear downward trend over the Years from 2013 to 2020.
+Insight 2:
+Type: top2
+Score: 0.1548612458761886
+Description: The Sale proportion of North America and Japan is significantly higher than that of other Locations.
+Insight 3:
+Type: dominance
+Score: 0.009897147292839081
+Description: The Sale of MAR dominates among all Seasons.
+
+Table structure: {
+'Company': ['Nintendo', 'Sony', 'Microsoft'], 
+'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 
+'Location': ['Europe', 'Japan', 'North America', 'Other'], 
+'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 
+'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
+
+Do you understand the questions I want to explore and the current exploration status? Next, I will provide you with some other subspaces related to the current exploration. Based on my question, analyze the information presented in the following subspaces. Choose three subspaces that are most relevant to the question as the next exploration directions.
+Related Headers List:
+('Nintendo', 'Europe')
+('Nintendo', 'DEC')
+('Nintendo', 2013)
+('Nintendo', 2014)
+('Nintendo', 2015)
+('Nintendo', 2016)
+('Nintendo', 2017)
+('Nintendo', 2018)
+('Nintendo', 2019)
+('Nintendo', 2020)
+('Nintendo', 'JUN')
+('Nintendo', 'MAR')
+('Nintendo', 'SEP')
+('Nintendo', 'Japan')
+('Nintendo', 'North America')
+('Nintendo', 'Other')
+('Nintendo', 'Nintendo DS (DS)')
+('Nintendo', 'Nintendo Switch (NS)')
+('Nintendo', 'Wii (Wii)')
+('Nintendo', 'Wii U (WiiU)')
+('Nintendo',)
+('Nintendo 3DS (3DS)',)
+('Nintendo', 'Nintendo 3DS (3DS)', 'Europe')
+('Nintendo', 'Nintendo 3DS (3DS)', 'DEC')
+('Nintendo', 'Nintendo 3DS (3DS)', 2013)
+('Nintendo', 'Nintendo 3DS (3DS)', 2014)
+('Nintendo', 'Nintendo 3DS (3DS)', 2015)
+('Nintendo', 'Nintendo 3DS (3DS)', 2016)
+('Nintendo', 'Nintendo 3DS (3DS)', 2017)
+('Nintendo', 'Nintendo 3DS (3DS)', 2018)
+('Nintendo', 'Nintendo 3DS (3DS)', 2019)
+('Nintendo', 'Nintendo 3DS (3DS)', 2020)
+('Nintendo', 'Nintendo 3DS (3DS)', 'JUN')
+('Nintendo', 'Nintendo 3DS (3DS)', 'MAR')
+('Nintendo', 'Nintendo 3DS (3DS)', 'SEP')
+('Nintendo', 'Nintendo 3DS (3DS)', 'Japan')
+('Nintendo', 'Nintendo 3DS (3DS)', 'North America')
+('Nintendo', 'Nintendo 3DS (3DS)', 'Other')
+
+Based on the question and current subspace, I need you to suggest five possible next steps for exploration and explain the reasons for each. Predict the information that may be explored.
+Your answer must follow the format below: 
+Subspace1: ""
+Reason: ""
+Subspace2: ""
+Reason: ""
+...
+
+A: Subspace1: "('Nintendo', 'Nintendo 3DS (3DS)', 2013)"
+Reason: This subspace will provide the sales information of Nintendo 3DS in the year 2013. It will help to understand the sales performance of the product in its early years.
+
+Subspace2: "('Nintendo', 'Nintendo 3DS (3DS)', 2020)"
+Reason: This subspace will provide the sales information of Nintendo 3DS in the year 2020. It will help to understand the recent sales performance of the product and compare it with the early years.
+
+Subspace3: "('Nintendo', 'Nintendo 3DS (3DS)', 'North America')"
+Reason: This subspace will provide the sales information of Nintendo 3DS in North America. Since North America has a significant proportion of sales, it will be interesting to see the sales performance in this region.
+
+Subspace4: "('Nintendo', 'Nintendo 3DS (3DS)', 'Japan')"
+Reason: This subspace will provide the sales information of Nintendo 3DS in Japan. As the home country of Nintendo, it will be interesting to see the sales performance in this region.
+
+Subspace5: "('Nintendo', 'Nintendo 3DS (3DS)', 'DEC')"
+Reason: This subspace will provide the sales information of Nintendo 3DS in December. As December is a holiday season, it will be interesting to see the sales performance in this month.
