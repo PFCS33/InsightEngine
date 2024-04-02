@@ -80,25 +80,101 @@ Related Headers List:
 ('Nintendo', 'Nintendo 3DS (3DS)', 'North America')
 ('Nintendo', 'Nintendo 3DS (3DS)', 'Other')
 
-Based on the question and current subspace, I need you to suggest five possible next steps for exploration and explain the reasons for each. Predict the information that may be explored.
+Your task is to predict the information that may be explored. Specifically, Based on the question and current subspace, I need you to suggest five possible next steps for exploration, explain the reasons for each, and provide a query that the user might want to explore in this subspace. 
 Your answer must follow the format below: 
 Subspace1: ""
 Reason: ""
+Query: ""
+
 Subspace2: ""
 Reason: ""
+Query: ""
 ...
 
 A: Subspace1: "('Nintendo', 'Nintendo 3DS (3DS)', 2013)"
-Reason: This subspace will provide the sales information of Nintendo 3DS in the year 2013. It will help to understand the sales performance of the product in its early years.
+Reason: "The user is interested in the sales information of Nintendo 3DS in different years. Exploring the sales data in 2013 can provide a starting point for understanding the sales trend of Nintendo 3DS."
+Query: "What is the sales performance of Nintendo 3DS in 2013?"
 
-Subspace2: "('Nintendo', 'Nintendo 3DS (3DS)', 2020)"
-Reason: This subspace will provide the sales information of Nintendo 3DS in the year 2020. It will help to understand the recent sales performance of the product and compare it with the early years.
+Subspace2: "('Nintendo', 'Nintendo 3DS (3DS)', 'North America')"
+Reason: "The user might be interested in the sales performance of Nintendo 3DS in different locations. Since North America has a significantly higher sales proportion, it would be interesting to explore the sales data in this region."
+Query: "What is the sales performance of Nintendo 3DS in North America?"
 
-Subspace3: "('Nintendo', 'Nintendo 3DS (3DS)', 'North America')"
-Reason: This subspace will provide the sales information of Nintendo 3DS in North America. Since North America has a significant proportion of sales, it will be interesting to see the sales performance in this region.
+Subspace3: "('Nintendo', 'Nintendo 3DS (3DS)', 'Japan')"
+Reason: "Similar to North America, Japan also has a high sales proportion. Exploring the sales data in Japan can provide insights into the market performance of Nintendo 3DS in this region."
+Query: "What is the sales performance of Nintendo 3DS in Japan?"
 
-Subspace4: "('Nintendo', 'Nintendo 3DS (3DS)', 'Japan')"
-Reason: This subspace will provide the sales information of Nintendo 3DS in Japan. As the home country of Nintendo, it will be interesting to see the sales performance in this region.
+Subspace4: "('Nintendo', 'Nintendo 3DS (3DS)', 'MAR')"
+Reason: "The user might be interested in the sales performance of Nintendo 3DS in different seasons. Since the sales of March dominates among all seasons, it would be interesting to explore the sales data in this month."
+Query: "What is the sales performance of Nintendo 3DS in March?"
 
-Subspace5: "('Nintendo', 'Nintendo 3DS (3DS)', 'DEC')"
-Reason: This subspace will provide the sales information of Nintendo 3DS in December. As December is a holiday season, it will be interesting to see the sales performance in this month.
+Subspace5: "('Nintendo', 'Nintendo 3DS (3DS)', 2020)"
+Reason: "The user is interested in the sales information of Nintendo 3DS in different years. Exploring the sales data in 2020 can provide the most recent sales trend of Nintendo 3DS."
+Query: "What is the sales performance of Nintendo 3DS in 2020?"
+====================================================================================================Q: Invalid Current Subspace.Related Headers List:
+
+Your task is to predict the information that may be explored. Specifically, Based on the question and current subspace, I need you to suggest five possible next steps for exploration, explain the reasons for each, and provide a query that the user might want to explore in this subspace. 
+Your answer must follow the format below: 
+Subspace1: ""
+Reason: ""
+Query: ""
+
+Subspace2: ""
+Reason: ""
+Query: ""
+...
+
+A: As the question does not provide specific details about the current subspace or related headers list, I'll provide a general example based on a hypothetical dataset related to sales data.
+
+Subspace1: "Sales by Region"
+Reason: Understanding sales performance by region can help identify areas of strength and weakness, and guide strategic decisions.
+Query: "What is the total sales volume for each region?"
+
+Subspace2: "Sales by Product Category"
+Reason: This can help identify which product categories are performing well and which are underperforming, informing product strategy.
+Query: "What is the total sales volume for each product category?"
+
+Subspace3: "Sales by Time (e.g., month, quarter, year)"
+Reason: Analyzing sales over time can reveal trends, seasonality, and growth or decline, which are important for forecasting and planning.
+Query: "How have sales changed over time?"
+
+Subspace4: "Sales by Customer Demographics (e.g., age, gender)"
+Reason: Understanding who is buying can help target marketing efforts and develop customer personas.
+Query: "What are the sales volumes for different customer demographics?"
+
+Subspace5: "Sales by Salesperson"
+Reason: This can help identify high-performing and underperforming salespeople, which is useful for performance management and training.
+Query: "What are the sales volumes for each salesperson?"
+====================================================================================================Q: Invalid Current Subspace.Related Headers List:
+
+Your task is to predict the information that may be explored. Specifically, Based on the question and current subspace, I need you to suggest five possible next steps for exploration, explain the reasons for each, and provide a query that the user might want to explore in this subspace. 
+Your answer must follow the format below: 
+Subspace1: ""
+Reason: ""
+Query: ""
+
+Subspace2: ""
+Reason: ""
+Query: ""
+...
+
+A: As the question does not provide specific details about the current subspace or related headers list, I'll provide a general example based on a hypothetical dataset related to sales data.
+
+Subspace1: "Sales by Region"
+Reason: Understanding regional sales performance can help identify where marketing efforts are most effective and where there may be opportunities for growth.
+Query: "What is the total sales volume for each region?"
+
+Subspace2: "Sales by Product Category"
+Reason: This can help identify which product categories are most popular and profitable, informing decisions about inventory management and product development.
+Query: "What is the total sales volume for each product category?"
+
+Subspace3: "Sales by Time (e.g., month, quarter, year)"
+Reason: Analyzing sales over time can reveal seasonal trends, growth or decline in sales, and the impact of specific events or initiatives.
+Query: "How have sales changed over time?"
+
+Subspace4: "Sales by Customer Demographics (e.g., age, gender)"
+Reason: Understanding who your customers are can inform marketing strategies and product development.
+Query: "What are the sales volumes for different customer demographic groups?"
+
+Subspace5: "Sales by Salesperson"
+Reason: This can help identify high-performing salespeople and understand what strategies or approaches may be contributing to their success.
+Query: "What is the total sales volume for each salesperson?"

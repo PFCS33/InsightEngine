@@ -9,4 +9,4 @@ proxy = {
 openai.proxy = proxy
 
 # gpt4.0 key
-api_key = '--'
+api_key = '4.2'

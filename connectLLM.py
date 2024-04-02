@@ -59,12 +59,15 @@ Do you understand the questions I want to explore and the current exploration st
 """
 
 question3_prompt = """
-Based on the question and current subspace, I need you to suggest five possible next steps for exploration and explain the reasons for each. Predict the information that may be explored.
+Your task is to predict the information that may be explored. Specifically, Based on the question and current subspace, I need you to suggest five possible next steps for exploration, explain the reasons for each, and provide a query that the user might want to explore in this subspace. 
 Your answer must follow the format below: 
 Subspace1: ""
 Reason: ""
+Query: ""
+
 Subspace2: ""
 Reason: ""
+Query: ""
 ...
 """
 global insight_list
@@ -202,16 +205,14 @@ def parse_response(response):
             subspace_reason_info = {"subspace": line.split(":")[1].strip()}
         elif line.startswith("Reason"):
             subspace_reason_info["reason"] = line.split(":")[1].strip()
+        elif line.startswith("Query"):
+            subspace_reason_info["query"] = line.split(":")[1].strip()
     if subspace_reason_info:
         response_list.append(subspace_reason_info)
     return response_list
 
 
-
 def qa_process():
-    signal_received = False
-    iteration = 0
-
     query = "I want to know the sales information of Nintendo 3DS in different years."
     crt_header = "('Nintendo', 'Nintendo 3DS (3DS)')"
 
@@ -220,22 +221,28 @@ def qa_process():
         f.write('=' * 100)
         f.write(f"Q: {question1}\nA: {response}\n")
 
-        # while not signal_received:
-        for _ in range(2):
-            iteration += 1
-            question2 = combine_question2(query, crt_header)
-            question3 = combine_question3(crt_header, insight_list)
-            response = get_response(question2 + question3)
+    iteration = 0
+    while iteration < 3:
+        iteration += 1
+        question2 = combine_question2(query, crt_header)
+        question3 = combine_question3(crt_header, insight_list)
+        response = get_response(question2 + question3)
+
+        with open('qa_log.txt', 'a') as f:
             f.write('=' * 100)
             f.write(f"Q: {question2 + question3}\nA: {response}\n")
+        print(f"Conversation {iteration} ended.")
 
-            # abstract structured info from response
-            response_list = parse_response(response)
+        # parse structured info from response
+        response_list = parse_response(response)
 
-            # if check_for_signal():
-            #     signal_received = True
+        # choose the 1st answer as default to start next qa process
+        next_header = response_list[0].get("subspace")
+        next_query = response_list[0].get("query")
+        crt_header = next_header
+        query = next_query
 
-    print("Conversation ended.")
+    print("Conversation closed.")
 
 
 if __name__ == "__main__":
