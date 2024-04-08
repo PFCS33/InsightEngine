@@ -1,4 +1,7 @@
 config_api.py
+*.txt
+
+
 
 ### Python template
 # Byte-compiled / optimized / DLL files

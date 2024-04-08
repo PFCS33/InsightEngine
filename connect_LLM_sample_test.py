@@ -63,22 +63,19 @@ directions.
 
 """
 
-question3_prompt = """Your task is to predict the information that might be explored. Specifically, based on the 
-question I want to explore and the current subspace of exploration, I need you to find the header I need from the 
-"Related Headers List". The headers you select must be relevant to the query that I want to explore and should guide 
-me in further exploration. Please list the selected headers, for each explain why you chose it, and give me a query 
-to continue exploring in that header. 
-Please note that you should list all headers that you think might solve the query, without omission.
+question3_prompt = """You need to categorize the "Related Headers List" based on the semantics, which indicates the 
+direction of exploration from the current subspace, which means you need to classify the headers in the "Related 
+Headers List" based on their semantic relationship to the current subspace. 
+After categorizing them, please select the group that best matches my query.
 Your answer must follow the format below: 
-Subspace1: "" 
-Reason: "" 
-Query: "" 
-
-Subspace2: ""
-Reason: ""
-Query: ""
+Classified groups:
+Group1: {Headers belonging to Group1}
+Group2: {Headers belonging to Group2}
 ...
+The group that best matches my query is: Group x.
+
 """
+
 global insight_list
 global header_dict
 
@@ -225,8 +222,8 @@ def parse_response(response):
 
 
 def qa_process():
-    file_path = 'qa_log_make_LLM_choose_all_related_headers.txt'
-    query = "I need to analyze sales data related to the Nintendo 3DS over time to gain insights specifically focused on trends and patterns associated with different time periods."
+    file_path = 'qa_log_make_LLM_group_related_headers.txt'
+    query = "I need to analyze sales data related to the Nintendo 3DS over time to gain insights specifically focused on trends and patterns associated with different **time periods**."
     crt_header = "('Nintendo', 'Nintendo 3DS (3DS)')"
 
     with open(file_path, 'w') as f:
