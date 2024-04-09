@@ -33,24 +33,12 @@ Table structure: {} # The structure of the original data table, including column
 "
 """
 
-subspaces = [
-    "('Nintendo', 'Europe', 'DEC', 2017)",
-    "('Nintendo', 'Europe', 'JUN', 2013)",
-    "('Nintendo', 'Europe', 'MAR', 2013)",
-    "('Nintendo', 'Europe', 'SEP', 2013)",
-    "('Nintendo', 'Japan', 'DEC', 2013)",
-    "('Nintendo', 'North America', 'DEC', 2013)",
-    "('Nintendo', 'Wii (Wii)', 'DEC', 2013)",
-    "('Nintendo', 'Europe', 'DEC')",
-    "('Nintendo', 'Europe', 2013)",
-    "('Nintendo', 'DEC', 2013)",
-    "('Europe', 'DEC', 2013)"
-]
 
 question2_prompt = """
 Table structure: {
 'Company': ['Nintendo', 'Sony', 'Microsoft'], 
-'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 
+'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)', 
+'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)', 'Xbox One (XOne)'], 
 'Location': ['Europe', 'Japan', 'North America', 'Other'], 
 'Season': ['DEC', 'JUN', 'MAR', 'SEP'], 
 'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']}
@@ -69,10 +57,11 @@ Headers List" based on their semantic relationship to the current subspace.
 After categorizing them, please select the group that best matches my query.
 Your answer must follow the format below: 
 Classified groups:
-Group1: {Headers belonging to Group1}
-Group2: {Headers belonging to Group2}
+Group1: {Header tuples belonging to Group1, divided by ", "}
+Group2: {Header tuples belonging to Group2, divided by ", "}
 ...
-The group that best matches my query is: Group x.
+Please rank the groups in order of how closely they match the question so that the first group is the answer that 
+best matches the question.
 
 """
 

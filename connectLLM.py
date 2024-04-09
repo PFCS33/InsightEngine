@@ -185,12 +185,6 @@ def combine_question3(crt_header, insight_list):
     related_headers_list = get_related_subspace(crt_header, header_dict)
     question3 = "Related Headers List:\n"
     for i, headers in enumerate(related_headers_list, start=1):
-        # if i == 1:
-        #     question3 += "Same Level Headers:\n"
-        # elif i == 2:
-        #     question3 += "Elaboration Headers:\n"
-        # elif i == 3:
-        #     question3 += "Generalization Headers:\n"
         for header in headers:
             question3 += str(header) + "\n"
     question3 += question3_prompt
