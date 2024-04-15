@@ -219,16 +219,18 @@ def group_elaboration_headers(input_header, elaboration_headers, attribute_to_co
     # Grouping based on the additional element's column
     groups = {}
     for header in elaboration_headers:
-        # Find the additional element's column
-        additional_element = header[len(input_header)]
-        group_key = attribute_to_column.get(additional_element, "False")
+        # Find the additional element in header that is not in input_header
+        additional_element = set(header) - set(input_header)
+        if len(additional_element) == 1:
+            additional_element = additional_element.pop()
+            group_key = attribute_to_column.get(additional_element, "False")
 
-        # Add header to the corresponding group
-        if group_key in groups:
-            groups[group_key]["headers"].append(header)
-        else:
-            groups[group_key] = {"headers": [header], "template_sentence":
-                f"This group is a subdivision of the current subspace in the '{group_key}' column dimension."}
+            # Add header to the corresponding group
+            if group_key in groups:
+                groups[group_key]["headers"].append(header)
+            else:
+                groups[group_key] = {"headers": [header], "template_sentence":
+                    f"This group is a subdivision of the current subspace in the '{group_key}' column dimension."}
 
     return groups
 
@@ -266,7 +268,7 @@ def get_related_subspace(input_header_str, header_dict):
 
     # Group same_level_headers
     same_level_groups = group_same_level_headers(input_header, same_level_headers, attribute_to_column)
-    same_level_explanation = "The following are groups of same-level headers, which have the same level of subdivision as the current data subspace. Each group consists of headers that are identical to the current data subspace in all elements except one, which represents a different attribute of the data subspace in a particular column."
+    same_level_explanation = "\nThe following are groups of same-level headers, which have the same level of subdivision as the current data subspace. Each group consists of headers that are identical to the current data subspace in all elements except one, which represents a different attribute of the data subspace in a particular column."
     output_string += same_level_explanation + "\n"
     output_string += "Same-level groups:\n"
     for (group_criteria,), group_info in same_level_groups.items():
@@ -279,14 +281,17 @@ def get_related_subspace(input_header_str, header_dict):
 
     # Group generalization_headers
     generalization_groups = generalization_headers
-    generalization_explanation = "The following is the group of generalization headers, which represent the parent or immediate higher-level region of the current data subspace. These headers can be used to expand the context of the current data subspace or provide more general background information."
+    generalization_explanation = "\nThe following is the group of generalization headers, which represent the parent or immediate higher-level region of the current data subspace. These headers can be used to expand the context of the current data subspace or provide more general background information."
     output_string += generalization_explanation + "\n"
+    output_string += "Generalization group:\n"
+    output_string += "Group Criteria: parent headers of current header\n"
+    output_string += "Headers:\n"
     for header in generalization_groups:
         output_string += str(header) + "\n"
 
     # Group elaboration_headers
     elaboration_groups = group_elaboration_headers(input_header, elaboration_headers, attribute_to_column)
-    elaboration_explanation = "The following are groups of elaboration headers, which represent the next level of detail beneath the current data subspace. These headers provide specific details about certain aspects of the current data subspace, helping to drill down into a specific aspect of the data."
+    elaboration_explanation = "\nThe following are groups of elaboration headers, which represent the next level of detail beneath the current data subspace. These headers provide specific details about certain aspects of the current data subspace, helping to drill down into a specific aspect of the data."
     output_string += elaboration_explanation + "\n"
     output_string += "Elaboration groups:\n"
     for group_key, group_info in elaboration_groups.items():
@@ -297,12 +302,9 @@ def get_related_subspace(input_header_str, header_dict):
             output_string += str(header) + "\n"
         output_string += "\n"
 
-    related_headers_list = [same_level_headers, elaboration_headers, generalization_headers]
-    print("test")
-    for header in related_headers_list:
-        print(header)
-        print("\n")
+    # related_headers_list = [same_level_headers, elaboration_headers, generalization_headers]
     # return related_headers_list
+
     return output_string
 
 def combine_question3(crt_header, query):
@@ -327,10 +329,11 @@ as the next direction for exploration, and provide the reason."""
     question3 += grouping_string
 
     repeat_str = """Please note that my current subspace is: {} , and the question need to be solved is: "{}". \
-    Considering the subspace groups mentioned above, select one group that best matches the question, and provide the reason for your choice."""
+Considering the subspace groups mentioned above, select one group that best matches the question, and provide the reason for your choice."""
     repeat_str = repeat_str.format(str(crt_header), query)
-
     question3 += repeat_str
+
+    response_format = """"""
     return question3
 
 
@@ -404,8 +407,8 @@ def from_header_get_query(main_query, crt_header, next_header):
 
 def qa_process():
     file_path = 'qa_log_group_back_end.txt'
-    query = "I want to know why the sale of the brand PlayStation 4 (PS4) is an outlier, what caused the unusually large value of this point? "
-    crt_header = "('Europe', 'JUN')"
+    query = "I want to analyze the Sales among"
+    crt_header = "('Nintendo 3DS (3DS)', 'MAR', '2014')"
     main_query = query
 
     with open(file_path, 'w') as f:
@@ -434,18 +437,18 @@ def qa_process():
 
         question4 = """You have selected a group of headers that best match the question: 
 Group Criteria: Brand
-Explanation: This group of subspaces replaces the attribute values of the 'Brand' column in the current subspace.
+Explanation: This group is a subdivision of the current subspace in the 'Brand' column dimension.
 Headers:
-('Nintendo 3DS (3DS)', 'JUN')
-('Nintendo DS (DS)', 'JUN')
-('Nintendo Switch (NS)', 'JUN')
-('Wii (Wii)', 'JUN')
-('Wii U (WiiU)', 'JUN')
-('PlayStation 3 (PS3)', 'JUN')
-('PlayStation 4 (PS4)', 'JUN')
-('PlayStation Vita (PSV)', 'JUN')
-('Xbox 360 (X360)', 'JUN')
-('Xbox One (XOne)', 'JUN')
+('Nintendo 3DS (3DS)', 'Europe', 'JUN')
+('Nintendo DS (DS)', 'Europe', 'JUN')
+('Nintendo Switch (NS)', 'Europe', 'JUN')
+('Wii (Wii)', 'Europe', 'JUN')
+('Wii U (WiiU)', 'Europe', 'JUN')
+('PlayStation 3 (PS3)', 'Europe', 'JUN')
+('PlayStation 4 (PS4)', 'Europe', 'JUN')
+('PlayStation Vita (PSV)', 'Europe', 'JUN')
+('Xbox 360 (X360)', 'Europe', 'JUN')
+('Xbox One (XOne)', 'Europe', 'JUN')
          
         Next, you need to sort the headers within the group. \
         Considering the current subspace: "('Europe', 'JUN')", and the question: "I want to know why the sale of the brand PlayStation 4 (PS4) is an outlier, what caused the unusually large value of this point? ", which header is most likely to contain key information for answering the question? \
@@ -506,7 +509,5 @@ if __name__ == "__main__":
         header_dict = [tuple(str(item) if isinstance(item, int) else item for item in eval(line.strip())) for line in
                        file]
 
-    input_header_str = "('Europe', 'JUN')"
-    related_headers = get_related_subspace(input_header_str, header_dict)
     # iterative q&a
     qa_process()
