@@ -13,14 +13,14 @@ Description: The Sale proportion of Nintendo Switch (NS) and Nintendo 3DS (3DS) 
 Insight3: 
 Type: evenness
 Score: 0.33032714639997907
-Description: The Sales are relatively evenly distributed across different Years, Brands, Locations and Seasons.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('Nintendo', 'Nintendo 3DS (3DS)')
 Insight1: 
 Type: trend
 Score: 0.778532224866023
-Description: Locations exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 Insight2: 
 Type: top2
@@ -37,7 +37,7 @@ Header: ('Nintendo 3DS (3DS)',)
 Insight1: 
 Type: trend
 Score: 0.778532224866023
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 Insight2: 
 Type: top2
@@ -54,12 +54,12 @@ Header: ('Europe',)
 Insight1: 
 Type: evenness
 Score: 0.8451861525768871
-Description: The Sales are relatively evenly distributed across different Years, Companys, Brands and Seasons.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight2: 
 Type: outlier
 Score: 0.68193578567085
-Description: The Sale of Brand PlayStation 4 (PS4) of Company all Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companys of Season all Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasons of Year all Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Years is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Seasons, Years.
+Description: The Sale of Brand PlayStation 4 (PS4) is an outlier, which is significantly higher than the normal Sale of other Brands.
 
 Insight3: 
 Type: top2
@@ -76,7 +76,7 @@ Description: The Sale proportion of Nintendo and Sony is significantly higher th
 Insight2: 
 Type: evenness
 Score: 0.5227045948021891
-Description: The Sales are relatively evenly distributed across different Years, Companys, Brands and Locations.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight3: 
 Type: top2
@@ -93,7 +93,7 @@ Description: The Sale proportion of Nintendo and Sony is significantly higher th
 Insight2: 
 Type: trend
 Score: 0.297458693652182
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight3: 
 Type: kurtosis
@@ -115,7 +115,7 @@ Description: The Sale proportion of Nintendo Switch (NS) and Nintendo 3DS (3DS) 
 Insight2: 
 Type: evenness
 Score: 0.359683978633349
-Description: The Sales are relatively evenly distributed across different Years, Brands and Seasons.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('DEC', 'Nintendo')
@@ -141,7 +141,7 @@ Header: ('Europe', 'Nintendo', 'Nintendo 3DS (3DS)')
 Insight1: 
 Type: trend
 Score: 0.4053640728377176
-Description: Seasons exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 Insight2: 
 Type: dominance
@@ -153,7 +153,7 @@ Header: ('Europe', 'Nintendo 3DS (3DS)')
 Insight1: 
 Type: trend
 Score: 0.4053640728377176
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 Insight2: 
 Type: dominance
@@ -165,7 +165,7 @@ Header: ('DEC', 'Europe')
 Insight1: 
 Type: outlier
 Score: 0.6536343688833756
-Description: The Sale of Brand PlayStation 4 (PS4) of Company all Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companys of Year all Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Years is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Years.
+Description: The Sale of Brand PlayStation 4 (PS4) is an outlier, which is significantly higher than the normal Sale of other Brands.
 
 Insight2: 
 Type: top2
@@ -175,7 +175,7 @@ Description: The Sale proportion of Sony and Nintendo is significantly higher th
 Insight3: 
 Type: evenness
 Score: 0.49158816429417884
-Description: The Sales are relatively evenly distributed across different Years, Companys and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('2013', 'Europe')
@@ -510,7 +510,7 @@ Description: The Sale of PlayStation 4 (PS4) dominates among all Brands.
 Insight4: 
 Type: trend
 Score: 0.10159545833334448
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('2016', 'DEC')
@@ -617,7 +617,7 @@ Header: ('2017', 'Europe')
 Insight1: 
 Type: outlier
 Score: 0.6937229177909343
-Description: The Sale of Brand PlayStation 4 (PS4) of Company all Companysall Companysall Companysall Companys of Season all Seasonsall Seasonsall Seasonsall Seasons is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Seasons.
+Description: The Sale of Brand PlayStation 4 (PS4) is an outlier, which is significantly higher than the normal Sale of other Brands.
 
 Insight2: 
 Type: top2
@@ -974,7 +974,7 @@ Description: The Sale of Nintendo dominates among all Companys.
 Insight2: 
 Type: trend
 Score: 0.2768163512830272
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight3: 
 Type: top2
@@ -1025,7 +1025,7 @@ Description: The Sale proportion of Nintendo Switch (NS) and PlayStation 4 (PS4)
 Insight3: 
 Type: trend
 Score: 0.14848559400154354
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('2020', 'DEC')
@@ -1094,7 +1094,7 @@ Header: ('JUN',)
 Insight1: 
 Type: evenness
 Score: 0.6749059696413948
-Description: The Sales are relatively evenly distributed across different Years, Companys, Brands and Locations.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight2: 
 Type: top2
@@ -1104,7 +1104,7 @@ Description: The Sale proportion of Sony and Nintendo is significantly higher th
 Insight3: 
 Type: outlier
 Score: 0.5713327047608496
-Description: The Sale of Brand PlayStation 4 (PS4) of Company all Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companys of Location all Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locations of Year all Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Years is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Locations, Years.
+Description: The Sale of Brand PlayStation 4 (PS4) is an outlier, which is significantly higher than the normal Sale of other Brands.
 
 Insight4: 
 Type: kurtosis
@@ -1126,7 +1126,7 @@ Description: The Sale proportion of Nintendo Switch (NS) and Nintendo 3DS (3DS) 
 Insight2: 
 Type: evenness
 Score: 0.27556972271252844
-Description: The Sales are relatively evenly distributed across different Years, Brands and Locations.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight3: 
 Type: skewness
@@ -1138,7 +1138,7 @@ Header: ('JUN', 'Nintendo 3DS (3DS)')
 Insight1: 
 Type: trend
 Score: 0.6755388694003768
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('Europe', 'JUN')
@@ -1150,29 +1150,29 @@ Description: The Sale proportion of Sony and Nintendo is significantly higher th
 Insight2: 
 Type: outlier
 Score: 0.7001711633663977
-Description: The Sale of Brand PlayStation 4 (PS4) of Company all Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companys of Year all Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Years is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Years.
+Description: The Sale of Brand PlayStation 4 (PS4) is an outlier, which is significantly higher than the normal Sale of other Brands.
 
 Insight3: 
 Type: outlier-temporal
 Score: 0.4708103596374066
-Description: The Sale of Year 2013 of Company all Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companys of Brand all Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brands is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Companys, Brands.
+Description: The Sale of Year 2013 is an outlier, which is significantly higher than the normal Sale of other Years.
 
 Insight4: 
 Type: evenness
 Score: 0.4621707746511916
-Description: The Sales are relatively evenly distributed across different Years, Companys and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight5: 
 Type: outlier-temporal
 Score: 0.3736879300992838
-Description: The Sale of Year 2014 of Company all Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companys of Brand all Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brands is an outlier, which is significantly lower than the normal Sale of other Years in the corresponding Companys, Brands.
+Description: The Sale of Year 2014 is an outlier, which is significantly lower than the normal Sale of other Years.
 
 ====================================================================================================
 Header: ('JUN', 'Nintendo', 'Nintendo 3DS (3DS)')
 Insight1: 
 Type: trend
 Score: 0.6755388694003768
-Description: Locations exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('Europe', 'JUN', 'Nintendo')
@@ -1184,7 +1184,7 @@ Description: The Sale proportion of Nintendo Switch (NS) and Nintendo 3DS (3DS) 
 Insight2: 
 Type: evenness
 Score: 0.5751051824415103
-Description: The Sales are relatively evenly distributed across different Years and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('2013', 'JUN', 'Nintendo')
@@ -1210,7 +1210,7 @@ Header: ('Europe', 'JUN', 'Nintendo 3DS (3DS)')
 Insight1: 
 Type: trend
 Score: 0.16213774441397819
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('2013', 'JUN', 'Nintendo', 'Nintendo 3DS (3DS)')
@@ -1538,7 +1538,7 @@ Header: ('MAR',)
 Insight1: 
 Type: evenness
 Score: 0.6548662780326744
-Description: The Sales are relatively evenly distributed across different Years, Companys, Brands and Locations.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight2: 
 Type: top2
@@ -1560,21 +1560,21 @@ Description: The Sale proportion of Nintendo 3DS (3DS) and Nintendo Switch (NS) 
 Insight2: 
 Type: evenness
 Score: 0.3744822206159868
-Description: The Sales are relatively evenly distributed across different Years, Brands and Locations.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('MAR', 'Nintendo 3DS (3DS)')
 Insight1: 
 Type: trend
 Score: 0.5060323382231978
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('Europe', 'MAR')
 Insight1: 
 Type: outlier
 Score: 0.6545928448497481
-Description: The Sale of Brand PlayStation 4 (PS4) of Company all Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companys of Year all Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Years is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Years.
+Description: The Sale of Brand PlayStation 4 (PS4) is an outlier, which is significantly higher than the normal Sale of other Brands.
 
 Insight2: 
 Type: top2
@@ -1584,7 +1584,7 @@ Description: The Sale proportion of Sony and Nintendo is significantly higher th
 Insight3: 
 Type: evenness
 Score: 0.5968432286766747
-Description: The Sales are relatively evenly distributed across different Years, Companys and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('2013', 'MAR')
@@ -1603,7 +1603,7 @@ Header: ('MAR', 'Nintendo', 'Nintendo 3DS (3DS)')
 Insight1: 
 Type: trend
 Score: 0.5060323382231978
-Description: Locations exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('Europe', 'MAR', 'Nintendo')
@@ -1615,7 +1615,7 @@ Description: The Sale proportion of Nintendo 3DS (3DS) and Nintendo Switch (NS) 
 Insight2: 
 Type: evenness
 Score: 0.2678316553556048
-Description: The Sales are relatively evenly distributed across different Years and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('2013', 'MAR', 'Nintendo')
@@ -1641,7 +1641,7 @@ Header: ('Europe', 'MAR', 'Nintendo 3DS (3DS)')
 Insight1: 
 Type: outlier-temporal
 Score: 0.456257352724196
-Description: The Sale of Year 2014 of Company all Companys is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Companys.
+Description: The Sale of Year 2014 is an outlier, which is significantly higher than the normal Sale of other Years.
 
 ====================================================================================================
 Header: ('2013', 'Europe', 'MAR')
@@ -1988,7 +1988,7 @@ Description: The Sale exhibit leptokurtic behavior with heavy tails and a sharp 
 Insight2: 
 Type: evenness
 Score: 0.6365161107296518
-Description: The Sales are relatively evenly distributed across different Years, Companys, Brands and Locations.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight3: 
 Type: top2
@@ -1998,7 +1998,7 @@ Description: The Sale proportion of Sony and Nintendo is significantly higher th
 Insight4: 
 Type: outlier
 Score: 0.5624549081246523
-Description: The Sale of Brand PlayStation 4 (PS4) of Company all Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companys of Location all Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locations of Year all Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Years is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Locations, Years.
+Description: The Sale of Brand PlayStation 4 (PS4) is an outlier, which is significantly higher than the normal Sale of other Brands.
 
 Insight5: 
 Type: top2
@@ -2010,7 +2010,7 @@ Header: ('Nintendo', 'SEP')
 Insight1: 
 Type: outlier-temporal
 Score: 0.5621762626662786
-Description: The Sale of Year 2020 of Brand all Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brands of Location all Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locations is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands, Locations.
+Description: The Sale of Year 2020 is an outlier, which is significantly higher than the normal Sale of other Years.
 
 Insight2: 
 Type: dominance
@@ -2027,7 +2027,7 @@ Header: ('Nintendo', 'Nintendo 3DS (3DS)', 'SEP')
 Insight1: 
 Type: outlier-temporal
 Score: 0.5921190970768014
-Description: The Sale of Year 2013 of Location all Locationsall Locationsall Locationsall Locations is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Locations.
+Description: The Sale of Year 2013 is an outlier, which is significantly higher than the normal Sale of other Years.
 
 Insight2: 
 Type: top2
@@ -2039,7 +2039,7 @@ Header: ('Nintendo 3DS (3DS)', 'SEP')
 Insight1: 
 Type: outlier-temporal
 Score: 0.5921190970768014
-Description: The Sale of Year 2013 of Company all Companysall Companysall Companysall Companys of Location all Locationsall Locationsall Locationsall Locations is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Companys, Locations.
+Description: The Sale of Year 2013 is an outlier, which is significantly higher than the normal Sale of other Years.
 
 Insight2: 
 Type: top2
@@ -2056,17 +2056,17 @@ Description: The Sale proportion of Sony and Nintendo is significantly higher th
 Insight2: 
 Type: outlier
 Score: 0.6908578721855536
-Description: The Sale of Brand PlayStation 4 (PS4) of Company all Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companys of Year all Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Years is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Years.
+Description: The Sale of Brand PlayStation 4 (PS4) is an outlier, which is significantly higher than the normal Sale of other Brands.
 
 Insight3: 
 Type: evenness
 Score: 0.48472293274739564
-Description: The Sales are relatively evenly distributed across different Years, Companys and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight4: 
 Type: outlier
 Score: 0.05143174708310243
-Description: The Sale of Brand Nintendo Switch (NS) of Company all Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companys of Year all Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Years is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Years.
+Description: The Sale of Brand Nintendo Switch (NS) is an outlier, which is significantly higher than the normal Sale of other Brands.
 
 ====================================================================================================
 Header: ('2013', 'SEP')
@@ -2085,7 +2085,7 @@ Header: ('Europe', 'Nintendo', 'SEP')
 Insight1: 
 Type: outlier-temporal
 Score: 0.5639193928462749
-Description: The Sale of Year 2020 of Brand all Brandsall Brandsall Brandsall Brandsall Brands is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands.
+Description: The Sale of Year 2020 is an outlier, which is significantly higher than the normal Sale of other Years.
 
 Insight2: 
 Type: dominance
@@ -2449,7 +2449,7 @@ Description: The Sale proportion of Nintendo and Sony is significantly higher th
 Insight2: 
 Type: evenness
 Score: 0.7386265774556682
-Description: The Sales are relatively evenly distributed across different Years, Companys, Brands and Seasons.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight3: 
 Type: skewness
@@ -2471,7 +2471,7 @@ Description: The Sale proportion of Nintendo Switch (NS) and Nintendo 3DS (3DS) 
 Insight2: 
 Type: evenness
 Score: 0.4731723174774518
-Description: The Sales are relatively evenly distributed across different Years, Brands and Seasons.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('Japan', 'Nintendo', 'Nintendo 3DS (3DS)')
@@ -2483,14 +2483,14 @@ Description: The Sale of Season MAR of Year 2013 is an outlier, which is signifi
 Insight2: 
 Type: trend
 Score: 0.7364132459588515
-Description: Seasons exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('Japan', 'Nintendo 3DS (3DS)')
 Insight1: 
 Type: trend
 Score: 0.7364132459588515
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('DEC', 'Japan')
@@ -2502,7 +2502,7 @@ Description: The Sale of Nintendo dominates among all Companys.
 Insight2: 
 Type: evenness
 Score: 0.37893442112148445
-Description: The Sales are relatively evenly distributed across different Years, Companys and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight3: 
 Type: top2
@@ -2536,7 +2536,7 @@ Description: The Sale proportion of Nintendo Switch (NS) and Nintendo 3DS (3DS) 
 Insight2: 
 Type: evenness
 Score: 0.13173564865479426
-Description: The Sales are relatively evenly distributed across different Years and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('2013', 'Japan', 'Nintendo')
@@ -2557,7 +2557,7 @@ Header: ('DEC', 'Japan', 'Nintendo 3DS (3DS)')
 Insight1: 
 Type: trend
 Score: 0.31018563707740066
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('2013', 'DEC', 'Japan')
@@ -2809,7 +2809,7 @@ Header: ('2019', 'Japan', 'Nintendo 3DS (3DS)')
 Insight1: 
 Type: trend
 Score: 0.7674961519568693
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight2: 
 Type: top2
@@ -2843,7 +2843,7 @@ Description: The Sale of Nintendo Switch (NS) dominates among all Brands.
 Insight3: 
 Type: trend
 Score: 0.046845415565100273
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('2020', 'DEC', 'Japan')
@@ -2867,7 +2867,7 @@ Description: The Sale proportion of Nintendo and Sony is significantly higher th
 Insight2: 
 Type: evenness
 Score: 0.7066500684645858
-Description: The Sales are relatively evenly distributed across different Years, Companys and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight3: 
 Type: kurtosis
@@ -2884,7 +2884,7 @@ Description: The Sale proportion of Nintendo Switch (NS) and Nintendo 3DS (3DS) 
 Insight2: 
 Type: evenness
 Score: 0.23685286476813827
-Description: The Sales are relatively evenly distributed across different Years and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('JUN', 'Japan', 'Nintendo', 'Nintendo 3DS (3DS)')
@@ -2898,7 +2898,7 @@ Header: ('JUN', 'Japan', 'Nintendo 3DS (3DS)')
 Insight1: 
 Type: trend
 Score: 0.7656160577307816
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('2013', 'JUN', 'Japan')
@@ -2994,7 +2994,7 @@ Description: The Sale proportion of Nintendo and Sony is significantly higher th
 Insight2: 
 Type: evenness
 Score: 0.6403501646539365
-Description: The Sales are relatively evenly distributed across different Years, Companys and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('Japan', 'MAR', 'Nintendo')
@@ -3006,7 +3006,7 @@ Description: The Sale proportion of Nintendo 3DS (3DS) and Nintendo Switch (NS) 
 Insight2: 
 Type: evenness
 Score: 0.49285116887968705
-Description: The Sales are relatively evenly distributed across different Years and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('Japan', 'MAR', 'Nintendo', 'Nintendo 3DS (3DS)')
@@ -3020,7 +3020,7 @@ Header: ('Japan', 'MAR', 'Nintendo 3DS (3DS)')
 Insight1: 
 Type: trend
 Score: 0.8617030668361609
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('2013', 'Japan', 'MAR')
@@ -3162,12 +3162,12 @@ Description: The Sale has a positively skewed distribution, which means that the
 Insight3: 
 Type: evenness
 Score: 0.4836257523627845
-Description: The Sales are relatively evenly distributed across different Years, Companys and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight4: 
 Type: outlier-temporal
 Score: 0.4773739046232767
-Description: The Sale of Year 2020 of Company all Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companys of Brand all Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brands is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Companys, Brands.
+Description: The Sale of Year 2020 is an outlier, which is significantly higher than the normal Sale of other Years.
 
 ====================================================================================================
 Header: ('Japan', 'Nintendo', 'SEP')
@@ -3179,12 +3179,12 @@ Description: The Sale proportion of Nintendo Switch (NS) and Nintendo 3DS (3DS) 
 Insight2: 
 Type: outlier-temporal
 Score: 0.5735595877312589
-Description: The Sale of Year 2020 of Brand all Brandsall Brandsall Brandsall Brandsall Brands is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands.
+Description: The Sale of Year 2020 is an outlier, which is significantly higher than the normal Sale of other Years.
 
 Insight3: 
 Type: evenness
 Score: 0.06310061243823695
-Description: The Sales are relatively evenly distributed across different Years and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('Japan', 'Nintendo', 'Nintendo 3DS (3DS)', 'SEP')
@@ -3198,7 +3198,7 @@ Header: ('Japan', 'Nintendo 3DS (3DS)', 'SEP')
 Insight1: 
 Type: trend
 Score: 0.6086571882397999
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('2013', 'Japan', 'SEP')
@@ -3289,7 +3289,7 @@ Header: ('North America',)
 Insight1: 
 Type: evenness
 Score: 0.7114969984353385
-Description: The Sales are relatively evenly distributed across different Years, Companys, Brands and Seasons.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight2: 
 Type: top2
@@ -3311,19 +3311,19 @@ Description: The Sale exhibit leptokurtic behavior with heavy tails and a sharp 
 Insight3: 
 Type: evenness
 Score: 0.3289763887691257
-Description: The Sales are relatively evenly distributed across different Years, Brands and Seasons.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('Nintendo', 'Nintendo 3DS (3DS)', 'North America')
 Insight1: 
 Type: trend
 Score: 0.603004360125997
-Description: Seasons exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 Insight2: 
 Type: evenness
 Score: 0.13462151675967649
-Description: The Sales are relatively evenly distributed across different Years and Seasons.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight3: 
 Type: dominance
@@ -3335,12 +3335,12 @@ Header: ('Nintendo 3DS (3DS)', 'North America')
 Insight1: 
 Type: trend
 Score: 0.603004360125997
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 Insight2: 
 Type: evenness
 Score: 0.13462151675967649
-Description: The Sales are relatively evenly distributed across different Years, Companys and Seasons.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight3: 
 Type: dominance
@@ -3352,7 +3352,7 @@ Header: ('DEC', 'North America')
 Insight1: 
 Type: evenness
 Score: 0.5462489895125324
-Description: The Sales are relatively evenly distributed across different Years, Companys and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight2: 
 Type: top2
@@ -3369,7 +3369,7 @@ Description: The Sale proportion of Nintendo and Microsoft is significantly high
 Insight2: 
 Type: trend
 Score: 0.14362575864676558
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('DEC', 'Nintendo', 'North America')
@@ -3386,7 +3386,7 @@ Description: The Sale exhibit leptokurtic behavior with heavy tails and a sharp 
 Insight3: 
 Type: evenness
 Score: 0.023384857774982226
-Description: The Sales are relatively evenly distributed across different Years and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('2013', 'Nintendo', 'North America')
@@ -3407,7 +3407,7 @@ Header: ('DEC', 'Nintendo 3DS (3DS)', 'North America')
 Insight1: 
 Type: trend
 Score: 0.37953356414283024
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('2013', 'DEC', 'North America')
@@ -3701,7 +3701,7 @@ Description: The Sale of MAR dominates among all Seasons.
 Insight2: 
 Type: trend
 Score: 0.18845669179878619
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('2019', 'DEC', 'North America')
@@ -3768,7 +3768,7 @@ Header: ('JUN', 'North America')
 Insight1: 
 Type: evenness
 Score: 0.5806093404803527
-Description: The Sales are relatively evenly distributed across different Years, Companys and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight2: 
 Type: top2
@@ -3790,12 +3790,12 @@ Description: The Sale proportion of Nintendo Switch (NS) and Nintendo 3DS (3DS) 
 Insight2: 
 Type: outlier-temporal
 Score: 0.5008252447136476
-Description: The Sale of Year 2020 of Brand all Brandsall Brandsall Brandsall Brandsall Brands is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands.
+Description: The Sale of Year 2020 is an outlier, which is significantly higher than the normal Sale of other Years.
 
 Insight3: 
 Type: evenness
 Score: 0.05828076438877927
-Description: The Sales are relatively evenly distributed across different Years and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('JUN', 'Nintendo', 'Nintendo 3DS (3DS)', 'North America')
@@ -3809,7 +3809,7 @@ Header: ('JUN', 'Nintendo 3DS (3DS)', 'North America')
 Insight1: 
 Type: evenness
 Score: 0.10250007726524668
-Description: The Sales are relatively evenly distributed across different Years and Companys.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('2013', 'JUN', 'North America')
@@ -3899,7 +3899,7 @@ Header: ('MAR', 'North America')
 Insight1: 
 Type: evenness
 Score: 0.6002774166681977
-Description: The Sales are relatively evenly distributed across different Years, Companys and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('MAR', 'Nintendo', 'North America')
@@ -3911,7 +3911,7 @@ Description: The Sale proportion of Nintendo 3DS (3DS) and Nintendo Switch (NS) 
 Insight2: 
 Type: evenness
 Score: 0.3796492463851904
-Description: The Sales are relatively evenly distributed across different Years and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('MAR', 'Nintendo', 'Nintendo 3DS (3DS)', 'North America')
@@ -3930,12 +3930,12 @@ Header: ('MAR', 'Nintendo 3DS (3DS)', 'North America')
 Insight1: 
 Type: outlier-temporal
 Score: 0.41392237154039596
-Description: The Sale of Year 2020 of Company all Companys is an outlier, which is significantly lower than the normal Sale of other Years in the corresponding Companys.
+Description: The Sale of Year 2020 is an outlier, which is significantly lower than the normal Sale of other Years.
 
 Insight2: 
 Type: evenness
 Score: 0.037698808077117896
-Description: The Sales are relatively evenly distributed across different Years and Companys.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('2013', 'MAR', 'North America')
@@ -4016,7 +4016,7 @@ Header: ('North America', 'SEP')
 Insight1: 
 Type: evenness
 Score: 0.643944795513427
-Description: The Sales are relatively evenly distributed across different Years, Companys and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight2: 
 Type: top2
@@ -4033,12 +4033,12 @@ Description: The Sale proportion of Nintendo Switch (NS) and Nintendo 3DS (3DS) 
 Insight2: 
 Type: outlier-temporal
 Score: 0.4469545622673682
-Description: The Sale of Year 2020 of Brand all Brandsall Brandsall Brandsall Brandsall Brands is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands.
+Description: The Sale of Year 2020 is an outlier, which is significantly higher than the normal Sale of other Years.
 
 Insight3: 
 Type: evenness
 Score: 0.01732802513689169
-Description: The Sales are relatively evenly distributed across different Years and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('Nintendo', 'Nintendo 3DS (3DS)', 'North America', 'SEP')
@@ -4052,7 +4052,7 @@ Header: ('Nintendo 3DS (3DS)', 'North America', 'SEP')
 Insight1: 
 Type: outlier-temporal
 Score: 0.48165631535857717
-Description: The Sale of Year 2013 of Company all Companys is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Companys.
+Description: The Sale of Year 2013 is an outlier, which is significantly higher than the normal Sale of other Years.
 
 ====================================================================================================
 Header: ('2013', 'North America', 'SEP')
@@ -4196,12 +4196,12 @@ Header: ('Other',)
 Insight1: 
 Type: evenness
 Score: 0.7307088977460361
-Description: The Sales are relatively evenly distributed across different Years, Companys, Brands and Seasons.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight2: 
 Type: outlier
 Score: 0.6673704414610783
-Description: The Sale of Brand PlayStation 4 (PS4) of Company all Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companys of Season all Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasons of Year all Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Years is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Seasons, Years.
+Description: The Sale of Brand PlayStation 4 (PS4) is an outlier, which is significantly higher than the normal Sale of other Brands.
 
 Insight3: 
 Type: kurtosis
@@ -4218,7 +4218,7 @@ Header: ('Nintendo', 'Other')
 Insight1: 
 Type: outlier-temporal
 Score: 0.5077642044583109
-Description: The Sale of Year 2020 of Brand all Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brands of Season all Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasons is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands, Seasons.
+Description: The Sale of Year 2020 is an outlier, which is significantly higher than the normal Sale of other Years.
 
 Insight2: 
 Type: dominance
@@ -4240,7 +4240,7 @@ Description: The Sale of MAR dominates among all Seasons.
 Insight2: 
 Type: trend
 Score: 0.002221377146815658
-Description: Seasons exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('Nintendo 3DS (3DS)', 'Other')
@@ -4252,19 +4252,19 @@ Description: The Sale of MAR dominates among all Seasons.
 Insight2: 
 Type: trend
 Score: 0.002221377146815658
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('DEC', 'Other')
 Insight1: 
 Type: outlier
 Score: 0.6511660267199705
-Description: The Sale of Brand PlayStation 4 (PS4) of Company all Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companys of Year all Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Years is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Years.
+Description: The Sale of Brand PlayStation 4 (PS4) is an outlier, which is significantly higher than the normal Sale of other Brands.
 
 Insight2: 
 Type: evenness
 Score: 0.20771050284487602
-Description: The Sales are relatively evenly distributed across different Years, Companys and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight3: 
 Type: dominance
@@ -4298,7 +4298,7 @@ Description: The Sale of Nintendo Switch (NS) dominates among all Brands.
 Insight2: 
 Type: trend
 Score: 0.04284337053668966
-Description: Brands exhibit a clear upward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear upward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('2013', 'Nintendo', 'Other')
@@ -4331,7 +4331,7 @@ Header: ('2014', 'Nintendo', 'Other')
 Insight1: 
 Type: trend
 Score: 0.46205830866625325
-Description: Brands exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight2: 
 Type: dominance
@@ -4350,7 +4350,7 @@ Header: ('2014', 'Nintendo 3DS (3DS)', 'Other')
 Insight1: 
 Type: trend
 Score: 0.49665233306027856
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('2014', 'DEC', 'Other')
@@ -4413,14 +4413,14 @@ Description: The Sale of PlayStation 4 (PS4) dominates among all Brands.
 Insight4: 
 Type: trend
 Score: 0.12968654491688453
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('2016', 'Nintendo', 'Other')
 Insight1: 
 Type: trend
 Score: 0.3974971129589847
-Description: Brands exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('2016', 'Nintendo', 'Nintendo 3DS (3DS)', 'Other')
@@ -4434,7 +4434,7 @@ Header: ('2016', 'Nintendo 3DS (3DS)', 'Other')
 Insight1: 
 Type: trend
 Score: 0.5108710729729259
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('2016', 'DEC', 'Other')
@@ -4453,7 +4453,7 @@ Header: ('2017', 'Other')
 Insight1: 
 Type: outlier
 Score: 0.7330787671657711
-Description: The Sale of Brand PlayStation 4 (PS4) of Company all Companysall Companysall Companysall Companys of Season all Seasonsall Seasonsall Seasonsall Seasons is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Seasons.
+Description: The Sale of Brand PlayStation 4 (PS4) is an outlier, which is significantly higher than the normal Sale of other Brands.
 
 Insight2: 
 Type: dominance
@@ -4480,7 +4480,7 @@ Header: ('2017', 'Nintendo', 'Other')
 Insight1: 
 Type: trend
 Score: 0.6794873158796146
-Description: Brands exhibit a clear upward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear upward trend over the Seasons from MAR to DEC.
 
 Insight2: 
 Type: dominance
@@ -4605,17 +4605,17 @@ Header: ('JUN', 'Other')
 Insight1: 
 Type: outlier
 Score: 0.6480423044545993
-Description: The Sale of Brand PlayStation 4 (PS4) of Company all Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companys of Year all Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Years is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Years.
+Description: The Sale of Brand PlayStation 4 (PS4) is an outlier, which is significantly higher than the normal Sale of other Brands.
 
 Insight2: 
 Type: evenness
 Score: 0.47054093567271926
-Description: The Sales are relatively evenly distributed across different Years, Companys and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight3: 
 Type: outlier-temporal
 Score: 0.46099061205078184
-Description: The Sale of Year 2013 of Company all Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companys of Brand all Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brands is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Companys, Brands.
+Description: The Sale of Year 2013 is an outlier, which is significantly higher than the normal Sale of other Years.
 
 Insight4: 
 Type: dominance
@@ -4632,7 +4632,7 @@ Header: ('JUN', 'Nintendo', 'Other')
 Insight1: 
 Type: outlier-temporal
 Score: 0.5760797422549258
-Description: The Sale of Year 2020 of Brand all Brandsall Brandsall Brandsall Brandsall Brands is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands.
+Description: The Sale of Year 2020 is an outlier, which is significantly higher than the normal Sale of other Years.
 
 Insight2: 
 Type: dominance
@@ -4762,7 +4762,7 @@ Header: ('MAR', 'Other')
 Insight1: 
 Type: outlier
 Score: 0.6795076045136104
-Description: The Sale of Brand PlayStation 4 (PS4) of Company all Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companys of Year all Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Years is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Years.
+Description: The Sale of Brand PlayStation 4 (PS4) is an outlier, which is significantly higher than the normal Sale of other Brands.
 
 Insight2: 
 Type: top2
@@ -4772,7 +4772,7 @@ Description: The Sale proportion of Sony and Nintendo is significantly higher th
 Insight3: 
 Type: evenness
 Score: 0.49868644722016375
-Description: The Sales are relatively evenly distributed across different Years, Companys and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('MAR', 'Nintendo', 'Other')
@@ -4793,7 +4793,7 @@ Header: ('MAR', 'Nintendo 3DS (3DS)', 'Other')
 Insight1: 
 Type: evenness
 Score: 0.28844703147231376
-Description: The Sales are relatively evenly distributed across different Years and Companys.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('2013', 'MAR', 'Other')
@@ -4891,7 +4891,7 @@ Header: ('Other', 'SEP')
 Insight1: 
 Type: evenness
 Score: 0.2639637654854847
-Description: The Sales are relatively evenly distributed across different Years, Companys and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight2: 
 Type: dominance
@@ -5043,7 +5043,7 @@ Description: The Sale of MAR dominates among all Seasons.
 Insight2: 
 Type: trend
 Score: 0.04388910225819738
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('2013', 'Nintendo', 'Nintendo DS (DS)')
@@ -5055,7 +5055,7 @@ Description: The Sale of MAR dominates among all Seasons.
 Insight2: 
 Type: trend
 Score: 0.04388910225819738
-Description: Locations exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('MAR', 'Nintendo', 'Nintendo DS (DS)')
@@ -5110,7 +5110,7 @@ Header: ('2013', 'Nintendo DS (DS)', 'North America')
 Insight1: 
 Type: trend
 Score: 0.20894745858173486
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight2: 
 Type: dominance
@@ -5122,7 +5122,7 @@ Header: ('Nintendo Switch (NS)',)
 Insight1: 
 Type: trend
 Score: 0.5372688895490902
-Description: Companys exhibit a clear upward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear upward trend over the Years from 2013 to 2020.
 
 Insight2: 
 Type: top2
@@ -5134,7 +5134,7 @@ Header: ('Nintendo', 'Nintendo Switch (NS)')
 Insight1: 
 Type: trend
 Score: 0.5372688895490902
-Description: Locations exhibit a clear upward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear upward trend over the Years from 2013 to 2020.
 
 Insight2: 
 Type: top2
@@ -5146,14 +5146,14 @@ Header: ('Europe', 'Nintendo Switch (NS)')
 Insight1: 
 Type: trend
 Score: 0.539136403056332
-Description: Companys exhibit a clear upward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear upward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('DEC', 'Nintendo Switch (NS)')
 Insight1: 
 Type: trend
 Score: 0.4413720725318107
-Description: Companys exhibit a clear upward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear upward trend over the Years from 2013 to 2020.
 
 Insight2: 
 Type: top2
@@ -5165,14 +5165,14 @@ Header: ('Europe', 'Nintendo', 'Nintendo Switch (NS)')
 Insight1: 
 Type: trend
 Score: 0.539136403056332
-Description: Seasons exhibit a clear upward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear upward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('DEC', 'Nintendo', 'Nintendo Switch (NS)')
 Insight1: 
 Type: trend
 Score: 0.4413720725318107
-Description: Locations exhibit a clear upward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear upward trend over the Years from 2013 to 2020.
 
 Insight2: 
 Type: top2
@@ -5196,7 +5196,7 @@ Header: ('DEC', 'Europe', 'Nintendo Switch (NS)')
 Insight1: 
 Type: trend
 Score: 0.49442681676512956
-Description: Companys exhibit a clear upward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear upward trend over the Years from 2013 to 2020.
 
 Insight2: 
 Type: top2
@@ -5274,14 +5274,14 @@ Header: ('JUN', 'Nintendo Switch (NS)')
 Insight1: 
 Type: trend
 Score: 0.5016011877297206
-Description: Companys exhibit a clear upward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear upward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('JUN', 'Nintendo', 'Nintendo Switch (NS)')
 Insight1: 
 Type: trend
 Score: 0.5016011877297206
-Description: Locations exhibit a clear upward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear upward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('Europe', 'JUN', 'Nintendo', 'Nintendo Switch (NS)')
@@ -5295,7 +5295,7 @@ Header: ('Europe', 'JUN', 'Nintendo Switch (NS)')
 Insight1: 
 Type: trend
 Score: 0.3425121325367789
-Description: Companys exhibit a clear upward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear upward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('MAR', 'Nintendo', 'Nintendo Switch (NS)')
@@ -5312,7 +5312,7 @@ Description: The Sales are relatively evenly distributed across different Locati
 Insight3: 
 Type: trend
 Score: 0.15501896332918355
-Description: Locations exhibit a clear upward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear upward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('MAR', 'Nintendo Switch (NS)')
@@ -5324,7 +5324,7 @@ Description: The Sale proportion of 2020 and 2019 is significantly higher than t
 Insight2: 
 Type: trend
 Score: 0.15501896332918355
-Description: Companys exhibit a clear upward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear upward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('Europe', 'MAR', 'Nintendo', 'Nintendo Switch (NS)')
@@ -5348,21 +5348,21 @@ Description: The Sale proportion of 2020 and 2019 is significantly higher than t
 Insight2: 
 Type: trend
 Score: 0.16467965107159827
-Description: Companys exhibit a clear upward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear upward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('Nintendo Switch (NS)', 'SEP')
 Insight1: 
 Type: trend
 Score: 0.22758288523765893
-Description: Companys exhibit a clear upward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear upward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('Nintendo', 'Nintendo Switch (NS)', 'SEP')
 Insight1: 
 Type: trend
 Score: 0.22758288523765893
-Description: Locations exhibit a clear upward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear upward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('Europe', 'Nintendo', 'Nintendo Switch (NS)', 'SEP')
@@ -5386,14 +5386,14 @@ Description: The Sale of 2020 dominates among all Years.
 Insight2: 
 Type: trend
 Score: 0.01090198766703095
-Description: Companys exhibit a clear upward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear upward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('Japan', 'Nintendo', 'Nintendo Switch (NS)')
 Insight1: 
 Type: trend
 Score: 0.5637224097119515
-Description: Seasons exhibit a clear upward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear upward trend over the Years from 2013 to 2020.
 
 Insight2: 
 Type: top2
@@ -5410,7 +5410,7 @@ Header: ('Japan', 'Nintendo Switch (NS)')
 Insight1: 
 Type: trend
 Score: 0.5637224097119515
-Description: Companys exhibit a clear upward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear upward trend over the Years from 2013 to 2020.
 
 Insight2: 
 Type: top2
@@ -5429,7 +5429,7 @@ Header: ('DEC', 'Japan', 'Nintendo Switch (NS)')
 Insight1: 
 Type: trend
 Score: 0.1280224047574607
-Description: Companys exhibit a clear upward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear upward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('2017', 'Japan', 'Nintendo', 'Nintendo Switch (NS)')
@@ -5471,7 +5471,7 @@ Header: ('JUN', 'Japan', 'Nintendo Switch (NS)')
 Insight1: 
 Type: trend
 Score: 0.5441309546487467
-Description: Companys exhibit a clear upward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear upward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('Japan', 'MAR', 'Nintendo', 'Nintendo Switch (NS)')
@@ -5485,7 +5485,7 @@ Header: ('Japan', 'MAR', 'Nintendo Switch (NS)')
 Insight1: 
 Type: trend
 Score: 0.07484935629971433
-Description: Companys exhibit a clear upward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear upward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('Japan', 'Nintendo', 'Nintendo Switch (NS)', 'SEP')
@@ -5499,14 +5499,14 @@ Header: ('Japan', 'Nintendo Switch (NS)', 'SEP')
 Insight1: 
 Type: trend
 Score: 0.12607170693069378
-Description: Companys exhibit a clear upward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear upward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('Nintendo Switch (NS)', 'North America')
 Insight1: 
 Type: trend
 Score: 0.5458647156034623
-Description: Companys exhibit a clear upward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear upward trend over the Years from 2013 to 2020.
 
 Insight2: 
 Type: top2
@@ -5518,7 +5518,7 @@ Header: ('Nintendo', 'Nintendo Switch (NS)', 'North America')
 Insight1: 
 Type: trend
 Score: 0.5458647156034623
-Description: Seasons exhibit a clear upward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear upward trend over the Years from 2013 to 2020.
 
 Insight2: 
 Type: top2
@@ -5542,7 +5542,7 @@ Header: ('DEC', 'Nintendo Switch (NS)', 'North America')
 Insight1: 
 Type: trend
 Score: 0.4233488716604612
-Description: Companys exhibit a clear upward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear upward trend over the Years from 2013 to 2020.
 
 Insight2: 
 Type: top2
@@ -5589,7 +5589,7 @@ Header: ('JUN', 'Nintendo Switch (NS)', 'North America')
 Insight1: 
 Type: trend
 Score: 0.3771681019700179
-Description: Companys exhibit a clear upward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear upward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('MAR', 'Nintendo', 'Nintendo Switch (NS)', 'North America')
@@ -5613,7 +5613,7 @@ Description: The Sale proportion of 2019 and 2020 is significantly higher than t
 Insight2: 
 Type: trend
 Score: 0.10693097729062127
-Description: Companys exhibit a clear upward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear upward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('Nintendo', 'Nintendo Switch (NS)', 'North America', 'SEP')
@@ -5627,21 +5627,21 @@ Header: ('Nintendo Switch (NS)', 'North America', 'SEP')
 Insight1: 
 Type: trend
 Score: 0.5233527930989474
-Description: Companys exhibit a clear upward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear upward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('Nintendo Switch (NS)', 'Other')
 Insight1: 
 Type: trend
 Score: 0.347845744427682
-Description: Companys exhibit a clear upward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear upward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('Nintendo', 'Nintendo Switch (NS)', 'Other')
 Insight1: 
 Type: trend
 Score: 0.347845744427682
-Description: Seasons exhibit a clear upward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear upward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('DEC', 'Nintendo', 'Nintendo Switch (NS)', 'Other')
@@ -5660,7 +5660,7 @@ Header: ('DEC', 'Nintendo Switch (NS)', 'Other')
 Insight1: 
 Type: trend
 Score: 0.5020972604893325
-Description: Companys exhibit a clear upward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear upward trend over the Years from 2013 to 2020.
 
 Insight2: 
 Type: top2
@@ -5684,7 +5684,7 @@ Header: ('2017', 'Nintendo Switch (NS)', 'Other')
 Insight1: 
 Type: trend
 Score: 0.3710447212118102
-Description: Companys exhibit a clear upward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear upward trend over the Seasons from MAR to DEC.
 
 Insight2: 
 Type: top2
@@ -5703,7 +5703,7 @@ Header: ('JUN', 'Nintendo Switch (NS)', 'Other')
 Insight1: 
 Type: trend
 Score: 0.15655670464162863
-Description: Companys exhibit a clear upward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear upward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('MAR', 'Nintendo', 'Nintendo Switch (NS)', 'Other')
@@ -5727,7 +5727,7 @@ Description: The Sale proportion of 2020 and 2019 is significantly higher than t
 Insight2: 
 Type: trend
 Score: 0.014754484997459015
-Description: Companys exhibit a clear upward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear upward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('Nintendo', 'Nintendo Switch (NS)', 'Other', 'SEP')
@@ -5825,7 +5825,7 @@ Description: The Sale proportion of Europe and North America is significantly hi
 Insight2: 
 Type: trend
 Score: 0.6834426505370527
-Description: Locations exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight3: 
 Type: top2
@@ -5842,7 +5842,7 @@ Description: The Sale proportion of Europe and North America is significantly hi
 Insight2: 
 Type: trend
 Score: 0.6834426505370527
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight3: 
 Type: top2
@@ -6024,7 +6024,7 @@ Header: ('2013', 'Japan', 'Wii (Wii)')
 Insight1: 
 Type: trend
 Score: 0.05180584266644324
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('Nintendo', 'North America', 'Wii (Wii)')
@@ -6137,14 +6137,14 @@ Header: ('2013', 'Other', 'Wii (Wii)')
 Insight1: 
 Type: trend
 Score: 0.4294208920423255
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('Nintendo', 'Wii U (WiiU)')
 Insight1: 
 Type: trend
 Score: 0.16191525734214968
-Description: Locations exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 Insight2: 
 Type: skewness
@@ -6161,7 +6161,7 @@ Header: ('Wii U (WiiU)',)
 Insight1: 
 Type: trend
 Score: 0.16191525734214968
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 Insight2: 
 Type: dominance
@@ -6173,7 +6173,7 @@ Header: ('Europe', 'Wii U (WiiU)')
 Insight1: 
 Type: trend
 Score: 0.10602016835791833
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('2013', 'Nintendo', 'Wii U (WiiU)')
@@ -6204,7 +6204,7 @@ Header: ('Europe', 'Nintendo', 'Wii U (WiiU)')
 Insight1: 
 Type: trend
 Score: 0.10602016835791833
-Description: Seasons exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('2014', 'Nintendo', 'Wii U (WiiU)')
@@ -6333,14 +6333,14 @@ Header: ('JUN', 'Wii U (WiiU)')
 Insight1: 
 Type: trend
 Score: 0.0324771637876368
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('JUN', 'Nintendo', 'Wii U (WiiU)')
 Insight1: 
 Type: trend
 Score: 0.0324771637876368
-Description: Locations exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('2013', 'JUN', 'Nintendo', 'Wii U (WiiU)')
@@ -6515,7 +6515,7 @@ Header: ('Japan', 'Nintendo', 'Wii U (WiiU)')
 Insight1: 
 Type: trend
 Score: 0.56178660808934
-Description: Seasons exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 Insight2: 
 Type: dominance
@@ -6527,7 +6527,7 @@ Header: ('Japan', 'Wii U (WiiU)')
 Insight1: 
 Type: trend
 Score: 0.56178660808934
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 Insight2: 
 Type: dominance
@@ -6588,7 +6588,7 @@ Header: ('JUN', 'Japan', 'Wii U (WiiU)')
 Insight1: 
 Type: trend
 Score: 0.43416030370690895
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('Japan', 'MAR', 'Nintendo', 'Wii U (WiiU)')
@@ -6602,7 +6602,7 @@ Header: ('Japan', 'MAR', 'Wii U (WiiU)')
 Insight1: 
 Type: trend
 Score: 0.3819328279748601
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('Japan', 'Nintendo', 'SEP', 'Wii U (WiiU)')
@@ -6616,7 +6616,7 @@ Header: ('Japan', 'SEP', 'Wii U (WiiU)')
 Insight1: 
 Type: trend
 Score: 0.32001045174226855
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('Nintendo', 'North America', 'Wii U (WiiU)')
@@ -6693,7 +6693,7 @@ Header: ('Nintendo', 'Other', 'Wii U (WiiU)')
 Insight1: 
 Type: trend
 Score: 0.3675849154652828
-Description: Seasons exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 Insight2: 
 Type: dominance
@@ -6705,7 +6705,7 @@ Header: ('Other', 'Wii U (WiiU)')
 Insight1: 
 Type: trend
 Score: 0.3675849154652828
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 Insight2: 
 Type: dominance
@@ -6738,14 +6738,14 @@ Header: ('JUN', 'Other', 'Wii U (WiiU)')
 Insight1: 
 Type: trend
 Score: 0.42288773034603133
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('Sony',)
 Insight1: 
 Type: evenness
 Score: 0.6026497593500202
-Description: The Sales are relatively evenly distributed across different Years, Brands, Locations and Seasons.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight2: 
 Type: dominance
@@ -6767,7 +6767,7 @@ Header: ('PlayStation 3 (PS3)', 'Sony')
 Insight1: 
 Type: trend
 Score: 0.5805920492791667
-Description: Locations exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight2: 
 Type: skewness
@@ -6789,7 +6789,7 @@ Header: ('PlayStation 3 (PS3)',)
 Insight1: 
 Type: trend
 Score: 0.5805920492791667
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight2: 
 Type: top2
@@ -6806,7 +6806,7 @@ Header: ('Europe', 'Sony')
 Insight1: 
 Type: evenness
 Score: 0.6904900266137894
-Description: The Sales are relatively evenly distributed across different Years, Brands and Seasons.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight2: 
 Type: dominance
@@ -6816,12 +6816,12 @@ Description: The Sale of PlayStation 4 (PS4) dominates among all Brands.
 Insight3: 
 Type: outlier-temporal
 Score: 0.37339941502867857
-Description: The Sale of Year 2013 of Brand all Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brands of Season all Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasons is an outlier, which is significantly lower than the normal Sale of other Years in the corresponding Brands, Seasons.
+Description: The Sale of Year 2013 is an outlier, which is significantly lower than the normal Sale of other Years.
 
 Insight4: 
 Type: outlier-temporal
 Score: 0.37339941502867857
-Description: The Sale of Year 2020 of Brand all Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brands of Season all Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasons is an outlier, which is significantly lower than the normal Sale of other Years in the corresponding Brands, Seasons.
+Description: The Sale of Year 2020 is an outlier, which is significantly lower than the normal Sale of other Years.
 
 ====================================================================================================
 Header: ('DEC', 'Sony')
@@ -6833,7 +6833,7 @@ Description: The Sale of PlayStation 4 (PS4) dominates among all Brands.
 Insight2: 
 Type: evenness
 Score: 0.1866105388537922
-Description: The Sales are relatively evenly distributed across different Years, Brands and Locations.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('2013', 'Sony')
@@ -6857,7 +6857,7 @@ Description: The Sale of 2013 dominates among all Years.
 Insight3: 
 Type: trend
 Score: 0.12535614650682017
-Description: Years exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('Europe', 'PlayStation 3 (PS3)')
@@ -6874,7 +6874,7 @@ Description: The Sale of 2013 dominates among all Years.
 Insight3: 
 Type: trend
 Score: 0.12535614650682017
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('DEC', 'PlayStation 3 (PS3)')
@@ -6919,7 +6919,7 @@ Description: The Sale of PlayStation 4 (PS4) dominates among all Brands.
 Insight2: 
 Type: evenness
 Score: 0.21945278959096504
-Description: The Sales are relatively evenly distributed across different Years and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('DEC', 'Europe', 'PlayStation 3 (PS3)', 'Sony')
@@ -7134,7 +7134,7 @@ Description: The Sale of Brand PlayStation 4 (PS4) of Season MAR is an outlier, 
 Insight3: 
 Type: trend
 Score: 0.27385672074978584
-Description: Brands exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('2016', 'DEC', 'Sony')
@@ -7172,7 +7172,7 @@ Header: ('2017', 'PlayStation 3 (PS3)')
 Insight1: 
 Type: trend
 Score: 0.2841243280918992
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight2: 
 Type: dominance
@@ -7184,7 +7184,7 @@ Header: ('2017', 'PlayStation 3 (PS3)', 'Sony')
 Insight1: 
 Type: trend
 Score: 0.2841243280918992
-Description: Locations exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight2: 
 Type: dominance
@@ -7257,7 +7257,7 @@ Header: ('2020', 'Sony')
 Insight1: 
 Type: trend
 Score: 0.953224025180006
-Description: Brands exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight2: 
 Type: top2
@@ -7274,7 +7274,7 @@ Header: ('2020', 'Europe', 'Sony')
 Insight1: 
 Type: trend
 Score: 0.5902186440845857
-Description: Brands exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight2: 
 Type: top2
@@ -7303,7 +7303,7 @@ Header: ('JUN', 'Sony')
 Insight1: 
 Type: evenness
 Score: 0.6890172082456578
-Description: The Sales are relatively evenly distributed across different Years, Brands and Locations.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight2: 
 Type: dominance
@@ -7334,7 +7334,7 @@ Description: The Sale of PlayStation 4 (PS4) dominates among all Brands.
 Insight2: 
 Type: evenness
 Score: 0.41606708311942553
-Description: The Sales are relatively evenly distributed across different Years and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('2013', 'JUN', 'Sony')
@@ -7466,7 +7466,7 @@ Description: The Sale of PlayStation 4 (PS4) dominates among all Brands.
 Insight2: 
 Type: evenness
 Score: 0.40488656311295546
-Description: The Sales are relatively evenly distributed across different Years, Brands and Locations.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight3: 
 Type: top2
@@ -7483,7 +7483,7 @@ Description: The Sale proportion of Europe and North America is significantly hi
 Insight2: 
 Type: trend
 Score: 0.2780748295927885
-Description: Locations exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('MAR', 'PlayStation 3 (PS3)')
@@ -7495,7 +7495,7 @@ Description: The Sale proportion of Europe and North America is significantly hi
 Insight2: 
 Type: trend
 Score: 0.2780748295927885
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('Europe', 'MAR', 'Sony')
@@ -7507,7 +7507,7 @@ Description: The Sale of PlayStation 4 (PS4) dominates among all Brands.
 Insight2: 
 Type: evenness
 Score: 0.43921563996308155
-Description: The Sales are relatively evenly distributed across different Years and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('Europe', 'MAR', 'PlayStation 3 (PS3)', 'Sony')
@@ -7521,7 +7521,7 @@ Header: ('Europe', 'MAR', 'PlayStation 3 (PS3)')
 Insight1: 
 Type: trend
 Score: 0.26251911569237335
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('2013', 'MAR', 'PlayStation 3 (PS3)', 'Sony')
@@ -7720,7 +7720,7 @@ Header: ('SEP', 'Sony')
 Insight1: 
 Type: evenness
 Score: 0.5291911569650987
-Description: The Sales are relatively evenly distributed across different Years, Brands and Locations.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight2: 
 Type: dominance
@@ -7761,7 +7761,7 @@ Description: The Sale of PlayStation 4 (PS4) dominates among all Brands.
 Insight2: 
 Type: evenness
 Score: 0.36670084443173057
-Description: The Sales are relatively evenly distributed across different Years and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('Europe', 'PlayStation 3 (PS3)', 'SEP', 'Sony')
@@ -7889,12 +7889,12 @@ Description: The Sale proportion of PlayStation 4 (PS4) and PlayStation Vita (PS
 Insight2: 
 Type: evenness
 Score: 0.366744778372198
-Description: The Sales are relatively evenly distributed across different Years, Brands and Seasons.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight3: 
 Type: trend
 Score: 0.08500896911124359
-Description: Brands exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('Japan', 'PlayStation 3 (PS3)', 'Sony')
@@ -7906,12 +7906,12 @@ Description: The Sale proportion of 2013 and 2014 is significantly higher than t
 Insight2: 
 Type: trend
 Score: 0.3626345043909673
-Description: Years exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight3: 
 Type: trend
 Score: 0.12247195293200987
-Description: Seasons exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('Japan', 'PlayStation 3 (PS3)')
@@ -7923,12 +7923,12 @@ Description: The Sale proportion of 2013 and 2014 is significantly higher than t
 Insight2: 
 Type: trend
 Score: 0.3626345043909673
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight3: 
 Type: trend
 Score: 0.12247195293200987
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('DEC', 'Japan', 'Sony')
@@ -7947,7 +7947,7 @@ Description: The Sales are relatively evenly distributed across different Brands
 Insight2: 
 Type: trend
 Score: 0.2910112935792197
-Description: Brands exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('DEC', 'Japan', 'PlayStation 3 (PS3)', 'Sony')
@@ -7971,7 +7971,7 @@ Description: The Sale proportion of 2013 and 2014 is significantly higher than t
 Insight2: 
 Type: trend
 Score: 0.22065072392791943
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('2013', 'Japan', 'PlayStation 3 (PS3)', 'Sony')
@@ -7985,14 +7985,14 @@ Header: ('2013', 'Japan', 'PlayStation 3 (PS3)')
 Insight1: 
 Type: trend
 Score: 0.08100130933790398
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('2014', 'Japan', 'Sony')
 Insight1: 
 Type: trend
 Score: 0.5554289734884109
-Description: Brands exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight2: 
 Type: dominance
@@ -8011,7 +8011,7 @@ Header: ('2014', 'Japan', 'PlayStation 3 (PS3)')
 Insight1: 
 Type: trend
 Score: 0.36014661039530915
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('2014', 'DEC', 'Japan', 'Sony')
@@ -8044,7 +8044,7 @@ Description: The Sale proportion of PlayStation 4 (PS4) and PlayStation Vita (PS
 Insight2: 
 Type: trend
 Score: 0.6272117218184876
-Description: Brands exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('2016', 'Japan', 'PlayStation 3 (PS3)', 'Sony')
@@ -8068,7 +8068,7 @@ Description: The Sale proportion of MAR and JUN is significantly higher than tha
 Insight2: 
 Type: trend
 Score: 0.05180584266644213
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('2016', 'DEC', 'Japan', 'Sony')
@@ -8094,7 +8094,7 @@ Header: ('2019', 'Japan', 'Sony')
 Insight1: 
 Type: trend
 Score: 0.45915603123327386
-Description: Brands exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight2: 
 Type: top2
@@ -8106,7 +8106,7 @@ Header: ('2020', 'Japan', 'Sony')
 Insight1: 
 Type: trend
 Score: 0.6808975762338705
-Description: Brands exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight2: 
 Type: top2
@@ -8128,7 +8128,7 @@ Description: The Sale proportion of PlayStation 4 (PS4) and PlayStation Vita (PS
 Insight2: 
 Type: evenness
 Score: 0.4396348728843398
-Description: The Sales are relatively evenly distributed across different Years and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('JUN', 'Japan', 'PlayStation 3 (PS3)', 'Sony')
@@ -8152,7 +8152,7 @@ Description: The Sale proportion of 2013 and 2014 is significantly higher than t
 Insight2: 
 Type: trend
 Score: 0.27161908650637573
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('2014', 'JUN', 'Japan', 'Sony')
@@ -8192,7 +8192,7 @@ Description: The Sale proportion of PlayStation 4 (PS4) and PlayStation Vita (PS
 Insight2: 
 Type: evenness
 Score: 0.29818534668863794
-Description: The Sales are relatively evenly distributed across different Years and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('Japan', 'MAR', 'PlayStation 3 (PS3)', 'Sony')
@@ -8216,7 +8216,7 @@ Description: The Sale proportion of 2013 and 2014 is significantly higher than t
 Insight2: 
 Type: trend
 Score: 0.08808558075103166
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('2015', 'Japan', 'MAR', 'Sony')
@@ -8249,12 +8249,12 @@ Description: The Sale proportion of PlayStation 4 (PS4) and PlayStation Vita (PS
 Insight2: 
 Type: evenness
 Score: 0.21004845876471645
-Description: The Sales are relatively evenly distributed across different Years and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight3: 
 Type: trend
 Score: 0.007322144773886558
-Description: Brands exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('Japan', 'PlayStation 3 (PS3)', 'SEP', 'Sony')
@@ -8308,12 +8308,12 @@ Description: The Sale of PlayStation 4 (PS4) dominates among all Brands.
 Insight2: 
 Type: evenness
 Score: 0.46632972599946254
-Description: The Sales are relatively evenly distributed across different Years, Brands and Seasons.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight3: 
 Type: outlier-temporal
 Score: 0.4290897047129115
-Description: The Sale of Year 2013 of Brand all Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brands of Season all Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasons is an outlier, which is significantly lower than the normal Sale of other Years in the corresponding Brands, Seasons.
+Description: The Sale of Year 2013 is an outlier, which is significantly lower than the normal Sale of other Years.
 
 Insight4: 
 Type: kurtosis
@@ -8359,7 +8359,7 @@ Description: The Sale of PlayStation 4 (PS4) dominates among all Brands.
 Insight2: 
 Type: evenness
 Score: 0.12650567328718876
-Description: The Sales are relatively evenly distributed across different Years and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('DEC', 'North America', 'PlayStation 3 (PS3)', 'Sony')
@@ -8492,7 +8492,7 @@ Header: ('2020', 'North America', 'Sony')
 Insight1: 
 Type: trend
 Score: 0.4084666509576595
-Description: Brands exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('JUN', 'North America', 'Sony')
@@ -8504,17 +8504,17 @@ Description: The Sale of PlayStation 4 (PS4) dominates among all Brands.
 Insight2: 
 Type: evenness
 Score: 0.5837778656680253
-Description: The Sales are relatively evenly distributed across different Years and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight3: 
 Type: outlier-temporal
 Score: 0.44756796497909007
-Description: The Sale of Year 2013 of Brand all Brandsall Brandsall Brands is an outlier, which is significantly lower than the normal Sale of other Years in the corresponding Brands.
+Description: The Sale of Year 2013 is an outlier, which is significantly lower than the normal Sale of other Years.
 
 Insight4: 
 Type: outlier-temporal
 Score: 0.35018320263845243
-Description: The Sale of Year 2018 of Brand all Brandsall Brandsall Brands is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands.
+Description: The Sale of Year 2018 is an outlier, which is significantly higher than the normal Sale of other Years.
 
 ====================================================================================================
 Header: ('JUN', 'North America', 'PlayStation 3 (PS3)', 'Sony')
@@ -8568,7 +8568,7 @@ Description: The Sale of PlayStation 4 (PS4) dominates among all Brands.
 Insight2: 
 Type: evenness
 Score: 0.3483116759033922
-Description: The Sales are relatively evenly distributed across different Years and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('MAR', 'North America', 'PlayStation 3 (PS3)', 'Sony')
@@ -8592,7 +8592,7 @@ Description: The Sale proportion of 2013 and 2014 is significantly higher than t
 Insight2: 
 Type: trend
 Score: 0.1295408221097216
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('2014', 'MAR', 'North America', 'Sony')
@@ -8632,12 +8632,12 @@ Description: The Sale of PlayStation 4 (PS4) dominates among all Brands.
 Insight2: 
 Type: evenness
 Score: 0.6128267086750079
-Description: The Sales are relatively evenly distributed across different Years and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight3: 
 Type: outlier-temporal
 Score: 0.37680866950578
-Description: The Sale of Year 2013 of Brand all Brandsall Brandsall Brands is an outlier, which is significantly lower than the normal Sale of other Years in the corresponding Brands.
+Description: The Sale of Year 2013 is an outlier, which is significantly lower than the normal Sale of other Years.
 
 ====================================================================================================
 Header: ('North America', 'PlayStation 3 (PS3)', 'SEP', 'Sony')
@@ -8677,12 +8677,12 @@ Description: The Sale of PlayStation 4 (PS4) dominates among all Brands.
 Insight2: 
 Type: outlier-temporal
 Score: 0.5064973718093337
-Description: The Sale of Year 2020 of Brand all Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brands of Season all Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasons is an outlier, which is significantly lower than the normal Sale of other Years in the corresponding Brands, Seasons.
+Description: The Sale of Year 2020 is an outlier, which is significantly lower than the normal Sale of other Years.
 
 Insight3: 
 Type: evenness
 Score: 0.5046406765034093
-Description: The Sales are relatively evenly distributed across different Years, Brands and Seasons.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('Other', 'PlayStation 3 (PS3)')
@@ -8811,7 +8811,7 @@ Description: The Sale of Brand PlayStation 4 (PS4) of Season MAR is an outlier, 
 Insight3: 
 Type: trend
 Score: 0.3071641597630096
-Description: Brands exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('2016', 'Other', 'PlayStation 3 (PS3)', 'Sony')
@@ -8825,7 +8825,7 @@ Header: ('2016', 'Other', 'PlayStation 3 (PS3)')
 Insight1: 
 Type: trend
 Score: 0.20241924770910208
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('2016', 'DEC', 'Other', 'Sony')
@@ -8868,7 +8868,7 @@ Header: ('2017', 'Other', 'PlayStation 3 (PS3)')
 Insight1: 
 Type: trend
 Score: 0.29101129357921895
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight2: 
 Type: dominance
@@ -8887,21 +8887,21 @@ Header: ('2019', 'Other', 'Sony')
 Insight1: 
 Type: trend
 Score: 0.25070439843150566
-Description: Brands exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('2020', 'Other', 'Sony')
 Insight1: 
 Type: trend
 Score: 0.865961295969999
-Description: Brands exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('JUN', 'Other', 'Sony')
 Insight1: 
 Type: outlier-temporal
 Score: 0.4676766746806601
-Description: The Sale of Year 2013 of Brand all Brandsall Brandsall Brands is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands.
+Description: The Sale of Year 2013 is an outlier, which is significantly higher than the normal Sale of other Years.
 
 Insight2: 
 Type: dominance
@@ -8911,7 +8911,7 @@ Description: The Sale of PlayStation 4 (PS4) dominates among all Brands.
 Insight3: 
 Type: evenness
 Score: 0.13306118565352132
-Description: The Sales are relatively evenly distributed across different Years and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('JUN', 'Other', 'PlayStation 3 (PS3)', 'Sony')
@@ -8958,7 +8958,7 @@ Description: The Sale of PlayStation 4 (PS4) dominates among all Brands.
 Insight2: 
 Type: evenness
 Score: 0.23426855597629892
-Description: The Sales are relatively evenly distributed across different Years and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('MAR', 'Other', 'PlayStation 3 (PS3)', 'Sony')
@@ -9012,7 +9012,7 @@ Description: The Sale of PlayStation 4 (PS4) dominates among all Brands.
 Insight2: 
 Type: evenness
 Score: 0.26202793407670066
-Description: The Sales are relatively evenly distributed across different Years and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('Other', 'PlayStation 3 (PS3)', 'SEP', 'Sony')
@@ -9061,7 +9061,7 @@ Header: ('PlayStation 4 (PS4)', 'Sony')
 Insight1: 
 Type: evenness
 Score: 0.6385998527350327
-Description: The Sales are relatively evenly distributed across different Years, Locations and Seasons.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight2: 
 Type: top2
@@ -9073,7 +9073,7 @@ Header: ('PlayStation 4 (PS4)',)
 Insight1: 
 Type: evenness
 Score: 0.6385998527350327
-Description: The Sales are relatively evenly distributed across different Years, Companys, Locations and Seasons.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight2: 
 Type: top2
@@ -9085,7 +9085,7 @@ Header: ('Europe', 'PlayStation 4 (PS4)', 'Sony')
 Insight1: 
 Type: evenness
 Score: 0.6415610476989393
-Description: The Sales are relatively evenly distributed across different Years and Seasons.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight2: 
 Type: evenness
@@ -9097,21 +9097,21 @@ Header: ('Europe', 'PlayStation 4 (PS4)')
 Insight1: 
 Type: evenness
 Score: 0.6415610476989393
-Description: The Sales are relatively evenly distributed across different Years, Companys and Seasons.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('DEC', 'PlayStation 4 (PS4)')
 Insight1: 
 Type: evenness
 Score: 0.29195583881624465
-Description: The Sales are relatively evenly distributed across different Years, Companys and Locations.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('DEC', 'PlayStation 4 (PS4)', 'Sony')
 Insight1: 
 Type: evenness
 Score: 0.29195583881624465
-Description: The Sales are relatively evenly distributed across different Years and Locations.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('DEC', 'Europe', 'PlayStation 4 (PS4)', 'Sony')
@@ -9125,7 +9125,7 @@ Header: ('DEC', 'Europe', 'PlayStation 4 (PS4)')
 Insight1: 
 Type: evenness
 Score: 0.25961714266788194
-Description: The Sales are relatively evenly distributed across different Years and Companys.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('2014', 'PlayStation 4 (PS4)', 'Sony')
@@ -9258,7 +9258,7 @@ Header: ('2016', 'Europe', 'PlayStation 4 (PS4)')
 Insight1: 
 Type: trend
 Score: 0.24203484625637184
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('2018', 'PlayStation 4 (PS4)', 'Sony')
@@ -9293,7 +9293,7 @@ Header: ('2020', 'PlayStation 4 (PS4)', 'Sony')
 Insight1: 
 Type: trend
 Score: 0.953224025180006
-Description: Locations exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight2: 
 Type: top2
@@ -9310,7 +9310,7 @@ Header: ('2020', 'PlayStation 4 (PS4)')
 Insight1: 
 Type: trend
 Score: 0.953224025180006
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight2: 
 Type: top2
@@ -9339,7 +9339,7 @@ Header: ('2020', 'Europe', 'PlayStation 4 (PS4)')
 Insight1: 
 Type: trend
 Score: 0.5902186440845857
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight2: 
 Type: top2
@@ -9365,14 +9365,14 @@ Header: ('JUN', 'PlayStation 4 (PS4)')
 Insight1: 
 Type: evenness
 Score: 0.612771686777243
-Description: The Sales are relatively evenly distributed across different Years, Companys and Locations.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('JUN', 'PlayStation 4 (PS4)', 'Sony')
 Insight1: 
 Type: evenness
 Score: 0.612771686777243
-Description: The Sales are relatively evenly distributed across different Years and Locations.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('Europe', 'JUN', 'PlayStation 4 (PS4)', 'Sony')
@@ -9386,7 +9386,7 @@ Header: ('Europe', 'JUN', 'PlayStation 4 (PS4)')
 Insight1: 
 Type: evenness
 Score: 0.4163602468435157
-Description: The Sales are relatively evenly distributed across different Years and Companys.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('2014', 'JUN', 'PlayStation 4 (PS4)', 'Sony')
@@ -9463,7 +9463,7 @@ Header: ('MAR', 'PlayStation 4 (PS4)', 'Sony')
 Insight1: 
 Type: evenness
 Score: 0.44678811545086194
-Description: The Sales are relatively evenly distributed across different Years and Locations.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight2: 
 Type: top2
@@ -9475,7 +9475,7 @@ Header: ('MAR', 'PlayStation 4 (PS4)')
 Insight1: 
 Type: evenness
 Score: 0.44678811545086194
-Description: The Sales are relatively evenly distributed across different Years, Companys and Locations.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight2: 
 Type: top2
@@ -9494,7 +9494,7 @@ Header: ('Europe', 'MAR', 'PlayStation 4 (PS4)')
 Insight1: 
 Type: evenness
 Score: 0.4224308051259038
-Description: The Sales are relatively evenly distributed across different Years and Companys.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('2014', 'MAR', 'PlayStation 4 (PS4)', 'Sony')
@@ -9599,14 +9599,14 @@ Header: ('PlayStation 4 (PS4)', 'SEP')
 Insight1: 
 Type: evenness
 Score: 0.5294889248956682
-Description: The Sales are relatively evenly distributed across different Years, Companys and Locations.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('PlayStation 4 (PS4)', 'SEP', 'Sony')
 Insight1: 
 Type: evenness
 Score: 0.5294889248956682
-Description: The Sales are relatively evenly distributed across different Years and Locations.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('Europe', 'PlayStation 4 (PS4)', 'SEP', 'Sony')
@@ -9620,7 +9620,7 @@ Header: ('Europe', 'PlayStation 4 (PS4)', 'SEP')
 Insight1: 
 Type: evenness
 Score: 0.37959097838325473
-Description: The Sales are relatively evenly distributed across different Years and Companys.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('2014', 'PlayStation 4 (PS4)', 'SEP', 'Sony')
@@ -9697,14 +9697,14 @@ Header: ('Japan', 'PlayStation 4 (PS4)')
 Insight1: 
 Type: evenness
 Score: 0.3283083945320595
-Description: The Sales are relatively evenly distributed across different Years, Companys and Seasons.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('Japan', 'PlayStation 4 (PS4)', 'Sony')
 Insight1: 
 Type: evenness
 Score: 0.3283083945320595
-Description: The Sales are relatively evenly distributed across different Years and Seasons.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('2014', 'Japan', 'PlayStation 4 (PS4)', 'Sony')
@@ -9746,7 +9746,7 @@ Header: ('2016', 'Japan', 'PlayStation 4 (PS4)')
 Insight1: 
 Type: trend
 Score: 0.08602559314433728
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('2019', 'Japan', 'PlayStation 4 (PS4)', 'Sony')
@@ -9765,7 +9765,7 @@ Header: ('2019', 'Japan', 'PlayStation 4 (PS4)')
 Insight1: 
 Type: trend
 Score: 0.4951664383001763
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight2: 
 Type: top2
@@ -9789,7 +9789,7 @@ Header: ('2020', 'Japan', 'PlayStation 4 (PS4)')
 Insight1: 
 Type: trend
 Score: 0.6808975762338705
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight2: 
 Type: top2
@@ -9808,7 +9808,7 @@ Header: ('JUN', 'Japan', 'PlayStation 4 (PS4)')
 Insight1: 
 Type: evenness
 Score: 0.6981538287287528
-Description: The Sales are relatively evenly distributed across different Years and Companys.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('Japan', 'MAR', 'PlayStation 4 (PS4)', 'Sony')
@@ -9822,7 +9822,7 @@ Header: ('Japan', 'MAR', 'PlayStation 4 (PS4)')
 Insight1: 
 Type: evenness
 Score: 0.11354725943806487
-Description: The Sales are relatively evenly distributed across different Years and Companys.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('Japan', 'PlayStation 4 (PS4)', 'SEP', 'Sony')
@@ -9836,14 +9836,14 @@ Header: ('Japan', 'PlayStation 4 (PS4)', 'SEP')
 Insight1: 
 Type: evenness
 Score: 0.14859936137602014
-Description: The Sales are relatively evenly distributed across different Years and Companys.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('North America', 'PlayStation 4 (PS4)', 'Sony')
 Insight1: 
 Type: evenness
 Score: 0.710754021024363
-Description: The Sales are relatively evenly distributed across different Years and Seasons.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight2: 
 Type: dominance
@@ -9855,7 +9855,7 @@ Header: ('North America', 'PlayStation 4 (PS4)')
 Insight1: 
 Type: evenness
 Score: 0.710754021024363
-Description: The Sales are relatively evenly distributed across different Years, Companys and Seasons.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight2: 
 Type: dominance
@@ -9874,7 +9874,7 @@ Header: ('DEC', 'North America', 'PlayStation 4 (PS4)')
 Insight1: 
 Type: evenness
 Score: 0.28202755688972037
-Description: The Sales are relatively evenly distributed across different Years and Companys.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('2016', 'North America', 'PlayStation 4 (PS4)', 'Sony')
@@ -9916,7 +9916,7 @@ Header: ('2020', 'North America', 'PlayStation 4 (PS4)')
 Insight1: 
 Type: trend
 Score: 0.4084666509576595
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('JUN', 'North America', 'PlayStation 4 (PS4)', 'Sony')
@@ -9930,7 +9930,7 @@ Header: ('JUN', 'North America', 'PlayStation 4 (PS4)')
 Insight1: 
 Type: evenness
 Score: 0.6549396749007306
-Description: The Sales are relatively evenly distributed across different Years and Companys.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('MAR', 'North America', 'PlayStation 4 (PS4)', 'Sony')
@@ -9944,7 +9944,7 @@ Header: ('MAR', 'North America', 'PlayStation 4 (PS4)')
 Insight1: 
 Type: evenness
 Score: 0.5510116504006568
-Description: The Sales are relatively evenly distributed across different Years and Companys.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('North America', 'PlayStation 4 (PS4)', 'SEP', 'Sony')
@@ -9958,21 +9958,21 @@ Header: ('North America', 'PlayStation 4 (PS4)', 'SEP')
 Insight1: 
 Type: evenness
 Score: 0.7530108615188891
-Description: The Sales are relatively evenly distributed across different Years and Companys.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('Other', 'PlayStation 4 (PS4)')
 Insight1: 
 Type: evenness
 Score: 0.43891025669125905
-Description: The Sales are relatively evenly distributed across different Years, Companys and Seasons.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('Other', 'PlayStation 4 (PS4)', 'Sony')
 Insight1: 
 Type: evenness
 Score: 0.43891025669125905
-Description: The Sales are relatively evenly distributed across different Years and Seasons.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('2016', 'Other', 'PlayStation 4 (PS4)', 'Sony')
@@ -9986,7 +9986,7 @@ Header: ('2016', 'Other', 'PlayStation 4 (PS4)')
 Insight1: 
 Type: trend
 Score: 0.06926019228615686
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('2017', 'Other', 'PlayStation 4 (PS4)', 'Sony')
@@ -10028,7 +10028,7 @@ Header: ('2020', 'Other', 'PlayStation 4 (PS4)')
 Insight1: 
 Type: trend
 Score: 0.865961295969999
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('JUN', 'Other', 'PlayStation 4 (PS4)', 'Sony')
@@ -10042,7 +10042,7 @@ Header: ('JUN', 'Other', 'PlayStation 4 (PS4)')
 Insight1: 
 Type: evenness
 Score: 0.291703803706739
-Description: The Sales are relatively evenly distributed across different Years and Companys.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('MAR', 'Other', 'PlayStation 4 (PS4)', 'Sony')
@@ -10056,7 +10056,7 @@ Header: ('MAR', 'Other', 'PlayStation 4 (PS4)')
 Insight1: 
 Type: evenness
 Score: 0.19613471808763272
-Description: The Sales are relatively evenly distributed across different Years and Companys.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('Other', 'PlayStation 4 (PS4)', 'SEP', 'Sony')
@@ -10070,7 +10070,7 @@ Header: ('Other', 'PlayStation 4 (PS4)', 'SEP')
 Insight1: 
 Type: evenness
 Score: 0.34191239949317653
-Description: The Sales are relatively evenly distributed across different Years and Companys.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('PlayStation Vita (PSV)', 'Sony')
@@ -10087,7 +10087,7 @@ Description: The Sale proportion of Japan and Europe is significantly higher tha
 Insight3: 
 Type: trend
 Score: 0.2514735450586158
-Description: Locations exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('PlayStation Vita (PSV)',)
@@ -10099,7 +10099,7 @@ Description: The Sale proportion of Japan and Europe is significantly higher tha
 Insight2: 
 Type: trend
 Score: 0.2514735450586158
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('Europe', 'PlayStation Vita (PSV)', 'Sony')
@@ -10113,7 +10113,7 @@ Header: ('DEC', 'PlayStation Vita (PSV)', 'Sony')
 Insight1: 
 Type: trend
 Score: 0.3426331126529054
-Description: Locations exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 Insight2: 
 Type: top2
@@ -10125,7 +10125,7 @@ Header: ('DEC', 'PlayStation Vita (PSV)')
 Insight1: 
 Type: trend
 Score: 0.3426331126529054
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 Insight2: 
 Type: top2
@@ -10179,14 +10179,14 @@ Header: ('2014', 'PlayStation Vita (PSV)')
 Insight1: 
 Type: trend
 Score: 0.16119113805715768
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('2014', 'PlayStation Vita (PSV)', 'Sony')
 Insight1: 
 Type: trend
 Score: 0.16119113805715768
-Description: Locations exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('2014', 'Europe', 'PlayStation Vita (PSV)', 'Sony')
@@ -10242,7 +10242,7 @@ Header: ('2016', 'PlayStation Vita (PSV)', 'Sony')
 Insight1: 
 Type: trend
 Score: 0.7720563545322925
-Description: Locations exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight2: 
 Type: dominance
@@ -10254,7 +10254,7 @@ Header: ('2016', 'PlayStation Vita (PSV)')
 Insight1: 
 Type: trend
 Score: 0.7720563545322925
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight2: 
 Type: dominance
@@ -10337,7 +10337,7 @@ Description: The Sale of Japan dominates among all Locations.
 Insight2: 
 Type: trend
 Score: 0.35861983860297036
-Description: Locations exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight3: 
 Type: dominance
@@ -10354,7 +10354,7 @@ Description: The Sale of Japan dominates among all Locations.
 Insight2: 
 Type: trend
 Score: 0.35861983860297036
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight3: 
 Type: dominance
@@ -10385,14 +10385,14 @@ Header: ('JUN', 'PlayStation Vita (PSV)')
 Insight1: 
 Type: trend
 Score: 0.8311810672708966
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('JUN', 'PlayStation Vita (PSV)', 'Sony')
 Insight1: 
 Type: trend
 Score: 0.8311810672708966
-Description: Locations exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('Europe', 'JUN', 'PlayStation Vita (PSV)', 'Sony')
@@ -10406,7 +10406,7 @@ Header: ('Europe', 'JUN', 'PlayStation Vita (PSV)')
 Insight1: 
 Type: trend
 Score: 0.24323042115489668
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('2018', 'JUN', 'PlayStation Vita (PSV)', 'Sony')
@@ -10539,24 +10539,24 @@ Header: ('Japan', 'PlayStation Vita (PSV)', 'Sony')
 Insight1: 
 Type: trend
 Score: 0.5616724834702553
-Description: Years exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight2: 
 Type: trend
 Score: 0.46038834339986856
-Description: Seasons exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('Japan', 'PlayStation Vita (PSV)')
 Insight1: 
 Type: trend
 Score: 0.5616724834702553
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight2: 
 Type: trend
 Score: 0.46038834339986856
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('DEC', 'Japan', 'PlayStation Vita (PSV)', 'Sony')
@@ -10570,7 +10570,7 @@ Header: ('DEC', 'Japan', 'PlayStation Vita (PSV)')
 Insight1: 
 Type: trend
 Score: 0.5656454049145542
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('2013', 'Japan', 'PlayStation Vita (PSV)', 'Sony')
@@ -10584,7 +10584,7 @@ Header: ('2013', 'Japan', 'PlayStation Vita (PSV)')
 Insight1: 
 Type: trend
 Score: 0.48656612848674574
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('2014', 'Japan', 'PlayStation Vita (PSV)', 'Sony')
@@ -10598,7 +10598,7 @@ Header: ('2014', 'Japan', 'PlayStation Vita (PSV)')
 Insight1: 
 Type: trend
 Score: 0.5127165608182078
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('2016', 'Japan', 'PlayStation Vita (PSV)', 'Sony')
@@ -10612,7 +10612,7 @@ Header: ('2016', 'Japan', 'PlayStation Vita (PSV)')
 Insight1: 
 Type: trend
 Score: 0.7666195097836191
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('2017', 'Japan', 'PlayStation Vita (PSV)', 'Sony')
@@ -10640,7 +10640,7 @@ Header: ('2018', 'Japan', 'PlayStation Vita (PSV)')
 Insight1: 
 Type: trend
 Score: 0.7647621363445491
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('JUN', 'Japan', 'PlayStation Vita (PSV)', 'Sony')
@@ -10654,7 +10654,7 @@ Header: ('JUN', 'Japan', 'PlayStation Vita (PSV)')
 Insight1: 
 Type: trend
 Score: 0.40119841865819583
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('Japan', 'PlayStation Vita (PSV)', 'SEP', 'Sony')
@@ -10668,14 +10668,14 @@ Header: ('Japan', 'PlayStation Vita (PSV)', 'SEP')
 Insight1: 
 Type: trend
 Score: 0.6313524229052668
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('North America', 'PlayStation Vita (PSV)', 'Sony')
 Insight1: 
 Type: trend
 Score: 0.39207420060650916
-Description: Seasons exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 Insight2: 
 Type: dominance
@@ -10687,7 +10687,7 @@ Header: ('North America', 'PlayStation Vita (PSV)')
 Insight1: 
 Type: trend
 Score: 0.39207420060650916
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 Insight2: 
 Type: dominance
@@ -10762,7 +10762,7 @@ Header: ('2017', 'North America', 'PlayStation Vita (PSV)')
 Insight1: 
 Type: trend
 Score: 0.4697036706047522
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('JUN', 'North America', 'PlayStation Vita (PSV)', 'Sony')
@@ -10786,7 +10786,7 @@ Description: The Sale proportion of 2013 and 2015 is significantly higher than t
 Insight2: 
 Type: trend
 Score: 0.07668765086618104
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('MAR', 'North America', 'PlayStation Vita (PSV)', 'Sony')
@@ -10800,7 +10800,7 @@ Header: ('MAR', 'North America', 'PlayStation Vita (PSV)')
 Insight1: 
 Type: trend
 Score: 0.04294957798454531
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('North America', 'PlayStation Vita (PSV)', 'SEP', 'Sony')
@@ -10824,7 +10824,7 @@ Description: The Sale proportion of 2013 and 2014 is significantly higher than t
 Insight2: 
 Type: trend
 Score: 0.005374695526519183
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('Other', 'PlayStation Vita (PSV)', 'Sony')
@@ -10883,7 +10883,7 @@ Description: The Sale of MAR dominates among all Seasons.
 Insight2: 
 Type: trend
 Score: 0.06175082081902649
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('2018', 'Other', 'PlayStation Vita (PSV)', 'Sony')
@@ -10897,7 +10897,7 @@ Header: ('2018', 'Other', 'PlayStation Vita (PSV)')
 Insight1: 
 Type: trend
 Score: 0.4697036706047522
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('JUN', 'Other', 'PlayStation Vita (PSV)', 'Sony')
@@ -10911,7 +10911,7 @@ Header: ('JUN', 'Other', 'PlayStation Vita (PSV)')
 Insight1: 
 Type: trend
 Score: 0.5150140287738506
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('Other', 'PlayStation Vita (PSV)', 'SEP', 'Sony')
@@ -10932,12 +10932,12 @@ Header: ('Microsoft',)
 Insight1: 
 Type: outlier-temporal
 Score: 0.4288788690932622
-Description: The Sale of Year 2014 of Brand all Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brands of Location all Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locations of Season all Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasons is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands, Locations, Seasons.
+Description: The Sale of Year 2014 is an outlier, which is significantly higher than the normal Sale of other Years.
 
 Insight2: 
 Type: evenness
 Score: 0.3631394101500549
-Description: The Sales are relatively evenly distributed across different Years, Brands, Locations and Seasons.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight3: 
 Type: skewness
@@ -10964,7 +10964,7 @@ Description: The Sale proportion of 2013 and 2014 is significantly higher than t
 Insight2: 
 Type: trend
 Score: 0.5644640832011604
-Description: Locations exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight3: 
 Type: dominance
@@ -10979,7 +10979,7 @@ Description: The Sale has a positively skewed distribution, which means that the
 Insight5: 
 Type: trend
 Score: 0.0395636502091475
-Description: Locations exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('Xbox 360 (X360)',)
@@ -10991,7 +10991,7 @@ Description: The Sale proportion of 2013 and 2014 is significantly higher than t
 Insight2: 
 Type: trend
 Score: 0.5644640832011604
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight3: 
 Type: dominance
@@ -11001,24 +11001,24 @@ Description: The Sale of North America dominates among all Locations.
 Insight4: 
 Type: trend
 Score: 0.0395636502091475
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('Europe', 'Microsoft')
 Insight1: 
 Type: outlier-temporal
 Score: 0.37991574785024823
-Description: The Sale of Year 2020 of Brand all Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brands of Season all Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasons is an outlier, which is significantly lower than the normal Sale of other Years in the corresponding Brands, Seasons.
+Description: The Sale of Year 2020 is an outlier, which is significantly lower than the normal Sale of other Years.
 
 Insight2: 
 Type: evenness
 Score: 0.24611749952018025
-Description: The Sales are relatively evenly distributed across different Years, Brands and Seasons.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight3: 
 Type: trend
 Score: 0.059713891622591435
-Description: Brands exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('DEC', 'Microsoft')
@@ -11030,7 +11030,7 @@ Description: The Sale proportion of North America and Europe is significantly hi
 Insight2: 
 Type: outlier-temporal
 Score: 0.487192983692155
-Description: The Sale of Year 2014 of Brand all Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brands of Location all Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locations is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands, Locations.
+Description: The Sale of Year 2014 is an outlier, which is significantly higher than the normal Sale of other Years.
 
 ====================================================================================================
 Header: ('2013', 'Microsoft')
@@ -11047,14 +11047,14 @@ Description: The Sale proportion of JUN and MAR is significantly higher than tha
 Insight3: 
 Type: trend
 Score: 0.003546751803668775
-Description: Brands exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('Europe', 'Microsoft', 'Xbox 360 (X360)')
 Insight1: 
 Type: trend
 Score: 0.47854408996271464
-Description: Years exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight2: 
 Type: dominance
@@ -11071,7 +11071,7 @@ Header: ('Europe', 'Xbox 360 (X360)')
 Insight1: 
 Type: trend
 Score: 0.47854408996271464
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight2: 
 Type: dominance
@@ -11098,7 +11098,7 @@ Description: The Sale proportion of 2013 and 2014 is significantly higher than t
 Insight3: 
 Type: trend
 Score: 0.02573523759136775
-Description: Locations exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('DEC', 'Xbox 360 (X360)')
@@ -11115,7 +11115,7 @@ Description: The Sale proportion of 2013 and 2014 is significantly higher than t
 Insight3: 
 Type: trend
 Score: 0.02573523759136775
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('2013', 'Microsoft', 'Xbox 360 (X360)')
@@ -11132,7 +11132,7 @@ Description: The Sale proportion of JUN and MAR is significantly higher than tha
 Insight3: 
 Type: trend
 Score: 0.003546751803668775
-Description: Locations exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('2013', 'Xbox 360 (X360)')
@@ -11149,7 +11149,7 @@ Description: The Sale proportion of JUN and MAR is significantly higher than tha
 Insight3: 
 Type: trend
 Score: 0.003546751803668775
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('2013', 'DEC', 'Microsoft')
@@ -11410,7 +11410,7 @@ Header: ('2016', 'Europe', 'Xbox 360 (X360)')
 Insight1: 
 Type: trend
 Score: 0.05180584266644324
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 ====================================================================================================
 Header: ('2016', 'DEC', 'Microsoft', 'Xbox 360 (X360)')
@@ -11532,7 +11532,7 @@ Header: ('2020', 'Microsoft')
 Insight1: 
 Type: trend
 Score: 0.8150865507124948
-Description: Brands exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight2: 
 Type: dominance
@@ -11561,7 +11561,7 @@ Header: ('JUN', 'Microsoft')
 Insight1: 
 Type: outlier-temporal
 Score: 0.5946041556439857
-Description: The Sale of Year 2013 of Brand all Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brands of Location all Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locations is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands, Locations.
+Description: The Sale of Year 2013 is an outlier, which is significantly higher than the normal Sale of other Years.
 
 Insight2: 
 Type: dominance
@@ -11571,12 +11571,12 @@ Description: The Sale of North America dominates among all Locations.
 Insight3: 
 Type: outlier-temporal
 Score: 0.17415981112050066
-Description: The Sale of Year 2019 of Brand all Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brands of Location all Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locations is an outlier, which is significantly lower than the normal Sale of other Years in the corresponding Brands, Locations.
+Description: The Sale of Year 2019 is an outlier, which is significantly lower than the normal Sale of other Years.
 
 Insight4: 
 Type: evenness
 Score: 0.1582805020014999
-Description: The Sales are relatively evenly distributed across different Years, Brands and Locations.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('JUN', 'Microsoft', 'Xbox 360 (X360)')
@@ -11730,7 +11730,7 @@ Header: ('MAR', 'Microsoft')
 Insight1: 
 Type: evenness
 Score: 0.4094246735504832
-Description: The Sales are relatively evenly distributed across different Years, Brands and Locations.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight2: 
 Type: dominance
@@ -11752,7 +11752,7 @@ Description: The Sale proportion of 2013 and 2014 is significantly higher than t
 Insight3: 
 Type: trend
 Score: 0.35816260140227796
-Description: Locations exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('MAR', 'Xbox 360 (X360)')
@@ -11769,19 +11769,19 @@ Description: The Sale proportion of 2013 and 2014 is significantly higher than t
 Insight3: 
 Type: trend
 Score: 0.35816260140227796
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('Europe', 'MAR', 'Microsoft')
 Insight1: 
 Type: outlier-temporal
 Score: 0.5200003331365456
-Description: The Sale of Year 2020 of Brand all Brandsall Brands is an outlier, which is significantly lower than the normal Sale of other Years in the corresponding Brands.
+Description: The Sale of Year 2020 is an outlier, which is significantly lower than the normal Sale of other Years.
 
 Insight2: 
 Type: evenness
 Score: 0.26758093333754696
-Description: The Sales are relatively evenly distributed across different Years and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('2013', 'MAR', 'Microsoft')
@@ -11812,7 +11812,7 @@ Header: ('Europe', 'MAR', 'Xbox 360 (X360)')
 Insight1: 
 Type: trend
 Score: 0.056903321799314226
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 Insight2: 
 Type: dominance
@@ -11961,7 +11961,7 @@ Header: ('Microsoft', 'SEP')
 Insight1: 
 Type: outlier-temporal
 Score: 0.5614057743877529
-Description: The Sale of Year 2014 of Brand all Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brands of Location all Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locations is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands, Locations.
+Description: The Sale of Year 2014 is an outlier, which is significantly higher than the normal Sale of other Years.
 
 Insight2: 
 Type: dominance
@@ -11997,7 +11997,7 @@ Header: ('Europe', 'Microsoft', 'SEP')
 Insight1: 
 Type: evenness
 Score: 0.2823649952796339
-Description: The Sales are relatively evenly distributed across different Years and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('2013', 'Microsoft', 'SEP')
@@ -12158,7 +12158,7 @@ Header: ('Japan', 'Microsoft')
 Insight1: 
 Type: outlier-temporal
 Score: 0.5379957542114076
-Description: The Sale of Year 2014 of Brand all Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brands of Season all Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasons is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands, Seasons.
+Description: The Sale of Year 2014 is an outlier, which is significantly higher than the normal Sale of other Years.
 
 ====================================================================================================
 Header: ('Japan', 'MAR', 'Microsoft')
@@ -12170,14 +12170,14 @@ Description: The Sales are relatively evenly distributed across different Brands
 Insight2: 
 Type: evenness
 Score: 0.3876275643042053
-Description: The Sales are relatively evenly distributed across different Years and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('Microsoft', 'North America')
 Insight1: 
 Type: evenness
 Score: 0.4766600704868367
-Description: The Sales are relatively evenly distributed across different Years, Brands and Seasons.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight2: 
 Type: dominance
@@ -12194,12 +12194,12 @@ Description: The Sale proportion of 2013 and 2014 is significantly higher than t
 Insight2: 
 Type: trend
 Score: 0.406364273716719
-Description: Years exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight3: 
 Type: trend
 Score: 0.12542002903810984
-Description: Seasons exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 Insight4: 
 Type: dominance
@@ -12216,12 +12216,12 @@ Description: The Sale proportion of 2013 and 2014 is significantly higher than t
 Insight2: 
 Type: trend
 Score: 0.406364273716719
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight3: 
 Type: trend
 Score: 0.12542002903810984
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 Insight4: 
 Type: dominance
@@ -12233,7 +12233,7 @@ Header: ('2013', 'Microsoft', 'North America')
 Insight1: 
 Type: trend
 Score: 0.46863877955479855
-Description: Brands exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight2: 
 Type: top2
@@ -12267,7 +12267,7 @@ Description: The Sale proportion of 2013 and 2014 is significantly higher than t
 Insight2: 
 Type: trend
 Score: 0.06997803818758215
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('2013', 'Microsoft', 'North America', 'Xbox 360 (X360)')
@@ -12286,7 +12286,7 @@ Header: ('2013', 'North America', 'Xbox 360 (X360)')
 Insight1: 
 Type: trend
 Score: 0.46863877955479855
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight2: 
 Type: top2
@@ -12426,7 +12426,7 @@ Header: ('2020', 'Microsoft', 'North America')
 Insight1: 
 Type: trend
 Score: 0.5928920722409629
-Description: Brands exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight2: 
 Type: dominance
@@ -12443,12 +12443,12 @@ Header: ('JUN', 'Microsoft', 'North America')
 Insight1: 
 Type: outlier-temporal
 Score: 0.585544734748237
-Description: The Sale of Year 2013 of Brand all Brandsall Brands is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands.
+Description: The Sale of Year 2013 is an outlier, which is significantly higher than the normal Sale of other Years.
 
 Insight2: 
 Type: evenness
 Score: 0.45649130088773004
-Description: The Sales are relatively evenly distributed across different Years and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('JUN', 'Microsoft', 'North America', 'Xbox 360 (X360)')
@@ -12469,7 +12469,7 @@ Header: ('MAR', 'Microsoft', 'North America')
 Insight1: 
 Type: evenness
 Score: 0.4599657603057987
-Description: The Sales are relatively evenly distributed across different Years and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('MAR', 'Microsoft', 'North America', 'Xbox 360 (X360)')
@@ -12493,19 +12493,19 @@ Description: The Sale proportion of 2013 and 2014 is significantly higher than t
 Insight2: 
 Type: trend
 Score: 0.3509736999791697
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('Microsoft', 'North America', 'SEP')
 Insight1: 
 Type: outlier-temporal
 Score: 0.572396211217744
-Description: The Sale of Year 2014 of Brand all Brandsall Brands is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands.
+Description: The Sale of Year 2014 is an outlier, which is significantly higher than the normal Sale of other Years.
 
 Insight2: 
 Type: evenness
 Score: 0.1685139087474501
-Description: The Sales are relatively evenly distributed across different Years and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('Microsoft', 'North America', 'SEP', 'Xbox 360 (X360)')
@@ -12526,7 +12526,7 @@ Header: ('Microsoft', 'Other')
 Insight1: 
 Type: outlier-temporal
 Score: 0.5159859912265733
-Description: The Sale of Year 2014 of Brand all Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brands of Season all Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasons is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands, Seasons.
+Description: The Sale of Year 2014 is an outlier, which is significantly higher than the normal Sale of other Years.
 
 Insight2: 
 Type: skewness
@@ -12591,7 +12591,7 @@ Description: The Sale proportion of 2013 and 2014 is significantly higher than t
 Insight2: 
 Type: trend
 Score: 0.2562022895105657
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('2013', 'Microsoft', 'Other', 'Xbox 360 (X360)')
@@ -12685,7 +12685,7 @@ Header: ('MAR', 'Microsoft', 'Other')
 Insight1: 
 Type: evenness
 Score: 0.3753474842952378
-Description: The Sales are relatively evenly distributed across different Years and Brands.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('MAR', 'Microsoft', 'Other', 'Xbox 360 (X360)')
@@ -12699,7 +12699,7 @@ Header: ('MAR', 'Other', 'Xbox 360 (X360)')
 Insight1: 
 Type: trend
 Score: 0.29493377076010996
-Description: Companys exhibit a clear downward trend over the Years from 2013 to 2020.
+Description: Sales exhibit a clear downward trend over the Years from 2013 to 2020.
 
 ====================================================================================================
 Header: ('Microsoft', 'Other', 'SEP')
@@ -12732,7 +12732,7 @@ Header: ('Microsoft', 'Xbox One (XOne)')
 Insight1: 
 Type: evenness
 Score: 0.5316073317760821
-Description: The Sales are relatively evenly distributed across different Years, Locations and Seasons.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight2: 
 Type: dominance
@@ -12754,7 +12754,7 @@ Header: ('Xbox One (XOne)',)
 Insight1: 
 Type: evenness
 Score: 0.5316073317760821
-Description: The Sales are relatively evenly distributed across different Years, Companys, Locations and Seasons.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight2: 
 Type: dominance
@@ -12771,7 +12771,7 @@ Header: ('Europe', 'Xbox One (XOne)')
 Insight1: 
 Type: evenness
 Score: 0.24901236542449068
-Description: The Sales are relatively evenly distributed across different Years, Companys and Seasons.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('DEC', 'Microsoft', 'Xbox One (XOne)')
@@ -12792,7 +12792,7 @@ Header: ('Europe', 'Microsoft', 'Xbox One (XOne)')
 Insight1: 
 Type: evenness
 Score: 0.24901236542449068
-Description: The Sales are relatively evenly distributed across different Years and Seasons.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('2014', 'Microsoft', 'Xbox One (XOne)')
@@ -13045,7 +13045,7 @@ Header: ('2020', 'Microsoft', 'Xbox One (XOne)')
 Insight1: 
 Type: trend
 Score: 0.8150865507124948
-Description: Locations exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight2: 
 Type: dominance
@@ -13062,7 +13062,7 @@ Header: ('2020', 'Xbox One (XOne)')
 Insight1: 
 Type: trend
 Score: 0.8150865507124948
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight2: 
 Type: dominance
@@ -13093,7 +13093,7 @@ Header: ('JUN', 'Microsoft', 'Xbox One (XOne)')
 Insight1: 
 Type: evenness
 Score: 0.673842986213733
-Description: The Sales are relatively evenly distributed across different Years and Locations.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight2: 
 Type: dominance
@@ -13105,7 +13105,7 @@ Header: ('JUN', 'Xbox One (XOne)')
 Insight1: 
 Type: evenness
 Score: 0.673842986213733
-Description: The Sales are relatively evenly distributed across different Years, Companys and Locations.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight2: 
 Type: dominance
@@ -13124,7 +13124,7 @@ Header: ('Europe', 'JUN', 'Xbox One (XOne)')
 Insight1: 
 Type: evenness
 Score: 0.027749686439280552
-Description: The Sales are relatively evenly distributed across different Years and Companys.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('2014', 'JUN', 'Microsoft', 'Xbox One (XOne)')
@@ -13201,7 +13201,7 @@ Header: ('MAR', 'Microsoft', 'Xbox One (XOne)')
 Insight1: 
 Type: evenness
 Score: 0.509056078546031
-Description: The Sales are relatively evenly distributed across different Years and Locations.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight2: 
 Type: dominance
@@ -13213,7 +13213,7 @@ Header: ('MAR', 'Xbox One (XOne)')
 Insight1: 
 Type: evenness
 Score: 0.509056078546031
-Description: The Sales are relatively evenly distributed across different Years, Companys and Locations.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight2: 
 Type: dominance
@@ -13232,7 +13232,7 @@ Header: ('Europe', 'MAR', 'Xbox One (XOne)')
 Insight1: 
 Type: evenness
 Score: 0.27401865395589065
-Description: The Sales are relatively evenly distributed across different Years and Companys.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('2014', 'MAR', 'Microsoft', 'Xbox One (XOne)')
@@ -13323,7 +13323,7 @@ Header: ('Microsoft', 'SEP', 'Xbox One (XOne)')
 Insight1: 
 Type: evenness
 Score: 0.313376734802459
-Description: The Sales are relatively evenly distributed across different Years and Locations.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight2: 
 Type: dominance
@@ -13335,7 +13335,7 @@ Header: ('SEP', 'Xbox One (XOne)')
 Insight1: 
 Type: evenness
 Score: 0.313376734802459
-Description: The Sales are relatively evenly distributed across different Years, Companys and Locations.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight2: 
 Type: dominance
@@ -13354,7 +13354,7 @@ Header: ('Europe', 'SEP', 'Xbox One (XOne)')
 Insight1: 
 Type: evenness
 Score: 0.17158259735788084
-Description: The Sales are relatively evenly distributed across different Years and Companys.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('2014', 'Microsoft', 'SEP', 'Xbox One (XOne)')
@@ -13459,7 +13459,7 @@ Header: ('Microsoft', 'North America', 'Xbox One (XOne)')
 Insight1: 
 Type: evenness
 Score: 0.6897470879813457
-Description: The Sales are relatively evenly distributed across different Years and Seasons.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight2: 
 Type: dominance
@@ -13471,7 +13471,7 @@ Header: ('North America', 'Xbox One (XOne)')
 Insight1: 
 Type: evenness
 Score: 0.6897470879813457
-Description: The Sales are relatively evenly distributed across different Years, Companys and Seasons.
+Description: The Sales are relatively evenly distributed across different Years.
 
 Insight2: 
 Type: dominance
@@ -13490,7 +13490,7 @@ Header: ('DEC', 'North America', 'Xbox One (XOne)')
 Insight1: 
 Type: evenness
 Score: 0.001413601552991306
-Description: The Sales are relatively evenly distributed across different Years and Companys.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('2014', 'Microsoft', 'North America', 'Xbox One (XOne)')
@@ -13579,7 +13579,7 @@ Header: ('2020', 'North America', 'Xbox One (XOne)')
 Insight1: 
 Type: trend
 Score: 0.5928920722409629
-Description: Companys exhibit a clear downward trend over the Seasons from MAR to DEC.
+Description: Sales exhibit a clear downward trend over the Seasons from MAR to DEC.
 
 Insight2: 
 Type: dominance
@@ -13598,7 +13598,7 @@ Header: ('JUN', 'North America', 'Xbox One (XOne)')
 Insight1: 
 Type: evenness
 Score: 0.7395610509028563
-Description: The Sales are relatively evenly distributed across different Years and Companys.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('MAR', 'Microsoft', 'North America', 'Xbox One (XOne)')
@@ -13612,7 +13612,7 @@ Header: ('MAR', 'North America', 'Xbox One (XOne)')
 Insight1: 
 Type: evenness
 Score: 0.6403327102250678
-Description: The Sales are relatively evenly distributed across different Years and Companys.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('Microsoft', 'North America', 'SEP', 'Xbox One (XOne)')
@@ -13626,7 +13626,7 @@ Header: ('North America', 'SEP', 'Xbox One (XOne)')
 Insight1: 
 Type: evenness
 Score: 0.5484950174014747
-Description: The Sales are relatively evenly distributed across different Years and Companys.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('Microsoft', 'Other', 'Xbox One (XOne)')
@@ -13638,7 +13638,7 @@ Description: The Sale proportion of MAR and DEC is significantly higher than tha
 Insight2: 
 Type: evenness
 Score: 0.03802080738854663
-Description: The Sales are relatively evenly distributed across different Years and Seasons.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('Other', 'Xbox One (XOne)')
@@ -13650,7 +13650,7 @@ Description: The Sale proportion of MAR and DEC is significantly higher than tha
 Insight2: 
 Type: evenness
 Score: 0.03802080738854663
-Description: The Sales are relatively evenly distributed across different Years, Companys and Seasons.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('2014', 'Microsoft', 'Other', 'Xbox One (XOne)')
@@ -13720,7 +13720,7 @@ Header: ('MAR', 'Other', 'Xbox One (XOne)')
 Insight1: 
 Type: evenness
 Score: 0.4194258595802931
-Description: The Sales are relatively evenly distributed across different Years and Companys.
+Description: The Sales are relatively evenly distributed across different Years.
 
 ====================================================================================================
 Header: ('Microsoft', 'Other', 'SEP', 'Xbox One (XOne)')
@@ -13734,5 +13734,5 @@ Header: ('Other', 'SEP', 'Xbox One (XOne)')
 Insight1: 
 Type: evenness
 Score: 0.2407038705189537
-Description: The Sales are relatively evenly distributed across different Years and Companys.
+Description: The Sales are relatively evenly distributed across different Years.
 
