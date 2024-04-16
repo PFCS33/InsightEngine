@@ -333,7 +333,17 @@ Considering the subspace groups mentioned above, select one group that best matc
     repeat_str = repeat_str.format(str(crt_header), query)
     question3 += repeat_str
 
-    response_format = """"""
+    response_format = """Your answer should follow the format below:
+Group type: {}
+Group Criteria: {}
+Reason: {}
+Among them, Group type is used to identify the three categories of Same-level group, Elaboration group, and Generalization group, and Group Criteria is used to determine specific groups within the category.
+For example:
+Group type: Same-level groups
+Group Criteria: Brand
+Reason: The reason for choosing this group is that the question is specifically about the brand PlayStation 4 (PS4). By comparing the sales of PS4 with other brands in the same month ('JUN') and location ('Europe'), we can better understand what makes PS4 an outlier. For example, if PS4 has significantly higher sales than other brands, it could be due to factors like more popular games, better marketing, or superior hardware.
+"""
+    question3 += response_format
     return question3
 
 
