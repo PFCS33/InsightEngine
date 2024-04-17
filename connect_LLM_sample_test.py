@@ -215,6 +215,19 @@ def group_same_level_headers(input_header, same_level_headers, attribute_to_colu
     return groups
 
 
+def group_generalization_headers(input_header, generalization_headers, attribute_to_column):
+    groups = {}
+    group_criteria = "parent headers of current header"
+    for header in generalization_headers:
+        if (group_criteria,) in groups:
+            groups[(group_criteria,)]["headers"].append(header)
+        else:
+            groups[(group_criteria,)] = {"headers": [header], "template_sentence":
+                f"This group of subspaces replaces the attribute values of the '{group_criteria}' column in the current subspace."}
+
+    return groups
+
+
 def group_elaboration_headers(input_header, elaboration_headers, attribute_to_column):
     # Grouping based on the additional element's column
     groups = {}
@@ -233,6 +246,11 @@ def group_elaboration_headers(input_header, elaboration_headers, attribute_to_co
                     f"This group is a subdivision of the current subspace in the '{group_key}' column dimension."}
 
     return groups
+
+
+same_level_groups = {}
+generalization_groups = {}
+elaboration_groups = {}
 
 
 def get_related_subspace(input_header_str, header_dict):
@@ -267,6 +285,7 @@ def get_related_subspace(input_header_str, header_dict):
     output_string = ""
 
     # Group same_level_headers
+    global same_level_groups
     same_level_groups = group_same_level_headers(input_header, same_level_headers, attribute_to_column)
     same_level_explanation = "\nThe following are groups of same-level headers, which have the same level of subdivision as the current data subspace. Each group consists of headers that are identical to the current data subspace in all elements except one, which represents a different attribute of the data subspace in a particular column."
     output_string += same_level_explanation + "\n"
@@ -280,7 +299,8 @@ def get_related_subspace(input_header_str, header_dict):
         output_string += "\n"
 
     # Group generalization_headers
-    generalization_groups = generalization_headers
+    global generalization_groups
+    generalization_groups = group_generalization_headers(input_header, generalization_headers, attribute_to_column)
     generalization_explanation = "\nThe following is the group of generalization headers, which represent the parent or immediate higher-level region of the current data subspace. These headers can be used to expand the context of the current data subspace or provide more general background information."
     output_string += generalization_explanation + "\n"
     output_string += "Generalization group:\n"
@@ -290,6 +310,7 @@ def get_related_subspace(input_header_str, header_dict):
         output_string += str(header) + "\n"
 
     # Group elaboration_headers
+    global elaboration_groups
     elaboration_groups = group_elaboration_headers(input_header, elaboration_headers, attribute_to_column)
     elaboration_explanation = "\nThe following are groups of elaboration headers, which represent the next level of detail beneath the current data subspace. These headers provide specific details about certain aspects of the current data subspace, helping to drill down into a specific aspect of the data."
     output_string += elaboration_explanation + "\n"
@@ -306,6 +327,7 @@ def get_related_subspace(input_header_str, header_dict):
     # return related_headers_list
 
     return output_string
+
 
 def combine_question3(crt_header, query):
     # question contains only the related headers not insight-info
@@ -401,6 +423,40 @@ def parse_response_group(response):
     return response_list
 
 
+def parse_response_select_group(response):
+    lines = response.split("\n")
+    group_type = None
+    group_criteria = None
+    reason = None
+
+    for line in lines:
+        line = line.strip()
+        if line.startswith("Group type:"):
+            group_type = line.split(":")[1].strip()
+        elif line.startswith("Group Criteria:"):
+            group_criteria = line.split(":")[1].strip()
+        elif line.startswith("Reason:"):
+            reason = line.split(":")[1].strip()
+
+    if group_type is None or group_criteria is None or reason is None:
+        return None
+
+    if group_type == "Same-level groups":
+        groups_list = same_level_groups
+    elif group_type == "Generalization groups":
+        groups_list = generalization_groups
+    elif group_type == "Elaboration groups":
+        groups_list = elaboration_groups
+    else:
+        return None
+
+    for group in groups_list:
+        if group_criteria in group:
+            return group, reason
+
+    return None
+
+
 def from_header_get_query(main_query, crt_header, next_header):
     query_prompt = get_query_prompt.format(main_query, crt_header, next_header, '')
     response = get_query(query_prompt)
@@ -469,6 +525,14 @@ Headers:
             f.write('=' * 100)
             f.write("\n")
             f.write(f"Q: {question4}\nA: {response}\n")
+
+        response = """
+        Group type: Same-level groups
+        Group Criteria: Brand
+        Reason: The reason for choosing this group is that the question is specifically about the brand PlayStation 4 (PS4). By comparing the sales of PS4 with other brands in the same month ('JUN') and location ('Europe'), we can better understand what makes PS4 an outlier. For example, if PS4 has significantly higher sales than other brands, it could be due to factors like more popular games, better marketing, or superior hardware.
+        """
+        selected_group,  reason = parse_response_select_group(response)
+
 
         # parse structured info from response
         response_list = parse_response_group(response)
