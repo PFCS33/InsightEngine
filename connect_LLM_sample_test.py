@@ -586,7 +586,7 @@ For example:
 ...
 """
         # let LLM sort insights
-        response = get_response(sort_insight_prompt)
+        response = get_response(sort_group_prompt)
         with open(file_path, 'a') as f:
             f.write("\n")
             f.write('=' * 200)
