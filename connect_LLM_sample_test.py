@@ -1,3 +1,4 @@
+import datetime
 import openai
 import ast
 import os
@@ -70,7 +71,7 @@ It should be noted that a subspace can belong to no group (not helpful for solvi
 belong to multiple groups (key data subspaces).
 
 After categorizing them, please rank the groups in order of how closely they match the query so that \
-the first group is the answer that best matches the question., your answer must follow the format below: 
+the first group is the answer that best matches the question, your answer must follow the format below: 
 Results after grouping and sorting: 
 Group1: {Subspaces belonging to Group1, divided by ", ", no line breaks}
 Group2: {Subspaces belonging to Group2, divided by ", ", no line breaks}
@@ -142,7 +143,7 @@ def get_completion_from_messages(messages, temperature):
     return response.choices[0].message["content"]
 
 
-def get_insights_for_header(header_str, insight_list):
+def get_insight_from_header(header_str, insight_list):
     header = eval(header_str)
     # sort for matching
     header = tuple(sorted(map(str, header)))
@@ -161,15 +162,26 @@ def get_insights_for_header(header_str, insight_list):
     return None
 
 
-def combine_question2(query, crt_header, insights_info):
-    if insights_info:
+def combine_question2(query, crt_header, insights_info, crt_insight):
+    # if insights_info:
+    #     question2 = "Question: " + query + "\n"
+    #     question2 += "Current Subspace: " + str(crt_header) + "\n"
+    #     for info in insights_info:
+    #         question2 += info['Insight'] + ":\n"
+    #         question2 += "Type: " + info['Type'] + "\n"
+    #         question2 += "Score: " + str(info['Score']) + "\n"
+    #         question2 += "Description: " + info['Description'] + "\n"
+    #     question2 += question2_prompt
+    # else:
+    #     question2 = "Invalid Current Subspace."
+    if insights_info and crt_insight <= len(insights_info):
         question2 = "Question: " + query + "\n"
         question2 += "Current Subspace: " + str(crt_header) + "\n"
-        for info in insights_info:
-            question2 += info['Insight'] + ":\n"
-            question2 += "Type: " + info['Type'] + "\n"
-            question2 += "Score: " + str(info['Score']) + "\n"
-            question2 += "Description: " + info['Description'] + "\n"
+        info = insights_info[crt_insight - 1]
+        question2 += info['Insight'] + ":\n"
+        question2 += "Type: " + info['Type'] + "\n"
+        question2 += "Score: " + str(info['Score']) + "\n"
+        question2 += "Description: " + info['Description'] + "\n"
         question2 += question2_prompt
     else:
         question2 = "Invalid Current Subspace."
@@ -304,10 +316,12 @@ def get_related_subspace(input_header_str, header_dict):
     generalization_explanation = "\nThe following is the group of generalization headers, which represent the parent or immediate higher-level region of the current data subspace. These headers can be used to expand the context of the current data subspace or provide more general background information."
     output_string += generalization_explanation + "\n"
     output_string += "Generalization group:\n"
-    output_string += "Group Criteria: parent headers of current header\n"
-    output_string += "Headers:\n"
-    for header in generalization_groups:
-        output_string += str(header) + "\n"
+    for (group_criteria,), group_info in generalization_groups.items():
+        output_string += f"Group Criteria: {group_criteria}\n"
+        output_string += "Headers:\n"
+        for header in group_info["headers"]:
+            output_string += str(header) + "\n"
+        output_string += "\n"
 
     # Group elaboration_headers
     global elaboration_groups
@@ -363,7 +377,7 @@ Among them, Group type is used to identify the three categories of Same-level gr
 For example:
 Group type: Same-level groups
 Group Criteria: Brand
-Reason: The reason for choosing this group is that the question is specifically about the brand PlayStation 4 (PS4). By comparing the sales of PS4 with other brands in the same month ('JUN') and location ('Europe'), we can better understand what makes PS4 an outlier. For example, if PS4 has significantly higher sales than other brands, it could be due to factors like more popular games, better marketing, or superior hardware.
+Reason: The reason for choosing this group is that ...
 """
     question3 += response_format
     return question3
@@ -443,16 +457,40 @@ def parse_response_select_group(response):
 
     if group_type == "Same-level groups":
         groups_list = same_level_groups
-    elif group_type == "Generalization groups":
+    elif group_type == "Generalization group":  # only one group
         groups_list = generalization_groups
     elif group_type == "Elaboration groups":
         groups_list = elaboration_groups
     else:
         return None
 
-    for group in groups_list:
-        if group_criteria in group:
-            return group, reason
+    sort_group_prompt = "You have selected a group of headers that best match the question: \n"
+    sort_insight_prompt = "The following are the headers in the selected group and the insight information in each header.\n"
+    header_count = 1
+    insights_info_dict = {}
+
+    for group_key, group_value in groups_list.items():
+        if group_key == group_criteria:
+            insights_info_list = []
+            sort_group_prompt += f"Group Criteria: {group_criteria}, this group is a subdivision of the current subspace in the '{group_criteria}' column dimension.\n"
+            sort_group_prompt += "Headers: \n"
+            headers_list = group_value['headers']
+            for header in headers_list:
+                # get insight in header
+                insights_info = get_insight_from_header(str(header), insight_list)
+                sort_group_prompt += f"{header}\n"
+                if insights_info:
+                    insights_info_dict[str(header)] = insights_info
+                    sort_insight_prompt += f"Header {header_count}: {header}\n"
+                    insight_count = 1
+                    for insight_info in insights_info:
+                        sort_insight_prompt += f"  Insight {insight_count}:\n"
+                        sort_insight_prompt += f"    Type: {insight_info['Type']}\n"
+                        sort_insight_prompt += f"    Score: {insight_info['Score']}\n"
+                        sort_insight_prompt += f"    Description: {insight_info['Description']}\n"
+                        insight_count += 1
+                    header_count += 1
+            return sort_group_prompt, insights_info_dict, sort_insight_prompt, reason
 
     return None
 
@@ -472,66 +510,90 @@ def from_header_get_query(main_query, crt_header, next_header):
 
 
 def qa_process():
-    file_path = 'qa_log_group_back_end.txt'
-    query = "I want to analyze the Sales among"
-    crt_header = "('Nintendo 3DS (3DS)', 'MAR', '2014')"
+    today = datetime.datetime.today().strftime('%Y-%m-%d')
+    file_path = f'log/qa_log_{today}_Europe_JUN.txt'
+    query = "I want to know why the sale of the brand PlayStation 4 (PS4) is an outlier, what caused the unusually large value of this point? "
+    crt_header = "('Europe', 'JUN')"
+    crt_insight = 2
     main_query = query
 
     with open(file_path, 'w') as f:
+        # provide LLM task information and background knowledge
         response = get_response(question1)
-        f.write('=' * 100)
         f.write("\n")
-        f.write(f"Q: {question1}\nA: {response}\n")
+        f.write('=' * 200)
+        f.write("\n")
+        f.write(f"Q: \n{question1}\n\nA: \n{response}\n")
 
     iteration = 0
     while iteration < 3:
         iteration += 1
-        insights_info = get_insights_for_header(crt_header, insight_list)
-        question2 = combine_question2(query, crt_header, insights_info)
+        insights_info = get_insight_from_header(crt_header, insight_list)
+        question2 = combine_question2(query, crt_header, insights_info, crt_insight)
         if question2 != "Invalid Current Subspace.":
             question3 = combine_question3(crt_header, query)
+            # let LLM select one group that best matches the question and crt subspace
             response = get_response(question2 + question3)
         else:
             print("Invalid Current Subspace. Ending conversation.")
             break
 
         with open(file_path, 'a') as f:
-            f.write('=' * 100)
             f.write("\n")
-            f.write(f"Q: {question2 + question3}\nA: {response}\n")
+            f.write('=' * 200)
+            f.write("\n")
+            f.write(f"Q: \n{question2 + question3}\n\nA: \n{response}\n")
         print(f"Conversation {iteration} ended.")
 
-        question4 = """You have selected a group of headers that best match the question: 
-Group Criteria: Brand
-Explanation: This group is a subdivision of the current subspace in the 'Brand' column dimension.
-Headers:
-('Nintendo 3DS (3DS)', 'Europe', 'JUN')
-('Nintendo DS (DS)', 'Europe', 'JUN')
-('Nintendo Switch (NS)', 'Europe', 'JUN')
-('Wii (Wii)', 'Europe', 'JUN')
-('Wii U (WiiU)', 'Europe', 'JUN')
-('PlayStation 3 (PS3)', 'Europe', 'JUN')
-('PlayStation 4 (PS4)', 'Europe', 'JUN')
-('PlayStation Vita (PSV)', 'Europe', 'JUN')
-('Xbox 360 (X360)', 'Europe', 'JUN')
-('Xbox One (XOne)', 'Europe', 'JUN')
-         
-        Next, you need to sort the headers within the group. \
-        Considering the current subspace: "('Europe', 'JUN')", and the question: "I want to know why the sale of the brand PlayStation 4 (PS4) is an outlier, what caused the unusually large value of this point? ", which header is most likely to contain key information for answering the question? \
-        Please sort the headers within the group in order of importance, from highest to lowest."""
-        response = get_response(question4)
+        sort_group_prompt, insights_info_list, sort_insight_prompt, reason = parse_response_select_group(response)
+        sort_group_prompt += f"""Next, you need to rank the headers within the group. Considering the current subspace: "{crt_header}", and the question: "{query}", which header is most likely to contain key information for answering the question? Please sort the headers within the group in order of importance, from highest to lowest.\n"""
+        format_string = """
+Your answer must follow the format below: 
+1. {Header name} 
+2. {Header name}
+3. ...
+For example:
+1. ('Nintendo', 'Nintendo 3DS (3DS)', 2017)
+2. ('Nintendo', 'Europe', 2017)
+3. ('Nintendo', 'DEC', 2017)
+...
+"""
+        sort_group_prompt += format_string
 
+        # let LLM sort headers inside the selected group
+        response = get_response(sort_group_prompt)
         with open(file_path, 'a') as f:
-            f.write('=' * 100)
             f.write("\n")
-            f.write(f"Q: {question4}\nA: {response}\n")
+            f.write('=' * 200)
+            f.write("\n")
+            f.write(f"Q: \n{sort_group_prompt}\n\nA: \n{response}\n")
+        # TODO parse sorting response
 
-        response = """
-        Group type: Same-level groups
-        Group Criteria: Brand
-        Reason: The reason for choosing this group is that the question is specifically about the brand PlayStation 4 (PS4). By comparing the sales of PS4 with other brands in the same month ('JUN') and location ('Europe'), we can better understand what makes PS4 an outlier. For example, if PS4 has significantly higher sales than other brands, it could be due to factors like more popular games, better marketing, or superior hardware.
-        """
-        selected_group,  reason = parse_response_select_group(response)
+        sort_insight_prompt += f"""\nNext, you need to rank the insights provided based on the following criteria:
+1. Insight description, which includes information about the data patterns observed.
+2. Insight score, which reflects the significance of the insight. The range of Insight Score is from 0 to 1, where a value closer to 1 indicates a more significant insight.
+3. The question: "{query}", which guides the data exploration process and helps in selecting relevant insights.
+
+Your task is to identify which insights contain pattern information that can effectively address the current question. Please rank the insights based on these criteria with the most relevant insights listed first, and explain your reasons.\n
+Your answer must follow the format below: 
+1. Insight x of Header x. Reason: xxx
+2. Insight x of Header x. Reason: xxx
+3. ...
+For example:
+1. Insight 2 of Header 3. Reason: The reason why I choose Insight 2 of Header 3 as the most relevant insight is that ...
+2. Insight 1 of Header 2. Reason: The reason why I choose Insight 2 of Header 3 as the second relevant insight is that ...
+3. Insight 2 of Header 4. Reason: The reason why I choose Insight 2 of Header 3 as the third relevant insight is that ...
+...
+"""
+        # let LLM sort insights
+        response = get_response(sort_insight_prompt)
+        with open(file_path, 'a') as f:
+            f.write("\n")
+            f.write('=' * 200)
+            f.write("\n")
+            f.write(f"Q: \n{sort_insight_prompt}\n\nA: \n{response}\n")
+
+
 
 
         # parse structured info from response
@@ -543,7 +605,7 @@ Headers:
                 break
             for subspace in subspaces:
                 next_header = str(subspace)
-                insights_info = get_insights_for_header(next_header, insight_list)
+                insights_info = get_insight_from_header(next_header, insight_list)
                 if insights_info:
                     found_valid_subspace = True
                     break
