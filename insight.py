@@ -299,8 +299,6 @@ def insight_exists(header, insight):
 def save_insight(header, scope_data, ins_category, ins_type, ins_score, header_description, ins_description, breakdown=None,
                  aggregate=None):
     global subspace_insight
-    if ins_score == 0.7082256675279932:
-        print(header)
 
     # avoid duplicate headers caused by different orders
     sorted_header = tuple(sorted(map(str, header)))
