@@ -63,12 +63,13 @@ class HierarchicalTable:
         cnt_header_num = 0
         if os.path.exists('headers.txt'):
             os.remove('headers.txt')
+        with open('headers.txt', 'w') as file:
+            for key in header_dict.keys():
+                file.write(str(key) + '\n')
+
         if os.path.exists('vis_list.txt'):
             os.remove('vis_list.txt')
         for header in header_dict:
-            with open('headers.txt', 'w') as file:
-                for key in header_dict.keys():
-                    file.write(str(key) + '\n')
             subspace_insight = self.process_block(header)
             # if node != None:
             #     # if set(idx+col) in curr_focus_headers:

@@ -59,7 +59,7 @@ Description: The Sales are relatively evenly distributed across different Years,
 Insight2: 
 Type: outlier
 Score: 0.68193578567085
-Description: The Sale of Brand PlayStation 4 (PS4) of Company all Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companys of Season all Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasons of Year all Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Years is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Seasons, Years.
+Description: The Sale of Brand PlayStation 4 (PS4) of Company all Companys of Season all Seasons of Year all Years is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Seasons, Years.
 
 Insight3: 
 Type: top2
@@ -165,7 +165,7 @@ Header: ('DEC', 'Europe')
 Insight1: 
 Type: outlier
 Score: 0.6536343688833756
-Description: The Sale of Brand PlayStation 4 (PS4) of Company all Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companys of Year all Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Years is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Years.
+Description: The Sale of Brand PlayStation 4 (PS4) of Company all Companys of Year all Years is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Years.
 
 Insight2: 
 Type: top2
@@ -617,7 +617,7 @@ Header: ('2017', 'Europe')
 Insight1: 
 Type: outlier
 Score: 0.6937229177909343
-Description: The Sale of Brand PlayStation 4 (PS4) of Company all Companysall Companysall Companysall Companys of Season all Seasonsall Seasonsall Seasonsall Seasons is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Seasons.
+Description: The Sale of Brand PlayStation 4 (PS4) of Company all Companys of Season all Seasons is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Seasons.
 
 Insight2: 
 Type: top2
@@ -1104,7 +1104,7 @@ Description: The Sale proportion of Sony and Nintendo is significantly higher th
 Insight3: 
 Type: outlier
 Score: 0.5713327047608496
-Description: The Sale of Brand PlayStation 4 (PS4) of Company all Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companys of Location all Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locations of Year all Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Years is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Locations, Years.
+Description: The Sale of Brand PlayStation 4 (PS4) of Company all Companys of Location all Locations of Year all Years is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Locations, Years.
 
 Insight4: 
 Type: kurtosis
@@ -1150,12 +1150,12 @@ Description: The Sale proportion of Sony and Nintendo is significantly higher th
 Insight2: 
 Type: outlier
 Score: 0.7001711633663977
-Description: The Sale of Brand PlayStation 4 (PS4) of Company all Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companys of Year all Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Years is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Years.
+Description: The Sale of Brand PlayStation 4 (PS4) of Company all Companys of Year all Years is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Years.
 
 Insight3: 
 Type: outlier-temporal
 Score: 0.4708103596374066
-Description: The Sale of Year 2013 of Company all Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companys of Brand all Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brands is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Companys, Brands.
+Description: The Sale of Year 2013 of Company all Companys of Brand all Brands is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Companys, Brands.
 
 Insight4: 
 Type: evenness
@@ -1165,7 +1165,7 @@ Description: The Sales are relatively evenly distributed across different Years,
 Insight5: 
 Type: outlier-temporal
 Score: 0.3736879300992838
-Description: The Sale of Year 2014 of Company all Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companys of Brand all Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brands is an outlier, which is significantly lower than the normal Sale of other Years in the corresponding Companys, Brands.
+Description: The Sale of Year 2014 of Company all Companys of Brand all Brands is an outlier, which is significantly lower than the normal Sale of other Years in the corresponding Companys, Brands.
 
 ====================================================================================================
 Header: ('JUN', 'Nintendo', 'Nintendo 3DS (3DS)')
@@ -1574,7 +1574,7 @@ Header: ('Europe', 'MAR')
 Insight1: 
 Type: outlier
 Score: 0.6545928448497481
-Description: The Sale of Brand PlayStation 4 (PS4) of Company all Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companys of Year all Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Years is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Years.
+Description: The Sale of Brand PlayStation 4 (PS4) of Company all Companys of Year all Years is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Years.
 
 Insight2: 
 Type: top2
@@ -1998,7 +1998,7 @@ Description: The Sale proportion of Sony and Nintendo is significantly higher th
 Insight4: 
 Type: outlier
 Score: 0.5624549081246523
-Description: The Sale of Brand PlayStation 4 (PS4) of Company all Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companys of Location all Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locations of Year all Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Years is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Locations, Years.
+Description: The Sale of Brand PlayStation 4 (PS4) of Company all Companys of Location all Locations of Year all Years is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Locations, Years.
 
 Insight5: 
 Type: top2
@@ -2010,7 +2010,7 @@ Header: ('Nintendo', 'SEP')
 Insight1: 
 Type: outlier-temporal
 Score: 0.5621762626662786
-Description: The Sale of Year 2020 of Brand all Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brands of Location all Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locations is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands, Locations.
+Description: The Sale of Year 2020 of Brand all Brands of Location all Locations is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands, Locations.
 
 Insight2: 
 Type: dominance
@@ -2027,7 +2027,7 @@ Header: ('Nintendo', 'Nintendo 3DS (3DS)', 'SEP')
 Insight1: 
 Type: outlier-temporal
 Score: 0.5921190970768014
-Description: The Sale of Year 2013 of Location all Locationsall Locationsall Locationsall Locations is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Locations.
+Description: The Sale of Year 2013 of Location all Locations is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Locations.
 
 Insight2: 
 Type: top2
@@ -2039,7 +2039,7 @@ Header: ('Nintendo 3DS (3DS)', 'SEP')
 Insight1: 
 Type: outlier-temporal
 Score: 0.5921190970768014
-Description: The Sale of Year 2013 of Company all Companysall Companysall Companysall Companys of Location all Locationsall Locationsall Locationsall Locations is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Companys, Locations.
+Description: The Sale of Year 2013 of Company all Companys of Location all Locations is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Companys, Locations.
 
 Insight2: 
 Type: top2
@@ -2056,7 +2056,7 @@ Description: The Sale proportion of Sony and Nintendo is significantly higher th
 Insight2: 
 Type: outlier
 Score: 0.6908578721855536
-Description: The Sale of Brand PlayStation 4 (PS4) of Company all Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companys of Year all Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Years is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Years.
+Description: The Sale of Brand PlayStation 4 (PS4) of Company all Companys of Year all Years is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Years.
 
 Insight3: 
 Type: evenness
@@ -2066,7 +2066,7 @@ Description: The Sales are relatively evenly distributed across different Years,
 Insight4: 
 Type: outlier
 Score: 0.05143174708310243
-Description: The Sale of Brand Nintendo Switch (NS) of Company all Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companys of Year all Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Years is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Years.
+Description: The Sale of Brand Nintendo Switch (NS) of Company all Companys of Year all Years is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Years.
 
 ====================================================================================================
 Header: ('2013', 'SEP')
@@ -2085,7 +2085,7 @@ Header: ('Europe', 'Nintendo', 'SEP')
 Insight1: 
 Type: outlier-temporal
 Score: 0.5639193928462749
-Description: The Sale of Year 2020 of Brand all Brandsall Brandsall Brandsall Brandsall Brands is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands.
+Description: The Sale of Year 2020 of Brand all Brands is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands.
 
 Insight2: 
 Type: dominance
@@ -3167,7 +3167,7 @@ Description: The Sales are relatively evenly distributed across different Years,
 Insight4: 
 Type: outlier-temporal
 Score: 0.4773739046232767
-Description: The Sale of Year 2020 of Company all Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companys of Brand all Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brands is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Companys, Brands.
+Description: The Sale of Year 2020 of Company all Companys of Brand all Brands is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Companys, Brands.
 
 ====================================================================================================
 Header: ('Japan', 'Nintendo', 'SEP')
@@ -3179,7 +3179,7 @@ Description: The Sale proportion of Nintendo Switch (NS) and Nintendo 3DS (3DS) 
 Insight2: 
 Type: outlier-temporal
 Score: 0.5735595877312589
-Description: The Sale of Year 2020 of Brand all Brandsall Brandsall Brandsall Brandsall Brands is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands.
+Description: The Sale of Year 2020 of Brand all Brands is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands.
 
 Insight3: 
 Type: evenness
@@ -3790,7 +3790,7 @@ Description: The Sale proportion of Nintendo Switch (NS) and Nintendo 3DS (3DS) 
 Insight2: 
 Type: outlier-temporal
 Score: 0.5008252447136476
-Description: The Sale of Year 2020 of Brand all Brandsall Brandsall Brandsall Brandsall Brands is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands.
+Description: The Sale of Year 2020 of Brand all Brands is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands.
 
 Insight3: 
 Type: evenness
@@ -4033,7 +4033,7 @@ Description: The Sale proportion of Nintendo Switch (NS) and Nintendo 3DS (3DS) 
 Insight2: 
 Type: outlier-temporal
 Score: 0.4469545622673682
-Description: The Sale of Year 2020 of Brand all Brandsall Brandsall Brandsall Brandsall Brands is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands.
+Description: The Sale of Year 2020 of Brand all Brands is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands.
 
 Insight3: 
 Type: evenness
@@ -4201,7 +4201,7 @@ Description: The Sales are relatively evenly distributed across different Years,
 Insight2: 
 Type: outlier
 Score: 0.6673704414610783
-Description: The Sale of Brand PlayStation 4 (PS4) of Company all Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companys of Season all Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasons of Year all Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Years is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Seasons, Years.
+Description: The Sale of Brand PlayStation 4 (PS4) of Company all Companys of Season all Seasons of Year all Years is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Seasons, Years.
 
 Insight3: 
 Type: kurtosis
@@ -4218,7 +4218,7 @@ Header: ('Nintendo', 'Other')
 Insight1: 
 Type: outlier-temporal
 Score: 0.5077642044583109
-Description: The Sale of Year 2020 of Brand all Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brands of Season all Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasons is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands, Seasons.
+Description: The Sale of Year 2020 of Brand all Brands of Season all Seasons is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands, Seasons.
 
 Insight2: 
 Type: dominance
@@ -4259,7 +4259,7 @@ Header: ('DEC', 'Other')
 Insight1: 
 Type: outlier
 Score: 0.6511660267199705
-Description: The Sale of Brand PlayStation 4 (PS4) of Company all Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companys of Year all Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Years is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Years.
+Description: The Sale of Brand PlayStation 4 (PS4) of Company all Companys of Year all Years is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Years.
 
 Insight2: 
 Type: evenness
@@ -4453,7 +4453,7 @@ Header: ('2017', 'Other')
 Insight1: 
 Type: outlier
 Score: 0.7330787671657711
-Description: The Sale of Brand PlayStation 4 (PS4) of Company all Companysall Companysall Companysall Companys of Season all Seasonsall Seasonsall Seasonsall Seasons is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Seasons.
+Description: The Sale of Brand PlayStation 4 (PS4) of Company all Companys of Season all Seasons is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Seasons.
 
 Insight2: 
 Type: dominance
@@ -4605,7 +4605,7 @@ Header: ('JUN', 'Other')
 Insight1: 
 Type: outlier
 Score: 0.6480423044545993
-Description: The Sale of Brand PlayStation 4 (PS4) of Company all Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companys of Year all Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Years is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Years.
+Description: The Sale of Brand PlayStation 4 (PS4) of Company all Companys of Year all Years is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Years.
 
 Insight2: 
 Type: evenness
@@ -4615,7 +4615,7 @@ Description: The Sales are relatively evenly distributed across different Years,
 Insight3: 
 Type: outlier-temporal
 Score: 0.46099061205078184
-Description: The Sale of Year 2013 of Company all Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companys of Brand all Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brands is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Companys, Brands.
+Description: The Sale of Year 2013 of Company all Companys of Brand all Brands is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Companys, Brands.
 
 Insight4: 
 Type: dominance
@@ -4632,7 +4632,7 @@ Header: ('JUN', 'Nintendo', 'Other')
 Insight1: 
 Type: outlier-temporal
 Score: 0.5760797422549258
-Description: The Sale of Year 2020 of Brand all Brandsall Brandsall Brandsall Brandsall Brands is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands.
+Description: The Sale of Year 2020 of Brand all Brands is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands.
 
 Insight2: 
 Type: dominance
@@ -4762,7 +4762,7 @@ Header: ('MAR', 'Other')
 Insight1: 
 Type: outlier
 Score: 0.6795076045136104
-Description: The Sale of Brand PlayStation 4 (PS4) of Company all Companysall Companysall Companysall Companysall Companysall Companysall Companysall Companys of Year all Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Yearsall Years is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Years.
+Description: The Sale of Brand PlayStation 4 (PS4) of Company all Companys of Year all Years is an outlier, which is significantly higher than the normal Sale of other Brands in the corresponding Companys, Years.
 
 Insight2: 
 Type: top2
@@ -6816,12 +6816,12 @@ Description: The Sale of PlayStation 4 (PS4) dominates among all Brands.
 Insight3: 
 Type: outlier-temporal
 Score: 0.37339941502867857
-Description: The Sale of Year 2013 of Brand all Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brands of Season all Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasons is an outlier, which is significantly lower than the normal Sale of other Years in the corresponding Brands, Seasons.
+Description: The Sale of Year 2013 of Brand all Brands of Season all Seasons is an outlier, which is significantly lower than the normal Sale of other Years in the corresponding Brands, Seasons.
 
 Insight4: 
 Type: outlier-temporal
 Score: 0.37339941502867857
-Description: The Sale of Year 2020 of Brand all Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brands of Season all Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasons is an outlier, which is significantly lower than the normal Sale of other Years in the corresponding Brands, Seasons.
+Description: The Sale of Year 2020 of Brand all Brands of Season all Seasons is an outlier, which is significantly lower than the normal Sale of other Years in the corresponding Brands, Seasons.
 
 ====================================================================================================
 Header: ('DEC', 'Sony')
@@ -8313,7 +8313,7 @@ Description: The Sales are relatively evenly distributed across different Years,
 Insight3: 
 Type: outlier-temporal
 Score: 0.4290897047129115
-Description: The Sale of Year 2013 of Brand all Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brands of Season all Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasons is an outlier, which is significantly lower than the normal Sale of other Years in the corresponding Brands, Seasons.
+Description: The Sale of Year 2013 of Brand all Brands of Season all Seasons is an outlier, which is significantly lower than the normal Sale of other Years in the corresponding Brands, Seasons.
 
 Insight4: 
 Type: kurtosis
@@ -8509,12 +8509,12 @@ Description: The Sales are relatively evenly distributed across different Years 
 Insight3: 
 Type: outlier-temporal
 Score: 0.44756796497909007
-Description: The Sale of Year 2013 of Brand all Brandsall Brandsall Brands is an outlier, which is significantly lower than the normal Sale of other Years in the corresponding Brands.
+Description: The Sale of Year 2013 of Brand all Brands is an outlier, which is significantly lower than the normal Sale of other Years in the corresponding Brands.
 
 Insight4: 
 Type: outlier-temporal
 Score: 0.35018320263845243
-Description: The Sale of Year 2018 of Brand all Brandsall Brandsall Brands is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands.
+Description: The Sale of Year 2018 of Brand all Brands is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands.
 
 ====================================================================================================
 Header: ('JUN', 'North America', 'PlayStation 3 (PS3)', 'Sony')
@@ -8637,7 +8637,7 @@ Description: The Sales are relatively evenly distributed across different Years 
 Insight3: 
 Type: outlier-temporal
 Score: 0.37680866950578
-Description: The Sale of Year 2013 of Brand all Brandsall Brandsall Brands is an outlier, which is significantly lower than the normal Sale of other Years in the corresponding Brands.
+Description: The Sale of Year 2013 of Brand all Brands is an outlier, which is significantly lower than the normal Sale of other Years in the corresponding Brands.
 
 ====================================================================================================
 Header: ('North America', 'PlayStation 3 (PS3)', 'SEP', 'Sony')
@@ -8677,7 +8677,7 @@ Description: The Sale of PlayStation 4 (PS4) dominates among all Brands.
 Insight2: 
 Type: outlier-temporal
 Score: 0.5064973718093337
-Description: The Sale of Year 2020 of Brand all Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brands of Season all Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasons is an outlier, which is significantly lower than the normal Sale of other Years in the corresponding Brands, Seasons.
+Description: The Sale of Year 2020 of Brand all Brands of Season all Seasons is an outlier, which is significantly lower than the normal Sale of other Years in the corresponding Brands, Seasons.
 
 Insight3: 
 Type: evenness
@@ -8901,7 +8901,7 @@ Header: ('JUN', 'Other', 'Sony')
 Insight1: 
 Type: outlier-temporal
 Score: 0.4676766746806601
-Description: The Sale of Year 2013 of Brand all Brandsall Brandsall Brands is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands.
+Description: The Sale of Year 2013 of Brand all Brands is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands.
 
 Insight2: 
 Type: dominance
@@ -10932,7 +10932,7 @@ Header: ('Microsoft',)
 Insight1: 
 Type: outlier-temporal
 Score: 0.4288788690932622
-Description: The Sale of Year 2014 of Brand all Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brands of Location all Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locations of Season all Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasons is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands, Locations, Seasons.
+Description: The Sale of Year 2014 of Brand all Brands of Location all Locations of Season all Seasons is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands, Locations, Seasons.
 
 Insight2: 
 Type: evenness
@@ -11008,7 +11008,7 @@ Header: ('Europe', 'Microsoft')
 Insight1: 
 Type: outlier-temporal
 Score: 0.37991574785024823
-Description: The Sale of Year 2020 of Brand all Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brands of Season all Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasons is an outlier, which is significantly lower than the normal Sale of other Years in the corresponding Brands, Seasons.
+Description: The Sale of Year 2020 of Brand all Brands of Season all Seasons is an outlier, which is significantly lower than the normal Sale of other Years in the corresponding Brands, Seasons.
 
 Insight2: 
 Type: evenness
@@ -11030,7 +11030,7 @@ Description: The Sale proportion of North America and Europe is significantly hi
 Insight2: 
 Type: outlier-temporal
 Score: 0.487192983692155
-Description: The Sale of Year 2014 of Brand all Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brands of Location all Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locations is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands, Locations.
+Description: The Sale of Year 2014 of Brand all Brands of Location all Locations is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands, Locations.
 
 ====================================================================================================
 Header: ('2013', 'Microsoft')
@@ -11561,7 +11561,7 @@ Header: ('JUN', 'Microsoft')
 Insight1: 
 Type: outlier-temporal
 Score: 0.5946041556439857
-Description: The Sale of Year 2013 of Brand all Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brands of Location all Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locations is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands, Locations.
+Description: The Sale of Year 2013 of Brand all Brands of Location all Locations is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands, Locations.
 
 Insight2: 
 Type: dominance
@@ -11571,7 +11571,7 @@ Description: The Sale of North America dominates among all Locations.
 Insight3: 
 Type: outlier-temporal
 Score: 0.17415981112050066
-Description: The Sale of Year 2019 of Brand all Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brands of Location all Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locations is an outlier, which is significantly lower than the normal Sale of other Years in the corresponding Brands, Locations.
+Description: The Sale of Year 2019 of Brand all Brands of Location all Locations is an outlier, which is significantly lower than the normal Sale of other Years in the corresponding Brands, Locations.
 
 Insight4: 
 Type: evenness
@@ -11776,7 +11776,7 @@ Header: ('Europe', 'MAR', 'Microsoft')
 Insight1: 
 Type: outlier-temporal
 Score: 0.5200003331365456
-Description: The Sale of Year 2020 of Brand all Brandsall Brands is an outlier, which is significantly lower than the normal Sale of other Years in the corresponding Brands.
+Description: The Sale of Year 2020 of Brand all Brands is an outlier, which is significantly lower than the normal Sale of other Years in the corresponding Brands.
 
 Insight2: 
 Type: evenness
@@ -11961,7 +11961,7 @@ Header: ('Microsoft', 'SEP')
 Insight1: 
 Type: outlier-temporal
 Score: 0.5614057743877529
-Description: The Sale of Year 2014 of Brand all Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brands of Location all Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locationsall Locations is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands, Locations.
+Description: The Sale of Year 2014 of Brand all Brands of Location all Locations is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands, Locations.
 
 Insight2: 
 Type: dominance
@@ -12158,7 +12158,7 @@ Header: ('Japan', 'Microsoft')
 Insight1: 
 Type: outlier-temporal
 Score: 0.5379957542114076
-Description: The Sale of Year 2014 of Brand all Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brands of Season all Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasons is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands, Seasons.
+Description: The Sale of Year 2014 of Brand all Brands of Season all Seasons is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands, Seasons.
 
 ====================================================================================================
 Header: ('Japan', 'MAR', 'Microsoft')
@@ -12443,7 +12443,7 @@ Header: ('JUN', 'Microsoft', 'North America')
 Insight1: 
 Type: outlier-temporal
 Score: 0.585544734748237
-Description: The Sale of Year 2013 of Brand all Brandsall Brands is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands.
+Description: The Sale of Year 2013 of Brand all Brands is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands.
 
 Insight2: 
 Type: evenness
@@ -12500,7 +12500,7 @@ Header: ('Microsoft', 'North America', 'SEP')
 Insight1: 
 Type: outlier-temporal
 Score: 0.572396211217744
-Description: The Sale of Year 2014 of Brand all Brandsall Brands is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands.
+Description: The Sale of Year 2014 of Brand all Brands is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands.
 
 Insight2: 
 Type: evenness
@@ -12526,7 +12526,7 @@ Header: ('Microsoft', 'Other')
 Insight1: 
 Type: outlier-temporal
 Score: 0.5159859912265733
-Description: The Sale of Year 2014 of Brand all Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brandsall Brands of Season all Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasonsall Seasons is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands, Seasons.
+Description: The Sale of Year 2014 of Brand all Brands of Season all Seasons is an outlier, which is significantly higher than the normal Sale of other Years in the corresponding Brands, Seasons.
 
 Insight2: 
 Type: skewness
