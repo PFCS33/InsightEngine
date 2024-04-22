@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b8aaf42-a88e-4d60-8ea0-acc1aaf0ca61" name="Changes" comment="4/20 update iTable">
-      <change afterPath="$PROJECT_DIR$/results/388c2aca-eb65-4e47-a00e-c061652402ee/console_sales_flat.csv.json" afterDir="false" />
+    <list default="true" id="2b8aaf42-a88e-4d60-8ea0-acc1aaf0ca61" name="Changes" comment="fix bug: &quot;all locations&quot; error">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/insight.py" beforeDir="false" afterPath="$PROJECT_DIR$/insight.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table.py" beforeDir="false" afterPath="$PROJECT_DIR$/table.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vis_list.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vis_list.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vis_list_VegaLite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vis_list_VegaLite.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +67,7 @@
       <recent name="D:\1-WORK\Github\InsightEngine\record_file" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.connect_LLM_sample_test">
     <configuration name="connectLLM" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="iTableInsight" />
       <option name="ENV_FILES" value="" />
@@ -165,8 +162,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.connect_LLM_sample_test" />
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.connection_test" />
         <item itemvalue="Python.connectLLM" />
       </list>
@@ -239,7 +236,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713613144159</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fix bug: &quot;all locations&quot; error">
+      <option name="closed" value="true" />
+      <created>1713693999039</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1713693999039</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,7 +268,8 @@
     <MESSAGE value="update 4/9" />
     <MESSAGE value="add parse response into group and reason" />
     <MESSAGE value="4/20 update iTable" />
-    <option name="LAST_COMMIT_MESSAGE" value="4/20 update iTable" />
+    <MESSAGE value="fix bug: &quot;all locations&quot; error" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bug: &quot;all locations&quot; error" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -302,6 +308,11 @@
           <url>file://$PROJECT_DIR$/insight.py</url>
           <line>164</line>
           <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/connect_LLM_sample_test.py</url>
+          <line>643</line>
+          <option name="timeStamp" value="58" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
