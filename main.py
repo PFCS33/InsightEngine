@@ -1,3 +1,4 @@
+import json
 import os
 import uuid
 from flask import Flask, request, jsonify
@@ -5,10 +6,12 @@ from flask_cors import CORS, cross_origin
 from werkzeug.utils import secure_filename
 from dataSource import DataSource
 from table import HierarchicalTable
-from connect_LLM_sample_test import read_vis_list
+from connect_LLM_sample_test import *
+from query_for_server import *
 
 global data_table
 global node_id
+global header_list
 global insight_list
 
 app = Flask(__name__)
@@ -67,30 +70,96 @@ def get_node_id():
 
 @app.route('/panel/<int:id>', methods=['GET'])
 @cross_origin()
-def get_node_detail(id):
-    # 在这里编写查询指定 id 的详细信息的逻辑
-    # 这里假设根据 id 查询到的详细信息如下
-    data_scope = {
-        "Company": "Sony",
-        "Brand": "*",
-        "Location": "*",
-        "Season": "DEC",
-        "Year": 2013
-    }
+def get_node_detail(realid):
+    item = get_insight_by_id(insight_list, realid)
+    data_scope = convert_header_to_data_scope(item['Header'])
+
     response = {
         "code": 200,
         "msg": "",
         "data": {
             "dataScope": data_scope,
-            "type": "dominance",
-            "score": 0.878957,
-            "category": "point",
-            "description": "Culpa Lorem laboris tempor exercitation magna tempor tempor exercitation velit veniam elit ut.Culpa Lorem laboris tempor exercitation magna tempor tempor exercitation velit veniam elit ut."
+            "type": item['Type'],
+            "score": item['Score'],
+            "category": item['Category'],
+            "description": item['Description']
         }
     }
     return jsonify(response)
 
 
+@app.route('/filter/scope', methods=['POST'])
+@cross_origin()
+def post_data_scope(data_scope):
+    header = convert_data_scope_to_header(data_scope)
+    header = str(header)
+
+    insights_info = get_insight_vega_by_header(header, insight_list)
+
+    response = {
+        "code": 200,
+        "msg": "",
+        "data": {
+            "insights": insights_info
+        }
+    }
+    return jsonify(response)
+
+
+@app.route('/panel/id-list', methods=['POST'])
+@cross_origin()
+def post_id_list():
+    id_list = request.json
+    vl_list = []
+
+    for id in id_list:
+        vl_spec = get_vega_lite_spec_by_id(id, insight_list)
+        vl_list.append(vl_spec)
+
+    response = {
+        "code": 200,
+        "msg": "",
+        "data": {
+            "vlList": vl_list
+        }
+    }
+
+    return jsonify(response)
+
+
+@app.route('/question/data', methods=['POST'])
+@cross_origin()
+def get_next_insights():
+    data = request.json
+    question_id = data.get('id')
+    question_content = data.get('content')
+
+    # 假设 nodes 是包含所有 insight 信息的列表
+    # 这里需要根据你的实际数据结构来获取 nodes
+    nodes = {...}  # 假设这里是你的 insight 列表
+
+    # 构建响应的 nodes 列表
+    next_nodes = []
+    for node in nodes:
+        next_node = {
+            "id": node.get('id'),
+            "real_id": node.get('real_id'),
+            "type": node.get('type'),
+            "category": node.get('category'),
+            "relationship": node.get('relationship'),
+            "vega-lite": node.get('vega-lite')
+        }
+        next_nodes.append(next_node)
+
+    # 构建响应
+    response = {
+        "code": 200,
+        "msg": "",
+        "data": {
+            "nodes": next_nodes
+        }
+    }
+    return jsonify(response)
 
 
 def create_table(name, path, req_id):
@@ -105,7 +174,8 @@ def create_table(name, path, req_id):
 
 if __name__ == '__main__':
     file_path = 'vis_list.txt'
-    insight_list = read_vis_list(file_path)
+    header_list = read_vis_list(file_path)
+    insight_list = read_vis_list_into_insights('vis_list_VegaLite.txt')
 
     app.run(debug=True)
 
