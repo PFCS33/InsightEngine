@@ -1,20 +1,19 @@
 import datetime
-
 import openai
 import ast
 import os
 import config_api
+import re
 
 proxy = {
     'http': 'http://localhost:7890',
     'https': 'http://localhost:7890'
 }
-
 openai.proxy = proxy
-
-# gpt4.0 key
-
 openai.api_key = config_api.api_key
+
+global header_dict
+
 
 question1 = """
 You are assisting me in exploring a dataset to analyze patterns and extract insights. Data exploration involves filtering data to extract subspaces and analyzing these subspaces to identify important patterns, known as insights.
@@ -177,6 +176,7 @@ def get_insight_by_header(header_str, header_list):
                     'Insight': f"Insight {i}",
                     'Type': insight['Type'],
                     'Score': insight['Score'],
+                    'Category': insight['Category'],
                     'Description': insight['Description']
                 }
                 insights_info.append(insight_info)
@@ -271,12 +271,28 @@ def group_elaboration_headers(input_header, elaboration_headers, attribute_to_co
     return groups
 
 
+table_structure = {
+    'Company': ['Nintendo', 'Sony', 'Microsoft'],
+    'Brand': ['Nintendo 3DS (3DS)', 'Nintendo DS (DS)', 'Nintendo Switch (NS)', 'Wii (Wii)', 'Wii U (WiiU)',
+              'PlayStation 3 (PS3)', 'PlayStation 4 (PS4)', 'PlayStation Vita (PSV)', 'Xbox 360 (X360)',
+              'Xbox One (XOne)'],
+    'Location': ['Europe', 'Japan', 'North America', 'Other'],
+    'Season': ['DEC', 'JUN', 'MAR', 'SEP'],
+    'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']
+}
+
 same_level_groups = {}
 generalization_groups = {}
 elaboration_groups = {}
 
 
-def get_related_subspace(input_header_str, header_dict):
+def get_related_subspace(input_header_str):
+    global header_dict
+    # read in header for search (external part of ReAct)
+    with open('headers.txt', 'r') as file:
+        header_dict = [tuple(str(item) if isinstance(item, int) else item for item in eval(line.strip())) for line in
+                       file]
+
     # transform to tuple
     input_header = ast.literal_eval(input_header_str)
     same_level_headers = []
@@ -363,7 +379,7 @@ These subspaces are categorized into three types based on their hierarchical rel
 same-level, elaboration, and generalization. Please select a group that is most likely to solve my current problem \
 as the next direction for exploration, and provide the reason."""
     question3 += "Related Subspaces List:\n"
-    grouping_string = get_related_subspace(crt_header, header_dict)
+    grouping_string = get_related_subspace(crt_header)
     # for i, headers in enumerate(related_headers_list, start=1):
     #     # if i == 1:
     #     #     question3 += "Same Level Headers:\n"
@@ -448,7 +464,7 @@ def parse_response_group(response):
     return response_list
 
 
-def parse_response_select_group(response):
+def parse_response_select_group(response, query):
     lines = response.split("\n")
     group_type = None
     group_criteria = None
@@ -478,7 +494,8 @@ def parse_response_select_group(response):
     sort_group_prompt = "You have selected a group of headers that best match the question: \n"
     sort_insight_prompt = "The following are the headers in the selected group and the insight information in each header.\n"
     header_count = 1
-    insights_info_dict = {}
+    headers_info_dict = {}
+    insights_info_dict = []
 
     for group_key, group_value in groups_list.items():
         if group_key == group_criteria:
@@ -486,24 +503,78 @@ def parse_response_select_group(response):
             sort_group_prompt += f"Group Criteria: {group_criteria}, this group is a subdivision of the current subspace in the '{group_criteria}' column dimension.\n"
             sort_group_prompt += "Headers: \n"
             headers_list = group_value['headers']
+
+            insight_count = 1
+
             for header in headers_list:
                 # get insight in header
                 insights_info = get_insight_by_header(str(header), header_list)
                 sort_group_prompt += f"{header}\n"
                 if insights_info:
-                    insights_info_dict[str(header)] = insights_info
-                    sort_insight_prompt += f"Header {header_count}: {header}\n"
-                    insight_count = 1
+                    headers_info_dict[str(header)] = insights_info
+                    # sort_insight_prompt += f"Header {header_count}: {header}\n"
+                    # insight_count = 1
                     for insight_info in insights_info:
-                        sort_insight_prompt += f"  Insight {insight_count}:\n"
-                        sort_insight_prompt += f"    Type: {insight_info['Type']}\n"
-                        sort_insight_prompt += f"    Score: {insight_info['Score']}\n"
-                        sort_insight_prompt += f"    Description: {insight_info['Description']}\n"
+                        # sort_insight_prompt += f"  Insight {insight_count}:\n"
+                        # sort_insight_prompt += f"    Type: {insight_info['Type']}\n"
+                        # sort_insight_prompt += f"    Score: {insight_info['Score']}\n"
+                        # sort_insight_prompt += f"    Description: {insight_info['Description']}\n"
+                        insight_type = insight_info['Type']
+                        insight_score = insight_info['Score']
+                        insight_category = insight_info['Category']
+                        insight_description = insight_info['Description']
+
+                        insights_info_dict.append({"Header": header, "Type": insight_type, "Score": insight_score,
+                                             "Category": insight_category, "Description": insight_description})
+
+                        sort_insight_prompt += f"Insight {insight_count}: In subspace {header}, {insight_info['Description']}\n"
                         insight_count += 1
                     header_count += 1
-            return sort_group_prompt, insights_info_dict, sort_insight_prompt, reason
+            sort_insight_prompt += f"""\nNext, you need to rank the insights provided based on the following criteria:
+1. Insight description, which includes information about the data patterns observed.
+2. The question: "{query}", which guides the data exploration process and helps in selecting relevant insights.
+
+Your task is to identify the top three insights that contain pattern information most effectively addressing the current question. Please rank the insights based on these criteria, with the most relevant insights listed first, and explain your reasons for selecting them.
+Your answer must follow the format below: 
+1. Insight x. Reason: xxx
+2. Insight x. Reason: xxx
+3. ...
+For example:
+1. Insight 2. Reason: The reason why I choose Insight 2 as the most relevant insight is that ...
+2. Insight 1. Reason: The reason why I choose Insight 1 as the second relevant insight is that ...
+3. Insight 4. Reason: The reason why I choose Insight 4 as the third relevant insight is that ...
+...
+"""
+            return sort_group_prompt, headers_info_dict, insights_info_dict, sort_insight_prompt, reason
 
     return None
+
+
+def parse_response_select_insight(response, insights_info_dict, insight_list):
+    response_list = re.findall(r'Insight (\d+)\. Reason: (.+)', response)
+    next_nodes = []
+    for res in response_list:
+        # id = res[0]
+        reason = res[1]
+        item = insights_info_dict[int(res[0])]
+
+        # TODO: set a realid-insights_info_dict-id table
+        for index, insight in enumerate(insight_list):
+            if insight["Header"] == item['Header'] and insight["Score"] == item['Score']:
+                realid = index
+                vega = insight["Vega-Lite"]
+                break
+
+        next_node = {
+            "id": 0,  # visualConter.getVisualId(),
+            "real_id": realid,
+            "type": item['Type'],
+            "category": item['Category'],
+            "relationship": reason,
+            "vega-lite": vega
+        }
+        next_nodes.append(next_node)
+    return next_nodes
 
 
 def from_header_get_query(main_query, crt_header, next_header):
@@ -556,7 +627,7 @@ def qa_process():
             f.write(f"Q: \n{question2 + question3}\n\nA: \n{response}\n")
         print(f"Conversation {iteration} ended.")
 
-        sort_group_prompt, insights_info_list, sort_insight_prompt, reason = parse_response_select_group(response)
+        sort_group_prompt, insights_info_list, sort_insight_prompt, reason = parse_response_select_group(response, query)
         sort_group_prompt += f"""Next, you need to rank the headers within the group. Considering the current subspace: "{crt_header}", and the question: "{query}", which header is most likely to contain key information for answering the question? Please sort the headers within the group in order of importance, from highest to lowest.\n"""
         format_string = """
 Your answer must follow the format below: 
@@ -597,7 +668,7 @@ For example:
 ...
 """
         # let LLM sort insights
-        response = get_response(sort_group_prompt)
+        response = get_response(sort_insight_prompt)
         with open(file_path, 'a') as f:
             f.write("\n")
             f.write('=' * 200)
@@ -645,18 +716,13 @@ For example:
 
 if __name__ == "__main__":
     # read in vis_list
-    file_path = 'vis_list.txt'
-    header_list = read_vis_list(file_path)
-    insight_list = read_vis_list_into_insights(file_path)
+    header_list = read_vis_list('vis_list.txt')
+    insight_list = read_vis_list_into_insights('vis_list.txt')
 
-    id = 50
-    item = get_insight_by_id(insight_list, id)
-    print(item)
 
-    header = ('Europe', 'MAR', 'Nintendo Switch (NS)')
-    data_scope = convert_header_to_data_scope(header)
-    print(data_scope)
 
+
+    global header_dict
     # read in header for search (external part of ReAct)
     with open('headers.txt', 'r') as file:
         header_dict = [tuple(str(item) if isinstance(item, int) else item for item in eval(line.strip())) for line in

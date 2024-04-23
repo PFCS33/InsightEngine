@@ -131,25 +131,11 @@ def post_id_list():
 @cross_origin()
 def get_next_insights():
     data = request.json
-    question_id = data.get('id')
-    question_content = data.get('content')
+    insight_id = data.get('id')
+    query = data.get('content')
 
-    # 假设 nodes 是包含所有 insight 信息的列表
-    # 这里需要根据你的实际数据结构来获取 nodes
-    nodes = {...}  # 假设这里是你的 insight 列表
-
-    # 构建响应的 nodes 列表
-    next_nodes = []
-    for node in nodes:
-        next_node = {
-            "id": node.get('id'),
-            "real_id": node.get('real_id'),
-            "type": node.get('type'),
-            "category": node.get('category'),
-            "relationship": node.get('relationship'),
-            "vega-lite": node.get('vega-lite')
-        }
-        next_nodes.append(next_node)
+    item = insight_list[insight_id]
+    next_nodes = qa_LLM(query, item)
 
     # 构建响应
     response = {
@@ -180,10 +166,3 @@ if __name__ == '__main__':
     app.run(debug=True)
 
 
-# if __name__ == '__main__':
-#     #  get dataSource
-#     name = filename
-#     req_id = str(uuid.uuid4())
-#     data_source = DataSource(name, filepath, req_id)
-#     data_table = HierarchicalTable(data_source)
-#     result = data_table.generate_all_results()

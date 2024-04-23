@@ -1,4 +1,7 @@
 import json
+from connect_LLM_sample_test import get_related_subspace, get_response, parse_response_select_group, read_vis_list, \
+    parse_response_select_insight
+
 
 # get header list
 def read_vis_list_vegalite(file_path):
@@ -34,6 +37,7 @@ def read_vis_list_vegalite(file_path):
                 i += 1
     return header_list_vegalite
 
+
 # insight list, fully info
 def read_vis_list_into_insights(file_path):
     global insight_list
@@ -58,13 +62,15 @@ def read_vis_list_into_insights(file_path):
                         index = data_str.index('Vega-Lite Json: ')
                         insight_vegalite = data_str[index + len('Vega-Lite Json: '):]
                         insight_list.append({"Header": header, "Type": insight_type, "Score": insight_score,
-                                             "Category": insight_category, "Description": insight_description, "Vega-Lite": insight_vegalite})
+                                             "Category": insight_category, "Description": insight_description,
+                                             "Vega-Lite": insight_vegalite})
                         i += 6
                     else:
                         i += 1
             else:
                 i += 1
     return insight_list
+
 
 def get_insight_vega_by_header(header_str, insight_list):
     header = eval(header_str)
@@ -109,6 +115,7 @@ table_structure = {
     'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']
 }
 
+
 def convert_header_to_data_scope(header):
     data_scope = {
         'Company': '*',
@@ -124,6 +131,7 @@ def convert_header_to_data_scope(header):
 
     return {'dataScope': data_scope}
 
+
 def convert_data_scope_to_header(data_scope):
     data_dict = json.loads(data_scope)
     header = []
@@ -134,10 +142,82 @@ def convert_data_scope_to_header(data_scope):
     return tuple(header)
 
 
-insight_list = read_vis_list_into_insights('vis_list_VegaLite.txt')
-id_list = [1, 4, 6, 88]
-vl_list = []
+question2_prompt = """
+Next, I will provide you with some other subspaces related to the current subspace in terms of header structure. 
+"""
 
-for id in id_list:
-    vl_spec = get_vega_lite_spec_by_id(id, insight_list)
-    vl_list.append(vl_spec)
+
+def qa_LLM(query, item):
+    question2 = combine_question2(query, item)
+
+    question3 = combine_question3(query, item)
+    # let LLM select one group that best matches the question and crt subspace
+    response = get_response(question2 + question3)
+
+    sort_group_prompt, headers_info_dict, insights_info_dict, sort_insight_prompt, reason = parse_response_select_group(
+        response, query)
+
+    # let LLM sort insights
+    response = get_response(sort_insight_prompt)
+
+    next_nodes = parse_response_select_insight(response, insights_info_dict, insight_list)
+
+    return next_nodes
+
+
+def combine_question2(query, item):
+    crt_header = str(item['Header'])
+
+    question2 = "Question: " + query + "\n"
+    question2 += "Current Subspace: " + str(crt_header) + "\n"
+    question2 += "Insight: \n"
+
+    question2 += "Type: " + item['Type'] + "\n"
+    question2 += "Score: " + str(item['Score']) + "\n"
+    question2 += "Description: " + item['Description'] + "\n"
+    question2 += question2_prompt
+
+    return question2
+
+
+def combine_question3(query, item):
+    crt_header = str(item['Header'])
+
+    # question contains only the related headers not insight-info
+    question3 = """You already know the current data subspace and a problem that needs to be solved, and next we need to constantly \
+change the data subspace to analyze the data. I will provide you with a "Related Subspaces List," \
+which lists other subspaces related to the current subspace.
+These subspaces are categorized into three types based on their hierarchical relationship with the current subspace: \
+same-level, elaboration, and generalization. Please select a group that is most likely to solve my current problem \
+as the next direction for exploration, and provide the reason."""
+    question3 += "Related Subspaces List:\n"
+    grouping_string = get_related_subspace(crt_header)
+    question3 += grouping_string
+
+    repeat_str = """Please note that my current subspace is: {} , and the question need to be solved is: "{}". \
+Considering the subspace groups mentioned above, select one group that best matches the question, and provide the reason for your choice."""
+    repeat_str = repeat_str.format(str(crt_header), query)
+    question3 += repeat_str
+
+    response_format = """Your answer should follow the format below:
+Group type: {}
+Group Criteria: {}
+Reason: {}
+Among them, Group type is used to identify the three categories of Same-level group, Elaboration group, and Generalization group, and Group Criteria is used to determine specific groups within the category.
+For example:
+Group type: Same-level groups
+Group Criteria: Brand
+Reason: The reason for choosing this group is that ...
+"""
+    question3 += response_format
+    return question3
+
+
+# test
+header_list = read_vis_list('vis_list.txt')
+insight_list = read_vis_list_into_insights('vis_list_VegaLite.txt')
+insight_id = 1
+query = "I want to analyze the sales performance of Nintendo Switch (NS) and Nintendo 3DS (3DS)."
+
+item = insight_list[insight_id]
+prompt = qa_LLM(query, item)
