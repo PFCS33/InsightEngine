@@ -11,7 +11,6 @@ from query_for_server import *
 
 global data_table
 global node_id
-global header_list
 global insight_list
 
 app = Flask(__name__)
@@ -51,6 +50,53 @@ def upload_table():
 
     # return the result to frontend
     return jsonify(result)
+
+
+@app.route('/graph/data', methods=['GET'])
+@cross_origin()
+def get_graph_data():
+    columnInfo = {
+        "Company": ["*", "Nintendo", "Sony", "Microsoft"],
+        "Brand": ["*", "Nintendo 3DS (3DS)", "Nintendo DS (DS)", "Nintendo Switch (NS)", "Wii (Wii)", "Wii U (WiiU)", "PlayStation 3 (PS3)", "PlayStation 4 (PS4)", "PlayStation Vita (PSV)", "Xbox 360 (X360)", "Xbox One (XOne)"],
+        "Location": ["*", "Europe", "Japan", "North America", "Other"],
+        "Season": ["*", "MAR", "JUN", "SEP", "DEC"],
+        "Year": ["*", 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020]
+    }
+
+    # TODO set init nodes
+    nodes = [
+        {
+            "id": 1,
+            "realId": 1,
+            "type": "dominance",
+            "category": "point",
+            "vegaLite": "{'data': {'values': [{'category': 'MAR', 'value': 1300.0}, {'category': 'JUN', 'value': 360.0}, {'category': 'SEP', 'value': 390.0}, {'category': 'DEC', 'value': 440.0}]}, 'mark': {'type': 'arc', 'innerRadius': 5, 'stroke': '#fff'}, 'encoding': {'theta': {'field': 'value', 'type': 'quantitative', 'stack': true}, 'color': {'field': 'category', 'type': 'nominal', 'legend': null}, 'order': {'field': 'value', 'type': 'quantitative', 'sort': 'descending'}, 'radius': {'field': 'value', 'scale': {'type': 'linear', 'zero': true, 'rangeMin': 20}}, 'tooltip': [{'field': 'category', 'type': 'nominal'}, {'field': 'value', 'type': 'quantitative'}]}}"
+        },
+        {
+            "id": 2,
+            "realId": 2,
+            "type": "skewness",
+            "category": "shape",
+            "vegaLite": "{'data': {'values': [{'category': 'MAR', 'value': 1300.0}, {'category': 'JUN', 'value': 360.0}, {'category': 'SEP', 'value': 390.0}, {'category': 'DEC', 'value': 440.0}]}, 'mark': {'type': 'arc', 'innerRadius': 5, 'stroke': '#fff'}, 'encoding': {'theta': {'field': 'value', 'type': 'quantitative', 'stack': true}, 'color': {'field': 'category', 'type': 'nominal', 'legend': null}, 'order': {'field': 'value', 'type': 'quantitative', 'sort': 'descending'}, 'radius': {'field': 'value', 'scale': {'type': 'linear', 'zero': true, 'rangeMin': 20}}, 'tooltip': [{'field': 'category', 'type': 'nominal'}, {'field': 'value', 'type': 'quantitative'}]}}"
+        },
+        {
+            "id": 3,
+            "realId": 10,
+            "type": "compound",
+            "category": "correlation",
+            "vegaLite": "{'data': {'values': [{'category': 'MAR', 'value': 1300.0}, {'category': 'JUN', 'value': 360.0}, {'category': 'SEP', 'value': 390.0}, {'category': 'DEC', 'value': 440.0}]}, 'mark': {'type': 'arc', 'innerRadius': 5, 'stroke': '#fff'}, 'encoding': {'theta': {'field': 'value', 'type': 'quantitative', 'stack': true}, 'color': {'field': 'category', 'type': 'nominal', 'legend': null}, 'order': {'field': 'value', 'type': 'quantitative', 'sort': 'descending'}, 'radius': {'field': 'value', 'scale': {'type': 'linear', 'zero': true, 'rangeMin': 20}}, 'tooltip': [{'field': 'category', 'type': 'nominal'}, {'field': 'value', 'type': 'quantitative'}]}}"
+        }
+    ]
+
+    response = {
+        "code": 200,
+        "msg": "",
+        "data": {
+            "columnInfo": columnInfo,
+            "nodes": nodes
+        }
+    }
+    return jsonify(response)
 
 
 @app.route('/filter/id', methods=['GET'])
@@ -160,9 +206,8 @@ def create_table(name, path, req_id):
 
 if __name__ == '__main__':
     file_path = 'vis_list.txt'
-    header_list = read_vis_list(file_path)
     insight_list = read_vis_list_into_insights('vis_list_VegaLite.txt')
 
-    app.run(debug=True)
+    app.run(debug=True, port=5000)
 
 

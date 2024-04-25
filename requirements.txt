@@ -1,0 +1,7 @@
+flask==1.1.2
+werkzeug==1.0.1
+pandas==1.2.4
+numpy==1.20.1
+openai==0.28.0
+openpyxl==3.0.7
+scipy==1.6.2

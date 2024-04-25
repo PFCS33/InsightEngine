@@ -8,7 +8,6 @@ import itertools
 import os
 import copy
 import pickle
-import insight
 
 # subspace_list = {}
 cnt_insight_num = 0
