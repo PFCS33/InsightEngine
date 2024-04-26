@@ -55,6 +55,11 @@ class HierarchicalTable:
         header_dict = self.header_dict
 
         print('processing blocks...')
+
+        # calculate insights of source table
+        no_filter = ()
+        source_block_insight, source_subspace_insight = get_insight(str(no_filter), src_data)
+
         # no multi-processing
         # start here
         global cnt_insight_num, cnt_header_num, subspace_insight, this_insight

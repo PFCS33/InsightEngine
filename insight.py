@@ -303,6 +303,8 @@ def save_insight(header, scope_data, ins_category, ins_type, ins_score, header_d
 
     # avoid duplicate headers caused by different orders
     sorted_header = tuple(sorted(map(str, header)))
+    if sorted_header == ('(', ')'):
+        sorted_header = ()
     insight = Insight(scope_data, breakdown, aggregate)
     insight.type = ins_type
     insight.score = ins_score
