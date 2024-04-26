@@ -216,8 +216,16 @@ Reason: The reason for choosing this group is that ...
 # test
 header_list = read_vis_list('vis_list.txt')
 insight_list = read_vis_list_into_insights('vis_list_VegaLite.txt')
-insight_id = 1
-query = "I want to analyze the sales performance of Nintendo Switch (NS) and Nintendo 3DS (3DS)."
+data_scope = {
+    "Company": "*",
+    "Brand": "*",
+    "location": "*",
+    "Season": "*",
+    "Year": "*"
+}
+data_scope_str = json.dumps(data_scope)
 
-item = insight_list[insight_id]
-prompt = qa_LLM(query, item)
+header = convert_data_scope_to_header(data_scope_str)
+header = str(header)
+insights_info = get_insight_vega_by_header(header, insight_list)
+

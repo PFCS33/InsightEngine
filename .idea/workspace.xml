@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b8aaf42-a88e-4d60-8ea0-acc1aaf0ca61" name="Changes" comment="add api post question-data">
-      <change beforePath="$PROJECT_DIR$/.idea/iTableInsight.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/iTableInsight.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="2b8aaf42-a88e-4d60-8ea0-acc1aaf0ca61" name="Changes" comment="add process source table">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/insight.py" beforeDir="false" afterPath="$PROJECT_DIR$/insight.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table.py" beforeDir="false" afterPath="$PROJECT_DIR$/table.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vis_list.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +56,7 @@
     "Python.data_process.executor": "Run",
     "Python.insight.executor": "Debug",
     "Python.main.executor": "Run",
+    "Python.query_for_server.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "true",
@@ -73,7 +70,7 @@
       <recent name="D:\1-WORK\Github\InsightEngine\record_file" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.data_process">
+  <component name="RunManager" selected="Python.query_for_server">
     <configuration name="connect_LLM_sample_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="iTableInsight" />
       <option name="ENV_FILES" value="" />
@@ -190,10 +187,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.query_for_server" />
         <item itemvalue="Python.data_process" />
         <item itemvalue="Python.insight" />
         <item itemvalue="Python.connection_test" />
-        <item itemvalue="Python.query_for_server" />
         <item itemvalue="Python.connect_LLM_sample_test" />
       </list>
     </recent_temporary>
@@ -288,7 +285,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713879339603</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add process source table">
+      <option name="closed" value="true" />
+      <created>1714124254780</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1714124254780</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,7 +320,8 @@
     <MESSAGE value="fix bug: &quot;all locations&quot; error" />
     <MESSAGE value="add api post" />
     <MESSAGE value="add api post question-data" />
-    <option name="LAST_COMMIT_MESSAGE" value="add api post question-data" />
+    <MESSAGE value="add process source table" />
+    <option name="LAST_COMMIT_MESSAGE" value="add process source table" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

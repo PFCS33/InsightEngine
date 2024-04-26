@@ -64,6 +64,8 @@ def get_graph_data():
     }
 
     # TODO set init nodes
+    # insights_info = get_insight_vega_by_header("()", insight_list)
+
     nodes = [
         {
             "id": 1,
