@@ -164,24 +164,24 @@ def get_insight_by_header_id(header_list, id):
     return dataScope, insights_info
 
 
-def get_insight_by_header(header_str, header_list):
+def get_insight_by_header(header_str, insight_list):
     header = eval(header_str)
     # sort for matching
     header = tuple(sorted(map(str, header)))
-    for item in header_list:
+
+    insights_info = []
+    for index, item in enumerate(insight_list):
         if item['Header'] == header:
-            insights_info = []
-            for i, insight in enumerate(item['Insights'], start=1):
-                insight_info = {
-                    'Insight': f"Insight {i}",
-                    'Type': insight['Type'],
-                    'Score': insight['Score'],
-                    'Category': insight['Category'],
-                    'Description': insight['Description']
-                }
-                insights_info.append(insight_info)
-            return insights_info
-    return None
+            insight_info = {
+                'realId': index,
+                'type': item['Type'],
+                'category': item['Category'],
+                'score': item['Score'],
+                'description': item['Description'],
+                'vegaLite': item['Vega-Lite']
+            }
+            insights_info.append(insight_info)
+    return insights_info
 
 
 def combine_question2(query, crt_header, insights_info, crt_insight):
@@ -281,9 +281,7 @@ table_structure = {
     'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']
 }
 
-same_level_groups = {}
-generalization_groups = {}
-elaboration_groups = {}
+global same_level_groups, generalization_groups, elaboration_groups
 
 
 def get_related_subspace(input_header_str):
@@ -326,43 +324,46 @@ def get_related_subspace(input_header_str):
     # Group same_level_headers
     global same_level_groups
     same_level_groups = group_same_level_headers(input_header, same_level_headers, attribute_to_column)
-    same_level_explanation = "\nThe following are groups of same-level headers, which have the same level of subdivision as the current data subspace. Each group consists of headers that are identical to the current data subspace in all elements except one, which represents a different attribute of the data subspace in a particular column."
-    output_string += same_level_explanation + "\n"
-    output_string += "Same-level groups:\n"
-    for (group_criteria,), group_info in same_level_groups.items():
-        output_string += f"Group Criteria: {group_criteria}\n"
-        output_string += f"Explanation: {group_info['template_sentence']}\n"
-        output_string += "Headers:\n"
-        for header in group_info["headers"]:
-            output_string += str(header) + "\n"
-        output_string += "\n"
+    if same_level_groups:
+        same_level_explanation = "\nThe following are groups of same-level headers, which have the same level of subdivision as the current data subspace. Each group consists of headers that are identical to the current data subspace in all elements except one, which represents a different attribute of the data subspace in a particular column."
+        output_string += same_level_explanation + "\n"
+        output_string += "Same-level groups:\n"
+        for (group_criteria,), group_info in same_level_groups.items():
+            output_string += f"Group Criteria: {group_criteria}\n"
+            output_string += f"Explanation: {group_info['template_sentence']}\n"
+            output_string += "Headers:\n"
+            for header in group_info["headers"]:
+                output_string += str(header) + "\n"
+            output_string += "\n"
 
     # Group generalization_headers
     global generalization_groups
     generalization_groups = group_generalization_headers(input_header, generalization_headers, attribute_to_column)
-    generalization_explanation = "\nThe following is the group of generalization headers, which represent the parent or immediate higher-level region of the current data subspace. These headers can be used to expand the context of the current data subspace or provide more general background information."
-    output_string += generalization_explanation + "\n"
-    output_string += "Generalization group:\n"
-    for (group_criteria,), group_info in generalization_groups.items():
-        output_string += f"Group Criteria: {group_criteria}\n"
-        output_string += "Headers:\n"
-        for header in group_info["headers"]:
-            output_string += str(header) + "\n"
-        output_string += "\n"
+    if generalization_groups:
+        generalization_explanation = "\nThe following is the group of generalization headers, which represent the parent or immediate higher-level region of the current data subspace. These headers can be used to expand the context of the current data subspace or provide more general background information."
+        output_string += generalization_explanation + "\n"
+        output_string += "Generalization group:\n"
+        for (group_criteria,), group_info in generalization_groups.items():
+            output_string += f"Group Criteria: {group_criteria}\n"
+            output_string += "Headers:\n"
+            for header in group_info["headers"]:
+                output_string += str(header) + "\n"
+            output_string += "\n"
 
     # Group elaboration_headers
     global elaboration_groups
     elaboration_groups = group_elaboration_headers(input_header, elaboration_headers, attribute_to_column)
-    elaboration_explanation = "\nThe following are groups of elaboration headers, which represent the next level of detail beneath the current data subspace. These headers provide specific details about certain aspects of the current data subspace, helping to drill down into a specific aspect of the data."
-    output_string += elaboration_explanation + "\n"
-    output_string += "Elaboration groups:\n"
-    for group_key, group_info in elaboration_groups.items():
-        output_string += f"Group Criteria: {group_key}\n"
-        output_string += f"Explanation: {group_info['template_sentence']}\n"
-        output_string += "Headers:\n"
-        for header in group_info["headers"]:
-            output_string += str(header) + "\n"
-        output_string += "\n"
+    if elaboration_groups:
+        elaboration_explanation = "\nThe following are groups of elaboration headers, which represent the next level of detail beneath the current data subspace. These headers provide specific details about certain aspects of the current data subspace, helping to drill down into a specific aspect of the data."
+        output_string += elaboration_explanation + "\n"
+        output_string += "Elaboration groups:\n"
+        for group_key, group_info in elaboration_groups.items():
+            output_string += f"Group Criteria: {group_key}\n"
+            output_string += f"Explanation: {group_info['template_sentence']}\n"
+            output_string += "Headers:\n"
+            for header in group_info["headers"]:
+                output_string += str(header) + "\n"
+            output_string += "\n"
 
     # related_headers_list = [same_level_headers, elaboration_headers, generalization_headers]
     # return related_headers_list
@@ -464,7 +465,7 @@ def parse_response_group(response):
     return response_list
 
 
-def parse_response_select_group(response, query):
+def parse_response_select_group(response, query, insight_list):
     lines = response.split("\n")
     group_type = None
     group_criteria = None
@@ -482,11 +483,11 @@ def parse_response_select_group(response, query):
     if group_type is None or group_criteria is None or reason is None:
         return None
 
-    if group_type == "Same-level groups":
+    if "same-level" in group_type.lower():
         groups_list = same_level_groups
-    elif group_type == "Generalization group":  # only one group
+    elif "generalization" in group_type.lower():
         groups_list = generalization_groups
-    elif group_type == "Elaboration groups":
+    elif "elaboration" in group_type.lower():
         groups_list = elaboration_groups
     else:
         return None
@@ -508,7 +509,7 @@ def parse_response_select_group(response, query):
 
             for header in headers_list:
                 # get insight in header
-                insights_info = get_insight_by_header(str(header), header_list)
+                insights_info = get_insight_by_header(str(header), insight_list)
                 sort_group_prompt += f"{header}\n"
                 if insights_info:
                     headers_info_dict[str(header)] = insights_info
@@ -519,15 +520,15 @@ def parse_response_select_group(response, query):
                         # sort_insight_prompt += f"    Type: {insight_info['Type']}\n"
                         # sort_insight_prompt += f"    Score: {insight_info['Score']}\n"
                         # sort_insight_prompt += f"    Description: {insight_info['Description']}\n"
-                        insight_type = insight_info['Type']
-                        insight_score = insight_info['Score']
-                        insight_category = insight_info['Category']
-                        insight_description = insight_info['Description']
+                        insight_type = insight_info['type']
+                        insight_score = insight_info['score']
+                        insight_category = insight_info['category']
+                        insight_description = insight_info['description']
 
                         insights_info_dict.append({"Header": header, "Type": insight_type, "Score": insight_score,
                                              "Category": insight_category, "Description": insight_description})
 
-                        sort_insight_prompt += f"Insight {insight_count}: In subspace {header}, {insight_info['Description']}\n"
+                        sort_insight_prompt += f"Insight {insight_count}: In subspace {header}, {insight_info['description']}\n"
                         insight_count += 1
                     header_count += 1
             sort_insight_prompt += f"""\nNext, you need to rank the insights provided based on the following criteria:
@@ -545,28 +546,34 @@ For example:
 3. Insight 4. Reason: The reason why I choose Insight 4 as the third relevant insight is that ...
 ...
 """
-            return sort_group_prompt, headers_info_dict, insights_info_dict, sort_insight_prompt, reason
+            # return sort_group_prompt, headers_info_dict, insights_info_dict, sort_insight_prompt, reason
+            return insights_info_dict, sort_insight_prompt, reason
 
     return None
 
 
-def parse_response_select_insight(response, insights_info_dict, insight_list):
+def approx_equal(a, b, tolerance=1e-6):
+    return abs(a - b) < tolerance
+
+
+def parse_response_select_insight(response, insights_info_dict, insight_list, node_id):
     response_list = re.findall(r'Insight (\d+)\. Reason: (.+)', response)
     next_nodes = []
     for res in response_list:
         # id = res[0]
         reason = res[1]
-        item = insights_info_dict[int(res[0])]
+        item = insights_info_dict[int(res[0]) - 1]
 
         # TODO: set a realid-insights_info_dict-id table
         for index, insight in enumerate(insight_list):
-            if insight["Header"] == item['Header'] and insight["Score"] == item['Score']:
+            if tuple(sorted(map(str, insight["Header"]))) == tuple(sorted(map(str, item['Header']))) and approx_equal(insight["Score"], item['Score']):
                 realid = index
                 vega = insight["Vega-Lite"]
                 break
 
+        node_id += 1
         next_node = {
-            "id": 0,  # visualConter.getVisualId(),
+            "id": node_id,
             "real_id": realid,
             "type": item['Type'],
             "category": item['Category'],
@@ -574,7 +581,7 @@ def parse_response_select_insight(response, insights_info_dict, insight_list):
             "vega-lite": vega
         }
         next_nodes.append(next_node)
-    return next_nodes
+    return next_nodes, node_id
 
 
 def from_header_get_query(main_query, crt_header, next_header):

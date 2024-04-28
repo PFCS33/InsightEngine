@@ -1,7 +1,7 @@
 import json
 from connect_LLM_sample_test import get_related_subspace, get_response, parse_response_select_group, read_vis_list, \
     parse_response_select_insight
-
+from asyncio import run
 
 # get header list
 def read_vis_list_vegalite(file_path):
@@ -86,7 +86,7 @@ def get_insight_vega_by_header(header_str, insight_list):
                 'category': item['Category'],
                 'score': item['Score'],
                 'description': item['Description'],
-                'vega-lite': item['Vega-Lite']
+                'vegaLite': item['Vega-Lite']
             }
             insights_info.append(insight_info)
     return insights_info
@@ -94,8 +94,10 @@ def get_insight_vega_by_header(header_str, insight_list):
 
 def get_vega_lite_spec_by_id(id, insight_list):
     # id: insight id (node real-id)
+    print(id)
     item = insight_list[id]
     vl_spec = item['Vega-Lite']
+    print(vl_spec)
     return vl_spec
 
 
@@ -125,11 +127,13 @@ def convert_header_to_data_scope(header):
         'Year': '*'
     }
 
-    for key, value in zip(table_structure.keys(), header):
-        if value in table_structure[key]:
-            data_scope[key] = value
+    for value in header:
+        for key, values_list in table_structure.items():
+            if value in values_list:
+                data_scope[key] = value
+                break
 
-    return {'dataScope': data_scope}
+    return data_scope
 
 
 def convert_data_scope_to_header(data_scope):
@@ -147,22 +151,24 @@ Next, I will provide you with some other subspaces related to the current subspa
 """
 
 
-def qa_LLM(query, item):
+async def qa_LLM(query, item, insight_list, node_id):
     question2 = combine_question2(query, item)
 
     question3 = combine_question3(query, item)
     # let LLM select one group that best matches the question and crt subspace
     response = get_response(question2 + question3)
 
-    sort_group_prompt, headers_info_dict, insights_info_dict, sort_insight_prompt, reason = parse_response_select_group(
-        response, query)
+    insights_info_dict, sort_insight_prompt, reason = parse_response_select_group(response, query, insight_list)
 
     # let LLM sort insights
     response = get_response(sort_insight_prompt)
 
-    next_nodes = parse_response_select_insight(response, insights_info_dict, insight_list)
+    next_nodes, node_id = parse_response_select_insight(response, insights_info_dict, insight_list, node_id)
 
-    return next_nodes
+    print(f"next_nodes: {next_nodes}")
+    print("=" * 100)
+
+    return next_nodes, node_id
 
 
 def combine_question2(query, item):
@@ -214,18 +220,16 @@ Reason: The reason for choosing this group is that ...
 
 
 # test
-header_list = read_vis_list('vis_list.txt')
-insight_list = read_vis_list_into_insights('vis_list_VegaLite.txt')
-data_scope = {
-    "Company": "*",
-    "Brand": "*",
-    "location": "*",
-    "Season": "*",
-    "Year": "*"
-}
-data_scope_str = json.dumps(data_scope)
 
-header = convert_data_scope_to_header(data_scope_str)
-header = str(header)
-insights_info = get_insight_vega_by_header(header, insight_list)
+#
+insight_list = read_vis_list_into_insights('vis_list_VegaLite.txt')
+
+# insight_id = 195
+# query = "I want to know why the sale of the brand PlayStation 4 (PS4) is an outlier, what caused the unusually large value of this point?"
+#
+# node_id = 0
+# item = insight_list[insight_id]
+# next_nodes = run(qa_LLM(query, item, insight_list, node_id))
+# #
+# # print(next_nodes)
 

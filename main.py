@@ -8,6 +8,7 @@ from dataSource import DataSource
 from table import HierarchicalTable
 from connect_LLM_sample_test import *
 from query_for_server import *
+from asyncio import run
 
 global data_table
 global node_id
@@ -63,32 +64,20 @@ def get_graph_data():
         "Year": ["*", 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020]
     }
 
-    # TODO set init nodes
-    # insights_info = get_insight_vega_by_header("()", insight_list)
-
-    nodes = [
-        {
-            "id": 1,
-            "realId": 1,
-            "type": "dominance",
-            "category": "point",
-            "vegaLite": "{'data': {'values': [{'category': 'MAR', 'value': 1300.0}, {'category': 'JUN', 'value': 360.0}, {'category': 'SEP', 'value': 390.0}, {'category': 'DEC', 'value': 440.0}]}, 'mark': {'type': 'arc', 'innerRadius': 5, 'stroke': '#fff'}, 'encoding': {'theta': {'field': 'value', 'type': 'quantitative', 'stack': true}, 'color': {'field': 'category', 'type': 'nominal', 'legend': null}, 'order': {'field': 'value', 'type': 'quantitative', 'sort': 'descending'}, 'radius': {'field': 'value', 'scale': {'type': 'linear', 'zero': true, 'rangeMin': 20}}, 'tooltip': [{'field': 'category', 'type': 'nominal'}, {'field': 'value', 'type': 'quantitative'}]}}"
-        },
-        {
-            "id": 2,
-            "realId": 2,
-            "type": "skewness",
-            "category": "shape",
-            "vegaLite": "{'data': {'values': [{'category': 'MAR', 'value': 1300.0}, {'category': 'JUN', 'value': 360.0}, {'category': 'SEP', 'value': 390.0}, {'category': 'DEC', 'value': 440.0}]}, 'mark': {'type': 'arc', 'innerRadius': 5, 'stroke': '#fff'}, 'encoding': {'theta': {'field': 'value', 'type': 'quantitative', 'stack': true}, 'color': {'field': 'category', 'type': 'nominal', 'legend': null}, 'order': {'field': 'value', 'type': 'quantitative', 'sort': 'descending'}, 'radius': {'field': 'value', 'scale': {'type': 'linear', 'zero': true, 'rangeMin': 20}}, 'tooltip': [{'field': 'category', 'type': 'nominal'}, {'field': 'value', 'type': 'quantitative'}]}}"
-        },
-        {
-            "id": 3,
-            "realId": 10,
-            "type": "compound",
-            "category": "correlation",
-            "vegaLite": "{'data': {'values': [{'category': 'MAR', 'value': 1300.0}, {'category': 'JUN', 'value': 360.0}, {'category': 'SEP', 'value': 390.0}, {'category': 'DEC', 'value': 440.0}]}, 'mark': {'type': 'arc', 'innerRadius': 5, 'stroke': '#fff'}, 'encoding': {'theta': {'field': 'value', 'type': 'quantitative', 'stack': true}, 'color': {'field': 'category', 'type': 'nominal', 'legend': null}, 'order': {'field': 'value', 'type': 'quantitative', 'sort': 'descending'}, 'radius': {'field': 'value', 'scale': {'type': 'linear', 'zero': true, 'rangeMin': 20}}, 'tooltip': [{'field': 'category', 'type': 'nominal'}, {'field': 'value', 'type': 'quantitative'}]}}"
+    # set init nodes
+    insights_info = get_insight_vega_by_header("()", insight_list)
+    nodes = []
+    for item in insights_info:
+        global node_id
+        node_id += 1
+        node = {
+            "id": node_id,
+            "realId": item['realId'],
+            "type": item['type'],
+            "category": item['category'],
+            "vegaLite": item['vegaLite']
         }
-    ]
+        nodes.append(node)
 
     response = {
         "code": 200,
@@ -116,7 +105,7 @@ def get_node_id():
     return jsonify(response)
 
 
-@app.route('/panel/<int:id>', methods=['GET'])
+@app.route('/panel/<int:realid>', methods=['GET'])
 @cross_origin()
 def get_node_detail(realid):
     item = get_insight_by_id(insight_list, realid)
@@ -138,7 +127,8 @@ def get_node_detail(realid):
 
 @app.route('/filter/scope', methods=['POST'])
 @cross_origin()
-def post_data_scope(data_scope):
+def post_data_scope():
+    data_scope = request.data
     header = convert_data_scope_to_header(data_scope)
     header = str(header)
 
@@ -171,7 +161,6 @@ def post_id_list():
             "vlList": vl_list
         }
     }
-
     return jsonify(response)
 
 
@@ -182,10 +171,10 @@ def get_next_insights():
     insight_id = data.get('id')
     query = data.get('content')
 
+    global node_id
     item = insight_list[insight_id]
-    next_nodes = qa_LLM(query, item)
+    next_nodes, node_id = run(qa_LLM(query, item, insight_list, node_id))
 
-    # 构建响应
     response = {
         "code": 200,
         "msg": "",
@@ -200,13 +189,14 @@ def create_table(name, path, req_id):
     data_source = DataSource(name, path, req_id)
     global data_table
     data_table = HierarchicalTable(data_source)
-    global node_id
-    node_id = 0
     result = data_table.generate_all_results()
 
     return jsonify(result)
 
 if __name__ == '__main__':
+    global node_id
+    node_id = 0
+
     file_path = 'vis_list.txt'
     insight_list = read_vis_list_into_insights('vis_list_VegaLite.txt')
 
