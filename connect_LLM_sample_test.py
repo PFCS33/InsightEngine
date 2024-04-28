@@ -574,11 +574,14 @@ def parse_response_select_insight(response, insights_info_dict, insight_list, no
         node_id += 1
         next_node = {
             "id": node_id,
-            "real_id": realid,
+            "realId": realid,
             "type": item['Type'],
             "category": item['Category'],
             "relationship": reason,
-            "vega-lite": vega
+            "vegaLite": vega,
+            "relType":
+        #     "specialization", 'generalization', 'sameLevel'
+
         }
         next_nodes.append(next_node)
     return next_nodes, node_id

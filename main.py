@@ -93,6 +93,8 @@ def get_graph_data():
 @app.route('/filter/id', methods=['GET'])
 @cross_origin()
 def get_node_id():
+    print("--------------------------------------------")
+    print("get_node_id")
     global node_id
     node_id += 1
     response = {
@@ -102,12 +104,16 @@ def get_node_id():
             "id": node_id
         }
     }
+    print(f"node_id: {node_id}")
     return jsonify(response)
 
 
 @app.route('/panel/<int:realid>', methods=['GET'])
 @cross_origin()
 def get_node_detail(realid):
+    print("--------------------------------------------")
+    print("get_node_detail")
+    print(f"realid: {realid}")
     item = get_insight_by_id(insight_list, realid)
     data_scope = convert_header_to_data_scope(item['Header'])
 
@@ -122,12 +128,16 @@ def get_node_detail(realid):
             "description": item['Description']
         }
     }
+    print(f"response: {response}")
     return jsonify(response)
 
 
 @app.route('/filter/scope', methods=['POST'])
 @cross_origin()
 def post_data_scope():
+    print("--------------------------------------------")
+    print("post_data_scope")
+    print(f"data_scope: {request.data}")
     data_scope = request.data
     header = convert_data_scope_to_header(data_scope)
     header = str(header)
@@ -141,12 +151,16 @@ def post_data_scope():
             "insights": insights_info
         }
     }
+    print(f"response: {response}")
     return jsonify(response)
 
 
 @app.route('/panel/id-list', methods=['POST'])
 @cross_origin()
 def post_id_list():
+    print("--------------------------------------------")
+    print("post_id_list")
+    print(f"id_list: {request.json}")
     id_list = request.json
     vl_list = []
 
@@ -161,15 +175,23 @@ def post_id_list():
             "vlList": vl_list
         }
     }
+    print(f"response: {response}")
     return jsonify(response)
 
 
 @app.route('/question/data', methods=['POST'])
 @cross_origin()
 def get_next_insights():
+    print("--------------------------------------------")
+    print("get_next_insights")
+    print(f"data: {request.json}")
+
     data = request.json
     insight_id = data.get('id')
     query = data.get('content')
+
+    print(f"insight_id: {insight_id}")
+    print(f"query: {query}")
 
     global node_id
     item = insight_list[insight_id]
@@ -182,6 +204,7 @@ def get_next_insights():
             "nodes": next_nodes
         }
     }
+    print(f"response: \n{response}")
     return jsonify(response)
 
 
