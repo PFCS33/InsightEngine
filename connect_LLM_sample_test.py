@@ -229,10 +229,10 @@ def group_same_level_headers(input_header, same_level_headers, attribute_to_colu
             group_criteria = "False"
 
         # Add header to the corresponding group
-        if (group_criteria,) in groups:
-            groups[(group_criteria,)]["headers"].append(header)
+        if group_criteria in groups:
+            groups[group_criteria]["headers"].append(header)
         else:
-            groups[(group_criteria,)] = {"headers": [header], "template_sentence":
+            groups[group_criteria] = {"headers": [header], "template_sentence":
                 f"This group of subspaces replaces the attribute values of the '{group_criteria}' column in the current subspace."}
 
     return groups
@@ -242,10 +242,10 @@ def group_generalization_headers(input_header, generalization_headers, attribute
     groups = {}
     group_criteria = "parent headers of current header"
     for header in generalization_headers:
-        if (group_criteria,) in groups:
-            groups[(group_criteria,)]["headers"].append(header)
+        if group_criteria in groups:
+            groups[group_criteria]["headers"].append(header)
         else:
-            groups[(group_criteria,)] = {"headers": [header], "template_sentence":
+            groups[group_criteria] = {"headers": [header], "template_sentence":
                 f"This group of subspaces replaces the attribute values of the '{group_criteria}' column in the current subspace."}
 
     return groups
@@ -303,6 +303,12 @@ def get_related_subspace(input_header_str):
         for attribute in attributes:
             attribute_to_column[attribute] = column
 
+    categorized_headers = {
+        "same_level_headers": [],
+        "elaboration_headers": [],
+        "generalization_headers": []
+    }
+
     for header in header_dict:
         if len(header) == len(input_header) and sum([1 for i, j in zip(header, input_header) if i == j]) == len(
                 input_header) - 1:
@@ -314,10 +320,13 @@ def get_related_subspace(input_header_str):
 
             if column_input_header == column_header:
                 same_level_headers.append(header)
+                categorized_headers["same_level_headers"].append(header)
         if len(header) == len(input_header) + 1 and all(item in header for item in input_header):
             elaboration_headers.append(header)
+            categorized_headers["elaboration_headers"].append(header)
         if len(header) == len(input_header) - 1 and all(item in input_header for item in header):
             generalization_headers.append(header)
+            categorized_headers["generalization_headers"].append(header)
 
     output_string = ""
 
@@ -328,7 +337,7 @@ def get_related_subspace(input_header_str):
         same_level_explanation = "\nThe following are groups of same-level headers, which have the same level of subdivision as the current data subspace. Each group consists of headers that are identical to the current data subspace in all elements except one, which represents a different attribute of the data subspace in a particular column."
         output_string += same_level_explanation + "\n"
         output_string += "Same-level groups:\n"
-        for (group_criteria,), group_info in same_level_groups.items():
+        for group_criteria, group_info in same_level_groups.items():
             output_string += f"Group Criteria: {group_criteria}\n"
             output_string += f"Explanation: {group_info['template_sentence']}\n"
             output_string += "Headers:\n"
@@ -343,7 +352,7 @@ def get_related_subspace(input_header_str):
         generalization_explanation = "\nThe following is the group of generalization headers, which represent the parent or immediate higher-level region of the current data subspace. These headers can be used to expand the context of the current data subspace or provide more general background information."
         output_string += generalization_explanation + "\n"
         output_string += "Generalization group:\n"
-        for (group_criteria,), group_info in generalization_groups.items():
+        for group_criteria, group_info in generalization_groups.items():
             output_string += f"Group Criteria: {group_criteria}\n"
             output_string += "Headers:\n"
             for header in group_info["headers"]:
@@ -368,7 +377,7 @@ def get_related_subspace(input_header_str):
     # related_headers_list = [same_level_headers, elaboration_headers, generalization_headers]
     # return related_headers_list
 
-    return output_string
+    return output_string, categorized_headers
 
 
 def combine_question3(crt_header, query):
@@ -467,9 +476,9 @@ def parse_response_group(response):
 
 def parse_response_select_group(response, query, insight_list):
     lines = response.split("\n")
-    group_type = None
-    group_criteria = None
-    reason = None
+    group_type = ""
+    group_criteria = ""
+    reason = ""
 
     for line in lines:
         line = line.strip()
@@ -520,13 +529,15 @@ def parse_response_select_group(response, query, insight_list):
                         # sort_insight_prompt += f"    Type: {insight_info['Type']}\n"
                         # sort_insight_prompt += f"    Score: {insight_info['Score']}\n"
                         # sort_insight_prompt += f"    Description: {insight_info['Description']}\n"
+                        insight_realId = insight_info['realId']
                         insight_type = insight_info['type']
                         insight_score = insight_info['score']
                         insight_category = insight_info['category']
                         insight_description = insight_info['description']
+                        insight_vega = insight_info['vegaLite']
 
-                        insights_info_dict.append({"Header": header, "Type": insight_type, "Score": insight_score,
-                                             "Category": insight_category, "Description": insight_description})
+                        insights_info_dict.append({"Header": header, "realId": insight_realId, "Type": insight_type, "Score": insight_score,
+                                             "Category": insight_category, "Description": insight_description, "vegaLite": insight_vega})
 
                         sort_insight_prompt += f"Insight {insight_count}: In subspace {header}, {insight_info['description']}\n"
                         insight_count += 1
@@ -556,7 +567,7 @@ def approx_equal(a, b, tolerance=1e-6):
     return abs(a - b) < tolerance
 
 
-def parse_response_select_insight(response, insights_info_dict, insight_list, node_id):
+def parse_response_select_insight(response, insights_info_dict, categorized_headers, node_id):
     response_list = re.findall(r'Insight (\d+)\. Reason: (.+)', response)
     next_nodes = []
     for res in response_list:
@@ -564,24 +575,23 @@ def parse_response_select_insight(response, insights_info_dict, insight_list, no
         reason = res[1]
         item = insights_info_dict[int(res[0]) - 1]
 
-        # TODO: set a realid-insights_info_dict-id table
-        for index, insight in enumerate(insight_list):
-            if tuple(sorted(map(str, insight["Header"]))) == tuple(sorted(map(str, item['Header']))) and approx_equal(insight["Score"], item['Score']):
-                realid = index
-                vega = insight["Vega-Lite"]
-                break
+        rel = ""
+        if item['Header'] in categorized_headers["same_level_headers"]:
+            rel = "sameLevel"
+        elif item['Header'] in categorized_headers["elaboration_headers"]:
+            rel = r"specialization"
+        elif item['Header'] in categorized_headers["generalization_headers"]:
+            rel = "generalization"
 
         node_id += 1
         next_node = {
             "id": node_id,
-            "realId": realid,
+            "realId": item['realId'],
             "type": item['Type'],
             "category": item['Category'],
             "relationship": reason,
-            "vegaLite": vega,
-            "relType":
-        #     "specialization", 'generalization', 'sameLevel'
-
+            "vegaLite": item['vegaLite'],
+            "relType": rel
         }
         next_nodes.append(next_node)
     return next_nodes, node_id
@@ -705,22 +715,6 @@ For example:
             print("No valid subspace or query found. Ending conversation.")
             break
 
-        # response_list = parse_response_subspace(response)
-        # choose the 1st answer as default to start next qa process
-        # next_header = None
-        # next_query = None
-        # for i in range(len(response_list)):
-        #     next_header = response_list[i].get("subspace")
-        #     next_query = response_list[i].get("query")
-        #     if combine_question2(next_query, next_header) != "Invalid Current Subspace.":
-        #         break
-        #
-        # crt_header = next_header
-        # query = next_query
-        # if crt_header is None or query is None:
-        #     print("No valid question found. Ending conversation.")
-        #     break
-
     print("Conversation closed.")
 
 
@@ -728,8 +722,6 @@ if __name__ == "__main__":
     # read in vis_list
     header_list = read_vis_list('vis_list.txt')
     insight_list = read_vis_list_into_insights('vis_list.txt')
-
-
 
 
     global header_dict

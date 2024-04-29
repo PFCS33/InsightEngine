@@ -154,7 +154,7 @@ Next, I will provide you with some other subspaces related to the current subspa
 async def qa_LLM(query, item, insight_list, node_id):
     question2 = combine_question2(query, item)
 
-    question3 = combine_question3(query, item)
+    question3, categorized_headers = combine_question3(query, item)
     # let LLM select one group that best matches the question and crt subspace
     response = get_response(question2 + question3)
 
@@ -163,7 +163,7 @@ async def qa_LLM(query, item, insight_list, node_id):
     # let LLM sort insights
     response = get_response(sort_insight_prompt)
 
-    next_nodes, node_id = parse_response_select_insight(response, insights_info_dict, insight_list, node_id)
+    next_nodes, node_id = parse_response_select_insight(response, insights_info_dict, categorized_headers, node_id)
 
     print(f"next_nodes: {next_nodes}")
     print("=" * 100)
@@ -197,7 +197,7 @@ These subspaces are categorized into three types based on their hierarchical rel
 same-level, elaboration, and generalization. Please select a group that is most likely to solve my current problem \
 as the next direction for exploration, and provide the reason."""
     question3 += "Related Subspaces List:\n"
-    grouping_string = get_related_subspace(crt_header)
+    grouping_string, categorized_headers = get_related_subspace(crt_header)
     question3 += grouping_string
 
     repeat_str = """Please note that my current subspace is: {} , and the question need to be solved is: "{}". \
@@ -216,7 +216,7 @@ Group Criteria: Brand
 Reason: The reason for choosing this group is that ...
 """
     question3 += response_format
-    return question3
+    return question3, categorized_headers
 
 
 # test
@@ -224,12 +224,16 @@ Reason: The reason for choosing this group is that ...
 #
 # insight_list = read_vis_list_into_insights('vis_list_VegaLite.txt')
 #
-# insight_id = 195
-# query = "I want to know why the sale of the brand PlayStation 4 (PS4) is an outlier, what caused the unusually large value of this point?"
-#
+# insight_id = 198
+# query = "I want to know more about the sales in Japan of JUN."
+# # query = "I want to know why the sale of the brand PlayStation 4 (PS4) is an outlier, what caused the unusually large value of this point?"
+# #
 # node_id = 0
 # item = insight_list[insight_id]
 # next_nodes = run(qa_LLM(query, item, insight_list, node_id))
+
+
+
 # insights_info = get_insight_vega_by_header(header, insight_list)
 #
 # response = {
