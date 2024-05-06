@@ -2,6 +2,8 @@ import json
 import pandas as pd
 import copy
 
+
+
 class VisualForm:
     def __init__(self, data, insight_type, insight_category, insight_score, insight_description):
         self.data = data
@@ -15,8 +17,8 @@ class VisualForm:
     def create_vegalite(self):
         func_list= {'outlier': create_box_plot, 
                     'outlier-temporal': create_trail_plot,
-                    'dominance':create_pie_chart, 
-                    'top2':create_pie_chart, 
+                    'dominance':create_pie_chart_dominance,
+                    'top2':create_pie_chart_top2,
                     'trend':create_area_chart, 
                     'correlation': create_scatter_plot, 
                     'correlation-temporal': create_multi_line_chart,
@@ -24,28 +26,32 @@ class VisualForm:
                     'skewness': create_density_plot,
                     'evenness': create_bar_chart
                     }
-        scope_data = None
-        # merge the first [merge_num] columns as the breakdown column
-        merge_num = self.data.shape[1] - 1
-        scope_data = merge_columns(self.data, 0, merge_num)
-        # merged_column = block_data.iloc[:, :merge_num].apply(lambda x: ' - '.join(x.astype(str)), axis=1)
-        # scope_data = pd.concat([merged_column, block_data.iloc[:, merge_num]], axis=1)
+        # scope_data = None
+        # # merge the first [merge_num] columns as the breakdown column
+        # merge_num = self.data.shape[1] - 1
+        # scope_data = merge_columns(self.data, 0, merge_num)
+        #
+        # # set the breakdown column as index
+        # scope_data = scope_data.set_index(scope_data.columns[0])
+        # # turn the dataframe to series
+        # scope_data = scope_data[scope_data.columns[0]]
 
-        # set the breakdown column as index
-        scope_data = scope_data.set_index(scope_data.columns[0])
-        # turn the dataframe to series
-        scope_data = scope_data[scope_data.columns[0]]
-
-        vega_obj = func_list[self.insight_type](scope_data)
-        # vega_obj['description'] =  self.description
+        vega_obj = func_list[self.insight_type](self.data)
         self.vega_json = json.dumps(vega_obj)
 
-# class VegaLiteObject:
-#     def __init__(self, description, data, mark, encoding):
-#         self.description = description
-#         self.data = data
-#         self.mark = mark
-#         self.encoding = encoding
+
+def preprocess_data(data):
+    scope_data = None
+    # merge the first [merge_num] columns as the breakdown column
+    merge_num = data.shape[1] - 1
+    scope_data = merge_columns(data, 0, merge_num)
+
+    # set the breakdown column as index
+    scope_data = scope_data.set_index(scope_data.columns[0])
+    # turn the dataframe to series
+    scope_data = scope_data[scope_data.columns[0]]
+
+    return scope_data
 
 
 def merge_columns(block_data, start, end, name='Merged'):
@@ -60,15 +66,15 @@ def merge_columns(block_data, start, end, name='Merged'):
 
 
 def create_bar_chart(d):
+    d = preprocess_data(d)
     values = []
     d = d.reset_index()
     if d[d.columns[0]].str.contains('-').any(): # include multiple columns, break it          
         d_tmp = d[d.columns[0]].str.split('-', n=1, expand=True)
         d_tmp.columns = ['var1', 'var2']
         d.drop(columns=d.columns[0], inplace=True)
-        d = pd.concat([d_tmp, d], axis=1)
-    else:
-        d.columns = ['variable', 'value']
+        d = pd.concat([d_tmp['var1'], d], axis=1)  # only 2 columns
+    d.columns = ['variable', 'value']
     for row in d.itertuples(index=False):
         v = {}
         for i in range(len(d.columns)):
@@ -83,18 +89,25 @@ def create_bar_chart(d):
             {'field': d.columns[-1], 'type': 'quantitative'}
         ]
     }
-    if len(d.columns)==3:   # breaked columns
-        encoding["xOffset"] = {"field": d.columns[0]}
-        encoding['color'] = {'field': d.columns[0], 
-                             'type': 'nominal', 
-                             "legend": {"orient": "bottom"},
-                             "title": None}
+    # if len(d.columns)==3:   # breaked columns
+    #     encoding["xOffset"] = {"field": d.columns[0]}
+    #     encoding['color'] = {'field': d.columns[0],
+    #                          'type': 'nominal',
+    #                          "legend": {"orient": "bottom"},
+    #                          "title": None}
     data = {'values': values}
     return {'data': data, 'mark': mark, 'encoding': encoding}
 
-def create_pie_chart(d):
+def create_pie_chart_dominance(d):
+    # get dominance name to create legend
+    sorted_d = d.sort_values(by=d.columns[-1], ascending=False)
+    top1_name = sorted_d.iloc[0, 0]
+
+    # merge columns
+    d = preprocess_data(d)
     values = []
     d = d.reset_index()
+
     d.columns = ['category', 'value']
     for row in d.itertuples(index=False):
         # if row[1] == 0:
@@ -104,7 +117,7 @@ def create_pie_chart(d):
     mark = {'type': 'arc', 'innerRadius': 5, 'stroke': '#fff'}
     encoding = {
         'theta': {'field': 'value', 'type': 'quantitative', "stack": True},
-        'color': {'field': 'category', 'type': 'nominal', 'legend': None},
+        'color': {'field': 'category', 'type': 'nominal'},
         'order': {
             'field': 'value',
             'type': 'quantitative',
@@ -116,12 +129,62 @@ def create_pie_chart(d):
             {'field': 'value', 'type': 'quantitative'}
         ]
     }
+
+    # Adding legend for dominance categories
+    encoding['color']['legend'] = {'title': None, 'symbolType': 'square', 'values': [str(top1_name)]}
+
+    data = {'values': values}
+    return {'data': data, 'mark': mark, 'encoding': encoding}
+
+
+def create_pie_chart_top2(d):
+    # get top2 name to create legend
+    sorted_d = d.sort_values(by=d.columns[-1], ascending=False)
+    top1_name = sorted_d.iloc[0, 0]
+    top2_name = sorted_d.iloc[1, 0]
+
+    # merge columns
+    d = preprocess_data(d)
+    values = []
+    d = d.reset_index()
+
+    d.columns = ['category', 'value']
+    for row in d.itertuples(index=False):
+        # if row[1] == 0:
+        #     continue    # ignore zeros
+        v = {d.columns[0]: row[0], d.columns[1]: row[1]}
+        values.append(v)
+    mark = {'type': 'arc', 'innerRadius': 5, 'stroke': '#fff'}
+    encoding = {
+        'theta': {'field': 'value', 'type': 'quantitative', "stack": True},
+        'color': {'field': 'category', 'type': 'nominal'},
+        'order': {
+            'field': 'value',
+            'type': 'quantitative',
+            'sort': 'descending'
+        },
+        "radius": {"field": "value", "scale": {"type": "linear", "zero": True, "rangeMin": 20}},
+        'tooltip': [
+            {'field': 'category', 'type': 'nominal'},
+            {'field': 'value', 'type': 'quantitative'}
+        ]
+    }
+
+    # Adding legend for top 2 categories
+    encoding['color']['legend'] = {'title': None, 'symbolType': 'square', 'values': [str(top1_name), str(top2_name)]}
+
     data = {'values': values}
     return {'data': data, 'mark': mark, 'encoding': encoding}
 
 def create_area_chart(d, color='#4682b4'):
+    d = preprocess_data(d)
     values = []
     d = d.reset_index()
+    if d[d.columns[0]].str.contains('-').any(): # include multiple columns, break it
+        d_tmp = d[d.columns[0]].str.split('-', n=1, expand=True)
+        d_tmp.columns = ['var1', 'var2']
+        d.drop(columns=d.columns[0], inplace=True)
+        d = pd.concat([d_tmp['var1'], d], axis=1)  # only 2 columns
     d.columns = ['variable', 'value']
     sort = []
     for row in d.itertuples(index=False):
@@ -162,6 +225,7 @@ def create_area_chart(d, color='#4682b4'):
     return {'data': data, 'mark': mark, 'encoding': encoding}
 
 def create_scatter_plot(d):
+    d = preprocess_data(d)
     values = []
     d = d.reset_index()
     for row in d.itertuples(index=False):
@@ -180,6 +244,7 @@ def create_scatter_plot(d):
     return {'data': data, 'mark': mark, 'encoding': encoding}
 
 def create_multi_line_chart(d):
+    d = preprocess_data(d)
     values = []
     d = d.reset_index()
     d = d.melt(id_vars=[d.columns[0]])
@@ -207,6 +272,7 @@ def create_multi_line_chart(d):
     return {'data': data, 'mark': mark, 'encoding': encoding}
 
 def create_box_plot(d):
+    d = preprocess_data(d)
     values = []
     d = d.reset_index()
     d.columns = ['category', 'value']
@@ -231,15 +297,15 @@ def create_box_plot(d):
     return {'data': data, 'mark': mark, 'encoding': encoding}
 
 def create_box_and_bar_plot(d):
+    d = preprocess_data(d)
     values = []
     d = d.reset_index()
     if d[d.columns[0]].str.contains('-').any(): # include multiple columns, break it          
         d_tmp = d[d.columns[0]].str.split('-', n=1, expand=True)
         d_tmp.columns = ['var1', 'var2']
         d.drop(columns=d.columns[0], inplace=True)
-        d = pd.concat([d_tmp, d], axis=1)
-    else:
-        d.columns = ['variable', 'value']
+        d = pd.concat([d_tmp['var1'], d], axis=1)
+    d.columns = ['variable', 'value']
     for row in d.itertuples(index=False):
         v = {}
         for i in range(len(d.columns)):
@@ -282,6 +348,7 @@ def create_box_and_bar_plot(d):
     return {'data': data, "spacing": 15, "bounds": "flush", 'vconcat': vconcat}
 
 def create_density_plot(d):
+    d = preprocess_data(d)
     values = []
     d = d.reset_index()
     d.columns = ['category', 'value']
@@ -324,6 +391,7 @@ def create_density_plot(d):
     return {'data': data, 'transform':transform ,'mark': mark, 'encoding': encoding}
 
 def create_density_plot_color(d):
+    d = preprocess_data(d)
     values = []
     d = d.reset_index()
     d.columns = ['category', 'value']
@@ -366,9 +434,16 @@ def create_density_plot_color(d):
     return {'data': data, 'transform':transform ,'mark': mark, 'encoding': encoding}
 
 def create_trail_plot(d):
+    d = preprocess_data(d)
     values = []
     d = d.reset_index()
+    if d[d.columns[0]].str.contains('-').any():  # include multiple columns, break it
+        d_tmp = d[d.columns[0]].str.split('-', n=1, expand=True)
+        d_tmp.columns = ['var1', 'var2']
+        d.drop(columns=d.columns[0], inplace=True)
+        d = pd.concat([d_tmp['var1'], d], axis=1)
     d.columns = ['category', 'value']
+
     sort = []
     for row in d.itertuples(index=False):
         v = {d.columns[0]: row[0], d.columns[1]: row[1]}
