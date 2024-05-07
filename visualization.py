@@ -1,5 +1,6 @@
 import json
 import pandas as pd
+import random
 import copy
 
 
@@ -66,13 +67,12 @@ table_structure = {
 }
 
 color_scheme = {
-    'Company': ['navy', 'midnightblue', 'darkblue', 'mediumblue', 'blue', 'royalblue', 'dodgerblue', 'deepskyblue', 'skyblue', 'lightblue'],
+    'Company': ['darkblue', 'mediumblue', 'blue', 'DodgerBlue', 'royalblue', 'deepskyblue', 'skyblue', 'lightblue'],
     'Brand': ['yellowgreen', 'lawngreen', 'chartreuse', 'greenyellow', 'darkgreen', 'green', 'forestgreen', 'limegreen', 'lime', 'lightgreen'],
     'Location': ['indianred', 'brown', 'maroon', 'darkred', 'firebrick', 'red', 'orangered', 'tomato', 'salmon', 'lightcoral'],
     'Season': ['sienna', 'chocolate', 'peru', 'sandybrown', 'burlywood', 'darkgoldenrod', 'goldenrod', 'gold', 'khaki', 'lightyellow'],
     'Year': ['blueviolet', 'mediumpurple', 'mediumorchid', 'magenta', 'fuchsia', 'orchid', 'violet', 'plum', 'thistle', 'lavenderblush']
 }
-
 
 def find_column_name(d, table_structure):
     first_value = d.iloc[0, 0]
@@ -100,6 +100,8 @@ def create_bar_chart(d):
 
     column_name = find_column_name(d, table_structure)
     color_range = color_scheme.get(column_name)
+    if color_range:
+        random.shuffle(color_range)
 
     mark = 'bar'
     encoding = {
@@ -144,6 +146,8 @@ def create_pie_chart_dominance(d):
 
     column_name = find_column_name(d, table_structure)
     color_range = color_scheme.get(column_name)
+    if color_range:
+        random.shuffle(color_range)
 
     mark = {'type': 'arc', 'innerRadius': 5, 'stroke': '#fff'}
     encoding = {
@@ -191,6 +195,8 @@ def create_pie_chart_top2(d):
 
     column_name = find_column_name(d, table_structure)
     color_range = color_scheme.get(column_name)
+    if color_range:
+        random.shuffle(color_range)
 
     mark = {'type': 'arc', 'innerRadius': 5, 'stroke': '#fff'}
     encoding = {

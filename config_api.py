@@ -8,5 +8,5 @@ proxy = {
 
 openai.proxy = proxy
 
-# update 4/25
+# update 5/7
 api_key = ''

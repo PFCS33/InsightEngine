@@ -75,7 +75,7 @@
       <recent name="D:\1-WORK\Github\InsightEngine\record_file" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.data_process">
+  <component name="RunManager" selected="Python.main">
     <configuration name="connect_LLM_sample_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="iTableInsight" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -188,8 +188,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.data_process" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.data_process" />
         <item itemvalue="Python.connection_test" />
         <item itemvalue="Python.query_for_server" />
         <item itemvalue="Python.connect_LLM_sample_test" />

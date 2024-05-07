@@ -1,5 +1,6 @@
 import json
 import os
+import random
 import uuid
 from flask import Flask, request, jsonify
 from flask_cors import CORS, cross_origin
@@ -65,10 +66,12 @@ def get_graph_data():
     }
 
     # set init nodes
-    insights_info = get_insight_vega_by_header("()", insight_list)
     nodes = []
+    global node_id
+
+    # global insights of source table
+    insights_info = get_insight_vega_by_header("()", insight_list)
     for item in insights_info:
-        global node_id
         node_id += 1
         node = {
             "id": node_id,
@@ -78,6 +81,23 @@ def get_graph_data():
             "vegaLite": item['vegaLite']
         }
         nodes.append(node)
+
+    # insights with the highest score
+    k = 50
+    insights_info = get_top_k_insights(k, insight_list)
+
+    random_selection = random.sample(insights_info, 5)
+    for item in random_selection:
+        if not any(node['realId'] == item['realId'] for node in nodes):
+            node_id += 1
+            node = {
+                "id": node_id,
+                "realId": item['realId'],
+                "type": item['type'],
+                "category": item['category'],
+                "vegaLite": item['vegaLite']
+            }
+            nodes.append(node)
 
     response = {
         "code": 200,

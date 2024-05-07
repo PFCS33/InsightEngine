@@ -92,6 +92,22 @@ def get_insight_vega_by_header(header_str, insight_list):
     return insights_info
 
 
+def get_top_k_insights(k, insight_list):
+    top_k = sorted(enumerate(insight_list), key=lambda x: x[1]['Score'], reverse=True)[:k]
+    insights_info = []
+    for index, (real_id, item) in enumerate(top_k):
+        insight_info = {
+            'realId': real_id,
+            'type': item['Type'],
+            'category': item['Category'],
+            'score': item['Score'],
+            'description': item['Description'],
+            'vegaLite': item['Vega-Lite']
+        }
+        insights_info.append(insight_info)
+    return insights_info
+
+
 def get_vega_lite_spec_by_id(id, insight_list):
     # id: insight id (node real-id)
     print(id)
