@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b8aaf42-a88e-4d60-8ea0-acc1aaf0ca61" name="Changes" comment="fix bug: display nodes">
-      <change afterPath="$PROJECT_DIR$/results/02c30b2d-4893-485a-bf32-0b541bde1684/console_sales_flat.csv.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/iTableInsight.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/iTableInsight.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vis_list.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vis_list.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vis_list_VegaLite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vis_list_VegaLite.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/visualization.py" beforeDir="false" afterPath="$PROJECT_DIR$/visualization.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,6 +73,7 @@
   <component name="RunManager" selected="Python.main">
     <configuration name="connect_LLM_sample_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="iTableInsight" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -100,6 +96,7 @@
     </configuration>
     <configuration name="connection_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="iTableInsight" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -122,6 +119,7 @@
     </configuration>
     <configuration name="data_process" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="iTableInsight" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -144,6 +142,7 @@
     </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="iTableInsight" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -166,6 +165,7 @@
     </configuration>
     <configuration name="query_for_server" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="iTableInsight" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -357,21 +357,6 @@
           <url>file://$PROJECT_DIR$/connectLLM.py</url>
           <line>144</line>
           <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>225</line>
-          <option name="timeStamp" value="143" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/visualization.py</url>
-          <line>518</line>
-          <option name="timeStamp" value="246" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/visualization.py</url>
-          <line>536</line>
-          <option name="timeStamp" value="249" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

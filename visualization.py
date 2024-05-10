@@ -66,12 +66,35 @@ table_structure = {
     'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']
 }
 
+
+# color_scheme = {
+#     'Company': ['darkblue', 'mediumblue', 'blue', 'DodgerBlue', 'royalblue', 'deepskyblue', 'skyblue', 'lightblue'],
+#     'Brand': ['yellowgreen', 'lawngreen', 'chartreuse', 'greenyellow', 'darkgreen', 'green', 'forestgreen', 'limegreen', 'lime', 'lightgreen'],
+#     'Location': ['indianred', 'brown', 'maroon', 'darkred', 'firebrick', 'red', 'orangered', 'tomato', 'salmon', 'lightcoral'],
+#     'Season': ['sienna', 'chocolate', 'peru', 'sandybrown', 'burlywood', 'darkgoldenrod', 'goldenrod', 'gold', 'khaki', 'lightyellow'],
+#     'Year': ['blueviolet', 'mediumpurple', 'mediumorchid', 'magenta', 'fuchsia', 'orchid', 'violet', 'plum', 'thistle', 'lavenderblush']
+# }
+
+
 color_scheme = {
-    'Company': ['darkblue', 'mediumblue', 'blue', 'DodgerBlue', 'royalblue', 'deepskyblue', 'skyblue', 'lightblue'],
-    'Brand': ['yellowgreen', 'lawngreen', 'chartreuse', 'greenyellow', 'darkgreen', 'green', 'forestgreen', 'limegreen', 'lime', 'lightgreen'],
-    'Location': ['indianred', 'brown', 'maroon', 'darkred', 'firebrick', 'red', 'orangered', 'tomato', 'salmon', 'lightcoral'],
-    'Season': ['sienna', 'chocolate', 'peru', 'sandybrown', 'burlywood', 'darkgoldenrod', 'goldenrod', 'gold', 'khaki', 'lightyellow'],
-    'Year': ['blueviolet', 'mediumpurple', 'mediumorchid', 'magenta', 'fuchsia', 'orchid', 'violet', 'plum', 'thistle', 'lavenderblush']
+    'Company': ['#66c2a5', '#fc8d62', '#8da0cb'],
+    'Brand': ['#a6cee3', '#1f78b4', '#b2df8a', '#33a02c', '#fb9a99', '#e31a1c', '#fdbf6f', '#ff7f00', '#cab2d6', '#6a3d9a'],
+    'Location': ['#fbb4ae', '#b3cde3', '#ccebc5', '#decbe4'],
+    'Season': ['#7fc97f', '#beaed4', '#fdc086', '#ffff99'],
+    'Year': ['#8dd3c7', '#ffffb3', '#bebada', '#fb8072', '#80b1d3', '#fdb462', '#b3de69', '#fccde5']
+}
+
+
+color_scheme = {
+    'Company': {'Nintendo': '#66c2a5', 'Sony': '#fc8d62', 'Microsoft': '#8da0cb'},
+    'Brand': {'Nintendo 3DS (3DS)': '#a6cee3', 'Nintendo DS (DS)': '#1f78b4', 'Nintendo Switch (NS)': '#b2df8a',
+              'Wii (Wii)': '#33a02c', 'Wii U (WiiU)': '#fb9a99', 'PlayStation 3 (PS3)': '#e31a1c',
+              'PlayStation 4 (PS4)': '#fdbf6f', 'PlayStation Vita (PSV)': '#ff7f00', 'Xbox 360 (X360)': '#cab2d6',
+              'Xbox One (XOne)': '#6a3d9a'},
+    'Location': {'Europe': '#fbb4ae', 'Japan': '#b3cde3', 'North America': '#ccebc5', 'Other': '#decbe4'},
+    'Season': {'DEC': '#7fc97f', 'JUN': '#beaed4', 'MAR': '#fdc086', 'SEP': '#ffff99'},
+    'Year': {'2013': '#8dd3c7', '2014': '#ffffb3', '2015': '#bebada', '2016': '#fb8072',
+             '2017': '#80b1d3', '2018': '#fdb462', '2019': '#b3de69', '2020': '#fccde5'}
 }
 
 def find_column_name(d, table_structure):
@@ -86,11 +109,6 @@ def create_bar_chart(d):
     d = preprocess_data(d)
     values = []
     d = d.reset_index()
-    # if d[d.columns[0]].str.contains('-').any():  # include multiple columns, break it
-    #     d_tmp = d[d.columns[0]].str.split('-', n=1, expand=True)
-    #     d_tmp.columns = ['var1', 'var2']
-    #     d.drop(columns=d.columns[0], inplace=True)
-    #     d = pd.concat([d_tmp['var1'], d], axis=1)  # only 2 columns
     d.columns = ['variable', 'value']
     for row in d.itertuples(index=False):
         v = {}
@@ -99,9 +117,7 @@ def create_bar_chart(d):
         values.append(v)
 
     column_name = find_column_name(d, table_structure)
-    color_range = color_scheme.get(column_name)
-    if color_range:
-        random.shuffle(color_range)
+    color_range = [color_scheme1[column_name][v['variable']] for v in values]
 
     mark = 'bar'
     encoding = {
@@ -146,8 +162,6 @@ def create_pie_chart_dominance(d):
 
     column_name = find_column_name(d, table_structure)
     color_range = color_scheme.get(column_name)
-    if color_range:
-        random.shuffle(color_range)
 
     mark = {'type': 'arc', 'innerRadius': 5, 'stroke': '#fff'}
     encoding = {
@@ -195,8 +209,6 @@ def create_pie_chart_top2(d):
 
     column_name = find_column_name(d, table_structure)
     color_range = color_scheme.get(column_name)
-    if color_range:
-        random.shuffle(color_range)
 
     mark = {'type': 'arc', 'innerRadius': 5, 'stroke': '#fff'}
     encoding = {
