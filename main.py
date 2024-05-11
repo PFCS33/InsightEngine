@@ -57,6 +57,7 @@ def upload_table():
 @app.route('/graph/data', methods=['GET'])
 @cross_origin()
 def get_graph_data():
+    print("========================init=======================")
     columnInfo = {
         "Company": ["*", "Nintendo", "Sony", "Microsoft"],
         "Brand": ["*", "Nintendo 3DS (3DS)", "Nintendo DS (DS)", "Nintendo Switch (NS)", "Wii (Wii)", "Wii U (WiiU)", "PlayStation 3 (PS3)", "PlayStation 4 (PS4)", "PlayStation Vita (PSV)", "Xbox 360 (X360)", "Xbox One (XOne)"],
@@ -80,6 +81,9 @@ def get_graph_data():
             "category": item['category'],
             "vegaLite": item['vegaLite']
         }
+        print(node_id)
+        print(item['realId'])
+        print("-----")
         nodes.append(node)
 
     # insights with the highest score
@@ -97,6 +101,9 @@ def get_graph_data():
                 "category": item['category'],
                 "vegaLite": item['vegaLite']
             }
+            print(node_id)
+            print(item['realId'])
+            print("-----")
             nodes.append(node)
 
     response = {
@@ -107,6 +114,7 @@ def get_graph_data():
             "nodes": nodes
         }
     }
+    print("========================init=======================end")
     return jsonify(response)
 
 

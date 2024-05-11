@@ -179,7 +179,9 @@ async def qa_LLM(query, item, insight_list, node_id):
     # let LLM sort insights
     response = get_response(sort_insight_prompt)
 
+    print("===========")
     next_nodes, node_id = parse_response_select_insight(response, insights_info_dict, categorized_headers, node_id)
+    print("===========end")
 
     print(f"next_nodes: {next_nodes}")
     print("=" * 100)

@@ -584,6 +584,7 @@ def parse_response_select_insight(response, insights_info_dict, categorized_head
             rel = "generalization"
 
         node_id += 1
+        print(node_id)
         next_node = {
             "id": node_id,
             "realId": item['realId'],
