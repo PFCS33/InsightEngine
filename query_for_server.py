@@ -239,7 +239,6 @@ Reason: The reason for choosing this group is that ...
 
 # test
 
-#
 # insight_list = read_vis_list_into_insights('vis_list_VegaLite.txt')
 #
 # insight_id = 198
@@ -249,21 +248,3 @@ Reason: The reason for choosing this group is that ...
 # node_id = 0
 # item = insight_list[insight_id]
 # next_nodes = run(qa_LLM(query, item, insight_list, node_id))
-
-
-
-# insights_info = get_insight_vega_by_header(header, insight_list)
-#
-# response = {
-#     "code": 200,
-#     "msg": "",
-#     "data": {
-#         "insights": insights_info
-#     }
-# }
-# print(f"response: {response}")
-
-
-# #
-# # print(next_nodes)
-

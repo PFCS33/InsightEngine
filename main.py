@@ -251,6 +251,6 @@ if __name__ == '__main__':
     file_path = 'vis_list.txt'
     insight_list = read_vis_list_into_insights('vis_list_VegaLite.txt')
 
-    app.run(debug=True, port=5000)
+    app.run(debug=False, port=5000)
 
 
