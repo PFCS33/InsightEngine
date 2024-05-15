@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2b8aaf42-a88e-4d60-8ea0-acc1aaf0ca61" name="Changes" comment="visualization with scheme color">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/query_for_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/query_for_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/config_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visualization.py" beforeDir="false" afterPath="$PROJECT_DIR$/visualization.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,29 +49,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.connect_LLM_sample_test.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.connection_test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.dataSource.executor&quot;: &quot;Run&quot;,
-    &quot;Python.data_process.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.insight.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.query_for_server.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Github/InsightEngine_4.1&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.connect_LLM_sample_test.executor": "Debug",
+    "Python.connection_test.executor": "Run",
+    "Python.dataSource.executor": "Run",
+    "Python.data_process.executor": "Debug",
+    "Python.insight.executor": "Debug",
+    "Python.main.executor": "Run",
+    "Python.query_for_server.executor": "Debug",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "E:/Github/circleForceGraph",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\1-WORK\Github\InsightEngine\record_file" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.data_process">
     <configuration name="connect_LLM_sample_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="iTableInsight" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -184,8 +184,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.data_process" />
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.connection_test" />
         <item itemvalue="Python.query_for_server" />
         <item itemvalue="Python.connect_LLM_sample_test" />
@@ -215,6 +215,7 @@
       <workItem from="1712645933796" duration="19417000" />
       <workItem from="1712732633999" duration="38188000" />
       <workItem from="1714013145959" duration="2718000" />
+      <workItem from="1715738383462" duration="5298000" />
     </task>
     <task id="LOCAL-00001" summary="TODO: avoid duplication in merge">
       <created>1711008784282</created>
@@ -364,17 +365,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/visualization.py</url>
-          <line>246</line>
+          <line>260</line>
           <option name="timeStamp" value="255" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/visualization.py</url>
-          <line>516</line>
+          <line>530</line>
           <option name="timeStamp" value="256" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/visualization.py</url>
-          <line>341</line>
+          <line>355</line>
           <option name="timeStamp" value="257" />
         </line-breakpoint>
       </breakpoints>
@@ -409,6 +410,6 @@
     <SUITE FILE_PATH="coverage/InsightEngine_4_26$query_for_server.coverage" NAME="query_for_server Coverage Results" MODIFIED="1714360520303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/InsightEngine_4_26$connection_test.coverage" NAME="connection_test Coverage Results" MODIFIED="1714458147616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/InsightEngine5_7$query_for_server.coverage" NAME="query_for_server Coverage Results" MODIFIED="1715163818841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/InsightEngine5_7$data_process.coverage" NAME="data_process Coverage Results" MODIFIED="1715407550314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/InsightEngine5_7$data_process.coverage" NAME="data_process Coverage Results" MODIFIED="1715744802737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

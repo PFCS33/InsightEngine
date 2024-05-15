@@ -66,7 +66,6 @@ table_structure = {
     'Year': ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']
 }
 
-
 # color_scheme = {
 #     'Company': ['darkblue', 'mediumblue', 'blue', 'DodgerBlue', 'royalblue', 'deepskyblue', 'skyblue', 'lightblue'],
 #     'Brand': ['yellowgreen', 'lawngreen', 'chartreuse', 'greenyellow', 'darkgreen', 'green', 'forestgreen', 'limegreen', 'lime', 'lightgreen'],
@@ -91,7 +90,8 @@ color_scheme = {
               'Wii (Wii)': '#33a02c', 'Wii U (WiiU)': '#fb9a99', 'PlayStation 3 (PS3)': '#e31a1c',
               'PlayStation 4 (PS4)': '#fdbf6f', 'PlayStation Vita (PSV)': '#ff7f00', 'Xbox 360 (X360)': '#cab2d6',
               'Xbox One (XOne)': '#6a3d9a', 'default': '#b15928'},
-    'Location': {'Europe': '#fbb4ae', 'Japan': '#b3cde3', 'North America': '#ccebc5', 'Other': '#decbe4', 'default': '#fed9a6'},
+    'Location': {'Europe': '#fbb4ae', 'Japan': '#b3cde3', 'North America': '#ccebc5', 'Other': '#decbe4',
+                 'default': '#fed9a6'},
     'Season': {'DEC': '#7fc97f', 'JUN': '#beaed4', 'MAR': '#fdc086', 'SEP': '#ffff99', 'default': '#386cb0'},
     'Year': {'2013': '#8dd3c7', '2014': '#ffffb3', '2015': '#bebada', '2016': '#fb8072',
              '2017': '#80b1d3', '2018': '#fdb462', '2019': '#b3de69', '2020': '#fccde5', 'default': '#d9d9d9'}
@@ -111,14 +111,19 @@ def create_bar_chart(d):
     values = []
     d = d.reset_index()
     d.columns = ['variable', 'value']
+
+    domain = []
+    color_range = []
+    column_name = find_column_name(d, table_structure)
+
     for row in d.itertuples(index=False):
         v = {}
         for i in range(len(d.columns)):
             v[d.columns[i]] = row[i]
         values.append(v)
-
-    column_name = find_column_name(d, table_structure)
-    color_range = [color_scheme[column_name][str(v['variable'])] for v in values]
+        if v['variable'] not in domain:
+            domain.append(v['variable'])
+            color_range.append(color_scheme[column_name][str(v['variable'])])
 
     mark = 'bar'
     encoding = {
@@ -127,7 +132,7 @@ def create_bar_chart(d):
         'color': {
             'field': 'variable',
             'type': 'nominal',
-            'scale': {"range": color_range},
+            'scale': {"domain": domain, "range": color_range},
         },
         'tooltip': [
             {'field': d.columns[-2], 'type': 'nominal'},
@@ -149,14 +154,18 @@ def create_pie_chart_dominance(d):
     d = d.reset_index()
 
     d.columns = ['category', 'value']
+    domain = []
+    color_range = []
+    column_name = find_column_name(d, table_structure)
+
     for row in d.itertuples(index=False):
         # if row[1] == 0:
         #     continue    # ignore zeros
         v = {d.columns[0]: row[0], d.columns[1]: row[1]}
         values.append(v)
-
-    column_name = find_column_name(d, table_structure)
-    color_range = [color_scheme[column_name][str(v['category'])] for v in values]
+        if v['category'] not in domain:
+            domain.append(v['category'])
+            color_range.append(color_scheme[column_name][str(v['category'])])
 
     mark = {'type': 'arc', 'innerRadius': 5, 'stroke': '#fff'}
     encoding = {
@@ -164,7 +173,7 @@ def create_pie_chart_dominance(d):
         'color': {
             'field': 'category',
             'type': 'nominal',
-            'scale': {"range": color_range},
+            'scale': {"domain": domain, "range": color_range},
             # Adding legend for dominance categories
             'legend': {"title": None, "symbolType": "square", "values": [str(top1_name)]}
         },
@@ -196,14 +205,19 @@ def create_pie_chart_top2(d):
     d = d.reset_index()
 
     d.columns = ['category', 'value']
+
+    domain = []
+    color_range = []
+    column_name = find_column_name(d, table_structure)
+
     for row in d.itertuples(index=False):
         # if row[1] == 0:
         #     continue    # ignore zeros
         v = {d.columns[0]: row[0], d.columns[1]: row[1]}
         values.append(v)
-
-    column_name = find_column_name(d, table_structure)
-    color_range = [color_scheme[column_name][str(v['category'])] for v in values]
+        if v['category'] not in domain:
+            domain.append(v['category'])
+            color_range.append(color_scheme[column_name][str(v['category'])])
 
     mark = {'type': 'arc', 'innerRadius': 5, 'stroke': '#fff'}
     encoding = {
@@ -211,7 +225,7 @@ def create_pie_chart_top2(d):
         'color': {
             'field': 'category',
             'type': 'nominal',
-            'scale': {"range": color_range},
+            'scale': {"domain": domain, "range": color_range},
             # Adding legend for top 2 categories
             'legend': {"title": None, "symbolType": "square", "values": [str(top1_name), str(top2_name)]}
         },
@@ -236,7 +250,9 @@ def create_area_chart(d, color='#4682b4'):
     values = []
     d = d.reset_index()
     d.columns = ['variable', 'value']
+
     sort = []
+
     for row in d.itertuples(index=False):
         v = {d.columns[0]: row[0], d.columns[1]: row[1]}
         values.append(v)
