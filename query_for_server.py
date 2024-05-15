@@ -168,20 +168,21 @@ Next, I will provide you with some other subspaces related to the current subspa
 
 
 async def qa_LLM(query, item, insight_list, node_id):
+    print("=====qa_LLM=====")
     question2 = combine_question2(query, item)
 
     question3, categorized_headers = combine_question3(query, item)
     # let LLM select one group that best matches the question and crt subspace
     response = get_response(question2 + question3)
+    print(f"1. Response choose group: \n{response}\n\n")
 
-    insights_info_dict, sort_insight_prompt, reason = parse_response_select_group(response, query, insight_list)
+    insights_info_dict, sort_insight_prompt = parse_response_select_group(response, query, insight_list)
 
     # let LLM sort insights
     response = get_response(sort_insight_prompt)
+    print(f"2. Response sort insights: \n{response}\n\n")
 
-    print("===========")
     next_nodes, node_id = parse_response_select_insight(response, insights_info_dict, categorized_headers, node_id)
-    print("===========end")
 
     print(f"next_nodes: {next_nodes}")
     print("=" * 100)
@@ -226,12 +227,10 @@ Considering the subspace groups mentioned above, select one group that best matc
     response_format = """Your answer should follow the format below:
 Group type: {}
 Group Criteria: {}
-Reason: {}
 Among them, Group type is used to identify the three categories of Same-level group, Elaboration group, and Generalization group, and Group Criteria is used to determine specific groups within the category.
 For example:
 Group type: Same-level groups
 Group Criteria: Brand
-Reason: The reason for choosing this group is that ...
 """
     question3 += response_format
     return question3, categorized_headers

@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b8aaf42-a88e-4d60-8ea0-acc1aaf0ca61" name="Changes" comment="visualization with scheme color">
+    <list default="true" id="2b8aaf42-a88e-4d60-8ea0-acc1aaf0ca61" name="Changes" comment="fix bug: add color scale domain">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/config_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visualization.py" beforeDir="false" afterPath="$PROJECT_DIR$/visualization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connect_LLM_sample_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/connect_LLM_sample_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connection_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/connection_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/query_for_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/query_for_server.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +73,7 @@
       <recent name="D:\1-WORK\Github\InsightEngine\record_file" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.data_process">
+  <component name="RunManager" selected="Python.connection_test">
     <configuration name="connect_LLM_sample_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="iTableInsight" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -184,9 +186,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.data_process" />
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.connection_test" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.data_process" />
         <item itemvalue="Python.query_for_server" />
         <item itemvalue="Python.connect_LLM_sample_test" />
       </list>
@@ -215,7 +217,7 @@
       <workItem from="1712645933796" duration="19417000" />
       <workItem from="1712732633999" duration="38188000" />
       <workItem from="1714013145959" duration="2718000" />
-      <workItem from="1715738383462" duration="5298000" />
+      <workItem from="1715738383462" duration="13334000" />
     </task>
     <task id="LOCAL-00001" summary="TODO: avoid duplication in merge">
       <created>1711008784282</created>
@@ -312,7 +314,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715435788250</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fix bug: add color scale domain">
+      <created>1715746128883</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1715746128883</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,11 +330,46 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="814a2d48-3e4d-4ebf-b9bf-e8817fc74270">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
           </value>
         </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="814a2d48-3e4d-4ebf-b9bf-e8817fc74270" value="TOOL_WINDOW" />
       </map>
     </option>
   </component>
@@ -343,7 +387,8 @@
     <MESSAGE value="fix bug 4/28" />
     <MESSAGE value="fix bug: display nodes" />
     <MESSAGE value="visualization with scheme color" />
-    <option name="LAST_COMMIT_MESSAGE" value="visualization with scheme color" />
+    <MESSAGE value="fix bug: add color scale domain" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bug: add color scale domain" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -365,17 +410,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/visualization.py</url>
-          <line>260</line>
+          <line>262</line>
           <option name="timeStamp" value="255" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/visualization.py</url>
-          <line>530</line>
+          <line>532</line>
           <option name="timeStamp" value="256" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/visualization.py</url>
-          <line>355</line>
+          <line>357</line>
           <option name="timeStamp" value="257" />
         </line-breakpoint>
       </breakpoints>
@@ -401,15 +446,15 @@
     <SUITE FILE_PATH="coverage/InsightEngine_4_1$query_for_server.coverage" NAME="query_for_server Coverage Results" MODIFIED="1713879241367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/InsightEngine_4_26$connect_LLM_sample_test.coverage" NAME="connect_LLM_sample_test Coverage Results" MODIFIED="1714215416390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/InsightEngine_4_1$data_process.coverage" NAME="data_process Coverage Results" MODIFIED="1714015420541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/InsightEngine5_7$main.coverage" NAME="main Coverage Results" MODIFIED="1715436956811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/InsightEngine5_7$main.coverage" NAME="main Coverage Results" MODIFIED="1715758121649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/InsightEngine_4_1$connectLLM.coverage" NAME="connectLLM Coverage Results" MODIFIED="1712143058620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/InsightEngine_4_26$main.coverage" NAME="main Coverage Results" MODIFIED="1714458155452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/InsightEngine5_7$connection_test.coverage" NAME="connection_test Coverage Results" MODIFIED="1715407120816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/InsightEngine5_7$connection_test.coverage" NAME="connection_test Coverage Results" MODIFIED="1715766234647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/InsightEngine_4_1$connection_test.coverage" NAME="connection_test Coverage Results" MODIFIED="1714015588157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/InsightEngine_4_26$data_process.coverage" NAME="data_process Coverage Results" MODIFIED="1715086577391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/InsightEngine_4_26$query_for_server.coverage" NAME="query_for_server Coverage Results" MODIFIED="1714360520303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/InsightEngine_4_26$connection_test.coverage" NAME="connection_test Coverage Results" MODIFIED="1714458147616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/InsightEngine5_7$query_for_server.coverage" NAME="query_for_server Coverage Results" MODIFIED="1715163818841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/InsightEngine5_7$data_process.coverage" NAME="data_process Coverage Results" MODIFIED="1715744802737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/InsightEngine5_7$data_process.coverage" NAME="data_process Coverage Results" MODIFIED="1715746025077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -478,7 +478,6 @@ def parse_response_select_group(response, query, insight_list):
     lines = response.split("\n")
     group_type = ""
     group_criteria = ""
-    reason = ""
 
     for line in lines:
         line = line.strip()
@@ -486,10 +485,8 @@ def parse_response_select_group(response, query, insight_list):
             group_type = line.split(":")[1].strip()
         elif line.startswith("Group Criteria:"):
             group_criteria = line.split(":")[1].strip()
-        elif line.startswith("Reason:"):
-            reason = line.split(":")[1].strip()
 
-    if group_type is None or group_criteria is None or reason is None:
+    if group_type is None or group_criteria is None:
         return None
 
     if "same-level" in group_type.lower():
@@ -501,7 +498,6 @@ def parse_response_select_group(response, query, insight_list):
     else:
         return None
 
-    sort_group_prompt = "You have selected a group of headers that best match the question: \n"
     sort_insight_prompt = "The following are the headers in the selected group and the insight information in each header.\n"
     header_count = 1
     headers_info_dict = {}
@@ -510,8 +506,6 @@ def parse_response_select_group(response, query, insight_list):
     for group_key, group_value in groups_list.items():
         if group_key == group_criteria:
             insights_info_list = []
-            sort_group_prompt += f"Group Criteria: {group_criteria}, this group is a subdivision of the current subspace in the '{group_criteria}' column dimension.\n"
-            sort_group_prompt += "Headers: \n"
             headers_list = group_value['headers']
 
             insight_count = 1
@@ -519,16 +513,9 @@ def parse_response_select_group(response, query, insight_list):
             for header in headers_list:
                 # get insight in header
                 insights_info = get_insight_by_header(str(header), insight_list)
-                sort_group_prompt += f"{header}\n"
                 if insights_info:
                     headers_info_dict[str(header)] = insights_info
-                    # sort_insight_prompt += f"Header {header_count}: {header}\n"
-                    # insight_count = 1
                     for insight_info in insights_info:
-                        # sort_insight_prompt += f"  Insight {insight_count}:\n"
-                        # sort_insight_prompt += f"    Type: {insight_info['Type']}\n"
-                        # sort_insight_prompt += f"    Score: {insight_info['Score']}\n"
-                        # sort_insight_prompt += f"    Description: {insight_info['Description']}\n"
                         insight_realId = insight_info['realId']
                         insight_type = insight_info['type']
                         insight_score = insight_info['score']
@@ -542,23 +529,18 @@ def parse_response_select_group(response, query, insight_list):
                         sort_insight_prompt += f"Insight {insight_count}: In subspace {header}, {insight_info['description']}\n"
                         insight_count += 1
                     header_count += 1
-            sort_insight_prompt += f"""\nNext, you need to rank the insights provided based on the following criteria:
-1. Insight description, which includes information about the data patterns observed.
-2. The question: "{query}", which guides the data exploration process and helps in selecting relevant insights.
-
-Your task is to identify the top three insights that contain pattern information most effectively addressing the current question. Please rank the insights based on these criteria, with the most relevant insights listed first, and explain your reasons for selecting them.
+            sort_insight_prompt += f"""\nNext, your task is to select top-3 insights based on their relation to the current insight.
+The relation between the current insight and the insight you choose represents the logical reasoning process from the current insight to the next insight. It describes why deriving the next insight from the current one is meaningful and reasonable. This logical reasoning is a part of the data exploration chain, where each step needs to be well-founded and justified. The relation can include the following aspects:
+1. Logical Reasoning: Explain why the current insight leads us to consider the next insight. For example, if the current insight reveals that a particular data point is an outlier, the next insight might analyze the proportion of this outlier in a key attribute, indicating the reason for the anomaly.
+2. Data Association: Describe the association or patterns between data points. For instance, from the distribution of one variable, infer the distribution of other variables.
+3. Problem Relevance: Explain how the new insight helps address the data analysis question: "{query}". For example, if the question concerns the reasons for a decline in sales, and the current insight shows an anomaly in sales for a particular month, the next insight might analyze the market conditions of that month (comparing sales in different regions, against other brands, or with the same month in previous years).
+Based on these criteria, select top-3 insights from the ones provided that most effectively follow from the current insight. Additionally, write out the relation for each selected insight, explaining why it was chosen and how it logically follows from the current insight, demonstrating strong logical reasoning, data association, and problem relevance.
 Your answer must follow the format below: 
-1. Insight x. Reason: xxx
-2. Insight x. Reason: xxx
-3. ...
-For example:
-1. Insight 2. Reason: The reason why I choose Insight 2 as the most relevant insight is that ...
-2. Insight 1. Reason: The reason why I choose Insight 1 as the second relevant insight is that ...
-3. Insight 4. Reason: The reason why I choose Insight 4 as the third relevant insight is that ...
-...
+1. Insight x. Relation: xxx
+2. Insight x. Relation: xxx
+3. Insight x. Relation: xxx
 """
-            # return sort_group_prompt, headers_info_dict, insights_info_dict, sort_insight_prompt, reason
-            return insights_info_dict, sort_insight_prompt, reason
+            return insights_info_dict, sort_insight_prompt
 
     return None
 
@@ -568,11 +550,11 @@ def approx_equal(a, b, tolerance=1e-6):
 
 
 def parse_response_select_insight(response, insights_info_dict, categorized_headers, node_id):
-    response_list = re.findall(r'Insight (\d+)\. Reason: (.+)', response)
+    response_list = re.findall(r'Insight (\d+)\. Relation: (.+)', response)
     next_nodes = []
     for res in response_list:
         # id = res[0]
-        reason = res[1]
+        relation = res[1]
         item = insights_info_dict[int(res[0]) - 1]
 
         rel = ""
@@ -590,7 +572,7 @@ def parse_response_select_insight(response, insights_info_dict, categorized_head
             "realId": item['realId'],
             "type": item['Type'],
             "category": item['Category'],
-            "relationship": reason,
+            "relationship": relation,
             "vegaLite": item['vegaLite'],
             "relType": rel
         }
