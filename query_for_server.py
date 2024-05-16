@@ -214,13 +214,13 @@ change the data subspace to analyze the data. I will provide you with a "Related
 which lists other subspaces related to the current subspace.
 These subspaces are categorized into three types based on their hierarchical relationship with the current subspace: \
 same-level, elaboration, and generalization. Please select a group that is most likely to solve my current problem \
-as the next direction for exploration, and provide the reason."""
+as the next direction for exploration."""
     question3 += "Related Subspaces List:\n"
     grouping_string, categorized_headers = get_related_subspace(crt_header)
     question3 += grouping_string
 
     repeat_str = """Please note that my current subspace is: {} , and the question need to be solved is: "{}". \
-Considering the subspace groups mentioned above, select one group that best matches the question, and provide the reason for your choice."""
+Considering the subspace groups mentioned above, select one group that best matches the question."""
     repeat_str = repeat_str.format(str(crt_header), query)
     question3 += repeat_str
 
