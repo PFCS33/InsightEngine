@@ -373,7 +373,7 @@ def calc_distribution_insight(d):
     # evenness
     e = abs(d_value.std() / d_value.mean())
     # _, p_e = kstest(d_value, 'uniform', args=(0, 1))
-    if e < 0.2:
+    if e < 0.5:
         has_evenness = True
         ins_type = 'evenness'
         ins_score = 1 - e

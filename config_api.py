@@ -1,12 +1,10 @@
-import openai
+from openai import OpenAI
 import os
 
-proxy = {
-'http': 'http://localhost:7890',
-'https': 'http://localhost:7890'
-}
+os.environ["http_proxy"] = "http://localhost:7890"
+os.environ["https_proxy"] = "http://localhost:7890"
 
-openai.proxy = proxy
-
-# update 5/7
-api_key = ''
+client = OpenAI(
+    base_url='https://api.openai-proxy.org/v1',
+    api_key='',
+)

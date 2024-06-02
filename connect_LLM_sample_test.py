@@ -1,16 +1,13 @@
 import datetime
-import openai
+from openai import OpenAI
 import ast
 import os
-import config_api
+from config_api import client
 import re
 
-proxy = {
-    'http': 'http://localhost:7890',
-    'https': 'http://localhost:7890'
-}
-openai.proxy = proxy
-openai.api_key = config_api.api_key
+os.environ["http_proxy"] = "http://localhost:7890"
+os.environ["https_proxy"] = "http://localhost:7890"
+
 
 global header_dict
 
@@ -132,7 +129,7 @@ def read_vis_list(file_path):
 
 
 def get_completion_from_messages(messages, temperature):
-    response = openai.ChatCompletion.create(
+    response = client.chat.completions.create(
         model="gpt-4",
         # model="gpt-3.5-turbo-0613",
         messages=messages,
@@ -143,7 +140,7 @@ def get_completion_from_messages(messages, temperature):
         timeout=1000,
     )
     # print(str(response.choices[0].message))
-    return response.choices[0].message["content"]
+    return response.choices[0].message.content
 
 
 def get_insight_by_header_id(header_list, id):
